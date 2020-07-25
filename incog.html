@@ -1,7 +1,4 @@
-<script>if(navigator.deviceMemory === undefined) {
-    document.querySelector("#ram-size").innerHTML = 'navigator.deviceMemory not supported. Try the latest version of Chrome.';
-}
-else {
-    document.querySelector("#ram-size").innerHTML = navigator.deviceMemory + 'GB';
-}</script>
-<p>The memory size of the current device is : <span id="ram-size" class="special-text"></span></p>
+<script>
+document.write(navigator.deviceMemory);
+</script>
+
