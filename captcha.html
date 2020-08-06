@@ -1,6 +1,15 @@
  <title>rGoogle reCAPTCHA V3</title>
-  <script src="https://www.google.com/recaptcha/api.js"></script>
+ <script src="https://www.google.com/recaptcha/api.js"></script>
+ <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+ </script>
 
 <center>
-<div class="g-recaptcha" data-sitekey="6LdpI7sZAAAAAGCvek-RVYhmRCPOrlV2f9hsqmPH"></div>
+<button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
+
 </center>
