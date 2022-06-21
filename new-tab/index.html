@@ -119,6 +119,7 @@
     </div>
 
 <script>
+var kk=0;
 document.addEventListener('keydown', function (e) {
     document.getElementById("ggl").focus();
     if (e.key === "Enter") {
@@ -141,6 +142,22 @@ document.addEventListener('keydown', function (e) {
     }
     if (e.key === "Control") {
 	show();
+    }
+    if (e.key === "Tab") {
+	e.preventDefault();
+	if(kk==0){
+		document.getElementById("aB1").focus();
+		kk=1;
+	}else if (kk==1){
+		document.getElementById("aB2").focus();
+		kk=2;
+	}else if (kk==2){
+		document.getElementById("aB3").focus();
+		kk=3;
+	}else{
+		document.getElementById("aB4").focus();
+		kk=0;
+	}
     }
 });
 
