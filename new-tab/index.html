@@ -122,7 +122,11 @@ document.addEventListener('keydown', function (e) {
     document.getElementById("ggl").focus();
     if (e.key === "Enter") {
 	var inpt=document.getElementById("ggl").value;
+	if (input=='f'){
+        document.location.href = 'https://facebook.com/;
+	}else{
 	document.location.href = 'https://www.google.com/search?q='+inpt;
+	}
     }
     if (e.key === "Control") {
 	show();
