@@ -55,7 +55,7 @@
 </style>
 </head>
 
-<body ondblclick="window.location='https://www.google.com.np/imghp?hl=en&authuser=0&ogbl'">
+<body onclick="showc()" ondblclick="window.location='https://www.google.com.np/imghp?hl=en&authuser=0&ogbl'">
     <div id="apexContainer">
 
       <div id='search-box' class = 'search-box'>
@@ -154,8 +154,11 @@ document.addEventListener('keydown', function (e) {
 	}else if (kk==2){
 		document.getElementById("aB3").focus();
 		kk=3;
+        }else if (kk==3){
+                document.getElementById("aB4").focus();
+                kk=4;
 	}else{
-		document.getElementById("aB4").focus();
+		document.getElementById("ggl").focus();
 		kk=0;
 	}
     }
@@ -172,6 +175,15 @@ function show(){
 		document.getElementById('ggl').style.fontSize='16px';
 		document.getElementById("ggl").style.cursor = 'auto';
 	}
+};
+
+function showc(){
+        if(document.getElementById('search-box').style.visibility=='visible'){
+                document.getElementById("ggl").focus();
+                document.getElementById('search-box').style.visibility='hidden';
+                document.getElementById('ggl').style.fontSize='0px';
+                document.getElementById("ggl").style.cursor = 'default';
+        }
 };
 </script>
 
