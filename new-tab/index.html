@@ -16,10 +16,50 @@
     <!-- Load Charset and set correct viewport -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
+<style>
+.search-box {
+  position: absolute;
+  top : 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+  visibility: hidden;
+}
+
+.search-box:hover > .search-text{
+  width: 240px;
+  padding: 0 6px;
+}
+
+.search-text {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 0px;
+  visibility: visible;
+  font-weight: normal;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 240px;
+  cursor: default; 
+}
+</style>
 </head>
 
-<body>
+<body ondblclick="window.location='https://www.google.com.np/imghp?hl=en&authuser=0&ogbl'">
     <div id="apexContainer">
+
+      <div id='search-box' class = 'search-box'>
+          <input id='ggl' class = "search-text" spellcheck="false" type="text" placeholder = "Search..">
+      </div>
+
 
         <div id="headingContainer">(⌐■_■)</div>
 
@@ -75,6 +115,33 @@
         </div>
 
     </div>
+
+<script>
+document.addEventListener('keydown', function (e) {
+    document.getElementById("ggl").focus();
+    if (e.key === "Enter") {
+	var inpt=document.getElementById("ggl").value;
+	document.location.href = 'https://www.google.com/search?q='+inpt;
+    }
+    if (e.key === "Control") {
+	show();
+    }
+});
+
+function show(){
+	if(document.getElementById('search-box').style.visibility=='visible'){
+		document.getElementById("ggl").focus();
+		document.getElementById('search-box').style.visibility='hidden';
+		document.getElementById('ggl').style.fontSize='0px';
+		document.getElementById("ggl").style.cursor = 'default';
+	}else{
+		document.getElementById('search-box').style.visibility='visible';
+		document.getElementById('ggl').style.fontSize='16px';
+		document.getElementById("ggl").style.cursor = 'auto';
+	}
+};
+</script>
+
 </body>
 
 </html>
