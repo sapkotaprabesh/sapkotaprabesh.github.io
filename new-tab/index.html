@@ -16,7 +16,8 @@
     <!-- Load Charset and set correct viewport -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
 <style>
 .search-box {
   position: absolute;
@@ -58,7 +59,7 @@
     <div id="apexContainer">
 
       <div id='search-box' class = 'search-box'>
-          <input id='ggl' class = "search-text" spellcheck="false" type="text" placeholder = "Search..">
+          <input id='ggl' class = "search-text" spellcheck="false" type="text" autocomplete="off" placeholder = "Search..">
       </div>
 
 
@@ -121,12 +122,22 @@
 document.addEventListener('keydown', function (e) {
     document.getElementById("ggl").focus();
     if (e.key === "Enter") {
+
+	var custom_keywords = {
+	  'f' : 'https://facebook.com',
+	  'd' : 'https://discord.com/app',
+	  'g' : 'https://mail.google.com/mail/u/0/',
+	  'y' : 'https://www.youtube.com/'
+	};
+
 	var inpt=document.getElementById("ggl").value;
-	if (input=='f'){
-        document.location.href = 'https://facebook.com/;
-	}else{
-	document.location.href = 'https://www.google.com/search?q='+inpt;
+        if (inpt.length==1){
+		if(inpt in custom_keywords){
+			document.location.href = custom_keywords[inpt];
+			return;
+		}
 	}
+	document.location.href = 'https://www.google.com/search?q='+inpt;
     }
     if (e.key === "Control") {
 	show();
