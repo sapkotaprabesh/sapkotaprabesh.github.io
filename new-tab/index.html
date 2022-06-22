@@ -175,7 +175,9 @@
 <script>
 var kk=0;
 document.addEventListener('keydown', function (e) {
-    document.getElementById("ggl").focus();
+    if(document.activeElement.tagName!="INPUT"){
+        document.getElementById("ggl").focus();
+    }
     if (e.key === "Enter") {
 
 	var custom_keywords = {
