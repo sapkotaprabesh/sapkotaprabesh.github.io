@@ -52,6 +52,59 @@
   width: 240px;
   cursor: default; 
 }
+
+#toast {
+  visibility: hidden;
+  height: 50px;
+  width: fit-content;
+  margin: auto;
+  background-color: rgb(209, 68, 68);
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 30px;
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+#toast #desc {
+  color: #fff;
+  padding: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#toast.show {
+  visibility: visible;
+  animation: fadein 1s, fadeout 1s 3s;
+}
+
+@keyframes fadein {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 30px;
+    opacity: 1
+  }
+}
+
+@keyframes fadeout {
+  from {
+    top: 30px;
+    opacity: 1;
+  }
+  to {
+    top: 0;
+    opacity: 0;
+  }
+}
+
 </style>
 </head>
 
@@ -62,7 +115,8 @@
           <input id='ggl' class = "search-text" spellcheck="false" type="text" autocomplete="off" placeholder = "Search..">
       </div>
 
-
+        <div id="toast"><div id="desc">Connectivity Status</div></div>
+       
         <div id="headingContainer">(⌐■_■)</div>
 
         <div id="clockContainer">00:00</div>
@@ -185,6 +239,65 @@ function showc(){
                 document.getElementById("ggl").style.cursor = 'default';
         }
 };
+
+var offline_=0;
+function connectivity_check(){
+	let xhr = new XMLHttpRequest();
+	xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
+	xhr.onload = ()=>{ 
+		if(xhr.status == 200 && xhr.status < 300){
+			if(offline_==1){
+				document.getElementById("desc").innerHTML = "Back Online :)";
+				let notification = document.getElementById("toast");
+				notification.style.backgroundColor='#90ee90';
+				notification.className = "show";
+				setTimeout(() => { notification.className = notification.className.replace("show", ""); }, 4000);
+			}
+			offline_=0;
+		}else{
+			offline();
+		}
+	}
+	xhr.onerror = ()=>{
+		offline();
+	}
+	xhr.send();
+}
+
+function offline(){
+	if(offline_==0){
+		document.getElementById("desc").innerHTML = "You're Offline :/";
+		let notification = document.getElementById("toast");
+		notification.style.backgroundColor='rgb(209, 68, 68)';
+		notification.className = "show";
+		setTimeout(() => { notification.className = notification.className.replace("show", ""); }, 4000);
+	}
+	offline_=1;
+}
+
+setInterval(()=>{
+	connectivity_check();
+}, 10000);
+
+function addLoadEvent(func)
+{    
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function')
+    {
+        window.onload = func;
+    } 
+    else 
+    {
+        window.onload = function()
+        {
+            oldonload();
+            func();
+        }
+    }
+}
+
+addLoadEvent(connectivity_check);
+
 </script>
 
 </body>
