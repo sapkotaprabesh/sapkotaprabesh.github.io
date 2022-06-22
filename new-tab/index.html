@@ -24,7 +24,7 @@
   top : 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #2f3640;
+  background: rgba(0, 0, 0, 0.3);<!--#2f3640;-->
   height: 40px;
   border-radius: 40px;
   padding: 10px;
@@ -222,10 +222,12 @@ function show(){
 	if(document.getElementById('search-box').style.visibility=='visible'){
 		document.getElementById("ggl").focus();
 		document.getElementById('search-box').style.visibility='hidden';
+		document.getElementById('headingContainer').style.visibility='visible';
 		document.getElementById('ggl').style.fontSize='0px';
 		document.getElementById("ggl").style.cursor = 'default';
 	}else{
 		document.getElementById('search-box').style.visibility='visible';
+		document.getElementById('headingContainer').style.visibility='hidden';
 		document.getElementById('ggl').style.fontSize='16px';
 		document.getElementById("ggl").style.cursor = 'auto';
 	}
@@ -235,6 +237,7 @@ function showc(){
         if(document.getElementById('search-box').style.visibility=='visible'){
                 document.getElementById("ggl").focus();
                 document.getElementById('search-box').style.visibility='hidden';
+  		document.getElementById('headingContainer').style.visibility='visible';
                 document.getElementById('ggl').style.fontSize='0px';
                 document.getElementById("ggl").style.cursor = 'default';
         }
