@@ -108,7 +108,7 @@
 </style>
 </head>
 
-<body ondragstart="return false" onclick="showc()" ondblclick="window.location='https://www.google.com.np/imghp?hl=en&authuser=0&ogbl'">
+<body oncontextmenu= "return false;" ondragstart="return false" onclick="showc()" ondblclick="window.location='https://www.google.com.np/imghp?hl=en&authuser=0&ogbl'">
     <div id="apexContainer">
 
       <div id='search-box' class = 'search-box'>
@@ -122,10 +122,10 @@
         <div id="clockContainer">00:00</div>
         
         <ul id="bookmarksContainer">
-            <div class="bookmark" id="b1"><a href="https://discord.com/app" id="aB1"><img src="assets/discord.svg" id="imgB1"></a></div>
-            <div class="bookmark" id="b2"><a href="https://www.facebook.com" id="aB2"><img src="assets/facebook.svg" id="imgB2"></a></div>
-            <div class="bookmark" id="b3"><a href="https://www.youtube.com" id="aB3"><img src="assets/youtube.svg" id="imgB3"></a></div>
-            <div class="bookmark" id="b4"><a href="https://gmail.com" id="aB4"><img src="assets/gmail.svg" id="imgB4"></a></div>
+            <div class="bookmark" id="b1"><a href="https://discord.com/app" id="aB1"><img oncontextmenu= "rtclick('aB1'); return false;" src="assets/discord.svg" id="imgB1"></a></div>
+            <div class="bookmark" id="b2"><a href="https://www.facebook.com" id="aB2"><img oncontextmenu= "rtclick('aB2'); return false;" src="assets/facebook.svg" id="imgB2"></a></div>
+            <div class="bookmark" id="b3"><a href="https://www.youtube.com" id="aB3"><img oncontextmenu= "rtclick('aB3'); return false;" src="assets/youtube.svg" id="imgB3"></a></div>
+            <div class="bookmark" id="b4"><a href="https://gmail.com" id="aB4"><img oncontextmenu= "rtclick('aB4'); return false;" src="assets/gmail.svg" id="imgB4"></a></div>
             <div class="bookmark" id="b5"><img src="assets/settings.svg"></div>
         </ul>
 
@@ -303,6 +303,9 @@ function addLoadEvent(func)
 
 addLoadEvent(connectivity_check);
 
+function rtclick(dib){
+	window.open(document.getElementById(dib).href);
+}
 </script>
 
 </body>
