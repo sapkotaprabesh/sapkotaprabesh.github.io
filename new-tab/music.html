@@ -1,5 +1,5 @@
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('Quicksand.css');
 
 html {
     box-sizing: border-box ;
@@ -9,7 +9,7 @@ html {
     --cubic-header: var(--duration) cubic-bezier(0.71, 0.21, 0.3, 0.95) ;
     --cubic-slider : var(--duration) cubic-bezier(0.4, 0, 0.2, 1) ;
     --cubic-play-list : .35s var(--duration) cubic-bezier(0, 0.85, 0.11, 1.64) ;
-    --cubic-slider-context : cubic-bezier(1, -0.01, 1, 1.01) ; 
+    --cubic-slider-context : cubic-bezier(1, -0.01, 1, 1.01) ;
 }
 
 html *,
@@ -31,28 +31,28 @@ body{
     font-family: 'Quicksand', sans-serif ;
     -webkit-tap-highlight-color: transparent ;
     transition: background-color  var(--cubic-slider) ;
-	
-	overflow: hidden;
-} 
- 
-.bg {
-	position: absolute;
-	
-	-webkit-filter: blur(12px);
-	-moz-filter: blur(12px);
-	-o-filter: blur(12px);
-	-ms-filter: blur(12px);
-	filter: blur(12px);
 
-	height: 110%;
-	width: 110%;
-	left: -5%;
-	top: -5%;
-	
-	background: url(https://pre00.deviantart.net/6b7d/th/pre/f/2016/308/a/e/flat_forest_wallpaper_by_brosproduction-dana96t.jpg);
-	background-position: center;
-	background-size: 150% 100%;
-	z-index: -1;
+        overflow: hidden;
+}
+
+.bg {
+        position: absolute;
+
+        -webkit-filter: blur(12px);
+        -moz-filter: blur(12px);
+        -o-filter: blur(12px);
+        -ms-filter: blur(12px);
+        filter: blur(12px);
+
+        height: 110%;
+        width: 110%;
+        left: -5%;
+        top: -5%;
+
+        background: url(assets/bg.jpg);
+        background-position: center;
+        background-size: 150% 100%;
+        z-index: -1;
 }
 .img {
     width: 100% ;
@@ -150,7 +150,7 @@ body{
     filter: brightness(75%) ;
 }
 
-.slider__name, 
+.slider__name,
 .slider__title {
     overflow: hidden ;
     white-space: nowrap ;
@@ -175,7 +175,7 @@ body{
 
 .player__button {
     all: unset ;
-    z-index: 100 ;
+    z-index: 9999 ;
     width: 2.5em ;
     height: 2.5em ;
     cursor: pointer ;
@@ -197,7 +197,7 @@ body{
     position: absolute ;
 }
 
-.player__button--absolute--center { 
+.player__button--absolute--center {
     top: 0 ;
     left: 0 ;
     right: 0 ;
@@ -207,7 +207,7 @@ body{
 }
 
 img[alt ="pause-icon"] {
-    display: none ;    
+    display: none ;
 }
 
 .player__controls {
@@ -224,7 +224,7 @@ img[alt ="pause-icon"] {
 
 .player__controls.move {
     width: 88% ;
-    transform: translate3d(-1.1em , calc(var(--parent-height) - 153%) , 0) ;    
+    transform: translate3d(-1.1em , calc(var(--parent-height) - 153%) , 0) ;
 }
 
 .player__context {
@@ -302,8 +302,8 @@ img[alt ="pause-icon"] {
 
 .player__playlist {
     height: 100% ;
-    overflow: auto ;   
-    padding: 1.05em .9em 0 1.2em ; 
+    overflow: auto ;
+    padding: 1.05em .9em 0 1.2em ;
 }
 
 .player__playlist::-webkit-scrollbar {
@@ -331,7 +331,7 @@ img[alt ="pause-icon"] {
 .player__song-time {
     font-size: .65em ;
     font-weight: bold ;
-    color: #00000079 ; 
+    color: #00000079 ;
     height: fit-content ;
     align-self: flex-end ;
 }
@@ -342,13 +342,13 @@ img[alt ="pause-icon"] {
 
 
 .player_shown {
-	bottom: 0;
+        bottom: 0;
 }
 
 #music { display: none; }
 
 #music_display {
-	position: absolute;
+        position: absolute;
 }
 
 </style>
@@ -365,38 +365,125 @@ img[alt ="pause-icon"] {
 <body>
 <div id="bg" class="bg"></div>
 <canvas id="music_display">
-	ERROR
+        ERROR
 </canvas>
     <div class="player">
         <div class="player__header">
             <div class="player__img player__img--absolute slider">
-                <button class="player__button player__button--absolute--nw playlist">
-                    <img src="http://physical-authority.surge.sh/imgs/icon/playlist.svg" alt="playlist-icon">
+                <button class="player__button player__button--absolute--nw playlist" >
+				<!-- style= "pointer-events: none"> -->
+                    <img src="assets/playlist.svg" alt="playlist-icon">
                 </button>
                 <button class="player__button player__button--absolute--center play">
-                    <img src="http://physical-authority.surge.sh/imgs/icon/play.svg" alt="play-icon">
-                    <img src="http://physical-authority.surge.sh/imgs/icon/pause.svg" alt="pause-icon">
+				<!-- style= "pointer-events: none"> -->
+                    <img src="assets/play.svg" alt="play-icon">
+                    <img src="assets/pause.svg" alt="pause-icon">
                 </button>
                 <div class="slider__content">
-                    <img class="img slider__img" src="https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/286/100x100/make-me-move-feat-karra-1586948717-dTsA9So1cu.jpg" alt="cover">
-                    <img class="img slider__img" src="https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/451/100x100/imagine-1586953710-4wJybAsS8x.jpg" alt="cover">
-                    <img class="img slider__img" src="https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/434/100x100/linked-1586953317-0BranYHgw8.jpg" alt="cover">
-                    <img class="img slider__img" src="https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/487/100x100/why-do-i-feat-bri-tolani-1586954592-AkIU1vSG9q.jpg" alt="cover">
-                    <img class="img slider__img" src="https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/137/100x100/invincible-1586946874-ZUsn5ZwSWh.jpg" alt="cover">
-                    <img class="img slider__img" src="https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/143/100x100/heroes-tonight-feat-johnning-1586946923-LsvZKuKHRf.jpg" alt="cover">
-                    <img class="img slider__img" src="https://linkstorage.linkfire.com/medialinks/images/7268dbaf-880f-4b40-aafe-0d45e278fe47/artwork-440x440.jpg" alt="cover">
+				<img class="img slider__img" src="assets/thumb.jpg" alt="cover">
+<!-- <img class="img slider__img" src="https://idgafs.github.io/thumbs/3 Idiots - Give Me Some Sunshine .jpg" alt="cover"> -->
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/5_55 - Maya.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/5_55 - Stoner Life.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/5_55 - Topendra.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Alex Dware - Timi Kaha.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Apocalypse - Cigarettes After Sex.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Arun Paija Pun - Samjhana Cha.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Billy Joel - Piano Man.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/BLUESSS - LA LA LA LA.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Bob Marley - Buffalo soldier.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Bruno Mars - That’s What I Like.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/CJ - GTA San Andreas Theme Song.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Convoy - Is he in your heart tonight.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Ease - Aslil Nepal 2.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Gorillaz - Clint Eastwood.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/GORKHALI TAKMA - WALKING FIRIRI.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Green Day - 21st Century Breakdown.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Green Day - Boulevard Of Broken Dreams.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Green day - Time of your life.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Imagine Dragons - Believer.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Imagine Dragons - Enemy.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Josh Ritter - Miles Away.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/JP Saxe Julia Michaels - If The World Was Ending.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Kana Hanazawa - Renai Circulation.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Karthik Rao - Main Bola Hey!.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Kelsang Shrestha - Bijuli Dai.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Khantrast - DEATH NOTE FREESTYLE.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Ktaharu - Maya ko bato.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/LISA WEAVER - CHANGES.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Mark Ronson - Uptown Funk.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Maroon 5 - Girls Like You.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Maroon 5 - Memories.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Marshmello - Alone.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Marshmello ft. Bastille - Happier.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Neetesh Jung Kunwar - Ashma.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Neetesh Jung Kunwar - Kholai Khola.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Neetesh Jung Kunwar - Pari.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Neetesh Jung Kunwar - Sworga ki pari.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/NEFFEX - Careless.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/NEFFEX - Destiny.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/NEFFEX - Fight Back.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/NEFFEX - Grateful.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/NEFFEX - Rumors.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/NEFFEX - Soldier.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/NEFFEX - Things Are Gonna Get Better.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/NF - Green Lights.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Oasis Thapa - Aparichit Bhaawanaa.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/OK Go - Turn Up the Radio.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/One Direction - Best Song Ever.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/One Direction - Strong.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/One Direction - What Makes You Beautiful.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Pahenlo Batti Muni - Bari Lai.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Pahenlo Batti Muni - Gauthali.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Pahenlo Batti Muni - Kina.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Pahenlo Batti Muni - Tatepate Bhitta.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Passenger _ Let Her Go.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Penah Ali - Yeh dil deewana.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Phineas and Ferb - there's a platypus controlling me.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Phosphenes - Yestai Nai Hola.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Photograph - Ed Sheeran.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Powfu - death bed (coffee for your head).jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Punit Singh - Teri Meri Pehli Shaam.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Punit Singh - Yahan koi nahi.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Rhett Miller - Question.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/ROCKHEADS - RANGA.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Rohit John Chettri - Bistarai Bistarai.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Roshan Limbu - Mero Manaiko Phool Tipi.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/SACAR - Timro Gaala.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Sajjan raj vaidya - Chitti vitra.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Sajjan Raj Vaidya - Hawaijahaj.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Sajjan Raj Vaidya - Lukaamaari.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Sajjan Raj Vaidya - Mooskaan.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Sajjan Raj Vaidya - Naganya Maya.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Samir Shrestha - Chaar Dewar.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Shuprim Gelang Magar - Samjhana Mai Bitla Jindagi.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Spicy Violin - Bink's Sake.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/The Clash - Police on My Back.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/The Elements - Birsiney Hau Ki.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/The Elements - Sapana Ko Mayalu.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/The Zephyr - Ishq wala love instrumental.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/TrapMusicHDTV - SpongeBob Trap Remix - Krusty Krab.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Tribal Rain - BHANAI.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Uges Limbu - Hamro geet.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/UNIQ POET - 1994.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Vice Versa - Manaka kura.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Wiz Khalifa - See You Again [Furious 7 Soundtrack].jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Wiz Khalifa - Young Wild and Free .jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/Yabesh Thapa - Ae Mutu.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/ZNMD - Der Lagi Lekin.jpg" alt="cover">
+<img class="img slider__img" src="https://idgafs.github.io/thumbs/ZNMD - Dil Dhadakne Do.jpg" alt="cover">
+
                 </div>
             </div>
             <div class="player__controls">
                 <button class="player__button back">
-                    <img class="img" src="http://physical-authority.surge.sh/imgs/icon/back.svg" alt="back-icon">
+                    <img class="img" src="assets/back.svg" alt="back-icon">
                 </button>
                 <p class="player__context slider__context">
                     <strong class="slider__name"></strong>
                     <span class="player__title slider__title"></span>
                 </p>
                 <button class="player__button next">
-                    <img class="img" src="http://physical-authority.surge.sh/imgs/icon/next.svg" alt="next-icon">
+                    <img class="img" src="assets/next.svg" alt="next-icon">
                 </button>
                 <div class="progres">
                     <div class="progres__filled"></div>
@@ -404,86 +491,190 @@ img[alt ="pause-icon"] {
             </div>
         </div>
         <ul class="player__playlist list">
-            <li class="player__song">
-                <img class="player__img img" src="https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/286/100x100/make-me-move-feat-karra-1586948717-dTsA9So1cu.jpg" alt="Make Me Move (feat. KARRA)" title="Make Me Move (feat. KARRA)">
-                <p class="player__context">
-                    <b class="player__song-name">Make Me Move (feat. KARRA)</b>
-                    <span class="flex">
-                        <span class="player__title">Culture Code, KARRA</span>
-                        <span class="player__song-time"></span>
-                    </span>
-                </p>
-                <audio class="audio" src="songs/Runaway (feat. Mathew V).mp3" crossorigin="anonymous"></audio>
-            </li>
-            <li class="player__song">
-                <img class="player__img img" src="https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/451/100x100/imagine-1586953710-4wJybAsS8x.jpg" alt="cover">
-                <p class="player__context">
-                    <b class="player__song-name">Imagine</b>
-                    <span class="flex">
-                        <span class="player__title">Jim Yosef</span>
-                        <span class="player__song-time"></span>
-                    </span>
-                </p>
-                <audio class="audio" src="http://127.0.0.1/mugic.mp3" crossorigin="anonymous"></audio>
-            </li>
-            <li class="player__song">
-                <img class="player__img img" src="https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/434/100x100/linked-1586953317-0BranYHgw8.jpg" alt="cover">
-                <p class="player__context">
-                    <b class="player__song-name">Linked</b>
-                    <span class="flex">
-                        <span class="player__title">Jim Yosef, Anna Yvette</span>
-                        <span class="player__song-time"></span>
-                    </span>
-                </p>
-                <audio class="audio" src="https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/434/linked-1586953319-v8FLkcjqgO.mp3"></audio>
-            </li>
-            <li class="player__song">
-                <img class="player__img img" src="https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/487/100x100/why-do-i-feat-bri-tolani-1586954592-AkIU1vSG9q.jpg" alt="cover">
-                <p class="player__context">
-                    <b class="player__song-name">Why Do I? (feat. Bri Tolani)</b>
-                    <span class="flex">
-                        <span class="player__title">Unknown Brain, Bri Tolani</span>
-                        <span class="player__song-time"></span>
-                    </span>
-                </p>
-                <audio class="audio" src="https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/487/why-do-i-feat-bri-tolani-1586954600-5IMWlSMhuc.mp3"></audio>
-            </li>
-            <li class="player__song">
-                <img class="player__img img" src="https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/137/100x100/invincible-1586946874-ZUsn5ZwSWh.jpg" alt="cover">
-                <p class="player__context ">
-                    <b class="player__song-name">Invincible</b>
-                    <span class="flex">
-                        <span class="player__title">DEAF KEV</span>
-                        <span class="player__song-time"></span>
-                    </span>
-                </p>
-                <audio class="audio" src="https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/137/invincible-1586946876-v3qvV3TEKb.mp3"></audio>
-            </li>
-            <li class="player__song">
-                <img class="player__img img" src="https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/143/100x100/heroes-tonight-feat-johnning-1586946923-LsvZKuKHRf.jpg" alt="cover">
-                <p class="player__context">
-                    <b class="player__song-name">Heroes Tonight (feat. Johnning)</b>
-                    <span class="flex">
-                        <span class="player__title">Janji, Johnning</span>
-                        <span class="player__song-time"></span>
-                    </span>
-                </p>
-                <audio class="audio" src="https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/143/heroes-tonight-feat-johnning-1586946924-fcppiBJp7z.mp3"></audio>
-            </li>
-            <li class="player__song">
-                <img class="player__img img" src="https://linkstorage.linkfire.com/medialinks/images/7268dbaf-880f-4b40-aafe-0d45e278fe47/artwork-440x440.jpg" alt="cover">
-                <p class="player__context ">
-                    <b class="player__song-name">Collide</b>
-                    <span class="flex">
-                        <span class="player__title">Elektronomia</span>
-                        <span class="player__song-time"></span>
-                    </span>
-                </p>
-                <audio class="audio" src="https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/081/collide-1643284836-kJ42U7PzET.mp3"></audio>
-            </li>
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/3 Idiots - Give Me Some Sunshine .jpg" alt="cover"><p class="player__context "><b class="player__song-name">Give Me Some Sunshine </b><span class="flex"><span class="player__title">3 Idiots </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/3 Idiots - Give Me Some Sunshine .mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/5_55 - Maya.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Maya</b><span class="flex"><span class="player__title">5_55 </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/5_55 - Maya.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/5_55 - Stoner Life.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Stoner Life</b><span class="flex"><span class="player__title">5_55 </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/5_55 - Stoner Life.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/5_55 - Topendra.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Topendra</b><span class="flex"><span class="player__title">5_55 </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/5_55 - Topendra.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Alex Dware - Timi Kaha.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Timi Kaha</b><span class="flex"><span class="player__title">Alex Dware </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Alex Dware - Timi Kaha.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Apocalypse - Cigarettes After Sex.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Cigarettes After Sex</b><span class="flex"><span class="player__title">Apocalypse </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Apocalypse - Cigarettes After Sex.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Arun Paija Pun - Samjhana Cha.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Samjhana Cha</b><span class="flex"><span class="player__title">Arun Paija Pun </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Arun Paija Pun - Samjhana Cha.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Billy Joel - Piano Man.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Piano Man</b><span class="flex"><span class="player__title">Billy Joel </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Billy Joel - Piano Man.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/BLUESSS - LA LA LA LA.jpg" alt="cover"><p class="player__context "><b class="player__song-name">LA LA LA LA</b><span class="flex"><span class="player__title">BLUESSS </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/BLUESSS - LA LA LA LA.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Bob Marley - Buffalo soldier.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Buffalo soldier</b><span class="flex"><span class="player__title">Bob Marley </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Bob Marley - Buffalo soldier.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Bruno Mars - That’s What I Like.jpg" alt="cover"><p class="player__context "><b class="player__song-name">That’s What I Like</b><span class="flex"><span class="player__title">Bruno Mars </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Bruno Mars - That’s What I Like.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/CJ - GTA San Andreas Theme Song.jpg" alt="cover"><p class="player__context "><b class="player__song-name">GTA San Andreas Theme Song</b><span class="flex"><span class="player__title">CJ </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/CJ - GTA San Andreas Theme Song.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Convoy - Is he in your heart tonight.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Is he in your heart tonight</b><span class="flex"><span class="player__title">Convoy </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Convoy - Is he in your heart tonight.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Ease - Aslil Nepal 2.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Aslil Nepal 2</b><span class="flex"><span class="player__title">Ease </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Ease - Aslil Nepal 2.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Gorillaz - Clint Eastwood.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Clint Eastwood</b><span class="flex"><span class="player__title">Gorillaz </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Gorillaz - Clint Eastwood.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/GORKHALI TAKMA - WALKING FIRIRI.jpg" alt="cover"><p class="player__context "><b class="player__song-name">WALKING FIRIRI</b><span class="flex"><span class="player__title">GORKHALI TAKMA </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/GORKHALI TAKMA - WALKING FIRIRI.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Green Day - 21st Century Breakdown.jpg" alt="cover"><p class="player__context "><b class="player__song-name">21st Century Breakdown</b><span class="flex"><span class="player__title">Green Day </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Green Day - 21st Century Breakdown.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Green Day - Boulevard Of Broken Dreams.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Boulevard Of Broken Dreams</b><span class="flex"><span class="player__title">Green Day </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Green Day - Boulevard Of Broken Dreams.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Green day - Time of your life.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Time of your life</b><span class="flex"><span class="player__title">Green day </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Green day - Time of your life.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Imagine Dragons - Believer.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Believer</b><span class="flex"><span class="player__title">Imagine Dragons </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Imagine Dragons - Believer.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Imagine Dragons - Enemy.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Enemy</b><span class="flex"><span class="player__title">Imagine Dragons </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Imagine Dragons - Enemy.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Josh Ritter - Miles Away.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Miles Away</b><span class="flex"><span class="player__title">Josh Ritter </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Josh Ritter - Miles Away.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/JP Saxe Julia Michaels - If The World Was Ending.jpg" alt="cover"><p class="player__context "><b class="player__song-name">If The World Was Ending</b><span class="flex"><span class="player__title">JP Saxe Julia Michaels </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/JP Saxe Julia Michaels - If The World Was Ending.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Kana Hanazawa - Renai Circulation.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Renai Circulation</b><span class="flex"><span class="player__title">Kana Hanazawa </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Kana Hanazawa - Renai Circulation.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Karthik Rao - Main Bola Hey!.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Main Bola Hey!</b><span class="flex"><span class="player__title">Karthik Rao </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Karthik Rao - Main Bola Hey!.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Kelsang Shrestha - Bijuli Dai.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Bijuli Dai</b><span class="flex"><span class="player__title">Kelsang Shrestha </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Kelsang Shrestha - Bijuli Dai.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Khantrast - DEATH NOTE FREESTYLE.jpg" alt="cover"><p class="player__context "><b class="player__song-name">DEATH NOTE FREESTYLE</b><span class="flex"><span class="player__title">Khantrast </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Khantrast - DEATH NOTE FREESTYLE.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Ktaharu - Maya ko bato.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Maya ko bato</b><span class="flex"><span class="player__title">Ktaharu </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Ktaharu - Maya ko bato.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/LISA WEAVER - CHANGES.jpg" alt="cover"><p class="player__context "><b class="player__song-name">CHANGES</b><span class="flex"><span class="player__title">LISA WEAVER </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/LISA WEAVER - CHANGES.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Mark Ronson - Uptown Funk.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Uptown Funk</b><span class="flex"><span class="player__title">Mark Ronson </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Mark Ronson - Uptown Funk.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Maroon 5 - Girls Like You.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Girls Like You</b><span class="flex"><span class="player__title">Maroon 5 </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Maroon 5 - Girls Like You.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Maroon 5 - Memories.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Memories</b><span class="flex"><span class="player__title">Maroon 5 </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Maroon 5 - Memories.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Marshmello - Alone.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Alone</b><span class="flex"><span class="player__title">Marshmello </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Marshmello - Alone.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Marshmello ft. Bastille - Happier.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Happier</b><span class="flex"><span class="player__title">Marshmello ft. Bastille </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Marshmello ft. Bastille - Happier.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Neetesh Jung Kunwar - Ashma.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Ashma</b><span class="flex"><span class="player__title">Neetesh Jung Kunwar </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Neetesh Jung Kunwar - Ashma.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Neetesh Jung Kunwar - Kholai Khola.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Kholai Khola</b><span class="flex"><span class="player__title">Neetesh Jung Kunwar </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Neetesh Jung Kunwar - Kholai Khola.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Neetesh Jung Kunwar - Pari.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Pari</b><span class="flex"><span class="player__title">Neetesh Jung Kunwar </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Neetesh Jung Kunwar - Pari.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Neetesh Jung Kunwar - Sworga ki pari.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Sworga ki pari</b><span class="flex"><span class="player__title">Neetesh Jung Kunwar </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Neetesh Jung Kunwar - Sworga ki pari.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/NEFFEX - Careless.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Careless</b><span class="flex"><span class="player__title">NEFFEX </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/NEFFEX - Careless.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/NEFFEX - Destiny.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Destiny</b><span class="flex"><span class="player__title">NEFFEX </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/NEFFEX - Destiny.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/NEFFEX - Fight Back.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Fight Back</b><span class="flex"><span class="player__title">NEFFEX </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/NEFFEX - Fight Back.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/NEFFEX - Grateful.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Grateful</b><span class="flex"><span class="player__title">NEFFEX </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/NEFFEX - Grateful.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/NEFFEX - Rumors.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Rumors</b><span class="flex"><span class="player__title">NEFFEX </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/NEFFEX - Rumors.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/NEFFEX - Soldier.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Soldier</b><span class="flex"><span class="player__title">NEFFEX </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/NEFFEX - Soldier.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/NEFFEX - Things Are Gonna Get Better.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Things Are Gonna Get Better</b><span class="flex"><span class="player__title">NEFFEX </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/NEFFEX - Things Are Gonna Get Better.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/NF - Green Lights.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Green Lights</b><span class="flex"><span class="player__title">NF </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/NF - Green Lights.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Oasis Thapa - Aparichit Bhaawanaa.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Aparichit Bhaawanaa</b><span class="flex"><span class="player__title">Oasis Thapa </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Oasis Thapa - Aparichit Bhaawanaa.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/OK Go - Turn Up the Radio.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Turn Up the Radio</b><span class="flex"><span class="player__title">OK Go </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/OK Go - Turn Up the Radio.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/One Direction - Best Song Ever.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Best Song Ever</b><span class="flex"><span class="player__title">One Direction </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/One Direction - Best Song Ever.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/One Direction - Strong.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Strong</b><span class="flex"><span class="player__title">One Direction </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/One Direction - Strong.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/One Direction - What Makes You Beautiful.jpg" alt="cover"><p class="player__context "><b class="player__song-name">What Makes You Beautiful</b><span class="flex"><span class="player__title">One Direction </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/One Direction - What Makes You Beautiful.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Pahenlo Batti Muni - Bari Lai.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Bari Lai</b><span class="flex"><span class="player__title">Pahenlo Batti Muni </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Pahenlo Batti Muni - Bari Lai.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Pahenlo Batti Muni - Gauthali.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Gauthali</b><span class="flex"><span class="player__title">Pahenlo Batti Muni </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Pahenlo Batti Muni - Gauthali.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Pahenlo Batti Muni - Kina.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Kina</b><span class="flex"><span class="player__title">Pahenlo Batti Muni </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Pahenlo Batti Muni - Kina.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Pahenlo Batti Muni - Tatepate Bhitta.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Tatepate Bhitta</b><span class="flex"><span class="player__title">Pahenlo Batti Muni </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Pahenlo Batti Muni - Tatepate Bhitta.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Passenger _ Let Her Go.jpg" alt="cover"><p class="player__context "><b class="player__song-name"></b><span class="flex"><span class="player__title">Passenger _ Let Her Go.mp3</span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Passenger _ Let Her Go.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Penah Ali - Yeh dil deewana.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Yeh dil deewana</b><span class="flex"><span class="player__title">Penah Ali </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Penah Ali - Yeh dil deewana.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Phineas and Ferb - there's a platypus controlling me.jpg" alt="cover"><p class="player__context "><b class="player__song-name">there's a platypus controlling me</b><span class="flex"><span class="player__title">Phineas and Ferb </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Phineas and Ferb - there's a platypus controlling me.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Phosphenes - Yestai Nai Hola.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Yestai Nai Hola</b><span class="flex"><span class="player__title">Phosphenes </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Phosphenes - Yestai Nai Hola.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Photograph - Ed Sheeran.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Ed Sheeran</b><span class="flex"><span class="player__title">Photograph </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Photograph - Ed Sheeran.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Powfu - death bed (coffee for your head).jpg" alt="cover"><p class="player__context "><b class="player__song-name">death bed (coffee for your head)</b><span class="flex"><span class="player__title">Powfu </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Powfu - death bed (coffee for your head).mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Punit Singh - Teri Meri Pehli Shaam.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Teri Meri Pehli Shaam</b><span class="flex"><span class="player__title">Punit Singh </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Punit Singh - Teri Meri Pehli Shaam.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Punit Singh - Yahan koi nahi.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Yahan koi nahi</b><span class="flex"><span class="player__title">Punit Singh </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Punit Singh - Yahan koi nahi.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Rhett Miller - Question.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Question</b><span class="flex"><span class="player__title">Rhett Miller </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Rhett Miller - Question.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/ROCKHEADS - RANGA.jpg" alt="cover"><p class="player__context "><b class="player__song-name">RANGA</b><span class="flex"><span class="player__title">ROCKHEADS </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/ROCKHEADS - RANGA.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Rohit John Chettri - Bistarai Bistarai.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Bistarai Bistarai</b><span class="flex"><span class="player__title">Rohit John Chettri </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Rohit John Chettri - Bistarai Bistarai.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Roshan Limbu - Mero Manaiko Phool Tipi.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Mero Manaiko Phool Tipi</b><span class="flex"><span class="player__title">Roshan Limbu </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Roshan Limbu - Mero Manaiko Phool Tipi.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/SACAR - Timro Gaala.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Timro Gaala</b><span class="flex"><span class="player__title">SACAR </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/SACAR - Timro Gaala.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Sajjan raj vaidya - Chitti vitra.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Chitti vitra</b><span class="flex"><span class="player__title">Sajjan raj vaidya </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Sajjan raj vaidya - Chitti vitra.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Sajjan Raj Vaidya - Hawaijahaj.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Hawaijahaj</b><span class="flex"><span class="player__title">Sajjan Raj Vaidya </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Sajjan Raj Vaidya - Hawaijahaj.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Sajjan Raj Vaidya - Lukaamaari.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Lukaamaari</b><span class="flex"><span class="player__title">Sajjan Raj Vaidya </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Sajjan Raj Vaidya - Lukaamaari.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Sajjan Raj Vaidya - Mooskaan.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Mooskaan</b><span class="flex"><span class="player__title">Sajjan Raj Vaidya </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Sajjan Raj Vaidya - Mooskaan.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Sajjan Raj Vaidya - Naganya Maya.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Naganya Maya</b><span class="flex"><span class="player__title">Sajjan Raj Vaidya </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Sajjan Raj Vaidya - Naganya Maya.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Samir Shrestha - Chaar Dewar.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Chaar Dewar</b><span class="flex"><span class="player__title">Samir Shrestha </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Samir Shrestha - Chaar Dewar.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Shuprim Gelang Magar - Samjhana Mai Bitla Jindagi.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Samjhana Mai Bitla Jindagi</b><span class="flex"><span class="player__title">Shuprim Gelang Magar </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Shuprim Gelang Magar - Samjhana Mai Bitla Jindagi.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Spicy Violin - Bink's Sake.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Bink's Sake</b><span class="flex"><span class="player__title">Spicy Violin </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Spicy Violin - Bink's Sake.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/The Clash - Police on My Back.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Police on My Back</b><span class="flex"><span class="player__title">The Clash </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/The Clash - Police on My Back.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/The Elements - Birsiney Hau Ki.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Birsiney Hau Ki</b><span class="flex"><span class="player__title">The Elements </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/The Elements - Birsiney Hau Ki.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/The Elements - Sapana Ko Mayalu.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Sapana Ko Mayalu</b><span class="flex"><span class="player__title">The Elements </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/The Elements - Sapana Ko Mayalu.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/The Zephyr - Ishq wala love instrumental.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Ishq wala love instrumental</b><span class="flex"><span class="player__title">The Zephyr </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/The Zephyr - Ishq wala love instrumental.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/TrapMusicHDTV - SpongeBob Trap Remix - Krusty Krab.jpg" alt="cover"><p class="player__context "><b class="player__song-name">SpongeBob Trap Remix  Krusty Krab</b><span class="flex"><span class="player__title">TrapMusicHDTV </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/TrapMusicHDTV - SpongeBob Trap Remix - Krusty Krab.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Tribal Rain - BHANAI.jpg" alt="cover"><p class="player__context "><b class="player__song-name">BHANAI</b><span class="flex"><span class="player__title">Tribal Rain </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Tribal Rain - BHANAI.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Uges Limbu - Hamro geet.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Hamro geet</b><span class="flex"><span class="player__title">Uges Limbu </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Uges Limbu - Hamro geet.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/UNIQ POET - 1994.jpg" alt="cover"><p class="player__context "><b class="player__song-name">1994</b><span class="flex"><span class="player__title">UNIQ POET </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/UNIQ POET - 1994.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Vice Versa - Manaka kura.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Manaka kura</b><span class="flex"><span class="player__title">Vice Versa </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Vice Versa - Manaka kura.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Wiz Khalifa - See You Again [Furious 7 Soundtrack].jpg" alt="cover"><p class="player__context "><b class="player__song-name">See You Again [Furious 7 Soundtrack]</b><span class="flex"><span class="player__title">Wiz Khalifa </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Wiz Khalifa - See You Again [Furious 7 Soundtrack].mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Wiz Khalifa - Young Wild and Free .jpg" alt="cover"><p class="player__context "><b class="player__song-name">Young Wild and Free </b><span class="flex"><span class="player__title">Wiz Khalifa </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Wiz Khalifa - Young Wild and Free .mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/Yabesh Thapa - Ae Mutu.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Ae Mutu</b><span class="flex"><span class="player__title">Yabesh Thapa </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/Yabesh Thapa - Ae Mutu.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/ZNMD - Der Lagi Lekin.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Der Lagi Lekin</b><span class="flex"><span class="player__title">ZNMD </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/ZNMD - Der Lagi Lekin.mp3" crossorigin="anonymous"></audio></li>
+
+<li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/ZNMD - Dil Dhadakne Do.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Dil Dhadakne Do</b><span class="flex"><span class="player__title">ZNMD </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/ZNMD - Dil Dhadakne Do.mp3" crossorigin="anonymous"></audio></li>
+
+
+
         </ul>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
 
@@ -513,7 +704,7 @@ const sliderContent = slider.querySelector(".slider__content");
 const sliderContentLength = playerPlayList.length - 1;
 const sliderWidth = 100;
 let left = 0;
-let count = 0;
+let count = Math.floor(Math.random() * sliderContentLength);
 let song = playerSongs[count];
 let isPlay = false;
 const pauseIcon = playButton.querySelector("img[alt = 'pause-icon']");
@@ -532,72 +723,72 @@ var canvas = document.getElementById("music_display");
 canvas.style.pointerEvents="none";
 var ctx = canvas.getContext("2d");
 var audioCtx, analyser, source;
-	var MEDIA_ELEMENT_NODES = new WeakMap();
+        var MEDIA_ELEMENT_NODES = new WeakMap();
 canvas.width = window.innerWidth * 0.8;
 canvas.height = window.innerHeight * 0.4;
 
 window.onresize = function() {
-	canvas.width = window.innerWidth * 0.8;
-	canvas.height = window.innerHeight * 0.4;
+        canvas.width = window.innerWidth * 0.8;
+        canvas.height = window.innerHeight * 0.4;
 }
 
 function draw_bars(values) {
-	var len = values.length - (~~(values.length / MAX_BARS)*4);
-	var normFac = 255;
-	var maxValue = normFac;
-	var istep = ~~(len / MAX_BARS);
-	var step = canvas.width / MAX_BARS;
-	var x = BAR_WIDTH;
-	var height = (canvas.height - (BAR_PAD * 2));
-	
-	for (var i = 0; i < len; i+=istep) {
-		var v = (values[i] / maxValue);
-		var h = v * height;
-		var y = height / 2 - h / 2;
-		ctx.beginPath();
-		ctx.shadowColor = "rgba(0, 0, 0, 0.5)";
-		ctx.shadowBlur = 8;
-		ctx.shadowOffsetX = 0;
-		ctx.shadowOffsetY = 4;
-		ctx.strokeStyle = "rgba(255, 255, 255, 0.9)";
-		ctx.lineWidth = BAR_WIDTH;
-		ctx.lineCap = 'round';
-		ctx.moveTo(x, y);
-		ctx.lineTo(x, y+h);
-		ctx.stroke();
-		x += step;
-	}
-	
-	// Background size change with bass
-	var fac = 0.0;
-	var div = 0;
-	for (var i = 0; i < len-SMOOTHING_SAMPLES; i++) {
-		var avgN = 0.0;
-		for (var j = 0; j < SMOOTHING_SAMPLES; j++) {
-			avgN += Math.abs(values[i+j] / maxValue * 2.0);
-		}
-		avgN /= SMOOTHING_SAMPLES;
+        var len = values.length - (~~(values.length / MAX_BARS)*4);
+        var normFac = 255;
+        var maxValue = normFac;
+        var istep = ~~(len / MAX_BARS);
+        var step = canvas.width / MAX_BARS;
+        var x = BAR_WIDTH;
+        var height = (canvas.height - (BAR_PAD * 2));
 
-		fac += avgN;
-		div++;
-	}
-	fac /= div;
-	fac *= MAX_BG_SCALE;
-	
-	var szW = ~~(150+fac);
-	var szH = ~~(100+fac);
-	var sz = szW.toString()+"% "+szH.toString()+"%";
-	bg.style.backgroundSize=sz;
+        for (var i = 0; i < len; i+=istep) {
+                var v = (values[i] / maxValue);
+                var h = v * height;
+                var y = height / 2 - h / 2;
+                ctx.beginPath();
+                ctx.shadowColor = "rgba(0, 0, 0, 0.5)";
+                ctx.shadowBlur = 8;
+                ctx.shadowOffsetX = 0;
+                ctx.shadowOffsetY = 4;
+                ctx.strokeStyle = "rgba(255, 255, 255, 0.9)";
+                ctx.lineWidth = BAR_WIDTH;
+                ctx.lineCap = 'round';
+                ctx.moveTo(x, y);
+                ctx.lineTo(x, y+h);
+                ctx.stroke();
+                x += step;
+        }
+
+        // Background size change with bass
+        var fac = 0.0;
+        var div = 0;
+        for (var i = 0; i < len-SMOOTHING_SAMPLES; i++) {
+                var avgN = 0.0;
+                for (var j = 0; j < SMOOTHING_SAMPLES; j++) {
+                        avgN += Math.abs(values[i+j] / maxValue * 2.0);
+                }
+                avgN /= SMOOTHING_SAMPLES;
+
+                fac += avgN;
+                div++;
+        }
+        fac /= div;
+        fac *= MAX_BG_SCALE;
+
+        var szW = ~~(150+fac);
+        var szH = ~~(100+fac);
+        var sz = szW.toString()+"% "+szH.toString()+"%";
+        bg.style.backgroundSize=sz;
 }
 
 function mainloop() {
-	var fbc = new Uint8Array(analyser.frequencyBinCount);
-	analyser.getByteFrequencyData(fbc);
-	
-	ctx.clearRect(0, 0, canvas.width, canvas.height);
-	draw_bars(fbc);
-	
-	requestAnimationFrame(mainloop);
+        var fbc = new Uint8Array(analyser.frequencyBinCount);
+        analyser.getByteFrequencyData(fbc);
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        draw_bars(fbc);
+
+        requestAnimationFrame(mainloop);
 }
 // creat functions
 function openPlayer() {
@@ -613,11 +804,12 @@ function closePlayer() {
 }
 
 function next(index) {
-    count = index || count;
-    if (count == sliderContentLength) {
-        count = count;
-        return;
-    }
+    <!-- count = index || count; -->
+    <!-- if (count == sliderContentLength) { -->
+        <!-- count = count; -->
+        <!-- return; -->
+    <!-- } -->
+	count =Math.floor(Math.random() * sliderContentLength);
     left = (count + 1) * sliderWidth;
     left = Math.min(left, (sliderContentLength) * sliderWidth);
     sliderContent.style.transform = `translate3d(-${left}%, 0, 0)`;
@@ -639,20 +831,20 @@ function back(index) {
 }
 
 function changeSliderContext() {
-    sliderContext.style.animationName = "opacity";    
+    sliderContext.style.animationName = "opacity";
     sliderName.textContent = playerPlayList[count].querySelector(".player__title").textContent;
-    sliderTitle.textContent = playerPlayList[count].querySelector(".player__song-name").textContent;    
+    sliderTitle.textContent = playerPlayList[count].querySelector(".player__song-name").textContent;
     if (sliderName.textContent.length > 16) {
         const textWrap = document.createElement("span");
         textWrap.className = "text-wrap";
-        textWrap.innerHTML = sliderName.textContent + "   " + sliderName.textContent;  
+        textWrap.innerHTML = sliderName.textContent + "   " + sliderName.textContent;
         sliderName.innerHTML = "";
-        sliderName.append(textWrap);        
+        sliderName.append(textWrap);
     }
     if (sliderTitle.textContent.length >= 18) {
         const textWrap = document.createElement("span");
         textWrap.className = "text-wrap";
-        textWrap.innerHTML = sliderTitle.textContent + "    " + sliderTitle.textContent;  
+        textWrap.innerHTML = sliderTitle.textContent + "    " + sliderTitle.textContent;
         sliderTitle.innerHTML = "";
         sliderTitle.append(textWrap);
     }
@@ -672,52 +864,53 @@ function selectSong() {
     }
     if (isPlay) {
 
-	audioCtx =  audioCtx || new AudioContext();
-	analyser =  audioCtx.createAnalyser();
+        audioCtx =  audioCtx || new AudioContext();
+        analyser =  audioCtx.createAnalyser();
  if (MEDIA_ELEMENT_NODES.has(song)) {
     source = MEDIA_ELEMENT_NODES.get(song);
   } else {
-    source =  audioCtx.createMediaElementSource(song); 
+    source =  audioCtx.createMediaElementSource(song);
     MEDIA_ELEMENT_NODES.set(song, source);
   }
-	
-	source.connect(analyser);
-	analyser.connect(audioCtx.destination);
-	song.play();
-	mainloop();
-		
-	}        
+
+        source.connect(analyser);
+        analyser.connect(audioCtx.destination);
+        song.play();
+        mainloop();
+
+        }
 }
 
-function run() {  
+function run() {
     changeSliderContext();
     changeBgBody();
-    selectSong();  
+    selectSong();
 }
 
-function playSong() {	
+function playSong() {
 
     if (song.paused) {
-	audioCtx =  audioCtx || new AudioContext();
-	analyser =  audioCtx.createAnalyser();
+        audioCtx =  audioCtx || new AudioContext();
+        analyser =  audioCtx.createAnalyser();
  if (MEDIA_ELEMENT_NODES.has(song)) {
     source = MEDIA_ELEMENT_NODES.get(song);
   } else {
-    source =  audioCtx.createMediaElementSource(song); 
+    source =  audioCtx.createMediaElementSource(song);
     MEDIA_ELEMENT_NODES.set(song, source);
   }
-	source.connect(analyser);
-	analyser.connect(audioCtx.destination);
-	song.play();
-	mainloop();
+        source.connect(analyser);
+        analyser.connect(audioCtx.destination);
+        song.play();
+        mainloop();
         playIcon.style.display = "none";
         pauseIcon.style.display = "block";
-
+		parent.postMessage(1, "*");
     }else{
         song.pause();
         isPlay = false;
         playIcon.style.display = "";
         pauseIcon.style.display = "";
+		parent.postMessage(0, "*");
     }
 }
 
@@ -725,7 +918,7 @@ function progresUpdate() {
     const progresFilledWidth = (this.currentTime / this.duration) * 100 + "%";
     progresFilled.style.width = progresFilledWidth;
     if (isPlay && this.duration == this.currentTime) {
-        next();
+        next(0);
     }
     if (count == sliderContentLength && song.currentTime == song.duration) {
         playIcon.style.display = "block";
@@ -746,7 +939,7 @@ function durationSongs() {
 
     let sec = parseInt(this.duration % 60);
     if (sec < 10) sec = "0" + sec;
-    
+
     const playerSongTime = `${min}:${sec}`;
     this.closest(".player__song").querySelector(".player__song-time").append(playerSongTime);
 }
@@ -775,7 +968,7 @@ playButton.addEventListener("click", () => {
 playerSongs.forEach(song => {
     song.addEventListener("loadeddata" , durationSongs);
     song.addEventListener("timeupdate" , progresUpdate);
-    
+
 });
 
 progres.addEventListener("pointerdown", (e) => {
@@ -785,7 +978,7 @@ progres.addEventListener("pointerdown", (e) => {
 
 document.addEventListener("pointermove", (e) => {
     if (isMove) {
-        scurb(e); 
+        scurb(e);
         song.muted = true;
     }
 });
@@ -801,12 +994,49 @@ playerPlayList.forEach((item, index) => {
             next(index - 1);
             return;
         }
-        
+
         if (index < count) {
             back(index + 1);
             return;
         }
-    });    
-});	
+    });
+});
 
+document.addEventListener('keydown', function (e) {
+if (e.key === "f") {
+  if (document.fullscreenEnabled || 
+    document.webkitFullscreenEnabled || 
+    document.mozFullScreenEnabled ||
+    document.msFullscreenEnabled) {
+    
+    if (document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen();
+    } else if (document.documentElement.webkitRequestFullscreen) {
+      document.documentElement.webkitRequestFullscreen();
+    } else if (document.documentElement.mozRequestFullScreen) {
+      document.documentElement.mozRequestFullScreen();
+    } else if (document.documentElement.msRequestFullscreen) {
+      document.documentElement.msRequestFullscreen();
+    }
+  }
+      if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { 
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { 
+    document.msExitFullscreen();
+  }
+
+}
+ if (event.code === 'Space') {
+ playSong();
+ }
+ if (e.key === "ArrowRight") {
+ next(0);
+ }
+ if (e.key === "ArrowLeft") {
+ back(0);
+ }
+
+});
 </script>

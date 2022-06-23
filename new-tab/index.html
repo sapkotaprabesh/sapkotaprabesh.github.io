@@ -5,13 +5,13 @@
     <!-- Set Title and Favicon -->
     <title>Home</title>
     <link rel='icon' href='assets/favicon.svg'>
-    
+
     <!-- Load CSS and JS -->
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    
+
     <!-- Load Fonts -->
-    <link rel="stylesheet" href="FiraCode.css"> 
+    <link rel="stylesheet" href="FiraCode.css">
 
     <!-- Load Charset and set correct viewport -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -24,7 +24,7 @@
   top : 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.3);<!--#2f3640;-->
+  background: rgba(0, 0, 0, 0.3);
   height: 40px;
   border-radius: 40px;
   padding: 10px;
@@ -50,7 +50,7 @@
   transition: 0.4s;
   line-height: 40px;
   width: 240px;
-  cursor: default; 
+  cursor: default;
 }
 
 #toast {
@@ -105,27 +105,114 @@
   }
 }
 
+/*Start | On-Off Button Design*/
+.btn-onoff{
+	position:absolute;  
+  right: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  z-index:9999;
+}
+.btn-onoff input{
+  display: block;
+  position: absolute;
+  opacity:0
+}
+.btn-onoff span{
+	position: relative;
+	display: block;
+	width: 80px;
+	height: 34px;
+	border-radius: 40px;
+	background: #ccc;
+	border: 1px solid #ccc;
+	-webkit-transition: 400ms;
+	-moz-transition: 400ms;
+	-ms-transition: 400ms;
+	transition: 400ms
+}
+.btn-onoff input:checked ~ span{
+  border: 1px solid #4CAF50;
+  background: #4CAF50
+}
+.btn-onoff input ~ span:before{
+	content: '♫';
+	display: block;
+	width: 34px;
+	height: 34px;
+	position: absolute;
+	right: 0px;
+	font-size: 14px;
+	font-family: "Arial";
+	font-weight: bold;
+	line-height: 34px;
+	color: #444;
+	padding: 0px 8px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	-ms-transition: 500ms;
+	transition: 500ms
+}
+.btn-onoff input:checked ~ span:before{
+	content: '♫';
+	right: 28px;
+	color: #fff
+}
+.btn-onoff input ~ span:after{
+	content: '';
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	top: 4px;
+	left: 4px;
+	background: #fff;
+	border-radius: 50%;
+	-webkit-transition: 400ms;
+	-moz-transition: 400ms;
+	-ms-transition: 400ms;
+	transition: 400ms
+}
+.btn-onoff:hover input ~ span:after{
+	-webkit-transform:scale(0.9);
+	-moz-transform:scale(0.9);
+	-ms-transform:scale(0.9);
+	transform:scale(0.9)
+}
+.btn-onoff input:checked ~ span:after{
+	content: '';
+	left: 51px;
+}
+/*End | On-Off Button Design*/
+
+#block { background: #000;  position: absolute; width: 100%; height: 100%; top:0; left:0;}​
+  
 </style>
 </head>
 
 <body oncontextmenu= "return false;" ondragstart="return false" onclick="showc()" ondblclick="window.location='https://www.google.com.np/imghp?hl=en&authuser=0&ogbl'">
-    <div id="apexContainer">
-
+  <div id="apexContainer">
+  
+	<label title="Ctrl+M" id= "btn-onoff" class="btn-onoff">
+		<input id="tog" type="checkbox" name="name" autocomplete="off" data-onoff="toggle"><span></span>	
+	</label>
+ 
       <div id='search-box' class = 'search-box'>
           <input id='ggl' class = "search-text" spellcheck="false" type="text" autocomplete="off" placeholder = "Search..">
       </div>
 
         <div id="toast"><div id="desc">Connectivity Status</div></div>
-       
+
         <div id="headingContainer">(⌐■_■)</div>
 
         <div id="clockContainer">00:00</div>
-        
+
         <ul id="bookmarksContainer">
-            <div class="bookmark" id="b1"><a href="https://discord.com/app" id="aB1"><img oncontextmenu= "rtclick('aB1'); return false;" src="assets/discord.svg" id="imgB1"></a></div>
-            <div class="bookmark" id="b2"><a href="https://www.facebook.com" id="aB2"><img oncontextmenu= "rtclick('aB2'); return false;" src="assets/facebook.svg" id="imgB2"></a></div>
-            <div class="bookmark" id="b3"><a href="https://www.youtube.com" id="aB3"><img oncontextmenu= "rtclick('aB3'); return false;" src="assets/youtube.svg" id="imgB3"></a></div>
-            <div class="bookmark" id="b4"><a href="https://gmail.com" id="aB4"><img oncontextmenu= "rtclick('aB4'); return false;" src="assets/gmail.svg" id="imgB4"></a></div>
+            <div class="bookmark" id="b1"><a onclick="clck('aB1'); return;" href="https://discord.com/app" id="aB1"><img oncontextmenu= "rtclick('aB1'); return false;" src="assets/discord.svg" id="imgB1"></a></div>
+            <div class="bookmark" id="b2"><a onclick="clck('aB2'); return;" href="https://www.facebook.com" id="aB2"><img  oncontextmenu= "rtclick('aB2'); return false;" src="assets/facebook.svg" id="imgB2"></a></div>
+            <div class="bookmark" id="b3"><a onclick="clck('aB3'); return;" href="https://www.youtube.com" id="aB3"><img oncontextmenu= "rtclick('aB3'); return false;" src="assets/youtube.svg" id="imgB3"></a></div>
+            <div class="bookmark" id="b4"><a onclick="clck('aB4'); return;" href="https://gmail.com" id="aB4"><img oncontextmenu= "rtclick('aB4'); return false;" src="assets/gmail.svg" id="imgB4"></a></div>
             <div class="bookmark" id="b5"><img src="assets/settings.svg"></div>
         </ul>
 
@@ -135,23 +222,24 @@
                 <button class="button" id="headingSettingCategory">HEADING</button>
                 <button class="button" id="clockSettingCategory">CLOCK</button>
                 <button class="button" id="bookmarkSettingCategory">BOOKMARKS</button>
+				<!-- <button class="button" id="shortcutSettingCategory">SHORTCUTS</button> -->
                 <button class="button" id="generalSettingCategory">GENERAL</button>
             </div>
-            
+
             <div id="headingSettingsContainer" style="display: grid;">
                 <div>Content <input type="text" class="inputField" id="headingContentSetting" value="(⌐■_■)"></div>
                 <div>Color <input type="text" class="inputField" id="headingColorSetting" value="#FFF"></div>
                 <div>Font <input type="text" class="inputField" id="headingFontSetting" value="Fira Code"></div>
-                <div>Font Size <input type="range" class="inputRange" id="headingFontSizeSetting" min="1" max="10" value="2"></div> 
+                <div>Font Size <input type="range" class="inputRange" id="headingFontSizeSetting" min="1" max="10" value="2"></div>
             </div>
-            
+
             <div id="clockSettingsContainer" style="display: none;">
                 <div>Color <input type="text" class="inputField" id="clockColorSetting" value="#FFF"></div>
                 <div>Font <input type="text" class="inputField" id="clockFontSetting" value="Fira Code"></div>
                 <div>Font Size <input type="range" class="inputRange" id="clockFontSizeSetting"  min="1" max="20" value="10"></div>
                 <div>Line Height <input type="range" class="inputRange" id="clockLineHeightSetting"  min="1" max="20" value="12"></div>
             </div>
-            
+
             <div id="bookmarkSettingsContainer" style="display: none;">
                 <div style="display: flex;">
                     <div style="width: 60%;text-align: center;">Icon</div>
@@ -159,10 +247,22 @@
                 </div>
                 <div>b1 <input type="text" class="inputField" id="imgB1Setting" style="width: 40%;" value="assets/discord.svg"> <input type="text" class="inputField" id="aB1Setting" style="width: 40%;" value="https://discord.com/app"></div>
                 <div>b2 <input type="text" class="inputField" id="imgB2Setting" style="width: 40%;" value="assets/facebook.svg"> <input type="text" class="inputField" id="aB2Setting" style="width: 40%;" value="https://www.facebook.com"></div>
-                <div>b3 <input type="text" class="inputField" id="imgB3Setting" style="width: 40%;" value="assets/youtube.svg"> <input type="text" class="inputField" id="aB3Setting" style="width: 40%;" value="https://www.youtube.com"></div>
+                <div>b3 <input type="text" class="inputField" id="imgB3Setting" style="width: 40%;" value="assets/youtube.svg"> <input type="text" class="inputField" id="aB3Setting" style="width: 40%;" value="https://youtube.com"></div>
                 <div>b4 <input type="text" class="inputField" id="imgB4Setting" style="width: 40%;" value="assets/gmail.svg"> <input type="text" class="inputField" id="aB4Setting" style="width: 40%;" value="https://gmail.com"></div>
             </div>
-            
+
+            <!-- <div id="shortcutSettingsContainer" style="display: none;"> -->
+                <!-- <div style="display: flex;"> -->
+                    <!-- <div style="width: 60%;text-align: center;">Shortcut Key</div> -->
+                    <!-- <div style="width: 60%;text-align: center;">Link</div> -->
+                <!-- </div> -->
+                <!-- <div>1 <input type="text" class="inputField" id="keyB1Setting" style="width: 40%;" value="d"> <input type="text" class="inputField" id="lB1Setting" style="width: 40%;" value="https://discord.com/app"></div> -->
+                <!-- <div>2 <input type="text" class="inputField" id="keyB2Setting" style="width: 40%;" value="f"> <input type="text" class="inputField" id="lB2Setting" style="width: 40%;" value="https://www.facebook.com"></div> -->
+                <!-- <div>3 <input type="text" class="inputField" id="keyB3Setting" style="width: 40%;" value="y"> <input type="text" class="inputField" id="lB3Setting" style="width: 40%;" value="https://youtube.com"></div> -->
+                <!-- <div>4 <input type="text" class="inputField" id="keyB4Setting" style="width: 40%;" value="g"> <input type="text" class="inputField" id="lB4Setting" style="width: 40%;" value="https://gmail.com"></div> -->
+            <!-- </div> -->
+
+
             <div id="generalSettingsContainer" style="display: none;">
                 <div>Background <input type="text" class="inputField" id="generalBackgroundSetting" value="assets/moomkin.png"></div>
                 <div>Blur Intensity <input type="range" class="inputRange" id="generalBlurIntensitySetting" min="1" max="15" value="5"></div>
@@ -175,71 +275,125 @@
 <script>
 var kk=0;
 document.addEventListener('keydown', function (e) {
-    if(document.activeElement.tagName!="INPUT"){
-        document.getElementById("ggl").focus();
-    }
+ <!-- if (event.code === 'Space') { -->
+ <!-- document.getElementById("ggl").focus(); -->
+ <!-- } -->
     if (e.key === "Enter") {
 
-	var custom_keywords = {
-	  'f' : 'https://www.facebook.com',
-	  'd' : 'https://discord.com/app',
-	  'g' : 'https://mail.google.com/mail/u/0/',
-	  'y' : 'https://www.youtube.com/'
-	};
-
-	var inpt=document.getElementById("ggl").value;
+        var custom_keywords = {
+          'f' : 'https://www.facebook.com',
+          'd' : 'https://discord.com/app',
+          'g' : 'https://mail.google.com/mail/u/0/',
+          'y' : 'https://www.youtube.com/'
+        };
+		var togo=0;
+        var inpt=document.getElementById("ggl").value;
         if (inpt.length==1){
-		if(inpt in custom_keywords){
-			document.location.href = custom_keywords[inpt];
-			return;
+                if(inpt in custom_keywords){
+                        togo = custom_keywords[inpt];               
+                }
+        }
+		if (togo==0){
+        togo= 'https://www.google.com/search?q='+inpt;
 		}
+		if(document.getElementById('block')){
+			window.open(togo);
+			document.getElementById("ggl").value=''
+		}else{
+			document.location.href=togo;
+		}
+		return;
+    }
+	    if (e.key === "Control") {
+	document.getElementById("ggl").select();
+        show();
+		return;
+    }
+	if(document.activeElement.tagName!="INPUT"){
+    document.getElementById("ggl").focus();
 	}
-	document.location.href = 'https://www.google.com/search?q='+inpt;
-    }
-    if (e.key === "Control") {
-	show();
-    }
+	if ((e.keyCode == 77 && e.ctrlKey)) {
+	showc();
+	if(document.getElementById('tog').checked){
+	document.getElementById('tog').checked=false;
+	close();
+	}else{
+	document.getElementById('tog').checked=true;
+	mugic();
+	}
+	return;
+	}
+	if ((e.keyCode != 17 && e.ctrlKey)) {
+	showc();
+	}
+
     if (e.key === "Tab") {
-	e.preventDefault();
-	if(kk==0){
-		document.getElementById("aB1").focus();
-		kk=1;
-	}else if (kk==1){
-		document.getElementById("aB2").focus();
-		kk=2;
-	}else if (kk==2){
-		document.getElementById("aB3").focus();
-		kk=3;
+        if(kk==0){
+                document.getElementById("aB1").focus();
+                kk=1;
+        }else if (kk==1){
+                document.getElementById("aB2").focus();
+                kk=2;
+        }else if (kk==2){
+                document.getElementById("aB3").focus();
+                kk=3;
         }else if (kk==3){
                 document.getElementById("aB4").focus();
                 kk=4;
-	}else{
-		document.getElementById("ggl").focus();
-		kk=0;
-	}
-    }
-});
+        }else{
+                document.getElementById("ggl").focus();
+                kk=0;
+        }
+		return;
+    }	
+	
+<!-- if (e.key === "f") { -->
+  <!-- if (document.fullscreenEnabled ||  -->
+    <!-- document.webkitFullscreenEnabled ||  -->
+    <!-- document.mozFullScreenEnabled || -->
+    <!-- document.msFullscreenEnabled) { -->
 
+    <!-- if (document.documentElement.requestFullscreen) { -->
+      <!-- document.documentElement.requestFullscreen(); -->
+    <!-- } else if (document.documentElement.webkitRequestFullscreen) { -->
+      <!-- document.documentElement.webkitRequestFullscreen(); -->
+    <!-- } else if (document.documentElement.mozRequestFullScreen) { -->
+      <!-- document.documentElement.mozRequestFullScreen(); -->
+    <!-- } else if (document.documentElement.msRequestFullscreen) { -->
+      <!-- document.documentElement.msRequestFullscreen(); -->
+    <!-- } -->
+  <!-- } -->
+    <!-- if (document.exitFullscreen) { -->
+    <!-- document.exitFullscreen(); -->
+  <!-- } else if (document.webkitExitFullscreen) {  -->
+    <!-- document.webkitExitFullscreen(); -->
+  <!-- } else if (document.msExitFullscreen) {  -->
+    <!-- document.msExitFullscreen(); -->
+  <!-- } -->
+<!-- } -->
+
+});
+onblur = e => { if (e.currentTarget === e.target) { focus(); setTimeout(focus, 20);  } };
 function show(){
-	if(document.getElementById('search-box').style.visibility=='visible'){
-		document.getElementById("ggl").focus();
-		document.getElementById('search-box').style.visibility='hidden';
-		document.getElementById('headingContainer').style.visibility='visible';
-		document.getElementById('ggl').style.fontSize='0px';
-		document.getElementById("ggl").style.cursor = 'default';
-	}else{
-		document.getElementById('search-box').style.visibility='visible';
-		document.getElementById('headingContainer').style.visibility='hidden';
-		document.getElementById('ggl').style.fontSize='16px';
-		document.getElementById("ggl").style.cursor = 'auto';
-	}
+        if(document.getElementById('search-box').style.visibility=='visible'){
+                document.getElementById("ggl").focus();
+                document.getElementById('search-box').style.visibility='hidden';
+				document.getElementById('headingContainer').style.visibility='visible';
+                document.getElementById('ggl').style.fontSize='0px';
+                document.getElementById("ggl").style.cursor = 'default';
+        }else{
+                document.getElementById('search-box').style.visibility='visible';
+				document.getElementById('headingContainer').style.visibility='hidden';
+                document.getElementById('ggl').style.fontSize='16px';
+                document.getElementById("ggl").style.cursor = 'auto';
+        }
 };
 
 function showc(){
         if(document.getElementById('search-box').style.visibility=='visible'){
                 document.getElementById("ggl").focus();
                 document.getElementById('search-box').style.visibility='hidden';
-  		document.getElementById('headingContainer').style.visibility='visible';
+				document.getElementById('headingContainer').style.visibility='visible';
                 document.getElementById('ggl').style.fontSize='0px';
                 document.getElementById("ggl").style.cursor = 'default';
         }
@@ -247,51 +401,130 @@ function showc(){
 
 var offline_=0;
 function connectivity_check(){
-	let xhr = new XMLHttpRequest();
-	xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
-	xhr.onload = ()=>{ 
-		if(xhr.status == 200 && xhr.status < 300){
-			if(offline_==1){
-				document.getElementById("desc").innerHTML = "Back Online :)";
-				let notification = document.getElementById("toast");
-				notification.style.backgroundColor='#90ee90';
-				notification.className = "show";
-				setTimeout(() => { notification.className = notification.className.replace("show", ""); }, 4000);
-			}
-			offline_=0;
-		}else{
-			offline();
-		}
-	}
-	xhr.onerror = ()=>{
-		offline();
-	}
-	xhr.send();
+        let xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
+        xhr.onload = ()=>{
+                if(xhr.status == 200 && xhr.status < 300){
+                        if(offline_==1){
+                                document.getElementById("desc").innerHTML = "Back Online :)";
+                                let notification = document.getElementById("toast");
+                                notification.style.backgroundColor='#90ee90';
+                                notification.className = "show";
+                                setTimeout(() => { notification.className = notification.className.replace("show", ""); }, 4000);
+                        }
+                        offline_=0;
+                }else{
+                        offline();
+                }
+        }
+        xhr.onerror = ()=>{
+                offline();
+        }
+        xhr.send();
 }
 
 function offline(){
-	if(offline_==0){
-		document.getElementById("desc").innerHTML = "You're Offline :/";
-		let notification = document.getElementById("toast");
-		notification.style.backgroundColor='rgb(209, 68, 68)';
-		notification.className = "show";
-		setTimeout(() => { notification.className = notification.className.replace("show", ""); }, 4000);
-	}
-	offline_=1;
+        if(offline_==0){
+                document.getElementById("desc").innerHTML = "You're Offline :/";
+                let notification = document.getElementById("toast");
+                notification.style.backgroundColor='rgb(209, 68, 68)';
+                notification.className = "show";
+                setTimeout(() => { notification.className = notification.className.replace("show", ""); }, 4000);
+        }
+        offline_=1;
 }
 
 setInterval(()=>{
-	connectivity_check();
+        connectivity_check();
 }, 5000);
 
+function mugic(){
+		document.getElementById('tog').checked=true;
+var iframe = document.createElement('iframe');
+iframe.id="block";
+iframe.frameBorder = 0;
+iframe.src = 'music.html'
+document.body.appendChild(iframe);
+mug=iframe.contentWindow.document.createElement('img');
+mug.style.position='absolute';
+<!-- mug.style.display='block'; -->
+mug.id="mug";
+mug.src="assets/paused.png";
+mug.width = "200";
+mug.height= "200";
+mug.style.right="20px";
+mug.style.zindex="9999";
+mug.style.borderRadius = '40px';
+document.body.appendChild(mug);
+document.getElementById("mug").addEventListener("click", function(){
+ 		minmax();
+ });
+
+}
+
+function close(){
+		document.getElementById('tog').checked=false;
+		document.querySelector('iframe').remove();
+		document.getElementById('mug').remove();
+	} 
+
+function minmax(){
+		 document.getElementById('tog').checked=true;
+		 iframe=document.querySelector('iframe');
+		if(document.querySelector('iframe').style.width=="0px"){
+				document.querySelector('iframe').style.width="100%";
+				document.querySelector('iframe').style.height="100%";
+				
+				mug=document.getElementById('mug');
+				presrc=mug.src;
+				mug.remove();
+mug=document.createElement('img');
+mug.style.position='absolute';
+<!-- mug.style.display='block'; -->
+mug.id="mug";
+mug.src=presrc;
+mug.width = "200";
+mug.height= "200";
+mug.style.right="20px";
+mug.style.zindex="9999";
+mug.style.borderRadius = '40px';
+document.body.appendChild(mug);
+document.getElementById("mug").addEventListener("click", function(){
+ 		minmax();
+ });
+		}else{
+		document.querySelector('iframe').style.width="0px";
+				document.querySelector('iframe').style.height="0px";
+				mug=document.getElementById('mug');
+				mug.width = "200";
+mug.height= "200";
+mug.style.right="20px";
+mug.style.bottom="0px";
+				}
+	}  
+ 
+var checkbox = document.getElementById('tog');
+
+checkbox.addEventListener('change', function() {
+  if (this.checked) {
+    mugic();
+  } else {
+    close();
+  }
+});
+
+checkbox.addEventListener('focus', function() {
+  document.getElementById("ggl").focus();
+});
+
 function addLoadEvent(func)
-{    
+{
     var oldonload = window.onload;
     if (typeof window.onload != 'function')
     {
         window.onload = func;
-    } 
-    else 
+    }
+    else
     {
         window.onload = function()
         {
@@ -306,6 +539,25 @@ addLoadEvent(connectivity_check);
 function rtclick(dib){
 	window.open(document.getElementById(dib).href);
 }
+
+function clck(dib){
+	window.event.preventDefault();
+	if(document.getElementById('block')){
+	window.open(document.getElementById(dib).href);
+	}else{
+	document.location.href=document.getElementById(dib).href;
+	}
+}
+
+window.addEventListener("message", function(event) {
+    if(event.data==1){
+	document.getElementById('mug').src="assets/vibin.gif";
+	}
+    if(event.data==0){
+	document.getElementById('mug').src="assets/paused.png";
+	}	
+});
+
 </script>
 
 </body>
