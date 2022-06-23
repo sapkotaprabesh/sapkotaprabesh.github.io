@@ -222,7 +222,6 @@
                 <button class="button" id="headingSettingCategory">HEADING</button>
                 <button class="button" id="clockSettingCategory">CLOCK</button>
                 <button class="button" id="bookmarkSettingCategory">BOOKMARKS</button>
-				<!-- <button class="button" id="shortcutSettingCategory">SHORTCUTS</button> -->
                 <button class="button" id="generalSettingCategory">GENERAL</button>
             </div>
 
@@ -250,18 +249,6 @@
                 <div>b3 <input type="text" class="inputField" id="imgB3Setting" style="width: 40%;" value="assets/youtube.svg"> <input type="text" class="inputField" id="aB3Setting" style="width: 40%;" value="https://youtube.com"></div>
                 <div>b4 <input type="text" class="inputField" id="imgB4Setting" style="width: 40%;" value="assets/gmail.svg"> <input type="text" class="inputField" id="aB4Setting" style="width: 40%;" value="https://gmail.com"></div>
             </div>
-
-            <!-- <div id="shortcutSettingsContainer" style="display: none;"> -->
-                <!-- <div style="display: flex;"> -->
-                    <!-- <div style="width: 60%;text-align: center;">Shortcut Key</div> -->
-                    <!-- <div style="width: 60%;text-align: center;">Link</div> -->
-                <!-- </div> -->
-                <!-- <div>1 <input type="text" class="inputField" id="keyB1Setting" style="width: 40%;" value="d"> <input type="text" class="inputField" id="lB1Setting" style="width: 40%;" value="https://discord.com/app"></div> -->
-                <!-- <div>2 <input type="text" class="inputField" id="keyB2Setting" style="width: 40%;" value="f"> <input type="text" class="inputField" id="lB2Setting" style="width: 40%;" value="https://www.facebook.com"></div> -->
-                <!-- <div>3 <input type="text" class="inputField" id="keyB3Setting" style="width: 40%;" value="y"> <input type="text" class="inputField" id="lB3Setting" style="width: 40%;" value="https://youtube.com"></div> -->
-                <!-- <div>4 <input type="text" class="inputField" id="keyB4Setting" style="width: 40%;" value="g"> <input type="text" class="inputField" id="lB4Setting" style="width: 40%;" value="https://gmail.com"></div> -->
-            <!-- </div> -->
-
 
             <div id="generalSettingsContainer" style="display: none;">
                 <div>Background <input type="text" class="inputField" id="generalBackgroundSetting" value="assets/moomkin.png"></div>
@@ -346,31 +333,6 @@ document.addEventListener('keydown', function (e) {
         }
 		return;
     }	
-	
-<!-- if (e.key === "f") { -->
-  <!-- if (document.fullscreenEnabled ||  -->
-    <!-- document.webkitFullscreenEnabled ||  -->
-    <!-- document.mozFullScreenEnabled || -->
-    <!-- document.msFullscreenEnabled) { -->
-
-    <!-- if (document.documentElement.requestFullscreen) { -->
-      <!-- document.documentElement.requestFullscreen(); -->
-    <!-- } else if (document.documentElement.webkitRequestFullscreen) { -->
-      <!-- document.documentElement.webkitRequestFullscreen(); -->
-    <!-- } else if (document.documentElement.mozRequestFullScreen) { -->
-      <!-- document.documentElement.mozRequestFullScreen(); -->
-    <!-- } else if (document.documentElement.msRequestFullscreen) { -->
-      <!-- document.documentElement.msRequestFullscreen(); -->
-    <!-- } -->
-  <!-- } -->
-    <!-- if (document.exitFullscreen) { -->
-    <!-- document.exitFullscreen(); -->
-  <!-- } else if (document.webkitExitFullscreen) {  -->
-    <!-- document.webkitExitFullscreen(); -->
-  <!-- } else if (document.msExitFullscreen) {  -->
-    <!-- document.msExitFullscreen(); -->
-  <!-- } -->
-<!-- } -->
 
 });
 onblur = e => { if (e.currentTarget === e.target) { focus(); setTimeout(focus, 20);  } };
