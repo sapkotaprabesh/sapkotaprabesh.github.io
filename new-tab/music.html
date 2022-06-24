@@ -756,6 +756,7 @@ const playerHeader = player.querySelector(".player__header");
 const playerControls = player.querySelector(".player__controls");
 const playerPlayList = player.querySelectorAll(".player__song");
 const playerSongs = player.querySelectorAll(".audio");
+const playerSongsarr=Array.prototype.slice.call(playerSongs);
 const playButton = player.querySelector(".play");
 const nextButton = player.querySelector(".next");
 const backButton = player.querySelector(".back");
