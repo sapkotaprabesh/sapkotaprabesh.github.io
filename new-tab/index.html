@@ -363,6 +363,11 @@ function showc(){
 
 var offline_=0;
 function connectivity_check(){
+	if(document.getElementById('block')){
+	if(document.querySelector('iframe').style.width!="0px"){
+		return;
+	}
+	}
         let xhr = new XMLHttpRequest();
         xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
         xhr.onload = ()=>{
