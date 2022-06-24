@@ -741,6 +741,8 @@ img[alt ="pause-icon"] {
 </html>
 
 <script>
+var loaded=[];
+var stopped=0;
 // Designed by:  Mauricio Bucardo
 // Original image: https://dribbble.com/shots/6957353-Music-Player-Widget
 
@@ -942,6 +944,7 @@ function connectivity_check(){
                 if(xhr.status == 200 && xhr.status < 300){
                         if(offline_==1){
 				if(stopped==1){playSong();}
+                                stopped=0;
                                 document.getElementById("desc").innerHTML = "Back Online :)";
                                 let notification = document.getElementById("toast");
                                 notification.style.backgroundColor='#90ee90';
