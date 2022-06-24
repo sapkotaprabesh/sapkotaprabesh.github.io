@@ -900,6 +900,11 @@ function back(index) {
 		if(loaded.length<=1){stopped=1;return;}
 		if (index==0 || loaded.indexOf(index)==-1){
 	count = loaded[Math.floor(Math.random()*loaded.length)];
+    left = (count) * sliderWidth;
+    left = Math.max(0, left);
+    sliderContent.style.transform = `translate3d(-${left}%, 0, 0)`;
+    run();
+    return;
 	}else{
 	count=index+1;
 	}
