@@ -866,11 +866,25 @@ function closePlayer() {
 }
 
 function next(index) {
+		if(offline_==1){
+		if(loaded.length<=1){stopped=1;return;}
+		if (index==0 || loaded.indexOf(index)==-1){
+	count = loaded[Math.floor(Math.random()*loaded.length)];
+    left = (count) * sliderWidth;
+    left = Math.min(left, (sliderContentLength) * sliderWidth);
+    sliderContent.style.transform = `translate3d(-${left}%, 0, 0)`;
+	run();
+	return;
+	}else{
+	count=index-1;
+	}
+}else{
     count = index || Math.floor(Math.random() * sliderContentLength);
     if (count == sliderContentLength) {
         count = count;
         return;
     }
+}
     left = (count + 1) * sliderWidth;
     left = Math.min(left, (sliderContentLength) * sliderWidth);
     sliderContent.style.transform = `translate3d(-${left}%, 0, 0)`;
@@ -879,11 +893,20 @@ function next(index) {
 }
 
 function back(index) {
+		if(offline_==1){
+		if(loaded.length<=1){stopped=1;return;}
+		if (index==0 || loaded.indexOf(index)==-1){
+	count = loaded[Math.floor(Math.random()*loaded.length)];
+	}else{
+	count=index+1;
+	}
+}else{
     count = index || Math.floor(Math.random() * sliderContentLength);
     if (count == 0) {
         count = count;
         return;
     }
+}
     left = (count - 1) * sliderWidth;
     left = Math.max(0, left);
     sliderContent.style.transform = `translate3d(-${left}%, 0, 0)`;
@@ -913,16 +936,12 @@ function changeSliderContext() {
 
 var offline_=0;
 function connectivity_check(){
-	if(document.getElementById('block')){
-	if(document.querySelector('iframe').style.width!="0px"){
-		return;
-	}
-	}
         let xhr = new XMLHttpRequest();
         xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
         xhr.onload = ()=>{
                 if(xhr.status == 200 && xhr.status < 300){
                         if(offline_==1){
+				if(stopped==1){playSong();}
                                 document.getElementById("desc").innerHTML = "Back Online :)";
                                 let notification = document.getElementById("toast");
                                 notification.style.backgroundColor='#90ee90';
@@ -997,6 +1016,22 @@ function run() {
 function playSong() {
 
     if (song.paused) {
+
+		if(offline_==1){
+		if(loaded.length<=1){stopped=1;return;}
+		if (loaded.indexOf(playerSongsarr.indexOf(song))==-1){
+	count = loaded[Math.floor(Math.random()*loaded.length)];
+	song=playerSongs[count];
+
+    left = (count) * sliderWidth;
+    left = Math.min(left, (sliderContentLength) * sliderWidth);
+    sliderContent.style.transform = `translate3d(-${left}%, 0, 0)`;
+    changeSliderContext();
+
+	}
+}
+
+
         audioCtx =  audioCtx || new AudioContext();
         analyser =  audioCtx.createAnalyser();
  if (MEDIA_ELEMENT_NODES.has(song)) {
