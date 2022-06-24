@@ -1126,18 +1126,22 @@ if (e.key === "f") {
 
 }
  if (event.code === 'Space') {
+isPlay = true;
  playSong();
  }
  if (e.key === "ArrowRight") {
+isPlay = true;
  next(0);
  }
  if (e.key === "ArrowLeft") {
+isPlay = true;
  back(0);
  }
 
 });
 document.body.addEventListener("click", function(e){ 
 if(event.target.localName=="body"){
+isPlay = true;
 playSong();
 }
 });
