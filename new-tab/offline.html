@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+<link rel='icon' href='assets/favicon.svg'><link rel='icon' href='assets/favicon.svg'>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Expires" content="-1">
+<style>
+html{
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */	
+}
+
+body {
+    margin: 0%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#apexContainer {
+    padding: 2vw;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 90px rgba(0, 0, 0, 1);
+	/* max-width: 40vw; */
+
+    transition: 0.2s;
+}
+
+#headingContainer {
+    color: #fff;
+    font-family: 'Fira Code';
+    font-size: 2vw;
+    text-align: center;
+}
+
+#clockContainer {
+    color: #fff;
+    font-family: 'Fira Code';
+    font-size: 10vw;
+    line-height: 12vw;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 5px 4px rgba(255, 255, 255, 0.5);
+}
+
+#bookmarksContainer {
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+
+.bookmark {
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.bookmark:hover {
+    transform: scale(1.2);
+}
+
+.bookmark img {
+    width: 3vw;
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    margin: 0vw 0.5vw 0vw 0.5vw;
+    color: #fff;
+    font-family: 'Fira Code';
+    font-size: 1em;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.2s;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.button:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.inputField {
+    border: none;
+    border-radius: 5px;
+    margin: 0vw 0vw 1vw 0vw;
+    padding: 0.5vw 0.5vw 0.5vw 1vw;
+    width: 90%;
+    font-family: 'Fira Code';
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+
+.inputField:hover {
+    opacity: 1;
+}
+
+.inputRange {
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 5px;
+    height: 0.5vw;
+    width: 95%;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 0.9;
+    transition: opacity 0.2s;
+    margin: 0vw 0vw 1vw 0vw;
+}
+
+.inputRange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.inputRange::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.inputRange:hover {
+    opacity: 1;
+}
+.search-box {
+  position: absolute;
+  top : 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.3);
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+  visibility: hidden;
+}
+
+.search-box:hover > .search-text{
+  width: 240px;
+  padding: 0 6px;
+}
+
+.search-text {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: 'Fira Code';
+  font-size: 0px;
+  visibility: visible;
+  font-weight: normal;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 240px;
+  cursor: default;
+}
+</style>
+</head>
+
+<body oncontextmenu= "return false;" ondragstart="return false" onclick="showc()" >
+  <div id="apexContainer">
+ 
+      <div id='search-box' class = 'search-box'>
+          <input id='ggl' class = "search-text" spellcheck="false" type="text" autocomplete="off" placeholder = "Search..">
+      </div>
+
+        <div id="headingContainer">(⌐■_■)</div>
+
+        <div id="clockContainer">00:00</div>
+
+        <ul id="bookmarksContainer">
+            <div class="bookmark" id="b1"><a href="https://discord.com/app" id="aB1"><img src="assets/discord.svg" alt="1" id="imgB1"></a></div>
+            <div class="bookmark" id="b2"><a href="https://www.facebook.com" id="aB2"><img src="assets/facebook.svg" alt="2" id="imgB2"></a></div>
+            <div class="bookmark" id="b3"><a href="https://www.youtube.com" id="aB3"><img  src="assets/youtube.svg" alt="3" id="imgB3"></a></div>
+            <div class="bookmark" id="b4"><a href="https://gmail.com" id="aB4"><img src="assets/gmail.svg" alt="4" id="imgB4"></a></div>
+
+        </ul>
+
+
+<script>
+document.addEventListener('keydown', function (e) {
+	    if (e.key === "Control") {
+	document.getElementById("ggl").select();
+        show();
+		return;
+    }
+	if(document.activeElement.tagName!="INPUT"){
+    document.getElementById("ggl").focus();
+	}
+
+});
+
+function show(){
+        if(document.getElementById('search-box').style.visibility=='visible'){
+                document.getElementById("ggl").focus();
+                document.getElementById('search-box').style.visibility='hidden';
+				document.getElementById('headingContainer').style.visibility='visible';
+                document.getElementById('ggl').style.fontSize='0px';
+                document.getElementById("ggl").style.cursor = 'default';
+        }else{
+                document.getElementById('search-box').style.visibility='visible';
+				document.getElementById('headingContainer').style.visibility='hidden';
+                document.getElementById('ggl').style.fontSize='16px';
+                document.getElementById("ggl").style.cursor = 'auto';
+        }
+};
+
+function showc(){
+        if(document.getElementById('search-box').style.visibility=='visible'){
+                document.getElementById("ggl").focus();
+                document.getElementById('search-box').style.visibility='hidden';
+				document.getElementById('headingContainer').style.visibility='visible';
+                document.getElementById('ggl').style.fontSize='0px';
+                document.getElementById("ggl").style.cursor = 'default';
+        }
+};
+function displayClock() {
+    const clockContainer = document.querySelector("#clockContainer");
+    let date = new Date();
+    let hrs = date.getHours();
+    let min = date.getMinutes();
+    if (hrs > 12) {
+        hrs = hrs - 12
+    }  
+    if (hrs < 10) {
+        hrs = "0" + hrs
+    }
+    if (min < 10) {
+        min = "0" + min
+    }
+    clockContainer.innerHTML = hrs + ':' + min;
+}
+
+
+function main() {
+
+    headingContainer = document.querySelector("#headingContainer");
+
+    if (localStorage.getItem("headingContent") != null) {
+        headingContainer.innerHTML =  localStorage.getItem("headingContent");
+    }
+    if (localStorage.getItem("headingColor") != null) {
+        headingContainer.style.color = localStorage.getItem("headingColor");
+    }
+    if (localStorage.getItem("headingFont") != null) {
+        headingContainer.style.fontFamily =  localStorage.getItem("headingFont");
+    }
+    if (localStorage.getItem("headingFontSize") != null) {
+        headingContainer.style.fontSize = localStorage.getItem("headingFontSize") + 'vw';
+    }
+   clockContainer = document.querySelector("#clockContainer");
+
+    if (localStorage.getItem("clockColor") != null) {
+        clockContainer.style.color = localStorage.getItem("clockColor");
+    }
+    if (localStorage.getItem("clockFont") != null) {
+        clockContainer.style.fontFamily = localStorage.getItem("clockFont");
+    }
+    if (localStorage.getItem("clockFontSize") != null) {
+        clockContainer.style.fontSize = localStorage.getItem("clockFontSize") + 'vw';
+    }
+    if (localStorage.getItem("clockLineHeight") != null) {
+        clockContainer.style.lineHeight = localStorage.getItem("clockLineHeight") + 'vw';
+    }
+    displayClock();
+    setInterval(displayClock, 1000);
+
+    bookmarkContainer = document.querySelector("#bookmarkContainer");
+    aB1 = document.querySelector("#aB1");
+    imgB1 = document.querySelector("#imgB1");
+
+    aB2 = document.querySelector("#aB2");
+    imgB2 = document.querySelector("#imgB2");
+
+    aB3 = document.querySelector("#aB3");
+    imgB3 = document.querySelector("#imgB3");
+
+    aB4 = document.querySelector("#aB4");
+    imgB4 = document.querySelector("#imgB4");
+
+    // load user prefs
+    if (localStorage.getItem("aB1") != null) {
+        aB1.href  = localStorage.getItem("aB1");
+    }
+    if (localStorage.getItem("aB2") != null) {
+        aB2.href  = localStorage.getItem("aB2");
+    }
+    if (localStorage.getItem("aB3") != null) {
+        aB3.href = localStorage.getItem("aB3");
+    }
+    if (localStorage.getItem("aB4") != null) {
+        aB4.href  = localStorage.getItem("aB4");
+    }
+    if (localStorage.getItem("imgB1") != null) {
+        imgB1.src  = localStorage.getItem("imgB1");
+    }
+    if (localStorage.getItem("imgB2") != null) {
+        imgB2.src = localStorage.getItem("imgB2");
+    }
+    if (localStorage.getItem("imgB3") != null) {
+        imgB3.src  = localStorage.getItem("imgB3");
+    }
+    if (localStorage.getItem("imgB4") != null) {
+        imgB4.src  = localStorage.getItem("imgB4");
+    }
+	
+    body = document.querySelector("body");
+    apexContainer = document.querySelector("#apexContainer");
+
+    if (localStorage.getItem("generalBackground") != null) {
+        body.style.backgroundImage = "url(" + localStorage.getItem("generalBackground") + ")";
+    } else {
+        body.style.backgroundImage = "url('assets/moomkin.png')";
+    }
+    if (localStorage.getItem("generalBlurIntensity") != null) {
+        apexContainer.style.backdropFilter = "blur(" + localStorage.getItem("generalBlurIntensity") + "px)";
+    }
+}
+window.onload = main;	
+</script>
+
+</body>
+
+</html>
