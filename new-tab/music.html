@@ -1136,4 +1136,9 @@ if (e.key === "f") {
  }
 
 });
+document.body.addEventListener("click", function(e){ 
+if(event.target.localName=="body"){
+playSong();
+}
+});
 </script>
