@@ -443,6 +443,18 @@ setInterval(()=>{
         connectivity_check();
 }, 5000);
 
+function openb(){
+window.open(document.getElementById('aB2').href);
+window.open(document.getElementById('aB3').href);
+window.open(document.getElementById('aB1').href);
+if(document.getElementById('block')){
+window.open(document.getElementById('aB4').href);
+}else{
+document.location.href=document.getElementById('aB4').href;
+}
+}
+
+
 function mugic(){
 		document.getElementById('tog').checked=true;
 var iframe = document.createElement('iframe');
