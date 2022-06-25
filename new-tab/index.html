@@ -583,6 +583,15 @@ function addLoadEvent(func)
 
 addLoadEvent(connectivity_check);
 
+window.onbeforeunload = function(){
+if(document.getElementById('block')){
+if(document.getElementById('mum').src.includes("vibin.gif") || document.getElementById('mug').src.includes("vibin.gif")){
+  return 'Music is playing. U sure u wanna leave?';
+  }
+  }
+};
+
+
 function rtclick(dib){
 	window.open(document.getElementById(dib).href);
 }
