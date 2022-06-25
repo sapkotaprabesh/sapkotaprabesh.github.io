@@ -328,9 +328,11 @@ document.addEventListener('keydown', function (e) {
 		return;
     }
 	    if (e.key === "Control") {
+		if(document.activeElement.id=='ggl' || document.activeElement.tagName!="INPUT"){
 	document.getElementById("ggl").select();
         show();
 		return;
+}
     }
 	if(document.activeElement.tagName!="INPUT"){
     document.getElementById("ggl").focus();
