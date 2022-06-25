@@ -24,6 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d), linear-gradient(to right, #ff6e7f, #bfe9ff);
 }
 
 #apexContainer {
@@ -173,6 +174,14 @@ body {
   width: 240px;
   cursor: default;
 }
+a{
+  color: #BADA55;
+  font-weght: bolder;
+  font-size: 45px ; 
+  text-transform: uppercase;
+	text-decoration: none;
+	padding: 20px;
+}
 </style>
 </head>
 
@@ -188,10 +197,10 @@ body {
         <div id="clockContainer">00:00</div>
 
         <ul id="bookmarksContainer">
-            <div class="bookmark" id="b1"><a href="https://discord.com/app" id="aB1"><img src="assets/discord.svg" alt="1" id="imgB1"></a></div>
-            <div class="bookmark" id="b2"><a href="https://www.facebook.com" id="aB2"><img src="assets/facebook.svg" alt="2" id="imgB2"></a></div>
-            <div class="bookmark" id="b3"><a href="https://www.youtube.com" id="aB3"><img  src="assets/youtube.svg" alt="3" id="imgB3"></a></div>
-            <div class="bookmark" id="b4"><a href="https://gmail.com" id="aB4"><img src="assets/gmail.svg" alt="4" id="imgB4"></a></div>
+            <div class="bookmark" id="b1"><a href="https://discord.com/app" id="aB1"><img onerror="doSomething(this)" src="assets/discord.svg" alt="1" id="imgB1"></a></div>
+            <div class="bookmark" id="b2"><a href="https://www.facebook.com" id="aB2"><img onerror="doSomething(this)" src="assets/facebook.svg" alt="2" id="imgB2"></a></div>
+            <div class="bookmark" id="b3"><a href="https://www.youtube.com" id="aB3"><img onerror="doSomething(this)"  src="assets/youtube.svg" alt="3" id="imgB3"></a></div>
+            <div class="bookmark" id="b4"><a href="https://gmail.com" id="aB4"><img onerror="doSomething(this)" src="assets/gmail.svg" alt="4" id="imgB4"></a></div>
 
         </ul>
 
@@ -233,6 +242,13 @@ function showc(){
                 document.getElementById("ggl").style.cursor = 'default';
         }
 };
+function doSomething(elem){
+  var alt = document.createTextNode( elem.getAttribute('alt') );
+  
+  elem.parentNode.insertBefore( alt, elem );
+  
+  elem.parentNode.removeChild( elem );
+}
 function displayClock() {
     const clockContainer = document.querySelector("#clockContainer");
     let date = new Date();
@@ -327,9 +343,9 @@ function main() {
     apexContainer = document.querySelector("#apexContainer");
 
     if (localStorage.getItem("generalBackground") != null) {
-        body.style.backgroundImage = "url(" + localStorage.getItem("generalBackground") + ")";
+        body.style.backgroundImage = "url(" + localStorage.getItem("generalBackground") + "),linear-gradient(to right, #ff6e7f, #bfe9ff), linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);";
     } else {
-        body.style.backgroundImage = "url('assets/moomkin.png')";
+        body.style.backgroundImage = "url('assets/moomkin.png'),linear-gradient(to right, #ff6e7f, #bfe9ff), linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);";
     }
     if (localStorage.getItem("generalBlurIntensity") != null) {
         apexContainer.style.backdropFilter = "blur(" + localStorage.getItem("generalBlurIntensity") + "px)";
