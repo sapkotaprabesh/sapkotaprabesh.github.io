@@ -552,7 +552,7 @@ img[alt ="pause-icon"] {
                 </div>
             </div>
         </div>
-        <ul class="player__playlist list">
+        <ul id = "player__playlist" class="player__playlist list">
 <li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/3 Idiots - Give Me Some Sunshine .jpg" alt="cover"><p class="player__context "><b class="player__song-name">Give Me Some Sunshine </b><span class="flex"><span class="player__title">3 Idiots </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/3 Idiots - Give Me Some Sunshine .mp3" preload="none" crossorigin="anonymous"></audio></li>
 
 <li class="player__song"><img class="player__img img" src="https://idgafs.github.io/thumbs/5_55 - Maya.jpg" alt="cover"><p class="player__context "><b class="player__song-name">Maya</b><span class="flex"><span class="player__title">5_55 </span><span class="player__song-time"></span></span></p><audio class="audio" src="https://idgafs.github.io/files/5_55 - Maya.mp3" preload="none" crossorigin="anonymous"></audio></li>
@@ -1027,7 +1027,7 @@ function run() {
 }
 
 function playSong() {
-
+document.getElementById('player__playlist').scrollTop=(count+1)*89;
     if (song.paused) {
 
 		if(offline_==1){
