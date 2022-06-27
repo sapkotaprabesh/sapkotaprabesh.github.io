@@ -770,6 +770,7 @@ const sliderContentLength = playerPlayList.length - 1;
 const sliderWidth = 100;
 let left = 0;
 let count = Math.floor(Math.random() * sliderContentLength);
+document.getElementById('player__playlist').scrollTop=(count+1)*89;
 let song = playerSongs[count];
 let isPlay = false;
 const pauseIcon = playButton.querySelector("img[alt = 'pause-icon']");
@@ -882,6 +883,7 @@ function next(index) {
 	count=index-1;
 	}
 }else{
+document.getElementById('player__playlist').scrollTop=(count+1)*89;
     count = index || Math.floor(Math.random() * sliderContentLength);
     if (count == sliderContentLength) {
         count = count;
@@ -896,6 +898,7 @@ function next(index) {
 }
 
 function back(index) {
+document.getElementById('player__playlist').scrollTop=(count+1)*89;
 		if(offline_==1){
 		if(loaded.length<=1){stopped=1;return;}
 		if (index==0 || loaded.indexOf(index)==-1){
@@ -990,6 +993,7 @@ function changeBgBody() {
 }
 
 function selectSong() {
+document.getElementById('player__playlist').scrollTop=(count+1)*89;
     song = playerSongs[count];
     for (const item of playerSongs) {
         if (item != song) {
