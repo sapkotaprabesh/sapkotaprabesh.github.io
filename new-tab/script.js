@@ -12,7 +12,7 @@ function displayClock() {
     if (min < 10) {
         min = "0" + min
     }
-    clockContainer.innerHTML = hrs + '<span style="display: inline-block; padding: 2em; margin: -2em;" onclick="openb()">:</span>' + min;
+    clockContainer.innerHTML = hrs + '<span onclick="openb()">:</span>' + min;
 }
 
 
