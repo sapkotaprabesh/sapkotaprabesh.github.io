@@ -1208,8 +1208,9 @@ if(this.currentTime.toFixed()==lrc[i]['seconds']){
    break;
    }
 }
+}else{
+document.getElementById('lyrics').innerHTML="Lyrics not available yet"; 
 }
-<!-- document.getElementById('lyrics').innerHTML="Lyrics not available yet"; -->
 }
     const progresFilledWidth = (this.currentTime / this.duration) * 100 + "%";
     progresFilled.style.width = progresFilledWidth;
