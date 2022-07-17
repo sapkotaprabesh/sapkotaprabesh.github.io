@@ -1109,7 +1109,7 @@ document.getElementById('player__playlist').scrollTop=(count+1)*89;
     if (isPlay) {
 
         audioCtx =  audioCtx || new AudioContext();
-        analyser =  audioCtx.createAnalyser();
+        analyser =  analyser ||  audioCtx.createAnalyser();
  if (MEDIA_ELEMENT_NODES.has(song)) {
     source = MEDIA_ELEMENT_NODES.get(song);
   } else {
@@ -1155,7 +1155,7 @@ document.getElementById('player__playlist').scrollTop=(count+1)*89;
 
 
         audioCtx =  audioCtx || new AudioContext();
-        analyser =  audioCtx.createAnalyser();
+        analyser =  analyser || audioCtx.createAnalyser();
  if (MEDIA_ELEMENT_NODES.has(song)) {
     source = MEDIA_ELEMENT_NODES.get(song);
   } else {
