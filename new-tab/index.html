@@ -709,7 +709,9 @@ function clck(dib){
 window.addEventListener("message", function(event) {
     if(event.data==1){
 	document.getElementById('mug').src="assets/vibin.gif";
+try{
 	document.getElementById('mum').src="assets/vibin.gif";
+}catch{}
 if(window.getComputedStyle(document.getElementById('mug')).display=="block"){
 	document.querySelector('.btn-onoff span').style.display='none';
 document.querySelectorAll('ul.bars li').forEach(el => el.style.visibility = 'visible')
@@ -717,7 +719,9 @@ document.querySelectorAll('ul.bars li').forEach(el => el.style.visibility = 'vis
 	}
     if(event.data==0){
 	document.getElementById('mug').src="assets/paused.png";
+try{
 	document.getElementById('mum').src="assets/paused.png";
+}catch{}
 if(window.getComputedStyle(document.getElementById('mug')).display=="block"){
 document.querySelectorAll('ul.bars li').forEach(el => el.style.visibility = 'hidden')	
 	document.querySelector('.btn-onoff span').style.display='block';
