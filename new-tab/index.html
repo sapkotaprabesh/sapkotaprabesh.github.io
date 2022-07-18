@@ -198,7 +198,7 @@ https://damnitharshit.github.io/nightly/
 
 @media only screen and (max-width: 760px) {
  #mug { display: none; }
-
+ul.bars {display:none;}
  .btn-onoff span{
  	width: 26px;
 	height: 14px;
@@ -581,9 +581,10 @@ document.getElementById("mum").addEventListener("click", function(){
 
 function close(){
 		document.getElementById('tog').checked=false;
+if(window.getComputedStyle(document.getElementById('mug')).display=="block"){
 		document.querySelectorAll('ul.bars li').forEach(el => el.style.visibility = 'hidden')	
 	document.querySelector('.btn-onoff span').style.display='block';
-
+}
 		document.querySelector('iframe').remove();
 		document.getElementById('mug').remove();
  		document.getElementById('mum').remove();
@@ -709,16 +710,18 @@ window.addEventListener("message", function(event) {
     if(event.data==1){
 	document.getElementById('mug').src="assets/vibin.gif";
 	document.getElementById('mum').src="assets/vibin.gif";
+if(window.getComputedStyle(document.getElementById('mug')).display=="block"){
 	document.querySelector('.btn-onoff span').style.display='none';
 document.querySelectorAll('ul.bars li').forEach(el => el.style.visibility = 'visible')
-
+}
 	}
     if(event.data==0){
 	document.getElementById('mug').src="assets/paused.png";
 	document.getElementById('mum').src="assets/paused.png";
+if(window.getComputedStyle(document.getElementById('mug')).display=="block"){
 document.querySelectorAll('ul.bars li').forEach(el => el.style.visibility = 'hidden')	
 	document.querySelector('.btn-onoff span').style.display='block';
-
+}
 	}	
 });
 window.addEventListener("load", () => {
