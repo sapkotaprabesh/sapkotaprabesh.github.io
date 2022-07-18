@@ -411,7 +411,45 @@ img[alt ="pause-icon"] {
     opacity: 0;
   }
 }
+.control{
+		position: absolute;
+		bottom: 10px;
+		right: 10px;
+		display: flex;
+		text-decoration: none;
+		font-size:25px;
+}
+.speaker{
+		border-radius: 50px;
+}
+  .volume {
+    -webkit-appearance: slider-vertical;
+	background-clip:content-box; 
+	width: 35px;
+	height:35vh;
+	opacity:0;	
+  }
+  .speaker{
+  transform: scale(1.08);
+  position: relative;
+  padding-left: 120px;
+  padding-right:10px;
 
+  }
+  
+  .volume{
+  position: relative;
+  padding-left: 150px;
+  padding-right:20px;
+
+  }
+.volume:hover{
+  cursor: crosshair;
+}
+
+@media only screen and (max-width: 760px) {
+ .control { display: none; }
+}
 </style>
 
 <!DOCTYPE html>
@@ -425,6 +463,11 @@ img[alt ="pause-icon"] {
 </head>
 <body>
 <div id="bg" class="bg"></div>
+<div class="control">
+	  <div class="volume-control">
+    <input id="volume" ondblclick="changevol()" class="volume" type="range" value="1" min="0" max="1" step="0.01"><div id="speaker" class="speaker">🔊</div>
+  </div>  
+</div>
 <canvas id="music_display">
         ERROR
 </canvas>
@@ -857,7 +900,7 @@ const playIcon = playButton.querySelector("img[alt = 'play-icon']");
 const progres = player.querySelector(".progres");
 const progresFilled = progres.querySelector(".progres__filled");
 let isMove = false;
-
+var vol=1;
 var BAR_PAD = 10;
 var BAR_WIDTH = 5;
 var MAX_BARS = 70;
@@ -1119,6 +1162,7 @@ document.getElementById('player__playlist').scrollTop=(count+1)*89;
 
         source.connect(analyser);
         analyser.connect(audioCtx.destination);
+        song.volume=vol;
         song.play();
         mainloop();
 
@@ -1164,6 +1208,7 @@ document.getElementById('player__playlist').scrollTop=(count+1)*89;
   }
         source.connect(analyser);
         analyser.connect(audioCtx.destination);
+        song.volume=vol;
         song.play();
         mainloop();
         playIcon.style.display = "none";
@@ -1346,4 +1391,104 @@ isPlay = true;
 playSong();
 }
 });
+
+var hidz=0;
+var valueHover = 0;
+function calcSliderPos(e) {
+    return (1-(e.offsetY / e.target.clientHeight));
+}
+
+document.getElementById('volume').addEventListener('mousemove', function(e) {
+    valueHover = calcSliderPos(e).toFixed(2);
+	if(valueHover==0){
+	document.getElementsByClassName('speaker')[0].innerHTML='🔇';
+	<!-- document.getElementsByClassName('volume')[0].style.visibility='hidden';	 -->
+	<!-- hidz=1; -->
+	<!-- valueHover=0; -->
+	}else if(valueHover<=0.25){
+	document.getElementsByClassName('speaker')[0].innerHTML='🔈';
+	}else if(0.25<valueHover && valueHover<=0.75){
+	document.getElementsByClassName('speaker')[0].innerHTML='🔉';
+	}else{
+	document.getElementsByClassName('speaker')[0].innerHTML='🔊';
+	}
+	song.volume=valueHover;
+	vol=valueHover;
+});
+
+document.getElementById('volume').addEventListener('change', function(e) {
+    var valueSeeked = e.target.value;
+	document.getElementsByClassName('volume')[0].style.visibility='hidden';
+	setTimeout(function(){ 
+	if(hidz==1){return;}
+	document.getElementsByClassName('volume')[0].style.opacity='0';
+	document.getElementsByClassName('volume')[0].style.visibility='visible';
+	}, 3000);
+	if(valueSeeked==0){
+	document.getElementsByClassName('speaker')[0].innerHTML='🔇';
+	document.getElementsByClassName('volume')[0].style.visibility='hidden';	
+	hidz=1;
+	valueSeeked=0;
+	}else if(valueSeeked<=0.25){
+	document.getElementsByClassName('speaker')[0].innerHTML='🔈';
+	}else if(0.25<valueSeeked && valueSeeked<=0.75){
+	document.getElementsByClassName('speaker')[0].innerHTML='🔉';
+	}else{
+	document.getElementsByClassName('speaker')[0].innerHTML='🔊';
+	}
+	song.volume=valueSeeked;
+	vol=valueSeeked;
+});
+
+
+document.getElementById('speaker').addEventListener("click", function(e){ 
+if (vol!="0"){
+document.getElementsByClassName('speaker')[0].innerHTML='🔇';
+document.getElementsByClassName('volume')[0].style.visibility='hidden';
+song.volume=0;
+hidz=1;
+vol=0;
+}else{
+document.getElementsByClassName('speaker')[0].innerHTML='🔊';
+document.getElementsByClassName('volume')[0].style.visibility='hidden';
+hidz=0;
+song.volume=1;
+vol=1;
+setTimeout(function(){ 
+if(hidz==1){return;}	
+document.getElementsByClassName('volume')[0].style.opacity='0';
+document.getElementsByClassName('volume')[0].style.visibility='visible';
+}, 3000);
+}
+});
+
+
+function changevol(){
+document.getElementsByClassName('speaker')[0].innerHTML='🔊';
+document.getElementsByClassName('volume')[0].style.visibility='hidden';
+song.volume=1;
+vol=1;
+setTimeout(function(){ 
+if(hidz==1){return;}
+document.getElementsByClassName('volume')[0].style.opacity='0';
+document.getElementsByClassName('volume')[0].style.visibility='visible';
+}, 3000);
+}
+
+window.addEventListener("message", function(event) {
+document.getElementsByClassName('volume')[0].style.visibility='hidden';
+if(hidz==0){hidze();}
+setTimeout(function(){ 
+if(hidz==1){return;}
+document.getElementsByClassName('volume')[0].style.opacity='0';
+document.getElementsByClassName('volume')[0].style.visibility='visible';
+}, 3000);
+});
+
+function hidze(){
+hidz=1;
+setTimeout(function(){ 
+hidz=0;
+}, 2900);
+}
 </script>
