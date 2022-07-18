@@ -223,15 +223,98 @@ content: '';
 }
 
 #block { background: #000;  position: absolute; width: 100%; height: 100%; top:0; left:0;}​
-  
+ul.bars {
+  list-style:none; 
+}
+ul.bars li {display: inline-block;visibility:hidden;width:5px;height:30px;right:15px;
+  position:relative;
+}
+ul.bars li:nth-child(1) {height:10px;}
+ul.bars li:nth-child(2) {height:20px;}
+ul.bars li:nth-child(3) {height:25px;}
+ul.bars li:nth-child(4) {height:30px;}
+ul.bars li:nth-child(5) {height:25px;}
+ul.bars li:nth-child(6) {height:20px;}
+ul.bars li:nth-child(7) {height:10px;}
+
+ul.bars li:nth-child(1):before {
+  -webkit-animation-delay : 0.2s;
+        animation-delay : 0.2s;
+} 
+ul.bars li:nth-child(2):before {
+  -webkit-animation-delay : 0.4s;
+        animation-delay : 0.4s;
+} 
+ul.bars li:nth-child(3):before {
+  -webkit-animation-delay : 0.6s;
+        animation-delay : 0.6s;
+} 
+ul.bars li:nth-child(4):before {
+  -webkit-animation-delay : 0.8s;
+        animation-delay : 0.8s;
+} 
+ul.bars li:nth-child(5):before {
+  -webkit-animation-delay : 0.3s;
+        animation-delay : 0.3s;
+} 
+ul.bars li:nth-child(6):before {
+  -webkit-animation-delay : 0.9s;
+        animation-delay : 0.9s;
+} 
+ul.bars li:before {
+  content:'';
+  display:inline-block;
+  background:lightblue;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  -webkit-animation-name: volume;
+  animation-name: volume;
+  -webkit-animation-duration : 0.5s;
+  animation-duration : 0.5s;
+  -webkit-animation-iteration-count : infinite;
+  animation-iteration-count : infinite;
+  -webkit-animation-direction : alternate;
+        animation-direction : alternate;
+}
+
+@-webkit-keyframes volume {
+  0% {
+    height:0%
+  }
+
+  100% {
+    height:100%
+  }
+}
+
+@keyframes volume {
+  0% {
+    height:0%
+  }
+
+  100% {
+    height:100%
+  }
+}
+    
 </style>
 </head>
-
-<body oncontextmenu= "return false;" ondragstart="return false" onclick="showc()" ondblclick="window.location='https://www.google.com.np/imghp?hl=en&authuser=0&ogbl'">
+<a id="dblclck" href="https://www.google.com.np/imghp?hl=en&authuser=0&ogbl" style="display=none;"></a>
+<body oncontextmenu= "return false;" ondragstart="return false" onclick="showc()" ondblclick="clck('dblclck')">
   <div id="apexContainer">
   
 	<label title="Ctrl+M" id= "btn-onoff" class="btn-onoff">
 		<input id="tog" type="checkbox" name="name" autocomplete="off" data-onoff="toggle"><span></span>	
+<ul class="bars">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>	
 	</label>
  
       <div id='search-box' class = 'search-box'>
@@ -498,6 +581,9 @@ document.getElementById("mum").addEventListener("click", function(){
 
 function close(){
 		document.getElementById('tog').checked=false;
+		document.querySelectorAll('ul.bars li').forEach(el => el.style.visibility = 'hidden')	
+	document.querySelector('.btn-onoff span').style.display='block';
+
 		document.querySelector('iframe').remove();
 		document.getElementById('mug').remove();
  		document.getElementById('mum').remove();
@@ -509,7 +595,7 @@ function minmax(){
 		if(document.querySelector('iframe').style.width=="0px"){
 				document.querySelector('iframe').style.width="100%";
 				document.querySelector('iframe').style.height="100%";
-				
+				document.querySelector('iframe').contentWindow.postMessage("message", "*");
 				mug=document.getElementById('mug');
 				presrc=mug.src;
 				mug.remove();
@@ -623,10 +709,16 @@ window.addEventListener("message", function(event) {
     if(event.data==1){
 	document.getElementById('mug').src="assets/vibin.gif";
 	document.getElementById('mum').src="assets/vibin.gif";
+	document.querySelector('.btn-onoff span').style.display='none';
+document.querySelectorAll('ul.bars li').forEach(el => el.style.visibility = 'visible')
+
 	}
     if(event.data==0){
 	document.getElementById('mug').src="assets/paused.png";
 	document.getElementById('mum').src="assets/paused.png";
+document.querySelectorAll('ul.bars li').forEach(el => el.style.visibility = 'hidden')	
+	document.querySelector('.btn-onoff span').style.display='block';
+
 	}	
 });
 window.addEventListener("load", () => {
