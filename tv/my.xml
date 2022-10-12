@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv generator-info-name="py">
+<channel id="ntv.np"><display-name lang="en">NTV</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="KantipurTV.np"><display-name lang="en">Kantipur TV</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="avenues.np"><display-name lang="en">Avenues TV</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="news24.np"><display-name lang="en">News24 Nepal</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="JanataHD.np"><display-name lang="en">Janata HD</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="ntvnews.np"><display-name lang="en">NTV News</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="TVtoday.np"><display-name lang="en">TV Today</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="TVOne.np"><display-name lang="en">TV One</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="ntvplus.np"><display-name lang="en">NTV PLUS</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="HakuTV.np"><display-name lang="en">Haku TV</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="9xm.music"><display-name lang="en">9XM</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="INBC28000122W"><display-name lang="en">9X Music</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="INBC2800013L6"><display-name lang="en">9X Jalwa</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="INBC28000144H"><display-name lang="en">9X Jhakaas</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="5e20b730f2f8d5003d739db7-62ee74af52f7d73061eec491"><display-name lang="en">Euro Hits</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="5e20b730f2f8d5003d739db7-61aa97d4113e1e5137fd5325"><display-name lang="en">Greatest Hits</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="5e20b730f2f8d5003d739db7-61aaa014784a2161d3caf7fd"><display-name lang="en">Hit List</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="5e20b730f2f8d5003d739db7-62f13eeded056a1db9ef3d54"><display-name lang="en">Nothin' But 90s</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="5e20b730f2f8d5003d739db7-61aa9f50784a2161d3caf7fb"><display-name lang="en">Everything ‘80s</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="star.gold"><display-name lang="en">Star Gold</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="star.goldslct"><display-name lang="en">Star Gold Select</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="sony.max"><display-name lang="en">Sony Max</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="sony.maxhd"><display-name lang="en">Sony Max HD</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="zeecinema.hd"><display-name lang="en">Zee Cinema</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="and.pictures"><display-name lang="en">&pictures</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="zeeanmol.cinema"><display-name lang="en">Zee Anmol Cinema</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="bbc.america"><display-name lang="en">BBC America</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="and.flix"><display-name lang="en">&flix HD</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="cine.max"><display-name lang="en">Cinemax</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="the.movie"><display-name lang="en">The Movie</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="hb.o"><display-name lang="en">HBO</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="5e20b730f2f8d5003d739db7-60240f58676235002df19f4b"><display-name lang="en">Top Cine</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="sony.pix"><display-name lang="en">Sony Pix</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="star.movieshd"><display-name lang="en">Star Movies Select HD</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="INBC15000054I"><display-name lang="en">Discovery Kids</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="AnimaxAsia.sg"><display-name lang="en">Animax Asia</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="AniplusAsia.sg"><display-name lang="en">Aniplus</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="neetball.one"><display-name lang="en">NeetBall</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="adult.kids"><display-name lang="en">Adult Swim Kids</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="adult.kidshd"><display-name lang="en">Adult Swim HD</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="nick.lodeon"><display-name lang="en">Nickelodeon</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="nick.hdp"><display-name lang="en">Nick HD+</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="cartoon.network"><display-name lang="en">Cartoon Network</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="so.nic"><display-name lang="en">Sonic</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="disnep.xd"><display-name lang="en">Disnep XD</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="disnep.channel"><display-name lang="en">Disnep</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="nick.toons"><display-name lang="en">Nicktoons</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="5e20b730f2f8d5003d739db7-5f170d60b898490041b49359"><display-name lang="en">Toon Goggles</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="BloombergTVAsiaPacific.hk"><display-name lang="en">Bloomberg TV Asia</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="france.24"><display-name lang="en">FRANCE 24 English</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="sky.news"><display-name lang="en">Sky News</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="nd.tv"><display-name lang="en">NDTV</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="ari.rang"><display-name lang="en">Arirang</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="5e20b730f2f8d5003d739db7-62ab5aabbb869dd0df6a3487"><display-name lang="en">TED</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="NASATV.us"><display-name lang="en">NASA TV</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="INBC1500001SN"><display-name lang="en">Animal Planet</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="INBC1500002TR"><display-name lang="en">Animal Planet HD</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="INBC1500011RN"><display-name lang="en">Discovery Science</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="INBB2800007DA"><display-name lang="en">Discovery</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="INBB280000836"><display-name lang="en">Discovery HD</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="nat.geo"><display-name lang="en">National Geographic</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="nat.geowild"><display-name lang="en">Nat Geo Wild</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="history.tv"><display-name lang="en">History TV</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="sony.six"><display-name lang="en">Sony Six</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="sportselect.one"><display-name lang="en">Star Sports Select 1</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="startsports.two"><display-name lang="en">Star Sports 2</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="sontten.three"><display-name lang="en">Sony Ten 3</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="RedBullTV.at"><display-name lang="en">Red Bull TV</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id=""><display-name lang="en">People are Awesome</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="sony.tv"><display-name lang="en">Sony</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="sony.sab"><display-name lang="en">Sony Sab</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="sony.pal"><display-name lang="en">Sony Pal</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="aapka.colors"><display-name lang="en">Colors</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="StarPlusHD.in"><display-name lang="en">Star Plus HD</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="INBC1500004JR"><display-name lang="en">TLC</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="INBA51000038B"><display-name lang="en">Fashion TV</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="comedy.central"><display-name lang="en">Comedy Central</display-name><url>https://www.nettv.com.np</url></channel>
+<channel id="0-9-zeecafehd"><display-name lang="en">Zee Café HD</display-name><url>https://www.nettv.com.np</url></channel>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="ntv.np"><title lang="en">NTV Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="KantipurTV.np"><title lang="en">Kantipur TV Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="avenues.np"><title lang="en">Avenues TV Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="news24.np"><title lang="en">News24 Nepal Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="JanataHD.np"><title lang="en">Janata HD Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="ntvnews.np"><title lang="en">NTV News Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="TVtoday.np"><title lang="en">TV Today Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="TVOne.np"><title lang="en">TV One Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="ntvplus.np"><title lang="en">NTV PLUS Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="HakuTV.np"><title lang="en">Haku TV Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="9xm.music"><title lang="en">9XM Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="INBC28000122W"><title lang="en">9X Music Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="INBC2800013L6"><title lang="en">9X Jalwa Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="INBC28000144H"><title lang="en">9X Jhakaas Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="5e20b730f2f8d5003d739db7-62ee74af52f7d73061eec491"><title lang="en">Euro Hits Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="5e20b730f2f8d5003d739db7-61aa97d4113e1e5137fd5325"><title lang="en">Greatest Hits Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="5e20b730f2f8d5003d739db7-61aaa014784a2161d3caf7fd"><title lang="en">Hit List Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="5e20b730f2f8d5003d739db7-62f13eeded056a1db9ef3d54"><title lang="en">Nothin' But 90s Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="5e20b730f2f8d5003d739db7-61aa9f50784a2161d3caf7fb"><title lang="en">Everything ‘80s Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="star.gold"><title lang="en">Star Gold Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="star.goldslct"><title lang="en">Star Gold Select Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="sony.max"><title lang="en">Sony Max Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="sony.maxhd"><title lang="en">Sony Max HD Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="zeecinema.hd"><title lang="en">Zee Cinema Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="and.pictures"><title lang="en">&pictures Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="zeeanmol.cinema"><title lang="en">Zee Anmol Cinema Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="bbc.america"><title lang="en">BBC America Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="and.flix"><title lang="en">&flix HD Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="cine.max"><title lang="en">Cinemax Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="the.movie"><title lang="en">The Movie Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="hb.o"><title lang="en">HBO Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="5e20b730f2f8d5003d739db7-60240f58676235002df19f4b"><title lang="en">Top Cine Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="sony.pix"><title lang="en">Sony Pix Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="star.movieshd"><title lang="en">Star Movies Select HD Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="INBC15000054I"><title lang="en">Discovery Kids Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="AnimaxAsia.sg"><title lang="en">Animax Asia Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="AniplusAsia.sg"><title lang="en">Aniplus Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="neetball.one"><title lang="en">NeetBall Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="adult.kids"><title lang="en">Adult Swim Kids Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="adult.kidshd"><title lang="en">Adult Swim HD Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="nick.lodeon"><title lang="en">Nickelodeon Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="nick.hdp"><title lang="en">Nick HD+ Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="cartoon.network"><title lang="en">Cartoon Network Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="so.nic"><title lang="en">Sonic Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="disnep.xd"><title lang="en">Disnep XD Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="disnep.channel"><title lang="en">Disnep Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="nick.toons"><title lang="en">Nicktoons Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="5e20b730f2f8d5003d739db7-5f170d60b898490041b49359"><title lang="en">Toon Goggles Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="BloombergTVAsiaPacific.hk"><title lang="en">Bloomberg TV Asia Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="france.24"><title lang="en">FRANCE 24 English Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="sky.news"><title lang="en">Sky News Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="nd.tv"><title lang="en">NDTV Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="ari.rang"><title lang="en">Arirang Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="5e20b730f2f8d5003d739db7-62ab5aabbb869dd0df6a3487"><title lang="en">TED Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="NASATV.us"><title lang="en">NASA TV Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="INBC1500001SN"><title lang="en">Animal Planet Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="INBC1500002TR"><title lang="en">Animal Planet HD Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="INBC1500011RN"><title lang="en">Discovery Science Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="INBB2800007DA"><title lang="en">Discovery Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="INBB280000836"><title lang="en">Discovery HD Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="nat.geo"><title lang="en">National Geographic Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="nat.geowild"><title lang="en">Nat Geo Wild Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="history.tv"><title lang="en">History TV Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="sony.six"><title lang="en">Sony Six Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="sportselect.one"><title lang="en">Star Sports Select 1 Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="startsports.two"><title lang="en">Star Sports 2 Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="sontten.three"><title lang="en">Sony Ten 3 Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="RedBullTV.at"><title lang="en">Red Bull TV Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel=""><title lang="en">People are Awesome Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="sony.tv"><title lang="en">Sony Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="sony.sab"><title lang="en">Sony Sab Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="sony.pal"><title lang="en">Sony Pal Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="aapka.colors"><title lang="en">Colors Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="StarPlusHD.in"><title lang="en">Star Plus HD Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="INBC1500004JR"><title lang="en">TLC Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="INBA51000038B"><title lang="en">Fashion TV Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="comedy.central"><title lang="en">Comedy Central Special</title></programme>
+<programme start="20201011213000 +0000" stop="20301011220000 +0000" channel="0-9-zeecafehd"><title lang="en">Zee Café HD Special</title></programme>
+</tv>
