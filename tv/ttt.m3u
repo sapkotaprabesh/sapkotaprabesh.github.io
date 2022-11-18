@@ -1,0 +1,4 @@
+#EXTINF:-1 tvg-id="cartoon.network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/1200px-Cartoon_Network_2010_logo.svg.png" group-title="Kids",Cartoon Network
+#EXTHTTP:{"Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","cookie":"YSC=gwmJDf2gboQ; VISITOR_INFO1_LIVE=tUVA7rw_Tws; GPS=1; PREF=tz=Asia.Katmandu"}
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+https://ntv.onrender.com/cartoonnetworkasia
