@@ -1,0 +1,202 @@
+#EXTM3U x-tvg-url="https://kodi.botallen.com/tv/epg.xml"
+#EXTINF:-1 tvg-id="ntv.np" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/18/NTV_Nepal.png" group-title="Nepali",NTV
+https://ntv.onrender.com/ntv
+#EXTINF:-1 tvg-id="avenues.np" tvg-logo="https://res.cloudinary.com/dpqvbxdpf/image/upload/v1643280143/uploads/ProfileImage/iq15wxumdbqhrzpu3amy.png" group-title="Nepali",Avenues TV
+https://ntv.onrender.com/AvenuesKhabar
+#EXTINF:-1 tvg-id="sagarmatha.np" tvg-logo="https://yt3.ggpht.com/leAOreCRVc6ptdgaUGEzEF289qu1wP7XNQYLe5pcaQr-MUf8gZfaC7iuq3_N_0pIf2-L4vRI=s900-c-k-c0x00ffffff-no-rj" group-title="Nepali",Sagarmatha TV
+http://np.truestreamz.com/broadcaster/Sagarmatha977mt.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="KantipurTV.np" tvg-logo="https://www.lyngsat.com/logo/tv/kk/kantipur-tv-np.png" group-title="Nepali",Kantipur TV
+https://ktvhdsg.ekantipur.com:8443/ktv_desktop_02347834/hd/playlist.m3u8
+#EXTINF:-1 tvg-id="abc.np" tvg-logo="https://play-lh.googleusercontent.com/z3Vg4nLruJCuWL_0W-FO9dNkOiIjlEmJJHuImyK7Ws4WKee0xq30xO0YFa6hLm7b-g" group-title="Nepali",ABC News
+http://np.truestreamz.com/broadcaster/ABC1008.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="news24.np" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/tv/150/150/bnw/news24-nepali-black.png" group-title="Nepali",News24 Nepal 
+https://ntv.onrender.com/news24tvchannel
+#EXTINF:-1 tvg-id="JanataHD.np" tvg-logo="https://api.v1.jobejee.com/v2/resource/employer-logo/a59f4a241648454327468.jpg" group-title="Nepali",Janata HD
+https://streaming.tvnepal.com:3439/live/janatasamacharlive.m3u8
+#EXTINF:-1 tvg-id="ntvnews.np" tvg-logo="https://resources.geniustv.geniussystems.com.np//livetv/channels/43/image" group-title="Nepali",NTV News
+https://ntv.onrender.com/ntv-news
+#EXTINF:-1 tvg-id="indigenous.np" tvg-logo="https://www.indigenousmediafoundation.org/uploads/project/indigenous-television.png" group-title="Nepali",Indigenous TV
+http://np.truestreamz.com/broadcaster/INDIGENOUSmob.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="tvfilmy.np" tvg-logo="https://yt3.ggpht.com/ytc/AMLnZu8PesAVXMeVS7ligP5bd6wukmxjOcfaDNHJSXMH=s900-c-k-c0x00ffffff-no-rj" group-title="Nepali",TV Filmy
+http://np.truestreamz.com/broadcaster/Tvfilmy977.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="krishitv.np" tvg-logo="https://www.krishitelevision.com/wp-content/themes/krishi-2022/img/default.png" group-title="Nepali",Krishi TV
+http://np.truestreamz.com/broadcaster/KrishiTV977.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="TVtoday.np" tvg-logo="https://is2-ssl.mzstatic.com/image/thumb/Purple124/v4/ae/c6/46/aec646c5-28ce-84e6-ba54-c3d80a9c0478/source/60x60bb.jpg" group-title="Nepali",TV Today
+https://nplb.truestreamz.com/broadcaster/tvtoday977reg.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="TVOne.np" tvg-logo="https://yt3.ggpht.com/ytc/AMLnZu-pm8D3Eytf47JnToHMjnDTe1g7vHxQnqeWLL0Y6Q=s800-c-k-c0x00ffffff-no-rj" group-title="Nepali",TV One
+https://nplb.truestreamz.com/broadcaster/tvtodayone.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="ntvplus.np" tvg-logo="https://resources.geniustv.geniussystems.com.np//livetv/channels/44/image" group-title="Nepali",NTV PLUS
+https://ntv.onrender.com/ntv-plus
+#EXTINF:-1 tvg-id="HakuTV.np" tvg-logo="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/69/74/1b/69741b8f-ac58-6682-ff9f-e05622433fd9/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.webp" group-title="Nepali",Haku TV
+http://hakutv.mooo.com:4200/live/hakuTV/hakuTV/4331.m3u8
+#EXTINF:-1 tvg-id="291" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/SET_India_logo.svg/1200px-SET_India_logo.svg.png" group-title="Entertainment",Sony
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=Sony_HD"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=Sony_HD&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="154" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sony_SAB.svg/1200px-Sony_SAB.svg.png" group-title="Entertainment",Sony Sab
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=Sony_SAB"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=Sony_SAB&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="474" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Sony_Pal_new.png/220px-Sony_Pal_new.png" group-title="Entertainment",Sony Pal
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=Sony_Pal"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=Sony_Pal&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="144" tvg-logo="https://pbs.twimg.com/profile_images/1230017608851869697/kk8ds8H__400x400.jpg" group-title="Entertainment",Colors
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=Colors_SD"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=Colors_SD&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="StarPlusHD.in" tvg-logo="https://i.imgur.com/WbvMMOR.png" group-title="Entertainment",Star Plus HD
+http://223.29.231.66:8000/play/a003/index.m3u8
+#EXTINF:-1 tvg-id="248" tvg-logo="https://www.maryville.edu/wp-content/uploads/2017/08/mtv-logo.png" group-title="Entertainment",MTV
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=MTV_HD_Plus"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=MTV_HD_Plus&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="479"  tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/02/05/INBC1500004JR_20220427T054807.png" group-title="Entertainment",TLC
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-tlchdin-samsungin/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=0
+#EXTINF:-1 tvg-id="INBA51000038B" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/02/40/INBA51000038B_20220427T054758.png" group-title="Entertainment",Fashion TV
+https://aa1ce778ea0544e4aa7429bc8a16eb1c.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/Samsung-in_FashionTV/playlist.m3u8?ads.wurl_channel=902&ads.wurl_name=FashionTV&ads.coppa=0&ads.psid=%7BPSID%7D&ads.targetopt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D
+#EXTINF:-1 tvg-id="people.awesome" tvg-logo="https://d3k81ch9hvuctc.cloudfront.net/company/HvKcVr/images/82aae7fa-ddf6-4297-a5ed-1486c8a23b89.png" group-title="Entertainment",People are Awesome
+https://jukin-peopleareawesome-2-in.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="1327" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Comedy_Central_2011_Logo.svg/1200px-Comedy_Central_2011_Logo.svg.png" group-title="Entertainment",Comedy Central
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=Comedy_Central_HD"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=Comedy_Central_HD&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="0-9-zeecafehd" tvg-logo="https://akamaividz.zee5.com/image/upload/resources/0-9-zeecafehd/list/1170x658withlogo325698699.png" group-title="Entertainment",Zee Café HD
+#EXTVLCOPT:http-referrer="https://tvworld.fun/play.php?c=0-9-zeecafehd"
+https://tvworld.fun/z2.php?c=0-9-zeecafehd
+#EXTINF:-1 tvg-id="star.gold" tvg-logo="https://www.tvchannelpricelist.com/wp-content/uploads/channels-logo-300/star-gold-hd-logo-300x300.jpg" group-title="Movies",Star Gold
+http://144.217.70.181:9587/hin2/STARGOLDUK/tracks-v1a1/mono.m3u8?token=test
+#EXTINF:-1 tvg-id="star.goldslct" tvg-logo="https://www.exchange4media.com/news-photo/1520595397_Bt65eH_logo-white.jpg" group-title="Movies",Star Gold Select
+http://103.151.43.102:8800/play/a037/index.m3u8
+#EXTINF:-1 tvg-id="289"  tvg-logo="https://dsnnepal.com/wp-content/uploads/2020/08/Sony_Max_HD.png" group-title="Movies",Sony Max
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=Sony_Max_SD"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=Sony_Max_SD&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="484" tvg-logo="https://image.airtel.tv/MWTV/MWTV_LIVETVCHANNEL_580/PORTRAIT/sjM1MbFR.png" group-title="Movies",Zee Cinema
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=Zee_Cinema_HD"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=Zee_Cinema_HD&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="185" tvg-logo="https://www.tvchannelpricelist.com/wp-content/uploads/channels-logo-300/and-pictures-hd-logo-300x300.jpg" group-title="Movies",&pictures
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=And_Pictures_HD"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=And_Pictures_HD&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="1477" tvg-logo="https://dsnnepal.com/wp-content/uploads/2020/08/colors-cineplex-hd.jpg" group-title="Movies",Colors Cineplex
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=Colors_Cineplex_HD"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=Colors_Cineplex_HD&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="415" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/dd/Zee-anmol-cinema.jpg" group-title="Movies",Zee Anmol Cinema
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=Zee_Anmol_Cinema"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=Zee_Anmol_Cinema&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="bbc.america" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/bbcamerica.png" group-title="Movies",BBC America
+http://208.86.19.13:81/34.stream/index.m3u8
+#EXTINF:-1 tvg-id="and.flix" tvg-logo="https://indeltv.com/wp-content/uploads/2019/01/flix.png" group-title="Movies",&flix HD
+#EXTVLCOPT:http-referrer="https://tvworld.fun/play.php?c=0-9-channel_2105335046"
+https://tvworld.fun/z2.php?c=0-9-channel_2105335046
+#EXTINF:-1 tvg-id="cine.max" tvg-logo="https://ustvgo.tv/wp-content/uploads/2020/04/cinemax.jpg" group-title="Movies",Cinemax
+http://ttv.bz:80/manolopc1/7U49kuozK8/1067
+#EXTINF:-1 tvg-id="hb.o" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/1200px-HBO_logo.svg.png" group-title="Movies",HBO
+#EXTVLCOPT:http-referrer="https://tv247.us/"
+https://live.tv247us.com/tv247/hbo.m3u8
+#EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-60240f58676235002df19f4b" tvg-logo="https://provider-static.plex.tv/epg/images/ott_channels/logos/topcine_logo_dark_v3.png" group-title="Movies",Top Cine
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/olympusat-topcine-plex/playlist.m3u8?us_privacy=1---&did=62274240-07e7-5d94-8dc8-ef68cf19e175&dnt=0&X-Plex-Token=z3f5nc3-fSds7ziZgkPX&channelId=60240f58676235002df19f4b&device_id_type=&ifa_type=ppid&url=app.plex.tv&app_name=plex&app_bundle=com.plexapp.android&app_store_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.plexapp.android&gdpr=0&gdpr_consent=0&coppa=0&ua=okhttp%2F4.9.0&ip=185.236.200.172&brand_name=&device_model=&device_type=handset&w=&h=&partner_id=S9DEAD1S1E6
+#EXTINF:-1 tvg-id="762" tvg-logo="https://upload.wikimedia.org/wikipedia/en/5/5f/Sony_PIX.png" group-title="Movies",Sony Pix
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=Sony_Pix_SD"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=Sony_Pix_SD&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="star.movieshd" tvg-logo="https://www.adgully.com/img/800/202003/star-movies-select-hd.png.jpg" group-title="Movies",Star Movies Select HD
+http://103.99.249.107:81/play/a02e
+#EXTINF:-1 tvg-id="587" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/INBC28000122W_20220928T010039.png" group-title="Music",9X Music
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01281-9xmediapvtltd-9xmusic-samsungin/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=0
+#EXTINF:-1 tvg-id="440" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/INBC2800013L6_20220928T010036.png" group-title="Music",9X Jalwa
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01281-9xmediapvtltd-9xjalwa-samsungin/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=0
+#EXTINF:-1 tvg-id="441" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/INBC28000144H_20220928T010037.png" group-title="Music",9X Jhakaas
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01281-9xmediapvtltd-9xjhakaas-samsungin/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=0
+#EXTINF:-1 tvg-id="585" tvg-logo="https://i.ibb.co/ZKw3gpg/zing-removebg-preview.png" group-title="Music",Zing
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=Zing"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=Zing&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-62ee74af52f7d73061eec491" tvg-logo="https://provider-static.plex.tv/epg/cms/production/be885265-dcca-4550-9ee9-f38aa2d7e49d/Stingray-Euro-Hits_logo_darkrdxwhite.png" group-title="Music",Euro Hits
+https://epg.provider.plex.tv/library/parts/5e20b730f2f8d5003d739db7-62ee74af52f7d73061eec491.m3u8?X-Plex-Client-Identifier=4f10a11d0159055e-com-plexapp-android&X-Plex-Client-Platform=Android&X-Plex-Token=GsaL4HnQmtRsNmJUV1Wh
+#EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-61aa97d4113e1e5137fd5325" tvg-logo="https://provider-static.plex.tv/epg/cms/staging/73c31029-967e-496f-a175-4e49112b4da1/stingray-greatest-hits_logo_dark.png" group-title="Music",Greatest Hits
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=1385&livestream=1&live=1&app_bundle=com.plexapp.android&did=62274240-07e7-5d94-8dc8-ef68cf19e175&app_domain=app.plex.tv&app_name=plex&h=&w=&custom4=plex&gdpr=0&device_make=&device_model=&coppa=1&us_privacy=1---&custom_6=GsaL4HnQmtRsNmJUV1Wh&custom_7=61aa97d4113e1e5137fd5325&is_lat=0
+#EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-61aaa014784a2161d3caf7fd" tvg-logo="https://provider-static.plex.tv/epg/cms/staging/b3706497-4073-4dfb-bd89-a798459f0348/stingray-hit-list_logo_dark.png" group-title="Music",Hit List
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=1388&livestream=1&live=1&app_bundle=com.plexapp.android&did=62274240-07e7-5d94-8dc8-ef68cf19e175&app_domain=app.plex.tv&app_name=plex&h=&w=&custom4=plex&gdpr=0&device_make=&device_model=&coppa=1&us_privacy=1---&custom_6=GsaL4HnQmtRsNmJUV1Wh&custom_7=61aaa014784a2161d3caf7fd&is_lat=0
+#EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-62f13eeded056a1db9ef3d54" tvg-logo="https://provider-static.plex.tv/epg/cms/production/d74f6b58-d1e2-4601-9f6b-c803bd0b4cfb/Stingray_Nothin_but_the_90s_logo_darkrdx.png" group-title="Music",Nothin' But 90s
+https://epg.provider.plex.tv/library/parts/5e20b730f2f8d5003d739db7-62f13eeded056a1db9ef3d54.m3u8?X-Plex-Client-Identifier=4f10a11d0159055e-com-plexapp-android&X-Plex-Client-Platform=Android&X-Plex-Token=GsaL4HnQmtRsNmJUV1Wh
+#EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-61aa9f50784a2161d3caf7fb" tvg-logo="https://provider-static.plex.tv/epg/cms/staging/081b8bca-9f8e-44a6-8173-c49e124bb7d2/stingray-everything-80s_logo_dark.png" group-title="Music",Everything ‘80s 
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=1387&livestream=1&live=1&app_bundle=com.plexapp.android&did=62274240-07e7-5d94-8dc8-ef68cf19e175&app_domain=app.plex.tv&app_name=plex&h=&w=&custom4=plex&gdpr=0&device_make=&device_model=&coppa=1&us_privacy=1---&custom_6=GsaL4HnQmtRsNmJUV1Wh&custom_7=61aa9f50784a2161d3caf7fb&is_lat=0
+#EXTINF:-1 tvg-id="INBC15000054I" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/INBC15000054I_20220824T102019.png" group-title="Kids",Discovery Kids
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-discoverykids-samsungin/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=1
+#EXTINF:-1 tvg-id="872" tvg-logo="https://yt3.ggpht.com/ytc/AMLnZu9xAMLXtV4KxKaR1cg-4YoYdJGBlMgVXPv8JsxsVA=s900-c-k-c0x00ffffff-no-rj" group-title="Kids",Sony Yay
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=Sony_Yay_Hindi"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=Sony_Yay_Hindi&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="AnimaxAsia.sg" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/65/Animaxlogo-20160701.png" group-title="Kids", Animax Asia
+http://redlabmcdn.s.llnwi.net/nv02/bs14hd/playlist.m3u8
+#EXTINF:-1 tvg-id="AniplusAsia.sg" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Aniplus_Asia_Logo.png/512px-Aniplus_Asia_Logo.png" group-title="Kids",Aniplus
+http://210.210.155.37/dr9445/h/h02/index.m3u8
+#EXTINF:-1 tvg-id="neetball.one" tvg-logo="https://neetball.net/favicon.ico" group-title="Kids",NeetBall
+https://sub2.neetball.net/live/neet.m3u8
+#EXTINF:-1 tvg-id="adult.kids" tvg-logo="https://static.wikia.nocookie.net/cnas/images/8/89/Adult_Swim_Junior.png" group-title="Kids",Adult Swim Kids
+http://208.86.19.13:81/33.stream/index.m3u8
+#EXTINF:-1 tvg-id="adult.kidshd" tvg-logo="https://static.wikia.nocookie.net/cnas/images/8/89/Adult_Swim_Junior.png" group-title="Kids",Adult Swim HD
+https://adultswim-vodlive.cdn.turner.com/live/off-the-air/stream.m3u8
+#EXTINF:-1 tvg-id="rick.morty" tvg-logo="https://media.cdn.adultswim.com/uploads/20210914/219141616186-1910281358343-RAM.jpg" group-title="Kids",Rick and Morty 24/7
+https://adultswim-vodlive.cdn.turner.com/live/rick-and-morty/stream_4.m3u8
+#EXTINF:-1 tvg-id="one.piece" tvg-logo="https://images.pluto.tv/channels/5f7790b3ed0c88000720b241/colorLogoPNG.png" group-title="Kids",One Piece 24/7
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f7790b3ed0c88000720b241/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="547" tvg-logo="https://nick-intl.mtvnimages.com/uri/mgid:file:gsp:entertainment-assets:/webplex/site/nick/intl/nickelodeon-600x600.png" group-title="Kids",Nickelodeon
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=Nick_Hindi"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=Nick_Hindi&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="cartoon.network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/1200px-Cartoon_Network_2010_logo.svg.png" group-title="Kids",Cartoon Network
+https://streamer12.xploretv.si/qdcnm4/__cl/cg:prod/__c/A1_SI_CARTOON_ott/__op/dash-default/__dci/__f/index.m3u8
+#EXTINF:-1 tvg-id="815" tvg-logo="https://upload.wikimedia.org/wikipedia/en/2/2b/Nickelodeon_Sonic_logo.png" group-title="Kids",Sonic
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=Sonic_Bangla"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=Sonic_Bangla&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="disnep.xd" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Disney_XD_-_2015.svg/1200px-Disney_XD_-_2015.svg.png" group-title="Kids",Disnep XD
+http://208.86.19.13:81/10.stream/index.m3u8
+#EXTINF:-1 tvg-id="disnep.channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/2019_Disney_Channel_logo.svg/1200px-2019_Disney_Channel_logo.svg.png" group-title="Kids",Disnep
+http://208.86.19.13:81/14.stream/index.m3u8
+#EXTINF:-1 tvg-id="po.go" tvg-logo="https://customercarecontacts.com/wp-content/uploads/2021/07/pogo-tv-logo.jpg" group-title="Kids",POGO
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=Pogo_Hindi"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=Pogo_Hindi&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="nick.toons" tvg-logo="https://static.wikia.nocookie.net/nickelodeon/images/9/95/NicktoonsTV.jpg" group-title="Kids",Nicktoons
+http://208.86.19.13:81/15.stream/index.m3u8
+#EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-5f170d60b898490041b49359" tvg-logo="https://provider-static.plex.tv/epg/images/ott_channels/logos/tg-toon-goggles-us.png" group-title="Kids",Toon Goggles
+https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=59&live=1&app_bundle=com.plexapp.android&did=62274240-07e7-5d94-8dc8-ef68cf19e175&app_domain=app.plex.tv&app_name=plex&h=&w=&content_title=z3f5nc3-fSds7ziZgkPX&content_series=5f170d60b898490041b49359&custom4=plex&gdpr=0&device_make=&device_model=&coppa=1&us_privacy=1---&custom_6=z3f5nc3-fSds7ziZgkPX&custom_7=5f170d60b898490041b49359&is_lat=0
+#EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-62ab5aabbb869dd0df6a3487" tvg-logo="https://provider-static.plex.tv/epg/cms/production/5fd3720e-6bb2-44ae-9345-65999a1afbf8/-_B_Channel_logo_1500x1000_RED.png" group-title="Infotainment",TED
+https://epg.provider.plex.tv/library/parts/5e20b730f2f8d5003d739db7-62ab5aabbb869dd0df6a3487.m3u8?X-Plex-Client-Identifier=4f10a11d0159055e-com-plexapp-android&X-Plex-Client-Platform=Android&X-Plex-Token=z3f5nc3-fSds7ziZgkPX
+#EXTINF:-1 tvg-id="NASATV.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/NASA_TV.svg/512px-NASA_TV.svg.png" group-title="Infotainment",NASA TV
+https://uplynkcontent.sinclairstoryline.com/channel/ddd76fdc1c0a456ba537e4f48e827d3e.m3u8
+#EXTINF:-1 tvg-id="821" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Sony_BBC_Earth.png/150px-Sony_BBC_Earth.png" group-title="Infotainment",Sony BBC Earth
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=Sony_BBC_Earth_HD_English"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=Sony_BBC_Earth_HD_English&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="566" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/00/98/INBC1500001SN_20220525T002411.png" group-title="Infotainment",Animal Planet
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-animalplanetin-samsungin/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=0
+#EXTINF:-1 tvg-id="567"  tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/05/65/INBC1500002TR_20220427T054732.png" group-title="Infotainment",Animal Planet HD
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-animalplanthdin-samsungin/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=0
+#EXTINF:-1 tvg-id="568"  tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/02/46/INBC1500011RN_20220427T054744.png" group-title="Infotainment",Discovery Science
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-discoverysciin-samsungin/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=0
+#EXTINF:-1 tvg-id="242"  tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/01/31/INBB280000836_20220525T002355.png" group-title="Infotainment",Discovery HD
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-discoveryhdin-samsungin/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=0
+#EXTINF:-1 tvg-id="nat.geo" tvg-logo="https://www.ifia.com/wp-content/uploads/2020/05/seo.ngsversion.1565614141405-768x403.jpg" group-title="Infotainment",National Geographic
+https://admdn2.cdn.mangomolo.com/nagtv/smil:nagtv.stream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="nat.geowild" tvg-logo="https://www.ifia.com/wp-content/uploads/2020/05/seo.ngsversion.1565614141405-768x403.jpg" group-title="Infotainment",Nat Geo Wild
+https://ntv.onrender.com/NatGeoWild
+#EXTINF:-1 tvg-id="1471" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/67/History_tv18_hd.png" group-title="Infotainment",History TV18
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=History_18_Hindi"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=History_18_Hindi&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="fox.sports" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/2022_FIFA_World_Cup.svg/1200px-2022_FIFA_World_Cup.svg.png" group-title="Sports",Fox Sports
+#EXTVLCOPT:http-referrer="https://techclips.net/"
+https://cdn3.reels2watch.com/hls/s1.m3u8
+#EXTINF:-1 tvg-id="es.pn" tvg-logo="hhttps://a1.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fespn_logos%2Fespn_red.png" group-title="Sports",ESPN
+#EXTVLCOPT:http-referrer="https://streamservicehd.click/wiki.php"
+https://webudi.openhd.lol/wiki/wiki26c/index.m3u8
+#EXTINF:-1 tvg-id="bein.sports" tvg-logo="https://assets.beinsports.com/beIN_SPORTS.png" group-title="Sports",Bein Sports
+#EXTVLCOPT:http-referrer="https://streamservicehd.click/"
+https://webudi.openhd.lol/ddyx2/premium298/index.m3u8
+#EXTINF:-1 tvg-id="startsports.one" tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/49/Star_Sports_India_logo1.png" group-title="Sports",Star Sports
+#EXTVLCOPT:http-referrer="https://123ecast.me/"
+https://ntv.onrender.com/star1in
+#EXTINF:-1 tvg-id="892" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Sony_Sports_Network.png/220px-Sony_Sports_Network.png" group-title="Sports",Sony Sports
+#EXTVLCOPT:http-referrer="https://tvstream.fun/jtv/play.php?c=Ten3_HD"
+https://tvstream.fun/jtv/jio_fifa_wc_qatar.php?c=Ten3_HD&q=1200&e=.m3u8
+#EXTINF:-1 tvg-id="RedBullTV.at" tvg-logo="https://i.imgur.com/7NeBmWX.jpg" group-title="Sports",Red Bull TV
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
+#EXTINF:-1 tvg-id="BloombergTVAsiaPacific.hk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3b/Bloomberg_Television_2016.png" group-title="International",Bloomberg TV Asia
+https://bloomberg.com/media-manifest/streams/asia.m3u8
+#EXTINF:-1 tvg-id="france.24" tvg-logo="https://static.france24.com/meta_og_twcards/jsonld_publisher.png" group-title="International",FRANCE 24 English
+https://ntv.onrender.com/FRANCE24English
+#EXTINF:-1 tvg-id="sky.news" tvg-logo="https://static.wikia.nocookie.net/youtube/images/a/a6/Sky_News.jpg" group-title="International",Sky News
+https://ntv.onrender.com/SkyNews
+#EXTINF:-1 tvg-id="255" tvg-logo="https://cdn.ndtv.com/common/images/ogndtv.png" group-title="International",NDTV
+https://ntv.onrender.com/NDTV
+#EXTINF:-1 tvg-id="ari.rang" tvg-logo="https://i.imgur.com/bDbObLR.png" group-title="International",Arirang
+http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
