@@ -717,7 +717,7 @@ if(window.getComputedStyle(document.getElementById('mug')).display=="block"){
 document.querySelectorAll('ul.bars li').forEach(el => el.style.visibility = 'visible')
 }
 	}
-    if(event.data==0){
+    else if(event.data==0){
 	document.getElementById('mug').src="assets/paused.png";
 try{
 	document.getElementById('mum').src="assets/paused.png";
@@ -726,6 +726,9 @@ if(window.getComputedStyle(document.getElementById('mug')).display=="block"){
 document.querySelectorAll('ul.bars li').forEach(el => el.style.visibility = 'hidden')	
 	document.querySelector('.btn-onoff span').style.display='block';
 }
+	}
+	else {
+	window.document.title=event.data
 	}	
 });
 window.addEventListener("load", () => {
