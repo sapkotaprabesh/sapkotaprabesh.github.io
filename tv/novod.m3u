@@ -29,7 +29,7 @@ https://ntv.onrender.com/ntv-plus
 http://hakutv.mooo.com:4200/live/hakuTV/hakuTV/4331.m3u8
 #EXTINF:-1 tvg-id="291" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/SET_India_logo.svg/1200px-SET_India_logo.svg.png" group-title="Entertainment",Sony
 #EXTVLCOPT:http-referrer="https://tvstream.fun"
-https://tvstream.fun/jtv/jio_world_tv.php?c=Sony_HD&q=1200&e=.m3u8
+https://ntv.onrender.com/Sony_HD
 #EXTINF:-1 tvg-id="154" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sony_SAB.svg/1200px-Sony_SAB.svg.png" group-title="Entertainment",Sony Sab
 https://ntv.onrender.com/Sony_SAB
 #EXTINF:-1 tvg-id="474" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Sony_Pal_new.png/220px-Sony_Pal_new.png" group-title="Entertainment",Sony Pal
