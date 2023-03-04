@@ -119,8 +119,9 @@ https://ntv.onrender.com/Nickelodeon
 http://ntv.onrender.com/cartoonnetworkasia
 #EXTINF:-1 tvg-id="815" tvg-logo="https://upload.wikimedia.org/wikipedia/en/2/2b/Nickelodeon_Sonic_logo.png" group-title="Kids",Sonic
 http://ntv.onrender.com/sonic_Hindi
-#EXTINF:-1 tvg-id="disnep.xd" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Disney_XD_-_2015.svg/1200px-Disney_XD_-_2015.svg.png" group-title="Kids",Disnep XD
-http://208.86.19.13:81/10.stream/index.m3u8
+#EXTINF:-1 tvg-id="disnep.xd" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Disney_XD_-_2015.svg/1200px-Disney_XD_-_2015.svg.png" group-title="Kids",Disney XD
+#EXTHTTP:{"Referer":"https://tv247.us","Origin":"https://tv247.us"}
+https://cdn.espnfree.xyz/channel/disneyxd.m3u8
 #EXTINF:-1 tvg-id="disnep.channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/2019_Disney_Channel_logo.svg/1200px-2019_Disney_Channel_logo.svg.png" group-title="Kids",Disnep
 http://208.86.19.13:81/14.stream/index.m3u8
 #EXTINF:-1 tvg-id="po.go" tvg-logo="https://customercarecontacts.com/wp-content/uploads/2021/07/pogo-tv-logo.jpg" group-title="Kids",POGO
