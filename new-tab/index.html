@@ -727,7 +727,7 @@ document.querySelectorAll('ul.bars li').forEach(el => el.style.visibility = 'hid
 	document.querySelector('.btn-onoff span').style.display='block';
 }
 	}
-	else {
+	else if(event.data.includes(' - ')){
 	window.document.title=event.data
 	}	
 });
