@@ -41,7 +41,7 @@ https://ntv.onrender.com/Star_Plus_HD
 #EXTINF:-1 tvg-id="248" tvg-logo="https://www.maryville.edu/wp-content/uploads/2017/08/mtv-logo.png" group-title="Entertainment",MTV
 https://ntv.onrender.com/MTV
 #EXTINF:-1 tvg-id="479"  tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/02/05/INBC1500004JR_20220427T054807.png" group-title="Entertainment",TLC
-https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-tlchdin-samsungin/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=0
+https://discoveryplus.roshantv.workers.dev/streams/97.m3u8
 #EXTINF:-1 tvg-id="INBA51000038B" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/02/40/INBA51000038B_20220427T054758.png" group-title="Entertainment",Fashion TV
 https://aa1ce778ea0544e4aa7429bc8a16eb1c.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/Samsung-in_FashionTV/playlist.m3u8?ads.wurl_channel=902&ads.wurl_name=FashionTV&ads.coppa=0&ads.psid=%7BPSID%7D&ads.targetopt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D
 #EXTINF:-1 tvg-id="people.awesome" tvg-logo="https://d3k81ch9hvuctc.cloudfront.net/company/HvKcVr/images/82aae7fa-ddf6-4297-a5ed-1486c8a23b89.png" group-title="Entertainment",People are Awesome
@@ -69,7 +69,7 @@ http://208.86.19.13:81/34.stream/index.m3u8
 #EXTINF:-1 tvg-id="and.flix" tvg-logo="https://indeltv.com/wp-content/uploads/2019/01/flix.png" group-title="Movies",&flix HD
 https://ntv.onrender.com/0-9-channel_2105335046
 #EXTINF:-1 tvg-id="cine.max" tvg-logo="https://ustvgo.tv/wp-content/uploads/2020/04/cinemax.jpg" group-title="Movies",Cinemax
-http://ttv.bz:80/manolopc1/7U49kuozK8/1067
+http://live.vthanhtivi.pw/cinemax
 #EXTINF:-1 tvg-id="hb.o" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/1200px-HBO_logo.svg.png" group-title="Movies",HBO
 #EXTVLCOPT:http-referrer="https://tv247.us/"
 https://live.tv247us.com/tv247/hbo.m3u8
@@ -78,7 +78,7 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/olympusat-topcine-plex/playlist.m3u8?u
 #EXTINF:-1 tvg-id="762" tvg-logo="https://upload.wikimedia.org/wikipedia/en/5/5f/Sony_PIX.png" group-title="Movies",Sony Pix
 https://ntv.onrender.com/Sony_Pix_HD
 #EXTINF:-1 tvg-id="star.movieshd" tvg-logo="https://www.adgully.com/img/800/202003/star-movies-select-hd.png.jpg" group-title="Movies",Star Movies Select HD
-http://223.29.231.66:8000/play/a01o/index.m3u8
+https://ntv.onrender.com/STAR_MOVIES_SELECT_HD
 #EXTINF:-1 tvg-id="587" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/INBC28000122W_20220928T010039.png" group-title="Music",9X Music
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01281-9xmediapvtltd-9xmusic-samsungin/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=0
 #EXTINF:-1 tvg-id="440" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/INBC2800013L6_20220928T010036.png" group-title="Music",9X Jalwa
@@ -98,11 +98,11 @@ https://epg.provider.plex.tv/library/parts/5e20b730f2f8d5003d739db7-62f13eeded05
 #EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-61aa9f50784a2161d3caf7fb" tvg-logo="https://provider-static.plex.tv/epg/cms/staging/081b8bca-9f8e-44a6-8173-c49e124bb7d2/stingray-everything-80s_logo_dark.png" group-title="Music",Everything ‘80s 
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=1387&livestream=1&live=1&app_bundle=com.plexapp.android&did=62274240-07e7-5d94-8dc8-ef68cf19e175&app_domain=app.plex.tv&app_name=plex&h=&w=&custom4=plex&gdpr=0&device_make=&device_model=&coppa=1&us_privacy=1---&custom_6=GsaL4HnQmtRsNmJUV1Wh&custom_7=61aa9f50784a2161d3caf7fb&is_lat=0
 #EXTINF:-1 tvg-id="INBC15000054I" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/INBC15000054I_20220824T102019.png" group-title="Kids",Discovery Kids
-https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-discoverykids-samsungin/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=1
+https://discoveryplus.roshantv.workers.dev/streams/113.m3u8
 #EXTINF:-1 tvg-id="872" tvg-logo="https://yt3.ggpht.com/ytc/AMLnZu9xAMLXtV4KxKaR1cg-4YoYdJGBlMgVXPv8JsxsVA=s900-c-k-c0x00ffffff-no-rj" group-title="Kids",Sony Yay
 https://ntv.onrender.com/Sony_Yay_Hindi
 #EXTINF:-1 tvg-id="AnimaxAsia.sg" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/65/Animaxlogo-20160701.png" group-title="Kids", Animax Asia
-http://redlabmcdn.s.llnwi.net/nv02/bs14hd/playlist.m3u8
+https://code.vthanhtivi.pw/getlink/jptvvn/37/playlist.m3u8
 #EXTINF:-1 tvg-id="AniplusAsia.sg" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Aniplus_Asia_Logo.png/512px-Aniplus_Asia_Logo.png" group-title="Kids",Aniplus
 http://210.210.155.37/dr9445/h/h02/index.m3u8
 #EXTINF:-1 tvg-id="adult.kids" tvg-logo="https://static.wikia.nocookie.net/cnas/images/8/89/Adult_Swim_Junior.png" group-title="Kids",Adult Swim Kids
@@ -120,14 +120,13 @@ http://ntv.onrender.com/cartoonnetworkasia
 #EXTINF:-1 tvg-id="815" tvg-logo="https://upload.wikimedia.org/wikipedia/en/2/2b/Nickelodeon_Sonic_logo.png" group-title="Kids",Sonic
 http://ntv.onrender.com/sonic_Hindi
 #EXTINF:-1 tvg-id="disnep.xd" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Disney_XD_-_2015.svg/1200px-Disney_XD_-_2015.svg.png" group-title="Kids",Disney XD
-#EXTHTTP:{"Referer":"https://tv247.us","Origin":"https://tv247.us"}
-https://cdn.espnfree.xyz/channel/disneyxd.m3u8
+http://ntv.onrender.com/disney_xd
 #EXTINF:-1 tvg-id="disnep.channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/2019_Disney_Channel_logo.svg/1200px-2019_Disney_Channel_logo.svg.png" group-title="Kids",Disnep
-http://208.86.19.13:81/14.stream/index.m3u8
+http://ntv.onrender.com/disnep
 #EXTINF:-1 tvg-id="po.go" tvg-logo="https://customercarecontacts.com/wp-content/uploads/2021/07/pogo-tv-logo.jpg" group-title="Kids",POGO
 http://ntv.onrender.com/Pogo_Hindi
 #EXTINF:-1 tvg-id="nick.toons" tvg-logo="https://static.wikia.nocookie.net/nickelodeon/images/9/95/NicktoonsTV.jpg" group-title="Kids",Nicktoons
-http://208.86.19.13:81/15.stream/index.m3u8
+http://ntv.onrender.com/nicktoons
 #EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-5f170d60b898490041b49359" tvg-logo="https://provider-static.plex.tv/epg/images/ott_channels/logos/tg-toon-goggles-us.png" group-title="Kids",Toon Goggles
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=59&live=1&app_bundle=com.plexapp.android&did=62274240-07e7-5d94-8dc8-ef68cf19e175&app_domain=app.plex.tv&app_name=plex&h=&w=&content_title=z3f5nc3-fSds7ziZgkPX&content_series=5f170d60b898490041b49359&custom4=plex&gdpr=0&device_make=&device_model=&coppa=1&us_privacy=1---&custom_6=z3f5nc3-fSds7ziZgkPX&custom_7=5f170d60b898490041b49359&is_lat=0
 #EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-62ab5aabbb869dd0df6a3487" tvg-logo="https://provider-static.plex.tv/epg/cms/production/5fd3720e-6bb2-44ae-9345-65999a1afbf8/-_B_Channel_logo_1500x1000_RED.png" group-title="Infotainment",TED
@@ -136,14 +135,12 @@ https://epg.provider.plex.tv/library/parts/5e20b730f2f8d5003d739db7-62ab5aabbb86
 https://uplynkcontent.sinclairstoryline.com/channel/ddd76fdc1c0a456ba537e4f48e827d3e.m3u8
 #EXTINF:-1 tvg-id="821" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Sony_BBC_Earth.png/150px-Sony_BBC_Earth.png" group-title="Infotainment",Sony BBC Earth
 https://ntv.onrender.com/Sony_BBC_Earth
-#EXTINF:-1 tvg-id="566" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/00/98/INBC1500001SN_20220525T002411.png" group-title="Infotainment",Animal Planet
-https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-animalplanetin-samsungin/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=0
-#EXTINF:-1 tvg-id="567"  tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/05/65/INBC1500002TR_20220427T054732.png" group-title="Infotainment",Animal Planet HD
-https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-animalplanthdin-samsungin/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=0
+#EXTINF:-1 tvg-id="566" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/00/98/INBC1500001SN_20220525T002411.png" group-title="Infotainment",Animal Planet HD
+https://discoveryplus.roshantv.workers.dev/streams/99.m3u8
 #EXTINF:-1 tvg-id="568"  tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/02/46/INBC1500011RN_20220427T054744.png" group-title="Infotainment",Discovery Science
-https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-discoverysciin-samsungin/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=0
+https://discoveryplus.roshantv.workers.dev/streams/96.m3u8
 #EXTINF:-1 tvg-id="242"  tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/01/31/INBB280000836_20220525T002355.png" group-title="Infotainment",Discovery HD
-https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-discoveryhdin-samsungin/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=0
+https://discoveryplus.roshantv.workers.dev/streams/95.m3u8
 #EXTINF:-1 tvg-id="nat.geo" tvg-logo="https://www.ifia.com/wp-content/uploads/2020/05/seo.ngsversion.1565614141405-768x403.jpg" group-title="Infotainment",National Geographic
 https://admdn2.cdn.mangomolo.com/nagtv/smil:nagtv.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="nat.geowild" tvg-logo="https://www.ifia.com/wp-content/uploads/2020/05/seo.ngsversion.1565614141405-768x403.jpg" group-title="Infotainment",Nat Geo Wild
@@ -151,12 +148,11 @@ https://ntv.onrender.com/NatGeoWild
 #EXTINF:-1 tvg-id="1471" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/67/History_tv18_hd.png" group-title="Infotainment",History TV18
 http://ntv.onrender.com/History_HD
 #EXTINF:-1 tvg-id="fox.sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/1280px-FOX_Sports_logo.svg.png" group-title="Sports",Fox Sports
-http://143.244.60.30/Fox_Sports_1/index.m3u8
+http://ntv.onrender.com/fox_sports
 #EXTINF:-1 tvg-id="bein.sports" tvg-logo="https://assets.beinsports.com/beIN_SPORTS.png" group-title="Sports",Bein Sports
-#EXTVLCOPT:http-referrer="https://eplayer.click/"
-https://ddyx2.onlinewebtv.lol/ddyx2/premium91/playlist.m3u8
+http://ntv.onrender.com/bein_sports
 #EXTINF:-1 tvg-id="euro.sports" tvg-logo="https://dnl.eurosport.com/sd/img/structured-data-logo.jpg" group-title="Sports",Euro Sports
-https://ntv.onrender.com/eurosports
+https://discoveryplus.roshantv.workers.dev/streams/106.m3u8
 #EXTINF:-1 tvg-id="startsports.one" tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/49/Star_Sports_India_logo1.png" group-title="Sports",Star Sports
 https://ntv.onrender.com/star1in
 #EXTINF:-1 tvg-id="892" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Sony_Sports_Network.png/220px-Sony_Sports_Network.png" group-title="Sports",Sony Sports
