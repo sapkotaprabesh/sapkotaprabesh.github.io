@@ -33,7 +33,7 @@ https://ntv.onrender.com/Sony_HD
 #EXTINF:-1 tvg-id="154" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sony_SAB.svg/1200px-Sony_SAB.svg.png" group-title="Entertainment",Sony Sab
 https://ntv.onrender.com/Sony_SAB
 #EXTINF:-1 tvg-id="474" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Sony_Pal_new.png/220px-Sony_Pal_new.png" group-title="Entertainment",Sony Pal
-https://ntv.onrender.com/Sony_Pal
+http://line.crystal-ott.com:80/7pC93vdZVUZNHSa/qatAMSo3g7/3137
 #EXTINF:-1 tvg-id="144" tvg-logo="https://pbs.twimg.com/profile_images/1230017608851869697/kk8ds8H__400x400.jpg" group-title="Entertainment",Colors
 https://ntv.onrender.com/Colors_HD
 #EXTINF:-1 tvg-id="StarPlusHD.in" tvg-logo="https://i.imgur.com/WbvMMOR.png" group-title="Entertainment",Star Plus HD
@@ -80,11 +80,11 @@ https://ntv.onrender.com/Sony_Pix_HD
 #EXTINF:-1 tvg-id="star.movieshd" tvg-logo="https://www.adgully.com/img/800/202003/star-movies-select-hd.png.jpg" group-title="Movies",Star Movies Select HD
 https://ntv.onrender.com/STAR_MOVIES_SELECT_HD
 #EXTINF:-1 tvg-id="587" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/INBC28000122W_20220928T010039.png" group-title="Music",9X Music
-https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01281-9xmediapvtltd-9xmusic-samsungin/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=0
+http://line.crystal-ott.com:80/7pC93vdZVUZNHSa/qatAMSo3g7/2985
 #EXTINF:-1 tvg-id="440" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/INBC2800013L6_20220928T010036.png" group-title="Music",9X Jalwa
-https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01281-9xmediapvtltd-9xjalwa-samsungin/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=0
+http://line.crystal-ott.com:80/7pC93vdZVUZNHSa/qatAMSo3g7/3131
 #EXTINF:-1 tvg-id="441" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/INBC28000144H_20220928T010037.png" group-title="Music",9X Jhakaas
-https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01281-9xmediapvtltd-9xjhakaas-samsungin/playlist.m3u8?ads.did=%7BPSID%7D&ads.dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.coppa=0
+http://line.crystal-ott.com:80/7pC93vdZVUZNHSa/qatAMSo3g7/2799
 #EXTINF:-1 tvg-id="585" tvg-logo="https://i.ibb.co/ZKw3gpg/zing-removebg-preview.png" group-title="Music",Zing
 https://ntv.onrender.com/0-9-zing
 #EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-62ee74af52f7d73061eec491" tvg-logo="https://provider-static.plex.tv/epg/cms/production/be885265-dcca-4550-9ee9-f38aa2d7e49d/Stingray-Euro-Hits_logo_darkrdxwhite.png" group-title="Music",Euro Hits
@@ -134,7 +134,7 @@ https://epg.provider.plex.tv/library/parts/5e20b730f2f8d5003d739db7-62ab5aabbb86
 #EXTINF:-1 tvg-id="NASATV.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/NASA_TV.svg/512px-NASA_TV.svg.png" group-title="Infotainment",NASA TV
 https://uplynkcontent.sinclairstoryline.com/channel/ddd76fdc1c0a456ba537e4f48e827d3e.m3u8
 #EXTINF:-1 tvg-id="821" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Sony_BBC_Earth.png/150px-Sony_BBC_Earth.png" group-title="Infotainment",Sony BBC Earth
-https://ntv.onrender.com/Sony_BBC_Earth
+http://line.crystal-ott.com:80/7pC93vdZVUZNHSa/qatAMSo3g7/3139
 #EXTINF:-1 tvg-id="566" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/00/98/INBC1500001SN_20220525T002411.png" group-title="Infotainment",Animal Planet HD
 https://discoveryplus.roshantv.workers.dev/streams/99.m3u8
 #EXTINF:-1 tvg-id="568"  tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/02/46/INBC1500011RN_20220427T054744.png" group-title="Infotainment",Discovery Science
