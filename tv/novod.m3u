@@ -28,12 +28,11 @@ https://ntv.onrender.com/ntv-plus
 #EXTINF:-1 tvg-id="HakuTV.np" tvg-logo="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/69/74/1b/69741b8f-ac58-6682-ff9f-e05622433fd9/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.webp" group-title="Nepali",Haku TV
 http://hakutv.mooo.com:4200/live/hakuTV/hakuTV/4331.m3u8
 #EXTINF:-1 tvg-id="291" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/SET_India_logo.svg/1200px-SET_India_logo.svg.png" group-title="Entertainment",Sony
-#EXTVLCOPT:http-referrer="https://tvstream.fun"
-https://ntv.onrender.com/Sony_HD
+https://dai.google.com/linear/hls/event/dBdwOiGaQvy0TA1zOsjV6w/master.m3u8
 #EXTINF:-1 tvg-id="154" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sony_SAB.svg/1200px-Sony_SAB.svg.png" group-title="Entertainment",Sony Sab
-https://ntv.onrender.com/Sony_SAB
+https://dai.google.com/linear/hls/event/CrTivkDESWqwvUj3zFEYEA/master.m3u8
 #EXTINF:-1 tvg-id="474" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Sony_Pal_new.png/220px-Sony_Pal_new.png" group-title="Entertainment",Sony Pal
-http://line.crystal-ott.com:80/7pC93vdZVUZNHSa/qatAMSo3g7/3137
+https://dai.google.com/linear/hls/event/dhPrGRwDRvuMQtmlzppzQQ/master.m3u8
 #EXTINF:-1 tvg-id="144" tvg-logo="https://pbs.twimg.com/profile_images/1230017608851869697/kk8ds8H__400x400.jpg" group-title="Entertainment",Colors
 https://ntv.onrender.com/Colors_HD
 #EXTINF:-1 tvg-id="StarPlusHD.in" tvg-logo="https://i.imgur.com/WbvMMOR.png" group-title="Entertainment",Star Plus HD
@@ -55,7 +54,7 @@ http://144.217.70.181:9587/hin2/STARGOLDUK/tracks-v1a1/mono.m3u8?token=test
 #EXTINF:-1 tvg-id="star.goldslct" tvg-logo="https://www.exchange4media.com/news-photo/1520595397_Bt65eH_logo-white.jpg" group-title="Movies",Star Gold Select
 https://ntv.onrender.com/star_gold_select
 #EXTINF:-1 tvg-id="289"  tvg-logo="https://dsnnepal.com/wp-content/uploads/2020/08/Sony_Max_HD.png" group-title="Movies",Sony Max
-https://ntv.onrender.com/Sony_Max_HD
+https://dai.google.com/linear/hls/event/UcjHNJmCQ1WRlGKlZm73QA/master.m3u8
 #EXTINF:-1 tvg-id="484" tvg-logo="https://image.airtel.tv/MWTV/MWTV_LIVETVCHANNEL_580/PORTRAIT/sjM1MbFR.png" group-title="Movies",Zee Cinema
 https://ntv.onrender.com/0-9-zeecinemahd
 #EXTINF:-1 tvg-id="185" tvg-logo="https://www.tvchannelpricelist.com/wp-content/uploads/channels-logo-300/and-pictures-hd-logo-300x300.jpg" group-title="Movies",&pictures
@@ -76,15 +75,15 @@ https://live.tv247us.com/tv247/hbo.m3u8
 #EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-60240f58676235002df19f4b" tvg-logo="https://provider-static.plex.tv/epg/images/ott_channels/logos/topcine_logo_dark_v3.png" group-title="Movies",Top Cine
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/olympusat-topcine-plex/playlist.m3u8?us_privacy=1---&did=62274240-07e7-5d94-8dc8-ef68cf19e175&dnt=0&X-Plex-Token=z3f5nc3-fSds7ziZgkPX&channelId=60240f58676235002df19f4b&device_id_type=&ifa_type=ppid&url=app.plex.tv&app_name=plex&app_bundle=com.plexapp.android&app_store_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.plexapp.android&gdpr=0&gdpr_consent=0&coppa=0&ua=okhttp%2F4.9.0&ip=185.236.200.172&brand_name=&device_model=&device_type=handset&w=&h=&partner_id=S9DEAD1S1E6
 #EXTINF:-1 tvg-id="762" tvg-logo="https://upload.wikimedia.org/wikipedia/en/5/5f/Sony_PIX.png" group-title="Movies",Sony Pix
-https://ntv.onrender.com/Sony_Pix_HD
+https://dai.google.com/linear/hls/event/x7rXWd2ERZ2tvyQWPmO1HA/master.m3u8
 #EXTINF:-1 tvg-id="star.movieshd" tvg-logo="https://www.adgully.com/img/800/202003/star-movies-select-hd.png.jpg" group-title="Movies",Star Movies Select HD
 https://ntv.onrender.com/STAR_MOVIES_SELECT_HD
 #EXTINF:-1 tvg-id="587" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/INBC28000122W_20220928T010039.png" group-title="Music",9X Music
-http://line.crystal-ott.com:80/7pC93vdZVUZNHSa/qatAMSo3g7/2985
+https://ntv.onrender.com/9x.music
 #EXTINF:-1 tvg-id="440" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/INBC2800013L6_20220928T010036.png" group-title="Music",9X Jalwa
-http://line.crystal-ott.com:80/7pC93vdZVUZNHSa/qatAMSo3g7/3131
+https://livectv.phando.com/8065/chunklist0.m3u8
 #EXTINF:-1 tvg-id="441" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/INBC28000144H_20220928T010037.png" group-title="Music",9X Jhakaas
-http://line.crystal-ott.com:80/7pC93vdZVUZNHSa/qatAMSo3g7/2799
+https://ntv.onrender.com/9x.jhakaas
 #EXTINF:-1 tvg-id="585" tvg-logo="https://i.ibb.co/ZKw3gpg/zing-removebg-preview.png" group-title="Music",Zing
 https://ntv.onrender.com/0-9-zing
 #EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-62ee74af52f7d73061eec491" tvg-logo="https://provider-static.plex.tv/epg/cms/production/be885265-dcca-4550-9ee9-f38aa2d7e49d/Stingray-Euro-Hits_logo_darkrdxwhite.png" group-title="Music",Euro Hits
@@ -100,7 +99,7 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=1387&livestream=1&live=1&a
 #EXTINF:-1 tvg-id="INBC15000054I" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/INBC15000054I_20220824T102019.png" group-title="Kids",Discovery Kids
 https://discoveryplus.roshantv.workers.dev/streams/113.m3u8
 #EXTINF:-1 tvg-id="872" tvg-logo="https://yt3.ggpht.com/ytc/AMLnZu9xAMLXtV4KxKaR1cg-4YoYdJGBlMgVXPv8JsxsVA=s900-c-k-c0x00ffffff-no-rj" group-title="Kids",Sony Yay
-https://ntv.onrender.com/Sony_Yay_Hindi
+https://dai.google.com/linear/hls/event/GPY7RqOrSkmKJ8z1GbVNhg/master.m3u8
 #EXTINF:-1 tvg-id="AnimaxAsia.sg" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/65/Animaxlogo-20160701.png" group-title="Kids", Animax Asia
 https://code.vthanhtivi.pw/getlink/jptvvn/37/playlist.m3u8
 #EXTINF:-1 tvg-id="AniplusAsia.sg" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Aniplus_Asia_Logo.png/512px-Aniplus_Asia_Logo.png" group-title="Kids",Aniplus
@@ -120,9 +119,9 @@ http://ntv.onrender.com/cartoonnetworkasia
 #EXTINF:-1 tvg-id="815" tvg-logo="https://upload.wikimedia.org/wikipedia/en/2/2b/Nickelodeon_Sonic_logo.png" group-title="Kids",Sonic
 http://ntv.onrender.com/sonic_Hindi
 #EXTINF:-1 tvg-id="disnep.xd" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Disney_XD_-_2015.svg/1200px-Disney_XD_-_2015.svg.png" group-title="Kids",Disney XD
-http://ntv.onrender.com/disney_xd
+https://ntv.onrender.com/disneyxd
 #EXTINF:-1 tvg-id="disnep.channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/2019_Disney_Channel_logo.svg/1200px-2019_Disney_Channel_logo.svg.png" group-title="Kids",Disnep
-http://ntv.onrender.com/disnep
+https://ntv.onrender.com/disneychannel
 #EXTINF:-1 tvg-id="po.go" tvg-logo="https://customercarecontacts.com/wp-content/uploads/2021/07/pogo-tv-logo.jpg" group-title="Kids",POGO
 http://ntv.onrender.com/Pogo_Hindi
 #EXTINF:-1 tvg-id="nick.toons" tvg-logo="https://static.wikia.nocookie.net/nickelodeon/images/9/95/NicktoonsTV.jpg" group-title="Kids",Nicktoons
@@ -134,7 +133,7 @@ https://epg.provider.plex.tv/library/parts/5e20b730f2f8d5003d739db7-62ab5aabbb86
 #EXTINF:-1 tvg-id="NASATV.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/NASA_TV.svg/512px-NASA_TV.svg.png" group-title="Infotainment",NASA TV
 https://uplynkcontent.sinclairstoryline.com/channel/ddd76fdc1c0a456ba537e4f48e827d3e.m3u8
 #EXTINF:-1 tvg-id="821" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Sony_BBC_Earth.png/150px-Sony_BBC_Earth.png" group-title="Infotainment",Sony BBC Earth
-http://line.crystal-ott.com:80/7pC93vdZVUZNHSa/qatAMSo3g7/3139
+https://dai.google.com/linear/hls/event/6bVWYIKGS0CIa-cOpZZJPQ/master.m3u8
 #EXTINF:-1 tvg-id="566" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/00/98/INBC1500001SN_20220525T002411.png" group-title="Infotainment",Animal Planet HD
 https://discoveryplus.roshantv.workers.dev/streams/99.m3u8
 #EXTINF:-1 tvg-id="568"  tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/02/46/INBC1500011RN_20220427T054744.png" group-title="Infotainment",Discovery Science
