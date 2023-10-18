@@ -1153,6 +1153,8 @@ function changeBgBody() {
 function selectSong() {
 document.getElementById('player__playlist').scrollTop=(count+1)*89;
     song = playerSongs[count];
+document.getElementById('spt').href='https://open.spotify.com/track/'+song.getAttribute('spotify');
+document.getElementById('yt').href='https://youtu.be/'+song.getAttribute('youtube');	
     for (const item of playerSongs) {
         if (item != song) {
             item.pause();
