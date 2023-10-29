@@ -2,25 +2,41 @@
 #EXTINF:-1 tvg-id="ntv.np" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/18/NTV_Nepal.png" group-title="Nepali",NTV
 https://ntv.onrender.com/ntv
 #EXTINF:-1 tvg-id="avenues.np" tvg-logo="https://res.cloudinary.com/dpqvbxdpf/image/upload/v1643280143/uploads/ProfileImage/iq15wxumdbqhrzpu3amy.png" group-title="Nepali",Avenues TV
-https://webtv-stream.nettv.com.np/ott_abr/kantipurhdabr.stream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTAvMjkvMjAyMyAxMToxNzo1OCBBTSZoYXNoX3ZhbHVlPWpTN3RSbUtSejg0RlNBR3RlRFNsaGc9PSZ2YWxpZG1pbnV0ZXM9NjAmaWQ9ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKU1V6STFOaUo5LmV5SmxlSEFpT2pFMk9UZzNOVEV3TlRNc0luTjFZbk5qY21saVpYSmZhV1FpT2lJNE1EY3lNekEySWl3aWMzUmlJam9pWjJ4Zk1UQXpOVFF3TkRZeU5UVTJNVFUwTmpJNU56Y3lMVEV3TnlKOS5jMU9hZ2tLTGNSdHZsQkR6UjhaRDJVSktKWHFXQ0VmTXJ0RlduMUJJLTZF
+https://ntv.onrender.com/ott_abr/avenuesabr
 https://ntv.onrender.com/AvenuesKhabar
 #EXTINF:-1 tvg-id="sagarmatha.np" tvg-logo="https://yt3.ggpht.com/leAOreCRVc6ptdgaUGEzEF289qu1wP7XNQYLe5pcaQr-MUf8gZfaC7iuq3_N_0pIf2-L4vRI=s900-c-k-c0x00ffffff-no-rj" group-title="Nepali",Sagarmatha TV
+https://ntv.onrender.com/ott_abr/sagarmathaabr
 https://np.truestreamz.com/broadcaster/Sagarmatha977mt.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="KantipurTV.np" tvg-logo="https://www.lyngsat.com/logo/tv/kk/kantipur-tv-np.png" group-title="Nepali",Kantipur TV
 https://ktvhdsg.ekantipur.com:8443/backup_23765291/hd/playlist.m3u8
 #EXTINF:-1 tvg-id="abc.np" tvg-logo="https://play-lh.googleusercontent.com/z3Vg4nLruJCuWL_0W-FO9dNkOiIjlEmJJHuImyK7Ws4WKee0xq30xO0YFa6hLm7b-g" group-title="Nepali",ABC News
+https://ntv.onrender.com/ott_abr/abcnewsabr
 https://np.truestreamz.com/broadcaster/ABC1008.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="news24.np" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/tv/150/150/bnw/news24-nepali-black.png" group-title="Nepali",News24 Nepal 
+https://ntv.onrender.com/ott_abr/news24abr
 https://ntv.onrender.com/news24tvchannel
+#EXTINF:-1 tvg-id="himalaya.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/47/image" group-title="Nepali",Himalaya TV 
+https://ntv.onrender.com/ott_abr/himalayahdabr
 #EXTINF:-1 tvg-id="JanataHD.np" tvg-logo="https://api.v1.jobejee.com/v2/resource/employer-logo/a59f4a241648454327468.jpg" group-title="Nepali",Janata HD
+https://ntv.onrender.com/ott_abr/jantahdabr
 https://streaming.tvnepal.com:3439/live/janatasamacharlive.m3u8
 #EXTINF:-1 tvg-id="ntvnews.np" tvg-logo="https://resources.geniustv.geniussystems.com.np//livetv/channels/43/image" group-title="Nepali",NTV News
 https://ntv.onrender.com/ntv-news
+#EXTINF:-1 tvg-id="ap1.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/42/image" group-title="Nepali",AP1 HD
+https://ntv.onrender.com/ott_abr/ap1hdabr
+#EXTINF:-1 tvg-id="galaxy.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/802/image" group-title="Nepali",Galaxy 4K
+https://ntv.onrender.com/ott_abr/galaxytvabr
 #EXTINF:-1 tvg-id="indigenous.np" tvg-logo="https://www.indigenousmediafoundation.org/uploads/project/indigenous-television.png" group-title="Nepali",Indigenous TV
 https://np.truestreamz.com/broadcaster/INDIGENOUSmob.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="tvfilmy.np" tvg-logo="https://yt3.ggpht.com/ytc/AMLnZu8PesAVXMeVS7ligP5bd6wukmxjOcfaDNHJSXMH=s900-c-k-c0x00ffffff-no-rj" group-title="Nepali",TV Filmy
+#EXTINF:-1 tvg-id="knticine.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/784/image" group-title="Nepali",Kantipur Cineplex HD
+https://ntv.onrender.com/ott_abr/kantipurcineplexabr
 https://np.truestreamz.com/broadcaster/Tvfilmy977.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="yestv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/245/image" group-title="Nepali",YES TV
+https://ntv.onrender.com/ott_abr/yestv_high
+#EXTINF:-1 tvg-id="tillotama.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/819/image" group-title="Nepali",Tilotamma HD
+https://ntv.onrender.com/ott_abr/netTillotamaTV
 #EXTINF:-1 tvg-id="krishitv.np" tvg-logo="https://www.krishitelevision.com/wp-content/themes/krishi-2022/img/default.png" group-title="Nepali",Krishi TV
+https://ntv.onrender.com/ott_abr/krishitvabr
 https://np.truestreamz.com/broadcaster/KrishiTV977.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVtoday.np" tvg-logo="https://is2-ssl.mzstatic.com/image/thumb/Purple124/v4/ae/c6/46/aec646c5-28ce-84e6-ba54-c3d80a9c0478/source/60x60bb.jpg" group-title="Nepali",TV Today
 https://nplb.truestreamz.com/broadcaster/tvtoday977reg.stream/playlist.m3u8
