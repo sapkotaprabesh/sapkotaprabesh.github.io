@@ -26,24 +26,26 @@ https://ntv.onrender.com/ntv-news
 https://ntv.onrender.com/ott_abr/ap1hdabr
 #EXTINF:-1 tvg-id="galaxy.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/802/image" group-title="Nepali",Galaxy 4K
 https://ntv.onrender.com/ott_abr/galaxytvabr
-#EXTINF:-1 tvg-id="indigenous.np" tvg-logo="https://www.indigenousmediafoundation.org/uploads/project/indigenous-television.png" group-title="Nepali",Indigenous TV
-https://np.truestreamz.com/broadcaster/INDIGENOUSmob.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="metv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/643/image" group-title="Nepali",METV HD
+https://ntv.onrender.com/ott_abr/METVHDabr
+#EXTINF:-1 tvg-id="bmhd.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/532/image" group-title="Nepali",BM HD
+https://ntv.onrender.com/iptvlive_abr/BMHDabr
 #EXTINF:-1 tvg-id="knticine.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/784/image" group-title="Nepali",Kantipur Cineplex HD
 https://ntv.onrender.com/ott_abr/kantipurcineplexabr
 https://np.truestreamz.com/broadcaster/Tvfilmy977.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="yestv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/245/image" group-title="Nepali",YES TV
-https://ntv.onrender.com/ott_abr/yestv_high
+https://ntv.onrender.com/iptvlivestream/yestv_high
 #EXTINF:-1 tvg-id="tillotama.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/819/image" group-title="Nepali",Tilotamma HD
-https://ntv.onrender.com/ott_abr/netTillotamaTV
+https://ntv.onrender.com/iptvlivestream/netTillotamaTV
 #EXTINF:-1 tvg-id="krishitv.np" tvg-logo="https://www.krishitelevision.com/wp-content/themes/krishi-2022/img/default.png" group-title="Nepali",Krishi TV
-https://ntv.onrender.com/ott_abr/krishitvabr
+https://ntv.onrender.com/iptvlive_abr/krishitvabr
 https://np.truestreamz.com/broadcaster/KrishiTV977.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVtoday.np" tvg-logo="https://is2-ssl.mzstatic.com/image/thumb/Purple124/v4/ae/c6/46/aec646c5-28ce-84e6-ba54-c3d80a9c0478/source/60x60bb.jpg" group-title="Nepali",TV Today
 https://nplb.truestreamz.com/broadcaster/tvtoday977reg.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="ntvplus.np" tvg-logo="https://resources.geniustv.geniussystems.com.np//livetv/channels/44/image" group-title="Nepali",NTV PLUS
 https://ntv.onrender.com/ntv-plus
-#EXTINF:-1 tvg-id="HakuTV.np" tvg-logo="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/69/74/1b/69741b8f-ac58-6682-ff9f-e05622433fd9/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.webp" group-title="Nepali",Haku TV
-http://hakutv.mooo.com:4200/live/hakuTV/hakuTV/4331.m3u8
+#EXTINF:-1 tvg-id="nepalnetworktv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/898/image" group-title="Nepali",Nepal Network TV
+https://ntv.onrender.com/iptvlivestream/netNepalNetwork
 #EXTINF:-1 tvg-id="291" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/SET_India_logo.svg/1200px-SET_India_logo.svg.png" group-title="Entertainment",Sony
 https://dai.google.com/linear/hls/event/dBdwOiGaQvy0TA1zOsjV6w/master.m3u8
 #EXTINF:-1 tvg-id="154" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sony_SAB.svg/1200px-Sony_SAB.svg.png" group-title="Entertainment",Sony Sab
