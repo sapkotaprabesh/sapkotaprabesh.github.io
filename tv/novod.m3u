@@ -44,6 +44,18 @@ https://np.truestreamz.com/broadcaster/KrishiTV977.stream/playlist.m3u8
 https://nplb.truestreamz.com/broadcaster/tvtoday977reg.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="ntvplus.np" tvg-logo="https://resources.geniustv.geniussystems.com.np//livetv/channels/44/image" group-title="Nepali",NTV PLUS
 https://ntv.onrender.com/ntv-plus
+#EXTINF:-1 tvg-id="" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/910/image" group-title="Nepali",Namaste TV
+https://ntv.onrender.com/iptvlivestream/national-chitwan
+#EXTINF:-1 tvg-id="" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/63/image" group-title="Nepali",Channel 4 Nepal
+https://ntv.onrender.com/iptvlivestream/netCHFOUR1500
+#EXTINF:-1 tvg-id="" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/678/image" group-title="Nepali",Indreni TV
+https://ntv.onrender.com/iptvlivestream/indrenitv
+#EXTINF:-1 tvg-id="" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/694/image" group-title="Nepali",Buddha Awaaz
+https://ntv.onrender.com/iptvlivestream/Buddhaawajtv
+#EXTINF:-1 tvg-id="" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/693/image" group-title="Nepali",National Gold
+https://ntv.onrender.com/iptvlivestream/NationalTVHD
+#EXTINF:-1 tvg-id="" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/597/image" group-title="Nepali",Gorkha TV
+https://ntv.onrender.com/iptvlivestream/GorkhaTvHD
 #EXTINF:-1 tvg-id="nepalnetworktv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/898/image" group-title="Nepali",Nepal Network TV
 https://ntv.onrender.com/iptvlivestream/netNepalNetwork
 #EXTINF:-1 tvg-id="291" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/SET_India_logo.svg/1200px-SET_India_logo.svg.png" group-title="Entertainment",Sony
