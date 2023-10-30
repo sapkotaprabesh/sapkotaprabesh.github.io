@@ -17,6 +17,8 @@ https://ntv.onrender.com/ott_abr/news24abr
 https://ntv.onrender.com/news24tvchannel
 #EXTINF:-1 tvg-id="himalaya.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/47/image" group-title="Nepali",Himalaya TV 
 https://ntv.onrender.com/ott_abr/himalayahdabr
+#EXTINF:-1 tvg-id="businessplus.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/57/image" group-title="Nepali",Business Plus HD
+https://ntv.onrender.com/ott_abr/businessplusabr
 #EXTINF:-1 tvg-id="JanataHD.np" tvg-logo="https://api.v1.jobejee.com/v2/resource/employer-logo/a59f4a241648454327468.jpg" group-title="Nepali",Janata HD
 https://ntv.onrender.com/ott_abr/jantahdabr
 https://streaming.tvnepal.com:3439/live/janatasamacharlive.m3u8
@@ -40,6 +42,10 @@ https://ntv.onrender.com/iptvlivestream/netTillotamaTV
 #EXTINF:-1 tvg-id="krishitv.np" tvg-logo="https://www.krishitelevision.com/wp-content/themes/krishi-2022/img/default.png" group-title="Nepali",Krishi TV
 https://ntv.onrender.com/iptvlive_abr/krishitvabr
 https://np.truestreamz.com/broadcaster/KrishiTV977.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="edutv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/403/image" group-title="Nepali",Education TV
+https://ntv.onrender.com/iptvlivestream/netEduTV1500
+#EXTINF:-1 tvg-id="newatv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/493/image" group-title="Nepali",Newa TV
+https://ntv.onrender.com/iptvlivestream/NewaTV
 #EXTINF:-1 tvg-id="TVtoday.np" tvg-logo="https://is2-ssl.mzstatic.com/image/thumb/Purple124/v4/ae/c6/46/aec646c5-28ce-84e6-ba54-c3d80a9c0478/source/60x60bb.jpg" group-title="Nepali",TV Today
 https://nplb.truestreamz.com/broadcaster/tvtoday977reg.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="ntvplus.np" tvg-logo="https://resources.geniustv.geniussystems.com.np//livetv/channels/44/image" group-title="Nepali",NTV PLUS
@@ -58,6 +64,8 @@ https://ntv.onrender.com/iptvlivestream/NationalTVHD
 https://ntv.onrender.com/iptvlivestream/GorkhaTvHD
 #EXTINF:-1 tvg-id="nepalnetworktv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/898/image" group-title="Nepali",Nepal Network TV
 https://ntv.onrender.com/iptvlivestream/netNepalNetwork
+#EXTINF:-1 tvg-id="deeptv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/562/image" group-title="Nepali",Deep TV
+https://ntv.onrender.com/iptvlivestream/netDeepTv
 #EXTINF:-1 tvg-id="291" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/SET_India_logo.svg/1200px-SET_India_logo.svg.png" group-title="Entertainment",Sony
 https://dai.google.com/linear/hls/event/dBdwOiGaQvy0TA1zOsjV6w/master.m3u8
 #EXTINF:-1 tvg-id="154" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sony_SAB.svg/1200px-Sony_SAB.svg.png" group-title="Entertainment",Sony Sab
