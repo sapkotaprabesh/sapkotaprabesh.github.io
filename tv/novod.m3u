@@ -156,10 +156,12 @@ https://ntv.onrender.com/0-9-zing
 # https://i.mjh.nz/Plex/5e20b730f2f8d5003d739db7-62ee74af52f7d73061eec491.m3u8
 #EXTINF:-1 tvg-id="USBD3300004RH" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBD3300004RH_20231024T231908SQUARE.png_20231024231909.png" group-title="Music" , XITE Hits
 https://i.mjh.nz/SamsungTVPlus/USBD3300004RH.m3u8
-#EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-61aa97d4113e1e5137fd5325" tvg-logo="https://provider-static.plex.tv/epg/cms/staging/73c31029-967e-496f-a175-4e49112b4da1/stingray-greatest-hits_logo_dark.png" group-title="Music",Greatest Hits
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=1385&livestream=1&live=1&app_bundle=com.plexapp.android&did=62274240-07e7-5d94-8dc8-ef68cf19e175&app_domain=app.plex.tv&app_name=plex&h=&w=&custom4=plex&gdpr=0&device_make=&device_model=&coppa=1&us_privacy=1---&custom_6=GsaL4HnQmtRsNmJUV1Wh&custom_7=61aa97d4113e1e5137fd5325&is_lat=0
+# #EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-61aa97d4113e1e5137fd5325" tvg-logo="https://provider-static.plex.tv/epg/cms/staging/73c31029-967e-496f-a175-4e49112b4da1/stingray-greatest-hits_logo_dark.png" group-title="Music",Greatest Hits
+# https://stream.ads.ottera.tv/playlist.m3u8?network_id=1385&livestream=1&live=1&app_bundle=com.plexapp.android&did=62274240-07e7-5d94-8dc8-ef68cf19e175&app_domain=app.plex.tv&app_name=plex&h=&w=&custom4=plex&gdpr=0&device_make=&device_model=&coppa=1&us_privacy=1---&custom_6=GsaL4HnQmtRsNmJUV1Wh&custom_7=61aa97d4113e1e5137fd5325&is_lat=0
 #EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-61aaa014784a2161d3caf7fd" tvg-logo="https://provider-static.plex.tv/epg/cms/staging/b3706497-4073-4dfb-bd89-a798459f0348/stingray-hit-list_logo_dark.png" group-title="Music",Hit List
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=1388&livestream=1&live=1&app_bundle=com.plexapp.android&did=62274240-07e7-5d94-8dc8-ef68cf19e175&app_domain=app.plex.tv&app_name=plex&h=&w=&custom4=plex&gdpr=0&device_make=&device_model=&coppa=1&us_privacy=1---&custom_6=GsaL4HnQmtRsNmJUV1Wh&custom_7=61aaa014784a2161d3caf7fd&is_lat=0
+#EXTINF:-1 tvg-id="USBC3600008WY" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBC3600008WY_20231024T234728SQUARE.png_20231024234729.png" group-title="Music" , Vevo Pop
+https://i.mjh.nz/SamsungTVPlus/USBC3600008WY.m3u8
 #EXTINF:-1 tvg-id="5fd7b8bf927e090007685853" tvg-logo="https://images.pluto.tv/channels/5fd7b8bf927e090007685853/colorLogoPNG.png" group-title="Music" , Vevo '80s
 https://i.mjh.nz/PlutoTV/5fd7b8bf927e090007685853-alt.m3u8
 #EXTINF:-1  tvg-id="5fd7bb1f86d94a000796e2c2" tvg-logo="https://images.pluto.tv/channels/5fd7bb1f86d94a000796e2c2/colorLogoPNG.png" group-title="Music" , Vevo '90s
