@@ -13,7 +13,7 @@ https://ktvhdsg.ekantipur.com:8443/backup_23765291/hd/playlist.m3u8
 https://ntv.onrender.com/ott_abr/abcnewsabr
 https://np.truestreamz.com/broadcaster/ABC1008.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="news24.np" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/tv/150/150/bnw/news24-nepali-black.png" group-title="Nepali",News24 Nepal 
-https://ntv.onrender.com/ott_abr/news24abr
+https://ntv.onrender.com/ott_abrs/news24abr
 https://ntv.onrender.com/news24tvchannel
 #EXTINF:-1 tvg-id="himalaya.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/47/image" group-title="Nepali",Himalaya TV 
 https://ntv.onrender.com/ott_abr/himalayahdabr
@@ -35,19 +35,35 @@ https://ntv.onrender.com/iptvlive_abr/BMHDabr
 #EXTINF:-1 tvg-id="knticine.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/784/image" group-title="Nepali",Kantipur Cineplex HD
 https://ntv.onrender.com/ott_abr/kantipurcineplexabr
 https://np.truestreamz.com/broadcaster/Tvfilmy977.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="yestv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/245/image" group-title="Nepali",YES TV
-https://ntv.onrender.com/iptvlivestream/yestv_high
 #EXTINF:-1 tvg-id="tillotama.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/819/image" group-title="Nepali",Tilotamma HD
 https://ntv.onrender.com/iptvlivestream/netTillotamaTV
 #EXTINF:-1 tvg-id="krishitv.np" tvg-logo="https://www.krishitelevision.com/wp-content/themes/krishi-2022/img/default.png" group-title="Nepali",Krishi TV
 https://ntv.onrender.com/iptvlive_abr/krishitvabr
 https://np.truestreamz.com/broadcaster/KrishiTV977.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="edutv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/403/image" group-title="Nepali",Education TV
-https://ntv.onrender.com/iptvlivestream/netEduTV1500
-#EXTINF:-1 tvg-id="newatv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/493/image" group-title="Nepali",Newa TV
-https://ntv.onrender.com/iptvlivestream/NewaTV
+# #EXTINF:-1 tvg-id="edutv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/403/image" group-title="Nepali",Education TV
+# https://ntv.onrender.com/iptvlivestream/netEduTV1500
+# #EXTINF:-1 tvg-id="newatv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/493/image" group-title="Nepali",Newa TV
+# https://ntv.onrender.com/iptvlivestream/NewaTV
+#EXTINF:-1 tvg-id="66.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/66/image" group-title="Nepali",J MUSIC HD
+https://ntv.onrender.com/iptvlive_abr/Jmusichdabr
+#EXTINF:-1 tvg-id="239.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/239/image" group-title="Nepali",Mega TV
+https://ntv.onrender.com/iptvlivestream/Megafallback
+#EXTINF:-1 tvg-id="yestv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/245/image" group-title="Nepali",YES TV
+https://ntv.onrender.com/iptvlivestream/yestv_high
 #EXTINF:-1 tvg-id="TVtoday.np" tvg-logo="https://is2-ssl.mzstatic.com/image/thumb/Purple124/v4/ae/c6/46/aec646c5-28ce-84e6-ba54-c3d80a9c0478/source/60x60bb.jpg" group-title="Nepali",TV Today
 https://nplb.truestreamz.com/broadcaster/tvtoday977reg.stream/playlist.m3u8
+# #EXTINF:-1 tvg-id="322.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/322/image" group-title="Nepali",Paryawaran Television
+# https://ntv.onrender.com/iptvlivestream/paryawarantv
+# #EXTINF:-1 tvg-id="893.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/893/image" group-title="Nepali",Saptakoshi TV
+# https://ntv.onrender.com/iptvlivestream/netSaptakoshiTv
+# #EXTINF:-1 tvg-id="904.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/904/image" group-title="Nepali",Public TV
+# https://ntv.onrender.com/iptvlivestream/netPublicTV
+# #EXTINF:-1 tvg-id="836.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/836/image" group-title="Nepali",City One HD
+# https://ntv.onrender.com/iptvlivestream/netCity1HD1500
+# #EXTINF:-1 tvg-id="430.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/430/image" group-title="Nepali",Rajya Television
+# https://ntv.onrender.com/iptvlivestream/rajya4k
+# #EXTINF:-1 tvg-id="325.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/325/image" group-title="Nepali",Fewa TV HD
+# https://ntv.onrender.com/iptvlivestream/netFewatv
 #EXTINF:-1 tvg-id="ntvplus.np" tvg-logo="https://resources.geniustv.geniussystems.com.np//livetv/channels/44/image" group-title="Nepali",NTV PLUS
 https://ntv.onrender.com/ntv-plus
 #EXTINF:-1 tvg-id="" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/910/image" group-title="Nepali",Namaste TV
@@ -208,7 +224,7 @@ http://89.254.128.5:22280/nicktoons/video.m3u8
 #EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-5f170d60b898490041b49359" tvg-logo="https://provider-static.plex.tv/epg/images/ott_channels/logos/tg-toon-goggles-us.png" group-title="Kids",Toon Goggles
 https://i.mjh.nz/SamsungTVPlus/GBBC4000017F.m3u8
 #EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-62ab5aabbb869dd0df6a3487" tvg-logo="https://provider-static.plex.tv/epg/cms/production/5fd3720e-6bb2-44ae-9345-65999a1afbf8/-_B_Channel_logo_1500x1000_RED.png" group-title="Infotainment",TED
-https://epg.provider.plex.tv/library/parts/5e20b730f2f8d5003d739db7-62ab5aabbb869dd0df6a3487.m3u8?X-Plex-Client-Identifier=xgkz9ui5tipdsflhzmh1ar3h&X-Plex-Client-Platform=Chrome&X-Plex-Token=dPzhVc8LxuxNj4XE7xFd
+https://i.mjh.nz/SamsungTVPlus/CABB2500020SS.m3u8
 #EXTINF:-1 tvg-id="NASATV.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/NASA_TV.svg/512px-NASA_TV.svg.png" group-title="Infotainment",NASA TV
 https://uplynkcontent.sinclairstoryline.com/channel/ddd76fdc1c0a456ba537e4f48e827d3e.m3u8
 #EXTINF:-1 tvg-id="821" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Sony_BBC_Earth.png/150px-Sony_BBC_Earth.png" group-title="Infotainment",Sony BBC Earth
@@ -226,14 +242,16 @@ https://ntv.onrender.com/NatGeoWild
 #EXTINF:-1 tvg-id="1471" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/67/History_tv18_hd.png" group-title="Infotainment",History TV18
 http://ntv.onrender.com/History_HD
 #EXTINF:-1 tvg-id="fox.sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/1280px-FOX_Sports_logo.svg.png" group-title="Sports",Fox Sports
-https://prod-ent-live-gm.jiocinema.com/bpk-tv/JV_SportsHD13_DIG_MOB/Fallback/index.m3u8
-http://ntv.onrender.com/fox_sports
+#EXTVLCOPT:http-referrer="https://godzlive.com/"
+https://ntv.onrender.com/time4tv.stream/usafox1
 #EXTINF:-1 tvg-id="bein.sports" tvg-logo="https://assets.beinsports.com/beIN_SPORTS.png" group-title="Sports",Bein Sports
-http://evolved.host:8080/emeliorush@yahoo.com/PVHGhdK4wx/496577
-http://ntv.onrender.com/bein_sports
+#EXTVLCOPT:http-referrer="https://godzlive.com/"
+https://ntv.onrender.com/time4tv.stream/bein1prem
 #EXTINF:-1 tvg-id="euro.sports" tvg-logo="https://dnl.eurosport.com/sd/img/structured-data-logo.jpg" group-title="Sports",Euro Sports
 https://discoveryplus.roshantv.workers.dev/streams/106.m3u8
 #EXTINF:-1 tvg-id="startsports.one" tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/49/Star_Sports_India_logo1.png" group-title="Sports",Star Sports
+#EXTVLCOPT:http-referrer="https://godzlive.com/"
+https://ntv.onrender.com/worldlivetv.stream/starhindi
 http://176.119.29.52/live.ts?channelId=293&deviceMac=00:1A:79:6E:26:8C
 https://ntv.onrender.com/star1in
 #EXTINF:-1 tvg-id="892" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Sony_Sports_Network.png/220px-Sony_Sports_Network.png" group-title="Sports",Sony Sports
