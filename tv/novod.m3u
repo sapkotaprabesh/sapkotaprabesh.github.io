@@ -260,8 +260,12 @@ https://ntv.onrender.com/thetvapp.to/HistoryEast
 https://ntv.onrender.com/time4tv.stream/usafox1
 https://ntv.onrender.com/thetvapp.to/FoxSports1
 #EXTINF:-1 tvg-id="bein.sports" tvg-logo="https://assets.beinsports.com/beIN_SPORTS.png" group-title="Sports",Bein Sports
+#EXTVLCOPT:http-referrer="https://weblivehdplay.ru/"
+https://salamus2022.webhd.ru/ddy2/premium98/playlist.m3u8
 https://176.126.83.201/stream.php?id=bein1prem&e=.m3u8
 #EXTINF:-1 tvg-id="euro.sports" tvg-logo="https://dnl.eurosport.com/sd/img/structured-data-logo.jpg" group-title="Sports",Euro Sports
+#EXTVLCOPT:http-referrer="https://weblivehdplay.ru/"
+https://salamus2022.webhd.ru/ddh2/premium41/playlist.m3u8
 https://176.126.83.201/stream.php?id=eurosp1&e=.m3u8
 https://discoveryplus.roshantv.workers.dev/streams/106.m3u8
 #EXTINF:-1 tvg-id="startsports.one" tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/49/Star_Sports_India_logo1.png" group-title="Sports",Star Sports
