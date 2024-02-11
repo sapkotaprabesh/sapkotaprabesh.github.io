@@ -1,6 +1,7 @@
 #EXTM3U x-tvg-url="https://kodi.botallen.com/tv/epg.xml"
 #EXTINF:-1 tvg-id="ntv.np" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/18/NTV_Nepal.png" group-title="Nepali",NTV
 https://ntv.onrender.com/ntv
+https://ntv.onrender.com/ott_abr/ntvnepalhdabr
 #EXTINF:-1 tvg-id="avenues.np" tvg-logo="https://res.cloudinary.com/dpqvbxdpf/image/upload/v1643280143/uploads/ProfileImage/iq15wxumdbqhrzpu3amy.png" group-title="Nepali",Avenues TV
 https://ntv.onrender.com/ott_abr/avenuesabr
 https://ntv.onrender.com/AvenuesKhabar
@@ -9,6 +10,7 @@ https://ntv.onrender.com/ott_abr/sagarmathaabr
 https://np.truestreamz.com/broadcaster/Sagarmatha977mt.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="KantipurTV.np" tvg-logo="https://www.lyngsat.com/logo/tv/kk/kantipur-tv-np.png" group-title="Nepali",Kantipur TV
 https://ktvhdsg.ekantipur.com:8443/backup_23765291/hd/playlist.m3u8
+https://ntv.onrender.com/ott_abr/kantipurhdabr
 #EXTINF:-1 tvg-id="abc.np" tvg-logo="https://play-lh.googleusercontent.com/z3Vg4nLruJCuWL_0W-FO9dNkOiIjlEmJJHuImyK7Ws4WKee0xq30xO0YFa6hLm7b-g" group-title="Nepali",ABC News
 https://ntv.onrender.com/ott_abr/abcnewsabr
 https://np.truestreamz.com/broadcaster/ABC1008.stream/playlist.m3u8
@@ -89,28 +91,24 @@ https://dai.google.com/linear/hls/event/CrTivkDESWqwvUj3zFEYEA/master.m3u8
 #EXTINF:-1 tvg-id="474" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Sony_Pal_new.png/220px-Sony_Pal_new.png" group-title="Entertainment",Sony Pal
 https://dai.google.com/linear/hls/event/dhPrGRwDRvuMQtmlzppzQQ/master.m3u8
 #EXTINF:-1 tvg-id="144" tvg-logo="https://pbs.twimg.com/profile_images/1230017608851869697/kk8ds8H__400x400.jpg" group-title="Entertainment",Colors
-https://prod-ent-live-gm.jiocinema.com/bpk-tv/Colors_HD_voot_MOB/Fallback/index.m3u8
 https://ntv.onrender.com/Colors_HD
+https://prod-ent-live-gm.jiocinema.com/bpk-tv/Colors_HD_voot_MOB/Fallback/index.m3u8
 #EXTINF:-1 tvg-id="StarPlusHD.in" tvg-logo="https://i.imgur.com/WbvMMOR.png" group-title="Entertainment",Star Plus HD
-#EXTVLCOPT:http-referrer="https://mhdtvpro.com/honey/index.m3u8/?id=280767&code=txasia1&key=8080"
-https://mhdtvpro.com/honey/index.m3u8/?id=280767&code=txasia1&key=8080
 https://ntv.onrender.com/Star_Plus_HD
 #EXTINF:-1 tvg-id="248" tvg-logo="https://www.maryville.edu/wp-content/uploads/2017/08/mtv-logo.png" group-title="Entertainment",MTV
-http://144.217.70.181:9587/hin2/MTVINDIA/tracks-v1a1/mono.m3u8?token=test
 https://ntv.onrender.com/MTV
 #EXTINF:-1 tvg-id="479"  tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/02/05/INBC1500004JR_20220427T054807.png" group-title="Entertainment",TLC
 https://discoveryplus.roshantv.workers.dev/streams/97.m3u8
 #EXTINF:-1 tvg-id="INBA51000038B" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/02/40/INBA51000038B_20220427T054758.png" group-title="Entertainment",Fashion TV
 https://aa1ce778ea0544e4aa7429bc8a16eb1c.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/Samsung-in_FashionTV/playlist.m3u8?ads.wurl_channel=902&ads.wurl_name=FashionTV&ads.coppa=0&ads.psid=%7BPSID%7D&ads.targetopt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D
+https://ntv.onrender.com/ott_abr/fashiontvabr
 #EXTINF:-1 tvg-id="people.awesome" tvg-logo="https://d3k81ch9hvuctc.cloudfront.net/company/HvKcVr/images/82aae7fa-ddf6-4297-a5ed-1486c8a23b89.png" group-title="Entertainment",People are Awesome
 https://jukin-peopleareawesome-2-in.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="1327" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Comedy_Central_2011_Logo.svg/1200px-Comedy_Central_2011_Logo.svg.png" group-title="Entertainment",Comedy Central
-https://prod-ent-live-gm.jiocinema.com/bpk-tv/Comedy_Central_HD_voot_MOB/Fallback/index.m3u8
 https://ntv.onrender.com/Comedy_Central_HD
 #EXTINF:-1 tvg-id="0-9-zeecafehd" tvg-logo="https://akamaividz.zee5.com/image/upload/resources/0-9-zeecafehd/list/1170x658withlogo325698699.png" group-title="Entertainment",Zee Café HD
-#EXTVLCOPT:http-referrer="https://entezeetv.fun/s5/stream.php?id=main__0-9-zeecafehd"
-https://entezeetv.fun/s5/stream.php?id=main__0-9-zeecafehd
 https://ntv.onrender.com/0-9-zeecafehd
+https://ntv.onrender.com/ott_abr/zeecafehdabr
 #EXTINF:-1 tvg-id="star.gold" tvg-logo="https://www.tvchannelpricelist.com/wp-content/uploads/channels-logo-300/star-gold-hd-logo-300x300.jpg" group-title="Movies",Star Gold
 http://103.12.122.22:5000/play/a05j/index.m3u8
 http://144.217.70.181:9587/hin2/STARGOLDUK/tracks-v1a1/mono.m3u8?token=test
@@ -120,14 +118,14 @@ https://ntv.onrender.com/star_gold_select
 #EXTINF:-1 tvg-id="289"  tvg-logo="https://dsnnepal.com/wp-content/uploads/2020/08/Sony_Max_HD.png" group-title="Movies",Sony Max
 https://dai.google.com/linear/hls/event/UcjHNJmCQ1WRlGKlZm73QA/master.m3u8
 #EXTINF:-1 tvg-id="484" tvg-logo="https://image.airtel.tv/MWTV/MWTV_LIVETVCHANNEL_580/PORTRAIT/sjM1MbFR.png" group-title="Movies",Zee Cinema
-https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeecinemahd/default/index.m3u8
-http://213.13.16.138/shls/LIVE$ZEE_CINEMA/index.m3u8?device=TVOS_Live&start=LIVE&end=END
 https://ntv.onrender.com/0-9-zeecinemahd
+https://ntv.onrender.com/ott_abr/zeecinemahdabr
+https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeecinemahd/default/index.m3u8
 #EXTINF:-1 tvg-id="185" tvg-logo="https://www.tvchannelpricelist.com/wp-content/uploads/channels-logo-300/and-pictures-hd-logo-300x300.jpg" group-title="Movies",&pictures
 https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Andpictureshd/default/index.m3u8
+https://ntv.onrender.com/ott_abr/andpictureshdabr
 https://ntv.onrender.com/0-9-tvpictureshd
 #EXTINF:-1 tvg-id="1477" tvg-logo="https://dsnnepal.com/wp-content/uploads/2020/08/colors-cineplex-hd.jpg" group-title="Movies",Colors Cineplex
-https://prod-ent-live-gm.jiocinema.com/bpk-tv/Colors_Cineplex_voot_MOB/Fallback/index.m3u8
 https://ntv.onrender.com/Colors_Cineplex
 #EXTINF:-1 tvg-id="415" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/dd/Zee-anmol-cinema.jpg" group-title="Movies",Zee Anmol Cinema
 #EXTVLCOPT:http-referrer="https://mhdtv.co.in/jio/stream.php?id=415&e=.m3u8"
@@ -136,8 +134,6 @@ https://ntv.onrender.com/0-9-zeeanmol
 #EXTINF:-1 tvg-id="bbc.america" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/bbcamerica.png" group-title="Movies",BBC America
 http://208.86.19.13:81/34.stream/index.m3u8
 #EXTINF:-1 tvg-id="and.flix" tvg-logo="https://indeltv.com/wp-content/uploads/2019/01/flix.png" group-title="Movies",&flix HD
-#EXTVLCOPT:http-referrer="https://entezeetv.fun/s5/stream.php?id=main__0-9-channel_2105335046"
-https://entezeetv.fun/s5/stream.php?id=main__0-9-channel_2105335046
 https://ntv.onrender.com/0-9-channel_2105335046
 #EXTINF:-1 tvg-id="cine.max" tvg-logo="https://ustvgo.tv/wp-content/uploads/2020/04/cinemax.jpg" group-title="Movies",Cinemax
 http://vthanhtivi.pw:5000/cinemax/index.m3u8
@@ -160,13 +156,11 @@ http://d2q8p4pe5spbak.cloudfront.net/bpk-tv/9XM/9XM.isml/index.m3u8
 # https://ntv.onrender.com/9x.jhakaas
 # https://d1g8wgjurz8via.cloudfront.net/bpk-tv/9Xjhakaas/default/9Xjhakaas-audio_208482_und=208000-video=877600.m3u8
 #EXTINF:-1 tvg-id="mhdtv.1020" tvg-logo="https://yt3.googleusercontent.com/ytc/APkrFKYebysSLMPmUqQyhEVyOnUsH9DN-6exAOdQApKCwg=s900-c-k-c0x00ffffff-no-rj" group-title="Music",MTV Beats
-#EXTVLCOPT:http-referrer="https://livevoot.co.in/jiovoot/stream.php?id=MTV_Beats_HD"
-https://livevoot.co.in/jiovoot/stream.php?id=MTV_Beats_HD
+https://ntv.onrender.com/MTV_Beats_HD
 #EXTINF:-1 tvg-id="585" tvg-logo="https://yt3.googleusercontent.com/ytc/APkrFKbFfhW-uqa0hJqrQ8_zlEOEM9MFgnbsDWMb08KuKQ=s900-c-k-c0x00ffffff-no-rj" group-title="Music",Zoom
-https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/zoom/master.m3u8?ads.rnd=__CACHE_BUSTER__&ads.env_i=__env.i__&ads.env_u=__env.u__&ads.name=DistroTV&ads.bundle=__APP_BUNDLE__&ads.storeurl=__STORE_URL__&ads.appCategory=__APP_CATEGORY__&ads.app_version=__APP_VERSION__&ads.width=__WIDTH__&ads.height=__HEIGHT__&ads.deviceId=__DEVICE_ID__&ads.deviceDNT=__LIMIT_AD_TRACKING__&ads.gdpr=__IS_GDPR__&ads.us_privacy=__IS_CCPA__&ads.aid=__ADVERTISING_ID__&ads.deviceMake=__DEVICE__&ads.deviceIdType=__DEVICE_ID_TYPE__&ads.deviceConnectionType=__DEVICE_CONNECTION_TYPE__&ads.client_ip=__CLIENT_IP__&ads.geo=__GEO_COUNTRY__&ads.lat=__LATITUDE__&ads.long=__LONGITUDE__&ads.dma=__GEO_DMA__&ads.geoType=__GEO_TYPE__&ads.contentid=22979&ads.content_duration=18000&ads.episode_id=58784&ads.show_id=1809&ads.showCategories=IAB1&ads.episodeCategories=IAB1&ads.genre=Entertainment&ads.showRating=TV-PG&ads.episodeRating=TV-PG&ads.language=en&ads.showtitle=Zoom&ads.episodetitle=Zoom&ads.keywords=zoom%20tv%2Ctimes%20now&ads.contenturl=__PAGEURL_ESC__&ads.paln=__PALN__&ads.tagname=dtv
+https://ntv.onrender.com/Zoom
 #EXTINF:-1 tvg-id="585" tvg-logo="https://i.ibb.co/ZKw3gpg/zing-removebg-preview.png" group-title="Music",Zing
-http://1161218186.rsc.cdn77.me/Zing/index.m3u8?token=test
-http://183.89.246.119:8881/play/a09a/index.m3u8
+https://ntv.onrender.com/ott_abr/zingabr
 https://ntv.onrender.com/0-9-zing
 # #EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-62ee74af52f7d73061eec491" tvg-logo="https://provider-static.plex.tv/epg/cms/production/be885265-dcca-4550-9ee9-f38aa2d7e49d/Stingray-Euro-Hits_logo_darkrdxwhite.png" group-title="Music",Euro Hits
 # https://i.mjh.nz/Plex/5e20b730f2f8d5003d739db7-62ee74af52f7d73061eec491.m3u8
@@ -191,7 +185,9 @@ https://discoveryplus.roshantv.workers.dev/streams/113.m3u8
 #EXTINF:-1 tvg-id="872" tvg-logo="https://yt3.ggpht.com/ytc/AMLnZu9xAMLXtV4KxKaR1cg-4YoYdJGBlMgVXPv8JsxsVA=s900-c-k-c0x00ffffff-no-rj" group-title="Kids",Sony Yay
 https://dai.google.com/linear/hls/event/GPY7RqOrSkmKJ8z1GbVNhg/master.m3u8
 #EXTINF:-1 tvg-id="AnimaxAsia.sg" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/65/Animaxlogo-20160701.png" group-title="Kids", Animax Asia
-http://vthanhtivi.pw:5000/animax/index.m3u8
+http://fpt.vthanhtivi.pw/animax/index.m3u8
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs15
+https://ntv.onrender.com/Animax
 #EXTINF:-1 tvg-id="AniplusAsia.sg" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Aniplus_Asia_Logo.png/512px-Aniplus_Asia_Logo.png" group-title="Kids",Aniplus
 https://code.vthanhtivi.pw/getlink/eazie/241430/playlist.m3u8
 #EXTINF:-1 tvg-id="adult.kids" tvg-logo="https://static.wikia.nocookie.net/cnas/images/8/89/Adult_Swim_Junior.png" group-title="Kids",Adult Swim Kids
@@ -207,9 +203,9 @@ https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f7790b3e
 https://mhdtv.co.in/jio/stream.php?id=545&e=.m3u8
 https://ntv.onrender.com/Nickelodeon
 #EXTINF:-1 tvg-id="cartoon.network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/1200px-Cartoon_Network_2010_logo.svg.png" group-title="Kids",Cartoon Network
+http://ntv.onrender.com/cartoon_network_hindi
 http://ntv.onrender.com/cartoonnetworkasia
 #EXTINF:-1 tvg-id="815" tvg-logo="https://upload.wikimedia.org/wikipedia/en/2/2b/Nickelodeon_Sonic_logo.png" group-title="Kids",Sonic
-https://prod-ent-live-gm.jiocinema.com/bpk-tv/Sonic_Nickelodeon_voot_MOB/Fallback/index.m3u8
 http://ntv.onrender.com/sonic_Hindi
 #EXTINF:-1 tvg-id="disnep.xd" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Disney_XD_-_2015.svg/1200px-Disney_XD_-_2015.svg.png" group-title="Kids",Disney XD
 https://ntv.onrender.com/disneyxd
@@ -245,15 +241,12 @@ http://ntv.onrender.com/History_HD
 #EXTVLCOPT:http-referrer="https://godzlive.com/"
 https://ntv.onrender.com/time4tv.stream/usafox1
 #EXTINF:-1 tvg-id="bein.sports" tvg-logo="https://assets.beinsports.com/beIN_SPORTS.png" group-title="Sports",Bein Sports
-#EXTVLCOPT:http-referrer="https://godzlive.com/"
-https://ntv.onrender.com/time4tv.stream/bein1prem
+https://176.126.83.201/stream.php?id=bein1prem&e=.m3u8
 #EXTINF:-1 tvg-id="euro.sports" tvg-logo="https://dnl.eurosport.com/sd/img/structured-data-logo.jpg" group-title="Sports",Euro Sports
+https://176.126.83.201/stream.php?id=eurosp1&e=.m3u8
 https://discoveryplus.roshantv.workers.dev/streams/106.m3u8
 #EXTINF:-1 tvg-id="startsports.one" tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/49/Star_Sports_India_logo1.png" group-title="Sports",Star Sports
-#EXTVLCOPT:http-referrer="https://godzlive.com/"
-https://ntv.onrender.com/worldlivetv.stream/starhindi
-http://176.119.29.52/live.ts?channelId=293&deviceMac=00:1A:79:6E:26:8C
-https://ntv.onrender.com/star1in
+https://176.126.83.201/stream.php?id=starhindi&e=.m3u8
 #EXTINF:-1 tvg-id="892" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Sony_Sports_Network.png/220px-Sony_Sports_Network.png" group-title="Sports",Sony Sports
 https://dai.google.com/linear/hls/event/wG75n5U8RrOKiFzaWObXbA/master.m3u8
 https://ntv.onrender.com/Six_HD
@@ -263,9 +256,11 @@ https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 https://bloomberg.com/media-manifest/streams/asia.m3u8
 #EXTINF:-1 tvg-id="france.24" tvg-logo="https://static.france24.com/meta_og_twcards/jsonld_publisher.png" group-title="International",FRANCE 24 English
 https://ntv.onrender.com/FRANCE24English
+https://ntv.onrender.com/ott_abr/france24abr
 #EXTINF:-1 tvg-id="sky.news" tvg-logo="https://static.wikia.nocookie.net/youtube/images/a/a6/Sky_News.jpg" group-title="International",Sky News
 https://ntv.onrender.com/SkyNews
 #EXTINF:-1 tvg-id="255" tvg-logo="https://cdn.ndtv.com/common/images/ogndtv.png" group-title="International",NDTV
 https://ntv.onrender.com/NDTV
 #EXTINF:-1 tvg-id="ari.rang" tvg-logo="https://i.imgur.com/bDbObLR.png" group-title="International",Arirang
 http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
+https://ntv.onrender.com/ott_abr/arirangabr
