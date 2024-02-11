@@ -247,8 +247,8 @@ https://discoveryplus.roshantv.workers.dev/streams/95.m3u8
 http://fpt.vthanhtivi.pw/discovery/index.m3u8
 https://ntv.onrender.com/thetvapp.to/DiscoveryChannelEast
 #EXTINF:-1 tvg-id="nat.geo" tvg-logo="https://www.ifia.com/wp-content/uploads/2020/05/seo.ngsversion.1565614141405-768x403.jpg" group-title="Infotainment",National Geographic
-https://admdn2.cdn.mangomolo.com/nagtv/smil:nagtv.stream.smil/playlist.m3u8
 https://ntv.onrender.com/thetvapp.to/NationalGeographicEast
+https://admdn2.cdn.mangomolo.com/nagtv/smil:nagtv.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="nat.geowild" tvg-logo="https://www.ifia.com/wp-content/uploads/2020/05/seo.ngsversion.1565614141405-768x403.jpg" group-title="Infotainment",Nat Geo Wild
 https://ntv.onrender.com/thetvapp.to/NationalGeographicWildEast
 https://ntv.onrender.com/NatGeoWild
