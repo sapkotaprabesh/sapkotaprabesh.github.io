@@ -97,10 +97,10 @@ https://prod-ent-live-gm.jiocinema.com/bpk-tv/Colors_HD_voot_MOB/Fallback/index.
 https://ntv.onrender.com/Star_Plus_HD
 #EXTINF:-1 tvg-id="248" tvg-logo="https://www.maryville.edu/wp-content/uploads/2017/08/mtv-logo.png" group-title="Entertainment",MTV
 https://ntv.onrender.com/MTV
-https://ntv.onrender.com/thetvapp.to/MTVEast
+https://thetvapp.cote.ws/MTVEast
 #EXTINF:-1 tvg-id="479"  tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/02/05/INBC1500004JR_20220427T054807.png" group-title="Entertainment",TLC
 https://discoveryplus.roshantv.workers.dev/streams/97.m3u8
-https://ntv.onrender.com/thetvapp.to/TLCEast
+https://thetvapp.cote.ws/TLCEast
 #EXTINF:-1 tvg-id="INBA51000038B" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/02/40/INBA51000038B_20220427T054758.png" group-title="Entertainment",Fashion TV
 https://aa1ce778ea0544e4aa7429bc8a16eb1c.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/Samsung-in_FashionTV/playlist.m3u8?ads.wurl_channel=902&ads.wurl_name=FashionTV&ads.coppa=0&ads.psid=%7BPSID%7D&ads.targetopt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D
 https://ntv.onrender.com/ott_abr/fashiontvabr
@@ -108,7 +108,7 @@ https://ntv.onrender.com/ott_abr/fashiontvabr
 https://jukin-peopleareawesome-2-in.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="1327" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Comedy_Central_2011_Logo.svg/1200px-Comedy_Central_2011_Logo.svg.png" group-title="Entertainment",Comedy Central
 https://ntv.onrender.com/Comedy_Central_HD
-https://ntv.onrender.com/thetvapp.to/ComedyCentralEast
+https://thetvapp.cote.ws/ComedyCentralEast
 #EXTINF:-1 tvg-id="0-9-zeecafehd" tvg-logo="https://akamaividz.zee5.com/image/upload/resources/0-9-zeecafehd/list/1170x658withlogo325698699.png" group-title="Entertainment",Zee Café HD
 https://ntv.onrender.com/0-9-zeecafehd
 https://ntv.onrender.com/ott_abr/zeecafehdabr
@@ -140,13 +140,13 @@ http://208.86.19.13:81/34.stream/index.m3u8
 https://ntv.onrender.com/0-9-channel_2105335046
 #EXTINF:-1 tvg-id="cine.max" tvg-logo="https://ustvgo.tv/wp-content/uploads/2020/04/cinemax.jpg" group-title="Movies",Cinemax
 http://fpt.vthanhtivi.pw/cinemax/index.m3u8
-https://ntv.onrender.com/thetvapp.to/CinemaxEast
+https://thetvapp.cote.ws/CinemaxEast
 #EXTVLCOPT:http-referrer="https://tv247.us/"
 https://live.tv247us.com/tv247/cinemaxus.m3u8
 #EXTINF:-1 tvg-id="hb.o" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/1200px-HBO_logo.svg.png" group-title="Movies",HBO
 #EXTVLCOPT:http-referrer="https://tv247.us/"
 https://live.tv247us.com/tv247/hbo.m3u8
-https://ntv.onrender.com/thetvapp.to/HBOEast
+https://thetvapp.cote.ws/HBOEast
 #EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-60240f58676235002df19f4b" tvg-logo="https://provider-static.plex.tv/epg/images/ott_channels/logos/topcine_logo_dark_v3.png" group-title="Movies",Top Cine
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/olympusat-topcine-plex/playlist.m3u8?us_privacy=1---&did=62274240-07e7-5d94-8dc8-ef68cf19e175&dnt=0&X-Plex-Token=z3f5nc3-fSds7ziZgkPX&channelId=60240f58676235002df19f4b&device_id_type=&ifa_type=ppid&url=app.plex.tv&app_name=plex&app_bundle=com.plexapp.android&app_store_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.plexapp.android&gdpr=0&gdpr_consent=0&coppa=0&ua=okhttp%2F4.9.0&ip=185.236.200.172&brand_name=&device_model=&device_type=handset&w=&h=&partner_id=S9DEAD1S1E6
 #EXTINF:-1 tvg-id="762" tvg-logo="https://upload.wikimedia.org/wikipedia/en/5/5f/Sony_PIX.png" group-title="Movies",Sony Pix
@@ -207,20 +207,20 @@ https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f7790b3e
 #EXTINF:-1 tvg-id="547" tvg-logo="https://nick-intl.mtvnimages.com/uri/mgid:file:gsp:entertainment-assets:/webplex/site/nick/intl/nickelodeon-600x600.png" group-title="Kids",Nickelodeon
 #EXTVLCOPT:http-referrer="https://mhdtv.co.in/jio/stream.php?id=545&e=.m3u8"
 https://mhdtv.co.in/jio/stream.php?id=545&e=.m3u8
-https://ntv.onrender.com/thetvapp.to/NickelodeonEast
+https://thetvapp.cote.ws/NickelodeonEast
 https://ntv.onrender.com/Nickelodeon
 #EXTINF:-1 tvg-id="cartoon.network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/1200px-Cartoon_Network_2010_logo.svg.png" group-title="Kids",Cartoon Network
 http://ntv.onrender.com/cartoon_network_hindi
 http://fpt.vthanhtivi.pw/cartoon/index.m3u8
 http://ntv.onrender.com/cartoonnetworkasia
-https://ntv.onrender.com/thetvapp.to/CartoonNetworkEast
+https://thetvapp.cote.ws/CartoonNetworkEast
 #EXTINF:-1 tvg-id="815" tvg-logo="https://upload.wikimedia.org/wikipedia/en/2/2b/Nickelodeon_Sonic_logo.png" group-title="Kids",Sonic
 http://ntv.onrender.com/sonic_Hindi
 #EXTINF:-1 tvg-id="disnep.xd" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Disney_XD_-_2015.svg/1200px-Disney_XD_-_2015.svg.png" group-title="Kids",Disney XD
-https://ntv.onrender.com/thetvapp.to/DisneyXDEast
+https://thetvapp.cote.ws/DisneyXDEast
 https://ntv.onrender.com/disneyxd
 #EXTINF:-1 tvg-id="disnep.channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/2019_Disney_Channel_logo.svg/1200px-2019_Disney_Channel_logo.svg.png" group-title="Kids",Disnep
-https://ntv.onrender.com/thetvapp.to/DisneyChannelEast
+https://thetvapp.cote.ws/DisneyChannelEast
 https://ntv.onrender.com/disneychannel
 #EXTINF:-1 tvg-id="po.go" tvg-logo="https://customercarecontacts.com/wp-content/uploads/2021/07/pogo-tv-logo.jpg" group-title="Kids",POGO
 #EXTVLCOPT:http-referrer="https://mhdtv.co.in/jio/stream.php?id=559&e=.m3u8"
@@ -228,7 +228,7 @@ https://mhdtv.co.in/jio/stream.php?id=559&e=.m3u8
 http://ntv.onrender.com/Pogo_Hindi
 #EXTINF:-1 tvg-id="nick.toons" tvg-logo="https://static.wikia.nocookie.net/nickelodeon/images/9/95/NicktoonsTV.jpg" group-title="Kids",Nicktoons
 http://89.254.128.5:22280/nicktoons/video.m3u8
-https://ntv.onrender.com/thetvapp.to/
+https://thetvapp.cote.ws/
 #EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-5f170d60b898490041b49359" tvg-logo="https://provider-static.plex.tv/epg/images/ott_channels/logos/tg-toon-goggles-us.png" group-title="Kids",Toon Goggles
 https://i.mjh.nz/SamsungTVPlus/GBBC4000017F.m3u8
 #EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-62ab5aabbb869dd0df6a3487" tvg-logo="https://provider-static.plex.tv/epg/cms/production/5fd3720e-6bb2-44ae-9345-65999a1afbf8/-_B_Channel_logo_1500x1000_RED.png" group-title="Infotainment",TED
@@ -239,26 +239,26 @@ https://uplynkcontent.sinclairstoryline.com/channel/ddd76fdc1c0a456ba537e4f48e82
 https://dai.google.com/linear/hls/event/6bVWYIKGS0CIa-cOpZZJPQ/master.m3u8
 #EXTINF:-1 tvg-id="566" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/00/98/INBC1500001SN_20220525T002411.png" group-title="Infotainment",Animal Planet HD
 https://discoveryplus.roshantv.workers.dev/streams/99.m3u8
-https://ntv.onrender.com/thetvapp.to/AnimalPlanetEast
+https://thetvapp.cote.ws/AnimalPlanetEast
 #EXTINF:-1 tvg-id="568"  tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/02/46/INBC1500011RN_20220427T054744.png" group-title="Infotainment",Discovery Science
 https://discoveryplus.roshantv.workers.dev/streams/96.m3u8
 #EXTINF:-1 tvg-id="242"  tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/01/31/INBB280000836_20220525T002355.png" group-title="Infotainment",Discovery HD
 https://discoveryplus.roshantv.workers.dev/streams/95.m3u8
 http://fpt.vthanhtivi.pw/discovery/index.m3u8
-https://ntv.onrender.com/thetvapp.to/DiscoveryChannelEast
+https://thetvapp.cote.ws/DiscoveryChannelEast
 #EXTINF:-1 tvg-id="nat.geo" tvg-logo="https://www.ifia.com/wp-content/uploads/2020/05/seo.ngsversion.1565614141405-768x403.jpg" group-title="Infotainment",National Geographic
-https://ntv.onrender.com/thetvapp.to/NationalGeographicEast
+https://thetvapp.cote.ws/NationalGeographicEast
 https://admdn2.cdn.mangomolo.com/nagtv/smil:nagtv.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="nat.geowild" tvg-logo="https://www.ifia.com/wp-content/uploads/2020/05/seo.ngsversion.1565614141405-768x403.jpg" group-title="Infotainment",Nat Geo Wild
-https://ntv.onrender.com/thetvapp.to/NationalGeographicWildEast
+https://thetvapp.cote.ws/NationalGeographicWildEast
 https://ntv.onrender.com/NatGeoWild
 #EXTINF:-1 tvg-id="1471" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/67/History_tv18_hd.png" group-title="Infotainment",History TV18
 http://ntv.onrender.com/History_HD
-https://ntv.onrender.com/thetvapp.to/HistoryEast
+https://thetvapp.cote.ws/HistoryEast
 #EXTINF:-1 tvg-id="fox.sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/1280px-FOX_Sports_logo.svg.png" group-title="Sports",Fox Sports
 #EXTVLCOPT:http-referrer="https://godzlive.com/"
 https://ntv.onrender.com/time4tv.stream/usafox1
-https://ntv.onrender.com/thetvapp.to/FoxSports1
+https://thetvapp.cote.ws/FoxSports1
 #EXTINF:-1 tvg-id="bein.sports" tvg-logo="https://assets.beinsports.com/beIN_SPORTS.png" group-title="Sports",Bein Sports
 #EXTVLCOPT:http-referrer="https://weblivehdplay.ru/"
 https://salamus2022.webhd.ru/ddy2/premium98/playlist.m3u8
@@ -277,7 +277,7 @@ https://ntv.onrender.com/Six_HD
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 #EXTINF:-1 tvg-id="BloombergTVAsiaPacific.hk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3b/Bloomberg_Television_2016.png" group-title="International",Bloomberg TV Asia
 https://bloomberg.com/media-manifest/streams/asia.m3u8
-https://ntv.onrender.com/thetvapp.to/BloombergTV
+https://thetvapp.cote.ws/BloombergTV
 #EXTINF:-1 tvg-id="france.24" tvg-logo="https://static.france24.com/meta_og_twcards/jsonld_publisher.png" group-title="International",FRANCE 24 English
 https://ntv.onrender.com/FRANCE24English
 https://ntv.onrender.com/ott_abr/france24abr
