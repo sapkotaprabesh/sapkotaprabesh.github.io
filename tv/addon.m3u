@@ -4,7 +4,7 @@
 https://live.tv247us.com/hls/hbo.m3u8
 #EXTINF:-1 tvg-logo="https://cdn.tvpassport.com/image/station/240x135/bbcamerica.png" group-title="Movies",BBC America
 http://208.86.19.13:81/34.stream/index.m3u8
-#EXTINF:-1 tvg-logo="https://ustvgo.tv/wp-content/uploads/2020/04/cinemax.jpg" group-title="Movies",Cinemax
+#EXTINF:-1 tvg-logo="https://logonoid.com/images/cinemax-logo.png" group-title="Movies",Cinemax
 http://s1.1-cup.net:2095/solucao111hgfgh77hu78/xplus1111XXhjgyu87/43
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/65/Animaxlogo-20160701.png" group-title="Kids", Animax Asia
@@ -19,9 +19,9 @@ https://vnpt.nekocdn.xyz/memfs/934473ee-a4c0-40be-bae1-5c692023c2bd.m3u8
 
 #EXTINF:-1 tvg-logo="https://logovectordl.com/wp-content/uploads/2020/08/adult-swim-logo-vector.png" group-title="Kids",Adult Swim
 http://cdn33.cc:80/patrickpimentel/topip2010/199850.ts
-#EXTINF:-1 tvg-logo="https://i.cdn.turner.com/adultswim/big/img/2014/08/22/offtheair_301.jpg",Adult Swim Off The Air
+#EXTINF:-1 tvg-logo="https://i.cdn.turner.com/adultswim/big/img/2014/08/22/offtheair_301.jpg" group-title="Kids",Adult Swim Off The Air
 https://adultswim-vodlive.cdn.turner.com/live/off-the-air/stream.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/8/83/Williams_Street.jpg",Adult Swim Williams Stream
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/8/83/Williams_Street.jpg" group-title="Kids",Adult Swim Williams Stream
 https://adultswim-vodlive.cdn.turner.com/live/williams-stream/stream_html5.m3u8
 
 #EXTINF:-1 tvg-logo="https://media.cdn.adultswim.com/uploads/20210914/219141616186-1910281358343-RAM.jpg" group-title="Kids",Rick and Morty 24/7
