@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Order - Inventory Management System</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6a1b9a;
+            --secondary: #9c27b0;
+            --light: #e1bee7;
+            --dark: #4a148c;
+            --text: #333;
+            --bg: #f5f5f5;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--primary);
+            padding: 15px 0;
+            color: white;
+            box-shadow: var(--shadow);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: var(--light);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--light);
+        }
+
+        .page-title {
+            margin: 30px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary);
+            color: var(--primary);
+        }
+
+        .purchase-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .card h3 i {
+            margin-right: 10px;
+        }
+
+        .card p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--dark);
+        }
+
+        .purchase-history {
+            margin-top: 40px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        thead {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tbody tr:hover {
+            background-color: var(--light);
+        }
+
+        .action-btn {
+            padding: 6px 12px;
+            border-radius: 4px;
+            color: white;
+            text-decoration: none;
+            margin-right: 5px;
+            font-size: 14px;
+        }
+
+        .view-btn {
+            background-color: var(--secondary);
+        }
+
+        .compare-btn {
+            background-color: #388e3c;
+        }
+
+        footer {
+            margin-top: 50px;
+            background-color: var(--primary);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .search-box {
+            margin-bottom: 20px;
+            display: flex;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+        }
+
+        .search-box button {
+            padding: 10px 15px;
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">Global <span>Tech IMS
+            </span></div>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i> Purchase</a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i> Reports</a></li>
+                    <li><a href="#"><i class="fas fa-tags"></i> Sales</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="page-title">Purchase Order Management</h1>
+
+        <div class="purchase-section">
+            <div class="card">
+                <h3><i class="fas fa-plus-circle"></i> Add New Purchase</h3>
+                <p>Record new purchases from suppliers and update your inventory records automatically.</p>
+                <a href="#" class="btn">Add Purchase</a>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-search"></i> View Purchases</h3>
+                <p>View and manage all your purchase orders, track deliveries, and manage suppliers.</p>
+                <a href="#" class="btn">View All</a>
+            </div>
+        </div>
+
+        <div class="purchase-history">
+            <h2><i class="fas fa-history"></i> Recent Purchase Orders</h2>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search purchase orders...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Purchase ID</th>
+                            <th>Product</th>
+                            <th>Supplier</th>
+                            <th>Price</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>PO-2025-001</td>
+                            <td>Product - 1</td>
+                            <td>Brand</td>
+                            <td>$899.99</td>
+                            <td>Apr 25, 2025</td>
+                            <td>Delivered</td>
+                            <td>
+                                <a href="#" class="action-btn view-btn">View</a>
+                                <a href="#" class="action-btn compare-btn">Compare</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Global Tech Corporation. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

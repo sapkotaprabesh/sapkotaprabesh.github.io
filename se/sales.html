@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Management - Inventory Management System</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6a1b9a;
+            --secondary: #9c27b0;
+            --light: #e1bee7;
+            --dark: #4a148c;
+            --text: #333;
+            --bg: #f5f5f5;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --green: #2e7d32;
+            --amber: #ff8f00;
+            --red: #c62828;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--primary);
+            padding: 15px 0;
+            color: white;
+            box-shadow: var(--shadow);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: var(--light);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--light);
+        }
+
+        .page-title {
+            margin: 30px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary);
+            color: var(--primary);
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .stat-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+        }
+
+        .stat-icon i {
+            font-size: 20px;
+            color: var(--primary);
+        }
+
+        .stat-content h3 {
+            font-size: 24px;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .stat-content p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .sales-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .option-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .option-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .option-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .option-card h3 i {
+            margin-right: 10px;
+        }
+
+        .option-card p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--dark);
+        }
+
+        .sales-list {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        .filter-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+            display: flex;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+        }
+
+        .search-box button {
+            padding: 10px 15px;
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .filter-dropdown {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .sales-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .sales-table th {
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        .sales-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .sales-table tr:hover {
+            background-color: rgba(225, 190, 231, 0.1);
+        }
+
+        .status-badge {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        .status-pending {
+            background-color: #fff8e1;
+            color: var(--amber);
+        }
+
+        .status-processing {
+            background-color: #e3f2fd;
+            color: #1976d2;
+        }
+
+        .status-shipped {
+            background-color: #e8f5e9;
+            color: var(--green);
+        }
+
+        .status-delivered {
+            background-color: #e8f5e9;
+            color: var(--green);
+            font-weight: bold;
+        }
+
+        .status-cancelled {
+            background-color: #ffebee;
+            color: var(--red);
+        }
+
+        .action-btn {
+            padding: 6px 12px;
+            border-radius: 4px;
+            color: white;
+            text-decoration: none;
+            margin-right: 5px;
+            font-size: 13px;
+        }
+
+        .view-btn {
+            background-color: var(--secondary);
+        }
+
+        .print-btn {
+            background-color: #1976d2;
+        }
+
+        .track-btn {
+            background-color: var(--green);
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 10px;
+        }
+
+        .pagination a {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 4px;
+            background-color: var(--white);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: var(--text);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .pagination a:hover, .pagination a.active {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        footer {
+            margin-top: 50px;
+            background-color: var(--primary);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">Global<span>Tech IMS</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i> Purchase</a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i> Reports</a></li>
+                    <li><a href="#"><i class="fas fa-tags"></i> Sales</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="page-title"><i class="fas fa-tags"></i> Sales Management</h1>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>256</h3>
+                    <p>Total Orders</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>42</h3>
+                    <p>Pending Shipments</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>$89,742</h3>
+                    <p>Total Sales This Month</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>+18%</h3>
+                    <p>Growth from Last Month</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sales-list">
+            <h2><i class="fas fa-list"></i> Recent Sales Orders</h2>
+
+            <div class="filter-row">
+                <div class="search-box">
+                    <input type="text" placeholder="Search orders by ID, customer or product...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+
+                <div class="filter-group">
+                    <select class="filter-dropdown">
+                        <option value="">Status: All</option>
+                        <option value="pending">Pending</option>
+                        <option value="processing">Processing</option>
+                        <option value="shipped">Shipped</option>
+                        <option value="delivered">Delivered</option>
+                        <option value="cancelled">Cancelled</option>
+                    </select>
+
+                    <select class="filter-dropdown">
+                        <option value="">Sort By: Newest</option>
+                        <option value="oldest">Oldest</option>
+                        <option value="highest">Highest Value</option>
+                        <option value="lowest">Lowest Value</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table class="sales-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Products</th>
+                            <th>Total Amount</th>
+                            <th>Order Date</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SO-2025-1854</td>
+                            <td>John Doe</td>
+                            <td>Product -1</td>
+                            <td>$948.99</td>
+                            <td>Apr 27, 2025</td>
+                            <td><span class="status-badge status-pending">Pending</span></td>
+                            <td>
+                                <a href="#" class="action-btn view-btn">View</a>
+                                <a href="#" class="action-btn print-btn">Print</a>
+                            </td>
+                        </tr>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management - Global Tech IMS</title>
+    <style>
+        :root {
+            --primary: #6a1b9a;
+            --secondary: #9c27b0;
+            --light: #e1bee7;
+            --dark: #4a148c;
+            --text: #333;
+            --bg: #f5f5f5;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 250px;
+            background: var(--primary);
+            color: var(--white);
+            padding: 20px 0;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar-header {
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .sidebar-header h3 {
+            margin-bottom: 10px;
+        }
+
+        .sidebar-menu {
+            padding: 20px;
+        }
+
+        .sidebar-menu ul {
+            list-style-type: none;
+        }
+
+        .sidebar-menu li {
+            margin-bottom: 15px;
+        }
+
+        .sidebar-menu a {
+            color: var(--light);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: 0.3s;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+
+        .sidebar-menu a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+        }
+
+        .sidebar-menu a.active {
+            background: var(--secondary);
+            color: var(--white);
+        }
+
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: var(--white);
+            box-shadow: var(--shadow);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .header h2 {
+            color: var(--primary);
+        }
+
+        .btn {
+            background: var(--primary);
+            color: var(--white);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--dark);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            height: 180px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-details {
+            padding: 15px;
+        }
+
+        .product-details h3 {
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .product-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .btn-sm {
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+
+        .btn-secondary {
+            background: var(--secondary);
+        }
+
+        .btn-danger {
+            background: #e91e63;
+        }
+
+        .product-filters {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .filter-group label {
+            margin-right: 10px;
+            font-weight: 500;
+        }
+
+        .filter-group select, .filter-group input {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: var(--white);
+        }
+
+        .stock-low {
+            color: #e91e63;
+            font-weight: bold;
+        }
+
+        .stock-available {
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 10px;
+        }
+
+        .pagination button {
+            background: var(--white);
+            border: 1px solid #ddd;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .pagination button.active {
+            background: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            width: 500px;
+            max-width: 90%;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: #777;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3>Global Tech IMS</h3>
+            <small>Inventory Management</small>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li><a href="#"><i class="icon"></i> Dashboard</a></li>
+                <li><a href="#"><i class="icon"></i> Purchase Orders</a></li>
+                <li><a href="#" class="active"><i class="icon"></i> Products</a></li>
+                <li><a href="#"><i class="icon"></i> Sales</a></li>
+                <li><a href="#"><i class="icon"></i> Reports</a></li>
+                <li><a href="#"><i class="icon"></i> Payments</a></li>
+                <li><a href="#"><i class="icon"></i> Settings</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h2>Product Management</h2>
+            <button class="btn" id="add-product-btn">Add New Product</button>
+        </div>
+
+        <div class="product-filters">
+            <div class="filter-group">
+                <label>Category:</label>
+                <select>
+                    <option value="">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="furniture">Furniture</option>
+                    <option value="clothing">Clothing</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Brand:</label>
+                <select>
+                    <option value="">All Brands</option>
+                    <option value="samsung">Samsung</option>
+                    <option value="apple">Apple</option>
+                    <option value="sony">Sony</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Stock Status:</label>
+                <select>
+                    <option value="">All</option>
+                    <option value="in-stock">In Stock</option>
+                    <option value="low-stock">Low Stock</option>
+                    <option value="out-of-stock">Out of Stock</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Search:</label>
+                <input type="text" placeholder="Search products...">
+            </div>
+        </div>
+
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://rev-art-v3.vercel.app/placeholder.svg" alt="Laptop">
+                </div>
+                <div class="product-details">
+                    <h3>Product 1</h3>
+                    <p>Lorem Ipsum</p>
+                    <div class="product-meta">
+                        <span>$1,299.99</span>
+                        <span class="stock-available">In Stock: 45</span>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn btn-sm">Edit</button>
+                        <button class="btn btn-sm btn-secondary">View</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://rev-art-v3.vercel.app/placeholder.svg" alt="Laptop">
+                </div>
+                <div class="product-details">
+                    <h3>Product 1</h3>
+                    <p>Lorem Ipsum</p>
+                    <div class="product-meta">
+                        <span>$1,299.99</span>
+                        <span class="stock-available">In Stock: 45</span>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn btn-sm">Edit</button>
+                        <button class="btn btn-sm btn-secondary">View</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    <!-- Add Product Modal -->
+    <div class="modal" id="add-product-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add New Product</h3>
+                <button class="close-btn">&times;</button>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="product-name">Product Name</label>
+                    <input type="text" id="product-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-description">Description</label>
+                    <textarea id="product-description"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="product-price">Price ($)</label>
+                    <input type="number" id="product-price" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-stock">Initial Stock</label>
+                    <input type="number" id="product-stock" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-brand">Brand</label>
+                    <input type="text" id="product-brand">
+                </div>
+                <div class="form-group">
+                    <label for="product-image">Product Image</label>
+                    <input type="file" id="product-image">
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary">Cancel</button>
+                    <button type="submit" class="btn">Save Product</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Simple toggle for modal demonstration
+        document.getElementById('add-product-btn').addEventListener('click', function() {
+            document.getElementById('add-product-modal').style.display = 'flex';
+        });
+
+        document.querySelector('.close-btn').addEventListener('click', function() {
+            document.getElementById('add-product-modal').style.display = 'none';
+        });
+
+        document.querySelector('.btn-secondary').addEventListener('click', function() {
+            document.getElementById('add-product-modal').style.display = 'none';
+        });
+    </script>
+</body>
+</html>

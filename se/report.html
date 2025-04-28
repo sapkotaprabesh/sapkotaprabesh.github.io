@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Generation - Inventory Management System</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6a1b9a;
+            --secondary: #9c27b0;
+            --light: #e1bee7;
+            --dark: #4a148c;
+            --text: #333;
+            --bg: #f5f5f5;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--primary);
+            padding: 15px 0;
+            color: white;
+            box-shadow: var(--shadow);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: var(--light);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--light);
+        }
+
+        .page-title {
+            margin: 30px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary);
+            color: var(--primary);
+        }
+
+        .reports-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .report-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .report-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .report-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .report-icon i {
+            font-size: 24px;
+            color: var(--primary);
+        }
+
+        .report-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .report-card p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--dark);
+        }
+
+        .report-generator {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        .report-form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn-secondary {
+            background-color: #757575;
+        }
+
+        .btn-secondary:hover {
+            background-color: #616161;
+        }
+
+        .recent-reports {
+            margin-top: 40px;
+        }
+
+        .recent-reports h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .report-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .report-table th {
+            background-color: var(--primary);
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .report-table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .report-table tr:hover {
+            background-color: var(--light);
+        }
+
+        .report-status {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .status-completed {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .status-pending {
+            background-color: #fff8e1;
+            color: #ff8f00;
+        }
+
+        .action-btn {
+            padding: 6px 12px;
+            border-radius: 4px;
+            color: white;
+            text-decoration: none;
+            margin-right: 5px;
+            font-size: 14px;
+        }
+
+        .download-btn {
+            background-color: var(--secondary);
+        }
+
+        footer {
+            margin-top: 50px;
+            background-color: var(--primary);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">Global<span>Tech IMS</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i> Purchase</a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i> Reports</a></li>
+                    <li><a href="#"><i class="fas fa-tags"></i> Sales</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="page-title"><i class="fas fa-chart-bar"></i> Report Generation</h1>
+
+        <div class="reports-grid">
+            <div class="report-card">
+                <div class="report-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h3>Purchase Report</h3>
+                <p>Generate comprehensive reports on your inventory acquisitions, including quantities, costs, and supplier details.</p>
+                <a href="#report-generator" class="btn">Generate Report</a>
+            </div>
+
+            <div class="report-card">
+                <div class="report-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Sales Report</h3>
+                <p>Track your sales performance with detailed reports on total sales, quantity sold, profit margins, and trends over time.</p>
+                <a href="#report-generator" class="btn">Generate Report</a>
+            </div>
+
+            <div class="report-card">
+                <div class="report-icon">
+                    <i class="fas fa-credit-card"></i>
+                </div>
+                <h3>Payment Report</h3>
+                <p>Monitor payment transactions, track outstanding payments, and analyze payment methods preferred by customers.</p>
+                <a href="#report-generator" class="btn">Generate Report</a>
+            </div>
+        </div>
+
+        <div class="report-generator" id="report-generator">
+            <h2><i class="fas fa-cogs"></i> Custom Report Generator</h2>
+            <p>Select your report parameters below to generate a customized report based on your specific needs.</p>
+
+            <form class="report-form">
+                <div class="form-group">
+                    <label for="report-type">Report Type</label>
+                    <select id="report-type" class="form-control">
+                        <option value="">-- Select Report Type --</option>
+                        <option value="purchase">Purchase Report</option>
+                        <option value="sales">Sales Report</option>
+                        <option value="inventory">Inventory Report</option>
+                        <option value="payment">Payment Report</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date-from">Date From</label>
+                        <input type="date" id="date-from" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date-to">Date To</label>
+                        <input type="date" id="date-to" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                    <button type="submit" class="btn">Generate Report</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="recent-reports">
+            <h2><i class="fas fa-history"></i> Recent Reports</h2>
+
+            <table class="report-table">
+                <thead>
+                    <tr>
+                        <th>Report Name</th>
+                        <th>Type</th>
+                        <th>Date Range</th>
+                        <th>Generated On</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monthly Sales Summary</td>
+                        <td>Sales Report</td>
+                        <td>Apr 1, 2025 - Apr 30, 2025</td>
+                        <td>Apr 27, 2025</td>
+                        <td><span class="report-status status-completed">Completed</span></td>
+                        <td>
+                            <a href="#" class="action-btn download-btn">Download</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Global Tech Corporation. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
