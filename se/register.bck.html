@@ -158,10 +158,23 @@
     <div class="container">
         <div class="logo">
             <h1>Global Tech IMS</h1>
-            <p>User Registration</p>
+            <p>Registration</p>
         </div>
 
         <form>
+            <div class="user-type">
+                <label>Register as:</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="admin" name="userType" value="admin">
+                        <label for="admin">Admin</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="customer" name="userType" value="customer" checked>
+                        <label for="customer">Customer</label>
+                    </div>
+                </div>
+            </div>
 
             <div class="row">
                 <div class="col">
