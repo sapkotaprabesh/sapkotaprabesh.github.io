@@ -381,7 +381,7 @@ ul.bars li:before {
     </div>
 
 <script>
-var kk=0;
+var kk=-1;
 document.addEventListener('keydown', function (e) {
  <!-- if (event.code === 'Space') { -->
  <!-- document.getElementById("ggl").focus(); -->
@@ -389,6 +389,9 @@ document.addEventListener('keydown', function (e) {
     if (e.key === "Enter") {
 
         var custom_keywords = {
+          'l' : 'https://www.linkedin.com',
+          'i' : 'https://www.instagram.com',
+          't' : 'https://web.telegram.org',
           'f' : 'https://www.facebook.com',
           'd' : 'https://discord.com/app',
           'g' : 'https://mail.google.com/mail/u/0/',
@@ -438,23 +441,15 @@ document.addEventListener('keydown', function (e) {
 	}
 
     if (e.key === "Tab") {
-        if(kk==0){
-                document.getElementById("aB1").focus();
-                kk=1;
-        }else if (kk==1){
-                document.getElementById("aB2").focus();
-                kk=2;
-        }else if (kk==2){
-                document.getElementById("aB3").focus();
-                kk=3;
-        }else if (kk==3){
-                document.getElementById("aB4").focus();
-                kk=4;
-        }else{
-                document.getElementById("ggl").focus();
-                kk=0;
-        }
-		return;
+    e.preventDefault();
+
+    if (kk === -1) {
+      kk = 0;
+    } else {
+      kk = (kk + 1) % 5;
+    }
+
+    document.getElementById("aB"+kk).focus();
     }	
 
 });
