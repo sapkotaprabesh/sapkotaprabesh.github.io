@@ -328,7 +328,8 @@ ul.bars li:before {
         <div id="clockContainer">00:00</div>
 
         <ul id="bookmarksContainer">
-            <div class="bookmark" id="b1"><a onclick="clck('aB1'); return;" href="https://discord.com/app" id="aB1"><img oncontextmenu= "rtclick('aB1'); return false;" src="assets/discord.svg" id="imgB1"></a></div>
+            <div class="bookmark" id="b0"><a onclick="clck('aB0'); return;" href="https://web.telegram.org" id="aB0"><img oncontextmenu= "rtclick('aB0'); return false;" src="assets/telegram.svg" id="imgB0"></a></div>
+            <div class="bookmark" id="b1"><a onclick="clck('aB1'); return;" href="https://www.instagram.com" id="aB1"><img oncontextmenu= "rtclick('aB1'); return false;" src="assets/instagram.svg" id="imgB1"></a></div>
             <div class="bookmark" id="b2"><a onclick="clck('aB2'); return;" href="https://www.facebook.com" id="aB2"><img  oncontextmenu= "rtclick('aB2'); return false;" src="assets/facebook.svg" id="imgB2"></a></div>
             <div class="bookmark" id="b3"><a onclick="clck('aB3'); return;" href="https://www.youtube.com" id="aB3"><img oncontextmenu= "rtclick('aB3'); return false;" src="assets/youtube.svg" id="imgB3"></a></div>
             <div class="bookmark" id="b4"><a onclick="clck('aB4'); return;" href="https://gmail.com" id="aB4"><img oncontextmenu= "rtclick('aB4'); return false;" src="assets/gmail.svg" id="imgB4"></a></div>
@@ -363,7 +364,8 @@ ul.bars li:before {
                     <div style="width: 60%;text-align: center;">Icon</div>
                     <div style="width: 60%;text-align: center;">Link</div>
                 </div>
-                <div>b1 <input type="text" class="inputField" id="imgB1Setting" style="width: 40%;" value="assets/discord.svg"> <input type="text" class="inputField" id="aB1Setting" style="width: 40%;" value="https://discord.com/app"></div>
+                <div>b0 <input type="text" class="inputField" id="imgB0Setting" style="width: 40%;" value="assets/telegram.svg"> <input type="text" class="inputField" id="aB0Setting" style="width: 40%;" value="https://web.telegram.org"></div>
+                <div>b1 <input type="text" class="inputField" id="imgB1Setting" style="width: 40%;" value="assets/instagram.svg"> <input type="text" class="inputField" id="aB1Setting" style="width: 40%;" value="https://www.instagram.com"></div>
                 <div>b2 <input type="text" class="inputField" id="imgB2Setting" style="width: 40%;" value="assets/facebook.svg"> <input type="text" class="inputField" id="aB2Setting" style="width: 40%;" value="https://www.facebook.com"></div>
                 <div>b3 <input type="text" class="inputField" id="imgB3Setting" style="width: 40%;" value="assets/youtube.svg"> <input type="text" class="inputField" id="aB3Setting" style="width: 40%;" value="https://youtube.com"></div>
                 <div>b4 <input type="text" class="inputField" id="imgB4Setting" style="width: 40%;" value="assets/gmail.svg"> <input type="text" class="inputField" id="aB4Setting" style="width: 40%;" value="https://gmail.com"></div>
@@ -530,6 +532,7 @@ function openb(){
 window.open(document.getElementById('aB2').href);
 window.open(document.getElementById('aB3').href);
 window.open(document.getElementById('aB1').href);
+window.open(document.getElementById('aB0').href);
 if(document.getElementById('block')){
 window.open(document.getElementById('aB4').href);
 }else{
