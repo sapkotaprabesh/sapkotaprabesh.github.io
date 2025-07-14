@@ -55,7 +55,17 @@ https://jmp2.uk/sam-FRBD1900013CB.m3u8
 #EXTINF:-1 tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CABC52000180Z_20240227T221227SQUARE.png_20240227221227.png" group-title="Music",Vevo Pop
 https://jmp2.uk/sam-CABC52000180Z.m3u8
 
+#EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-62ab5aabbb869dd0df6a3487" tvg-logo="https://provider-static.plex.tv/epg/cms/production/5fd3720e-6bb2-44ae-9345-65999a1afbf8/-_B_Channel_logo_1500x1000_RED.png" group-title="Infotainment",TED
+https://i.mjh.nz/SamsungTVPlus/CABB2500020SS.m3u8
+#EXTINF:-1 tvg-id="NASATV.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/NASA_TV.svg/512px-NASA_TV.svg.png" group-title="Infotainment",NASA TV
+https://uplynkcontent.sinclairstoryline.com/channel/ddd76fdc1c0a456ba537e4f48e827d3e.m3u8
+
+#EXTINF:-1 tvg-id="sky.news" tvg-logo="https://static.wikia.nocookie.net/youtube/images/a/a6/Sky_News.jpg" group-title="International",Sky News
+https://ntv.onrender.com/SkyNews
 #EXTINF:-1 tvg-logo="https://cdn.ndtv.com/common/images/ogndtv.png" group-title="News",NDTV
 https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679/ndtvindia/master.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3b/Bloomberg_Television_2016.png" group-title="News",Bloomberg TV Asia
 https://bloomberg.com/media-manifest/streams/asia.m3u8
+
+#EXTINF:-1 tvg-id="ari.rang" tvg-logo="https://i.imgur.com/bDbObLR.png" group-title="International",Arirang
+http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
