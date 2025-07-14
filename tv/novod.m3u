@@ -68,6 +68,8 @@ https://nplb.truestreamz.com/broadcaster/tvtoday977reg.stream/playlist.m3u8
 # https://ntv.onrender.com/iptvlivestream/netFewatv
 #EXTINF:-1 tvg-id="ntvplus.np" tvg-logo="https://resources.geniustv.geniussystems.com.np//livetv/channels/44/image" group-title="Nepali",NTV PLUS
 https://ntv.onrender.com/ntv-plus
+#EXTINF:-1 tvg-id="indigenous.np" tvg-logo="https://www.indigenousmediafoundation.org/uploads/project/indigenous-television.png" group-title="Nepali",Indigenous TV
+http://np.truestreamz.com/broadcaster/INDIGENOUSmob.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/910/image" group-title="Nepali",Namaste TV
 https://ntv.onrender.com/iptvlivestream/national-chitwan
 #EXTINF:-1 tvg-id="" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/63/image" group-title="Nepali",Channel 4 Nepal
