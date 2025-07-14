@@ -1,0 +1,319 @@
+
+#EXTINF:-1 tvg-id="ntvnepalhdabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/12/image" group-title="Nepali",Nepal TV HD
+https://ntv.onrender.com/ott_abr/ntvnepalhdabr
+#EXTINF:-1 tvg-id="euronewsabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/29/image" group-title="Nepali",Euro News English
+https://ntv.onrender.com/ott_abr/euronewsabr
+#EXTINF:-1 tvg-id="zeenewsabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/32/image" group-title="Nepali",Zee News
+https://ntv.onrender.com/ott_abr/zeenewsabr
+#EXTINF:-1 tvg-id="zeebusinessabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/35/image" group-title="Nepali",Zee Business
+https://ntv.onrender.com/ott_abr/zeebusinessabr
+#EXTINF:-1 tvg-id="kantipurhdabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/41/image" group-title="Nepali",Kantipur HD
+https://ntv.onrender.com/ott_abr/kantipurhdabr
+#EXTINF:-1 tvg-id="ap1hdabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/42/image" group-title="Nepali",AP1 HD
+https://ntv.onrender.com/ott_abr/ap1hdabr
+#EXTINF:-1 tvg-id="ntvnewshdabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/43/image" group-title="Nepali",NTV News HD
+https://ntv.onrender.com/ott_abr/ntvnewshdabr
+#EXTINF:-1 tvg-id="ntvplushdabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/44/image" group-title="Nepali",NTV Plus HD
+https://ntv.onrender.com/ott_abr/ntvplushdabr
+#EXTINF:-1 tvg-id="avenuesabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/45/image" group-title="Nepali",Avenues TV
+https://ntv.onrender.com/ott_abr/avenuesabr
+#EXTINF:-1 tvg-id="news24abr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/46/image" group-title="Nepali",News 24
+https://ntv.onrender.com/ott_abr/news24abr
+#EXTINF:-1 tvg-id="himalayahdabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/47/image" group-title="Nepali",Himalaya TV HD
+https://ntv.onrender.com/ott_abr/himalayahdabr
+#EXTINF:-1 tvg-id="imageabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/48/image" group-title="Nepali",Image HD
+https://ntv.onrender.com/ott_abr/imageabr
+#EXTINF:-1 tvg-id="abcnewsabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/49/image" group-title="Nepali",ABC News HD
+https://ntv.onrender.com/ott_abr/abcnewsabr
+#EXTINF:-1 tvg-id="sagarmathaabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/50/image" group-title="Nepali",Sagarmatha TV
+https://ntv.onrender.com/ott_abr/sagarmathaabr
+#EXTINF:-1 tvg-id="jantahdabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/51/image" group-title="Nepali",Janata HD
+https://ntv.onrender.com/ott_abr/jantahdabr
+#EXTINF:-1 tvg-id="tvtodayabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/53/image" group-title="Nepali",TV Today HD
+https://ntv.onrender.com/ott_abr/tvtodayabr
+#EXTINF:-1 tvg-id="mountainabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/54/image" group-title="Nepali",Mountain TV HD
+https://ntv.onrender.com/ott_abr/mountainabr
+#EXTINF:-1 tvg-id="tvfilmyabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/55/image" group-title="Nepali",Nari HD
+https://ntv.onrender.com/ott_abr/tvfilmyabr
+#EXTINF:-1 tvg-id="btvnepalabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/56/image" group-title="Nepali",BTV Business
+https://ntv.onrender.com/ott_abr/btvnepalabr
+#EXTINF:-1 tvg-id="businessplusabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/57/image" group-title="Nepali",Business Plus HD
+https://ntv.onrender.com/ott_abr/businessplusabr
+#EXTINF:-1 tvg-id="ntvkohalpurabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/61/image" group-title="Nepali",NTV Kohalpur HD
+https://ntv.onrender.com/ott_abr/ntvkohalpurabr
+#EXTINF:-1 tvg-id="netCHFOUR1500" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/63/image" group-title="Nepali",Channel 4 Nepal
+https://ntv.onrender.com/iptvlivestream/netCHFOUR1500
+#EXTINF:-1 tvg-id="Indigenousfallback" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/64/image" group-title="Nepali",Indigenous Television
+https://ntv.onrender.com/iptvlivestream/Indigenousfallback
+#EXTINF:-1 tvg-id="Jmusichdabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/66/image" group-title="Nepali",J MUSIC HD
+https://ntv.onrender.com/iptvlive_abr/Jmusichdabr
+#EXTINF:-1 tvg-id="livingfoodzabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/71/image" group-title="Nepali",Zee Classic
+https://ntv.onrender.com/ott_abr/livingfoodzabr
+#EXTINF:-1 tvg-id="bhaktidarsanabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/72/image" group-title="Nepali",Bhakti Darshan HD
+https://ntv.onrender.com/ott_abr/bhaktidarsanabr
+#EXTINF:-1 tvg-id="peaceofmindabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/74/image" group-title="Nepali",Peace of Mind
+https://ntv.onrender.com/ott_abr/peaceofmindabr
+#EXTINF:-1 tvg-id="aasthaabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/76/image" group-title="Nepali",Aastha
+https://ntv.onrender.com/ott_abr/aasthaabr
+#EXTINF:-1 tvg-id="sanskarabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/77/image" group-title="Nepali",Sanskar TV
+https://ntv.onrender.com/ott_abr/sanskarabr
+#EXTINF:-1 tvg-id="zeetvhdabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/86/image" group-title="Nepali",Zee TV HD
+https://ntv.onrender.com/ott_abr/zeetvhdabr
+#EXTINF:-1 tvg-id="andtvhdabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/89/image" group-title="Nepali",And TV HD
+https://ntv.onrender.com/ott_abr/andtvhdabr
+#EXTINF:-1 tvg-id="zeecafehdabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/90/image" group-title="Nepali",Zee Cafe HD
+https://ntv.onrender.com/ott_abr/zeecafehdabr
+#EXTINF:-1 tvg-id="ddsportsabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/123/image" group-title="Nepali",DD Sports
+https://ntv.onrender.com/ott_abr/ddsportsabr
+#EXTINF:-1 tvg-id="andpictureshdabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/130/image" group-title="Nepali",And Pictures HD
+https://ntv.onrender.com/ott_abr/andpictureshdabr
+#EXTINF:-1 tvg-id="zeecinemahdabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/131/image" group-title="Nepali",Zee Cinema HD
+https://ntv.onrender.com/ott_abr/zeecinemahdabr
+#EXTINF:-1 tvg-id="zeecinemaabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/135/image" group-title="Nepali",Zee Bollywood
+https://ntv.onrender.com/ott_abr/zeecinemaabr
+#EXTINF:-1 tvg-id="zeeactionabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/139/image" group-title="Nepali",Zee Action
+https://ntv.onrender.com/ott_abr/zeeactionabr
+#EXTINF:-1 tvg-id="lotusmacauabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/141/image" group-title="Nepali",Lotus Macau HD
+https://ntv.onrender.com/ott_abr/lotusmacauabr
+#EXTINF:-1 tvg-id="zingabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/163/image" group-title="Nepali",Zing
+https://ntv.onrender.com/ott_abr/zingabr
+#EXTINF:-1 tvg-id="dwabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/204/image" group-title="Nepali",DW-TV HD
+https://ntv.onrender.com/ott_abr/dwabr
+#EXTINF:-1 tvg-id="tv5mondeabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/206/image" group-title="Nepali",TV 5 MONDE
+https://ntv.onrender.com/ott_abr/tv5mondeabr
+#EXTINF:-1 tvg-id="nhkpremiumabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/210/image" group-title="Nepali",NHK Premium HD
+https://ntv.onrender.com/ott_abr/nhkpremiumabr
+#EXTINF:-1 tvg-id="arirangabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/211/image" group-title="Nepali",Arirang HD
+https://ntv.onrender.com/ott_abr/arirangabr
+#EXTINF:-1 tvg-id="nhkworldabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/212/image" group-title="Nepali",NHK World HD
+https://ntv.onrender.com/ott_abr/nhkworldabr
+#EXTINF:-1 tvg-id="aljazeeraabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/213/image" group-title="Nepali",Al Jazeera HD
+https://ntv.onrender.com/ott_abr/aljazeeraabr
+#EXTINF:-1 tvg-id="newsasiaabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/221/image" group-title="Nepali",News Asia HD
+https://ntv.onrender.com/ott_abr/newsasiaabr
+#EXTINF:-1 tvg-id="peacetvabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/227/image" group-title="Nepali",PeaceTv Urdu
+https://ntv.onrender.com/ott_abr/peacetvabr
+#EXTINF:-1 tvg-id="netNepalMandal1500" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/228/image" group-title="Nepali",Nepal Mandal
+https://ntv.onrender.com/iptvlivestream/netNepalMandal1500
+#EXTINF:-1 tvg-id="fashiontvabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/229/image" group-title="Nepali",Fashion TV Asia HD
+https://ntv.onrender.com/ott_abr/fashiontvabr
+#EXTINF:-1 tvg-id="france24abr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/230/image" group-title="Nepali",France 24 English HD
+https://ntv.onrender.com/ott_abr/france24abr
+#EXTINF:-1 tvg-id="zeetvabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/234/image" group-title="Nepali",Zee Anmol
+https://ntv.onrender.com/ott_abr/zeetvabr
+#EXTINF:-1 tvg-id="Appanfallback" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/237/image" group-title="Nepali",Appan TV
+https://ntv.onrender.com/iptvlivestream/Appanfallback
+#EXTINF:-1 tvg-id="bodhitvabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/238/image" group-title="Nepali",Bodhi TV HD
+https://ntv.onrender.com/iptvlive_abr/bodhitvabr
+#EXTINF:-1 tvg-id="Megafallback" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/239/image" group-title="Nepali",Mega TV
+https://ntv.onrender.com/iptvlivestream/Megafallback
+#EXTINF:-1 tvg-id="madaniabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/240/image" group-title="Nepali",Madani Channel
+https://ntv.onrender.com/ott_abr/madaniabr
+#EXTINF:-1 tvg-id="trtworldabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/241/image" group-title="Nepali",TRT World HD
+https://ntv.onrender.com/ott_abr/trtworldabr
+#EXTINF:-1 tvg-id="yestv_high" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/245/image" group-title="Nepali",YES TV
+https://ntv.onrender.com/iptvlivestream/yestv_high
+#EXTINF:-1 tvg-id="Kasthmandap" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/246/image" group-title="Nepali",Kastamandap Television
+https://ntv.onrender.com/iptvlivestream/Kasthmandap
+#EXTINF:-1 tvg-id="DEUTI-HD" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/256/image" group-title="Nepali",Deuti HD
+https://ntv.onrender.com/iptvlivestream/DEUTI-HD
+#EXTINF:-1 tvg-id="arenatv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/257/image" group-title="Nepali",Arena TV HD
+https://ntv.onrender.com/iptvlivestream/arenatv
+#EXTINF:-1 tvg-id="krishitvabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/260/image" group-title="Nepali",Krishi TV HD
+https://ntv.onrender.com/iptvlive_abr/krishitvabr
+#EXTINF:-1 tvg-id="primetvabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/267/image" group-title="Nepali",Prime HD
+https://ntv.onrender.com/ott_abr/primetvabr
+#EXTINF:-1 tvg-id="kalikatvabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/272/image" group-title="Nepali",Kalika HD
+https://ntv.onrender.com/iptvlive_abr/kalikatvabr
+#EXTINF:-1 tvg-id="netTvTodayJkpr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/276/image" group-title="Nepali",Tv Today Janakpur
+https://ntv.onrender.com/iptvlivestream/netTvTodayJkpr
+#EXTINF:-1 tvg-id="namaste" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/281/image" group-title="Nepali",Namaste Khowpa
+https://ntv.onrender.com/iptvlivestream/namaste
+#EXTINF:-1 tvg-id="kbsworldabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/284/image" group-title="Nepali",KBS Korea
+https://ntv.onrender.com/ott_abr/kbsworldabr
+#EXTINF:-1 tvg-id="netJanakpurtv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/291/image" group-title="Nepali",Janakpur TV HD
+https://ntv.onrender.com/iptvlivestream/netJanakpurtv
+#EXTINF:-1 tvg-id="ch1" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/294/image" group-title="Nepali",Buddha  TV
+https://ntv.onrender.com/iptvlivestream/ch1
+#EXTINF:-1 tvg-id="paryawarantv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/322/image" group-title="Nepali",Paryawaran TV
+https://ntv.onrender.com/iptvlivestream/paryawarantv
+#EXTINF:-1 tvg-id="bhadgaunabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/324/image" group-title="Nepali",Bhadgaun Television
+https://ntv.onrender.com/iptvlive_abr/bhadgaunabr
+#EXTINF:-1 tvg-id="netFewatv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/325/image" group-title="Nepali",Fewa TV HD
+https://ntv.onrender.com/iptvlivestream/netFewatv
+#EXTINF:-1 tvg-id="netlifeoknepal" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/326/image" group-title="Nepali",Life Ok Nepal
+https://ntv.onrender.com/iptvlivestream/netlifeoknepal
+#EXTINF:-1 tvg-id="znepaltv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/329/image" group-title="Nepali",Zee Nepal 4K
+https://ntv.onrender.com/iptvlivestream/znepaltv
+#EXTINF:-1 tvg-id="netDibyaDarsan1500" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/332/image" group-title="Nepali",Divya Darshan HD
+https://ntv.onrender.com/iptvlivestream/netDibyaDarsan1500
+#EXTINF:-1 tvg-id="cgtnhdabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/360/image" group-title="Nepali",CGTN
+https://ntv.onrender.com/ott_abr/cgtnhdabr
+#EXTINF:-1 tvg-id="netBhairahawa1500" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/373/image" group-title="Nepali",Bhairahawa TV
+https://ntv.onrender.com/iptvlivestream/netBhairahawa1500
+#EXTINF:-1 tvg-id="netGandakiTv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/377/image" group-title="Nepali",Gandaki TV
+https://ntv.onrender.com/iptvlivestream/netGandakiTv
+#EXTINF:-1 tvg-id="netRAPTITV" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/397/image" group-title="Nepali",Rapti Darpan HD
+https://ntv.onrender.com/iptvlivestream/netRAPTITV
+#EXTINF:-1 tvg-id="Omkartv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/398/image" group-title="Nepali",Omkar Television
+https://ntv.onrender.com/iptvlivestream/Omkartv
+#EXTINF:-1 tvg-id="netMithilatv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/399/image" group-title="Nepali",Mithila TV HD
+https://ntv.onrender.com/iptvlivestream/netMithilatv
+#EXTINF:-1 tvg-id="netEduTV1500" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/403/image" group-title="Nepali",Education TV
+https://ntv.onrender.com/iptvlivestream/netEduTV1500
+#EXTINF:-1 tvg-id="netYohoTv1500" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/406/image" group-title="Nepali",Yoho TV HD
+https://ntv.onrender.com/iptvlivestream/netYohoTv1500
+#EXTINF:-1 tvg-id="netANNATv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/409/image" group-title="Nepali",Moonlight TV
+https://ntv.onrender.com/iptvlivestream/netANNATv
+#EXTINF:-1 tvg-id="aranikotv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/418/image" group-title="Nepali",Universal TV HD
+https://ntv.onrender.com/iptvlivestream/aranikotv
+#EXTINF:-1 tvg-id="kisantv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/424/image" group-title="Nepali",Kisan TV
+https://ntv.onrender.com/iptvlivestream/kisantv
+#EXTINF:-1 tvg-id="rajya4k" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/430/image" group-title="Nepali",Rajya Television	
+https://ntv.onrender.com/iptvlivestream/rajya4k
+#EXTINF:-1 tvg-id="netChannelAce" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/433/image" group-title="Nepali",Channel ACE
+https://ntv.onrender.com/iptvlivestream/netChannelAce
+#EXTINF:-1 tvg-id="netOSNnepal1500" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/472/image" group-title="Nepali",Everest  Tv HD
+https://ntv.onrender.com/iptvlivestream/netOSNnepal1500
+#EXTINF:-1 tvg-id="netNewsNepal1500" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/475/image" group-title="Nepali",News Nepal
+https://ntv.onrender.com/iptvlivestream/netNewsNepal1500
+#EXTINF:-1 tvg-id="netMyTV" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/489/image" group-title="Nepali",My TV
+https://ntv.onrender.com/iptvlivestream/netMyTV
+#EXTINF:-1 tvg-id="NewaTV" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/493/image" group-title="Nepali",Newa TV HD
+https://ntv.onrender.com/iptvlivestream/NewaTV
+#EXTINF:-1 tvg-id="birattvabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/502/image" group-title="Nepali",Birat Television
+https://ntv.onrender.com/iptvlive_abr/birattvabr
+#EXTINF:-1 tvg-id="netLumbiniTv1500" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/522/image" group-title="Nepali",Lumbini TV HD
+https://ntv.onrender.com/iptvlivestream/netLumbiniTv1500
+#EXTINF:-1 tvg-id="SuryadayaTv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/527/image" group-title="Nepali",Suryodaya Television 
+https://ntv.onrender.com/iptvlivestream/SuryadayaTv
+#EXTINF:-1 tvg-id="BMHDabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/532/image" group-title="Nepali",BM HD
+https://ntv.onrender.com/iptvlive_abr/BMHDabr
+#EXTINF:-1 tvg-id="netTvBirgunjHD" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/537/image" group-title="Nepali",TV Birgunj
+https://ntv.onrender.com/iptvlivestream/netTvBirgunjHD
+#EXTINF:-1 tvg-id="netMukundaSenTV" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/548/image" group-title="Nepali",Mukundasen HD
+https://ntv.onrender.com/iptvlivestream/netMukundaSenTV
+#EXTINF:-1 tvg-id="tv1hd" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/553/image" group-title="Nepali",TV 1 HD
+https://ntv.onrender.com/iptvlivestream/tv1hd
+#EXTINF:-1 tvg-id="netDeepTv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/562/image" group-title="Nepali",Deep TV
+https://ntv.onrender.com/iptvlivestream/netDeepTv
+#EXTINF:-1 tvg-id="ddbharatiabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/567/image" group-title="Nepali",DD Bharati
+https://ntv.onrender.com/ott_abr/ddbharatiabr
+#EXTINF:-1 tvg-id="timestv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/577/image" group-title="Nepali",Times TV HD
+https://ntv.onrender.com/iptvlivestream/timestv
+#EXTINF:-1 tvg-id="netAakashTv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/581/image" group-title="Nepali",Akash Television
+https://ntv.onrender.com/iptvlivestream/netAakashTv
+#EXTINF:-1 tvg-id="netBagmatiTV" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/591/image" group-title="Nepali",Bagmati TV HD
+https://ntv.onrender.com/iptvlivestream/netBagmatiTV
+#EXTINF:-1 tvg-id="GorkhaTvHD" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/597/image" group-title="Nepali",Gorkha TV HD
+https://ntv.onrender.com/iptvlivestream/GorkhaTvHD
+#EXTINF:-1 tvg-id="sajhatv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/606/image" group-title="Nepali",Sajha TV
+https://ntv.onrender.com/iptvlivestream/sajhatv
+#EXTINF:-1 tvg-id="KARUWATV.STREAM" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/624/image" group-title="Nepali",Kastamandap Gold HD
+https://ntv.onrender.com/iptvlivestream/KARUWATV.STREAM
+#EXTINF:-1 tvg-id="REDTV" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/633/image" group-title="Nepali",Red TV
+https://ntv.onrender.com/iptvlivestream/REDTV
+#EXTINF:-1 tvg-id="ntvitshariabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/638/image" group-title="Nepali",NTV Itahari HD
+https://ntv.onrender.com/ott_abr/ntvitshariabr
+#EXTINF:-1 tvg-id="METVHDabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/643/image" group-title="Nepali",METV  | HD
+https://ntv.onrender.com/ott_abr/METVHDabr
+#EXTINF:-1 tvg-id="xraytv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/651/image" group-title="Nepali",Araniko HD
+https://ntv.onrender.com/iptvlivestream/xraytv
+#EXTINF:-1 tvg-id="netCapitalTvHD" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/656/image" group-title="Nepali",Capital TV HD
+https://ntv.onrender.com/iptvlivestream/netCapitalTvHD
+#EXTINF:-1 tvg-id="indrenitv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/678/image" group-title="Nepali",Indreni TV
+https://ntv.onrender.com/iptvlivestream/indrenitv
+#EXTINF:-1 tvg-id="PrithiviTv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/683/image" group-title="Nepali",Prithivi TV
+https://ntv.onrender.com/iptvlivestream/PrithiviTv
+#EXTINF:-1 tvg-id="A1tv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/688/image" group-title="Nepali",A1 TV
+https://ntv.onrender.com/iptvlivestream/A1tv
+#EXTINF:-1 tvg-id="NationalTVHD" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/693/image" group-title="Nepali",National Gold
+https://ntv.onrender.com/iptvlivestream/NationalTVHD
+#EXTINF:-1 tvg-id="Buddhaawajtv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/694/image" group-title="Nepali",Buddha Awaaz
+https://ntv.onrender.com/iptvlivestream/Buddhaawajtv
+#EXTINF:-1 tvg-id="saptrangi" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/703/image" group-title="Nepali",Saptrangi 
+https://ntv.onrender.com/iptvlivestream/saptrangi
+#EXTINF:-1 tvg-id="Siddhababa" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/723/image" group-title="Nepali",Siddhababa
+https://ntv.onrender.com/iptvlivestream/Siddhababa
+#EXTINF:-1 tvg-id="netDharmaTvNep" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/743/image" group-title="Nepali",Dharma Television
+https://ntv.onrender.com/iptvlivestream/netDharmaTvNep
+#EXTINF:-1 tvg-id="netGlobalTvNep" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/753/image" group-title="Nepali",Global TV
+https://ntv.onrender.com/iptvlivestream/netGlobalTvNep
+#EXTINF:-1 tvg-id="netMakaluTvHD" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/777/image" group-title="Nepali",Makalu TV HD
+https://ntv.onrender.com/iptvlivestream/netMakaluTvHD
+#EXTINF:-1 tvg-id="netJanaSanchar" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/779/image" group-title="Nepali",Jansanchar TV HD
+https://ntv.onrender.com/iptvlivestream/netJanaSanchar
+#EXTINF:-1 tvg-id="kantipurcineplexabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/784/image" group-title="Nepali",Kantipur Max HD
+https://ntv.onrender.com/ott_abr/kantipurcineplexabr
+#EXTINF:-1 tvg-id="BijayKilla" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/787/image" group-title="Nepali",RAY TV HD
+https://ntv.onrender.com/iptvlivestream/BijayKilla
+#EXTINF:-1 tvg-id="AamNepaliTv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/792/image" group-title="Nepali",Aam Nepali TV HD
+https://ntv.onrender.com/iptvlivestream/AamNepaliTv
+#EXTINF:-1 tvg-id="galaxytvabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/802/image" group-title="Nepali",Galaxy 4K
+https://ntv.onrender.com/ott_abr/galaxytvabr
+#EXTINF:-1 tvg-id="prabhutvabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/805/image" group-title="Nepali",GNN HD
+https://ntv.onrender.com/ott_abr/prabhutvabr
+#EXTINF:-1 tvg-id="netTillotamaTV" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/819/image" group-title="Nepali",Tilotamma HD
+https://ntv.onrender.com/iptvlivestream/netTillotamaTV
+#EXTINF:-1 tvg-id="JanakiTvHD" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/822/image" group-title="Nepali",Janaki TV HD
+https://ntv.onrender.com/iptvlivestream/JanakiTvHD
+#EXTINF:-1 tvg-id="PatanjaliNepal1500" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/825/image" group-title="Nepali",Patanjali
+https://ntv.onrender.com/iptvlivestream/PatanjaliNepal1500
+#EXTINF:-1 tvg-id="netDevDaha1500" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/830/image" group-title="Nepali",Devdaha TV
+https://ntv.onrender.com/iptvlivestream/netDevDaha1500
+#EXTINF:-1 tvg-id="netCity1HD1500" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/836/image" group-title="Nepali",City One HD
+https://ntv.onrender.com/iptvlivestream/netCity1HD1500
+#EXTINF:-1 tvg-id="netSamataHD1500" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/839/image" group-title="Nepali",Samata TV
+https://ntv.onrender.com/iptvlivestream/netSamataHD1500
+#EXTINF:-1 tvg-id="netHimShikharTV1500" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/842/image" group-title="Nepali",Him Shikhar TV
+https://ntv.onrender.com/iptvlivestream/netHimShikharTV1500
+#EXTINF:-1 tvg-id="netPanchaliTv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/863/image" group-title="Nepali",Panchali TV
+https://ntv.onrender.com/iptvlivestream/netPanchaliTv
+#EXTINF:-1 tvg-id="netAnews" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/875/image" group-title="Nepali",A News HD
+https://ntv.onrender.com/iptvlivestream/netAnews
+#EXTINF:-1 tvg-id="netSPACE4K" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/878/image" group-title="Nepali",Space 4K
+https://ntv.onrender.com/iptvlivestream/netSPACE4K
+#EXTINF:-1 tvg-id="PokharaTVabr" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/882/image" group-title="Nepali",Pokhara TV HD
+https://ntv.onrender.com/ott_abr/PokharaTVabr
+#EXTINF:-1 tvg-id="MaulaKalikaHd" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/890/image" group-title="Nepali",Maulakalika HD
+https://ntv.onrender.com/iptvlivestream/MaulaKalikaHd
+#EXTINF:-1 tvg-id="netSaptakoshiTv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/893/image" group-title="Nepali",Saptakoshi TV
+https://ntv.onrender.com/iptvlivestream/netSaptakoshiTv
+#EXTINF:-1 tvg-id="netSakuraTVHD" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/896/image" group-title="Nepali",Sakura Tv
+https://ntv.onrender.com/iptvlivestream/netSakuraTVHD
+#EXTINF:-1 tvg-id="netNepalNetwork" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/898/image" group-title="Nepali",Nepal Network TV
+https://ntv.onrender.com/iptvlivestream/netNepalNetwork
+#EXTINF:-1 tvg-id="netBBCEARTHNEWS1500" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/901/image" group-title="Nepali",Earth News HD
+https://ntv.onrender.com/iptvlivestream/netBBCEARTHNEWS1500
+#EXTINF:-1 tvg-id="netPublicTV" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/904/image" group-title="Nepali",Public Tv
+https://ntv.onrender.com/iptvlivestream/netPublicTV
+#EXTINF:-1 tvg-id="national-chitwan" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/910/image" group-title="Nepali",Namaste TV HD
+https://ntv.onrender.com/iptvlivestream/national-chitwan
+#EXTINF:-1 tvg-id="DibyaDarshanDhading" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/913/image" group-title="Nepali",Dibya Darshan TV
+https://ntv.onrender.com/iptvlivestream/DibyaDarshanDhading
+#EXTINF:-1 tvg-id="netMadhyaBindu" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/916/image" group-title="Nepali",Madhyabindu TV
+https://ntv.onrender.com/iptvlivestream/netMadhyaBindu
+#EXTINF:-1 tvg-id="netNepaTV" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/931/image" group-title="Nepali",Nepa TV
+https://ntv.onrender.com/iptvlivestream/netNepaTV
+#EXTINF:-1 tvg-id="OnePlusHD" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/941/image" group-title="Nepali",Plus 1 4k
+https://ntv.onrender.com/iptvlivestream/OnePlusHD
+#EXTINF:-1 tvg-id="SatyaTathyaTV" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/946/image" group-title="Nepali",Satya Tathya TV
+https://ntv.onrender.com/iptvlivestream/SatyaTathyaTV
+#EXTINF:-1 tvg-id="netSKYtv" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/949/image" group-title="Nepali",Sky Television
+https://ntv.onrender.com/iptvlivestream/netSKYtv
+#EXTINF:-1 tvg-id="net7star4k" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/952/image" group-title="Nepali",7 Star 4K
+https://ntv.onrender.com/iptvlivestream/net7star4k
+#EXTINF:-1 tvg-id="AviyanTV" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/955/image" group-title="Nepali",Abhiyan TV
+https://ntv.onrender.com/iptvlivestream/AviyanTV
+#EXTINF:-1 tvg-id="KoshiTvHD" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/976/image" group-title="Nepali",Koshi 4K
+https://ntv.onrender.com/iptvlivestream/KoshiTvHD
+#EXTINF:-1 tvg-id="SanghuTV" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/979/image" group-title="Nepali",Sanghu TV HD
+https://ntv.onrender.com/iptvlivestream/SanghuTV
+#EXTINF:-1 tvg-id="AasthaNepal1500" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/1003/image" group-title="Nepali",Aastha Nepal
+https://ntv.onrender.com/iptvlivestream/AasthaNepal1500
+#EXTINF:-1 tvg-id="SAROKARTV" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/1006/image" group-title="Nepali",Sarokar TV
+https://ntv.onrender.com/iptvlivestream/SAROKARTV
+#EXTINF:-1 tvg-id="netRodhiTv1500" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/1012/image" group-title="Nepali",Rodhi TV
+https://ntv.onrender.com/iptvlivestream/netRodhiTv1500
+#EXTINF:-1 tvg-id="netPrismaHD" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/1015/image" group-title="Nepali",Prisma TV HD
+https://ntv.onrender.com/iptvlivestream/netPrismaHD
