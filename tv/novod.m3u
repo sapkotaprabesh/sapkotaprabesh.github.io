@@ -1,97 +1,36 @@
 #EXTM3U x-tvg-url="https://kodi.botallen.com/tv/epg.xml"
 #EXTINF:-1 tvg-id="ntv.np" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/18/NTV_Nepal.png" group-title="Nepali",NTV
-https://ntv.onrender.com/ntv
-https://ntv.onrender.com/ott_abr/ntvnepalhdabr
-#EXTINF:-1 tvg-id="avenues.np" tvg-logo="https://res.cloudinary.com/dpqvbxdpf/image/upload/v1643280143/uploads/ProfileImage/iq15wxumdbqhrzpu3amy.png" group-title="Nepali",Avenues TV
-https://ntv.onrender.com/ott_abr/avenuesabr
-https://ntv.onrender.com/AvenuesKhabar
-#EXTINF:-1 tvg-id="sagarmatha.np" tvg-logo="https://yt3.ggpht.com/leAOreCRVc6ptdgaUGEzEF289qu1wP7XNQYLe5pcaQr-MUf8gZfaC7iuq3_N_0pIf2-L4vRI=s900-c-k-c0x00ffffff-no-rj" group-title="Nepali",Sagarmatha TV
-https://ntv.onrender.com/ott_abr/sagarmathaabr
-https://np.truestreamz.com/broadcaster/Sagarmatha977mt.stream/playlist.m3u8
+https://ntv.onrender.com/ntv/ntv
 #EXTINF:-1 tvg-id="KantipurTV.np" tvg-logo="https://www.lyngsat.com/logo/tv/kk/kantipur-tv-np.png" group-title="Nepali",Kantipur TV
+https://ktvhdsg.ekantipur.com:8443/high_quality_85840165/hd/playlist.m3u8
+#EXTINF:-1 tvg-id="KantipurMax.np" tvg-logo="https://i.ytimg.com/vi/64nyNNEYsPY/maxresdefault.jpg" group-title="Nepali",Kantipur Max
+https://ktvhdsg.ekantipur.com:8443/kantipurmax_sports_2025/hd/playlist.m3u8
 https://ktvhdsg.ekantipur.com:8443/backup_23765291/hd/playlist.m3u8
-https://ntv.onrender.com/ott_abr/kantipurhdabr
-#EXTINF:-1 tvg-id="abc.np" tvg-logo="https://play-lh.googleusercontent.com/z3Vg4nLruJCuWL_0W-FO9dNkOiIjlEmJJHuImyK7Ws4WKee0xq30xO0YFa6hLm7b-g" group-title="Nepali",ABC News
-https://ntv.onrender.com/ott_abr/abcnewsabr
-https://np.truestreamz.com/broadcaster/ABC1008.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="news24.np" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/tv/150/150/bnw/news24-nepali-black.png" group-title="Nepali",News24 Nepal 
-https://ntv.onrender.com/ott_abrs/news24abr
-https://ntv.onrender.com/news24tvchannel
-#EXTINF:-1 tvg-id="himalaya.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/47/image" group-title="Nepali",Himalaya TV 
-https://ntv.onrender.com/ott_abr/himalayahdabr
-#EXTINF:-1 tvg-id="businessplus.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/57/image" group-title="Nepali",Business Plus HD
-https://ntv.onrender.com/ott_abr/businessplusabr
-#EXTINF:-1 tvg-id="JanataHD.np" tvg-logo="https://api.v1.jobejee.com/v2/resource/employer-logo/a59f4a241648454327468.jpg" group-title="Nepali",Janata HD
-https://ntv.onrender.com/ott_abr/jantahdabr
-https://streaming.tvnepal.com:3439/live/janatasamacharlive.m3u8
+# EXTINF:-1 tvg-id="news24.np" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/tv/150/150/bnw/news24-nepali-black.png" group-title="Nepali",News24 Nepal 
+https://ntv.onrender.com/yt/news24tvchannel
 #EXTINF:-1 tvg-id="ntvnews.np" tvg-logo="https://resources.geniustv.geniussystems.com.np//livetv/channels/43/image" group-title="Nepali",NTV News
-https://ntv.onrender.com/ntv-news
-#EXTINF:-1 tvg-id="ap1.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/42/image" group-title="Nepali",AP1 HD
-https://ntv.onrender.com/ott_abr/ap1hdabr
-#EXTINF:-1 tvg-id="galaxy.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/802/image" group-title="Nepali",Galaxy 4K
-https://ntv.onrender.com/ott_abr/galaxytvabr
-#EXTINF:-1 tvg-id="metv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/643/image" group-title="Nepali",METV HD
-https://ntv.onrender.com/ott_abr/METVHDabr
-#EXTINF:-1 tvg-id="bmhd.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/532/image" group-title="Nepali",BM HD
-https://ntv.onrender.com/iptvlive_abr/BMHDabr
-#EXTINF:-1 tvg-id="knticine.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/784/image" group-title="Nepali",Kantipur Cineplex HD
-https://ntv.onrender.com/ott_abr/kantipurcineplexabr
-https://np.truestreamz.com/broadcaster/Tvfilmy977.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="tillotama.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/819/image" group-title="Nepali",Tilotamma HD
-https://ntv.onrender.com/iptvlivestream/netTillotamaTV
-#EXTINF:-1 tvg-id="krishitv.np" tvg-logo="https://www.krishitelevision.com/wp-content/themes/krishi-2022/img/default.png" group-title="Nepali",Krishi TV
-https://ntv.onrender.com/iptvlive_abr/krishitvabr
-https://np.truestreamz.com/broadcaster/KrishiTV977.stream/playlist.m3u8
-# #EXTINF:-1 tvg-id="edutv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/403/image" group-title="Nepali",Education TV
-# https://ntv.onrender.com/iptvlivestream/netEduTV1500
-# #EXTINF:-1 tvg-id="newatv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/493/image" group-title="Nepali",Newa TV
-# https://ntv.onrender.com/iptvlivestream/NewaTV
-#EXTINF:-1 tvg-id="66.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/66/image" group-title="Nepali",J MUSIC HD
-https://ntv.onrender.com/iptvlive_abr/Jmusichdabr
-#EXTINF:-1 tvg-id="239.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/239/image" group-title="Nepali",Mega TV
-https://ntv.onrender.com/iptvlivestream/Megafallback
-#EXTINF:-1 tvg-id="yestv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/245/image" group-title="Nepali",YES TV
-https://ntv.onrender.com/iptvlivestream/yestv_high
+https://ntv.onrender.com/ntv/ntv-news
 #EXTINF:-1 tvg-id="TVtoday.np" tvg-logo="https://is2-ssl.mzstatic.com/image/thumb/Purple124/v4/ae/c6/46/aec646c5-28ce-84e6-ba54-c3d80a9c0478/source/60x60bb.jpg" group-title="Nepali",TV Today
 https://nplb.truestreamz.com/broadcaster/tvtoday977reg.stream/playlist.m3u8
-# #EXTINF:-1 tvg-id="322.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/322/image" group-title="Nepali",Paryawaran Television
-# https://ntv.onrender.com/iptvlivestream/paryawarantv
-# #EXTINF:-1 tvg-id="893.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/893/image" group-title="Nepali",Saptakoshi TV
-# https://ntv.onrender.com/iptvlivestream/netSaptakoshiTv
-# #EXTINF:-1 tvg-id="904.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/904/image" group-title="Nepali",Public TV
-# https://ntv.onrender.com/iptvlivestream/netPublicTV
-# #EXTINF:-1 tvg-id="836.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/836/image" group-title="Nepali",City One HD
-# https://ntv.onrender.com/iptvlivestream/netCity1HD1500
-# #EXTINF:-1 tvg-id="430.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/430/image" group-title="Nepali",Rajya Television
-# https://ntv.onrender.com/iptvlivestream/rajya4k
-# #EXTINF:-1 tvg-id="325.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/325/image" group-title="Nepali",Fewa TV HD
-# https://ntv.onrender.com/iptvlivestream/netFewatv
 #EXTINF:-1 tvg-id="ntvplus.np" tvg-logo="https://resources.geniustv.geniussystems.com.np//livetv/channels/44/image" group-title="Nepali",NTV PLUS
-https://ntv.onrender.com/ntv-plus
+https://ntv.onrender.com/ntv/ntv-plus
 #EXTINF:-1 tvg-id="indigenous.np" tvg-logo="https://www.indigenousmediafoundation.org/uploads/project/indigenous-television.png" group-title="Nepali",Indigenous TV
 http://np.truestreamz.com/broadcaster/INDIGENOUSmob.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/910/image" group-title="Nepali",Namaste TV
-https://ntv.onrender.com/iptvlivestream/national-chitwan
-#EXTINF:-1 tvg-id="" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/63/image" group-title="Nepali",Channel 4 Nepal
-https://ntv.onrender.com/iptvlivestream/netCHFOUR1500
-#EXTINF:-1 tvg-id="" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/678/image" group-title="Nepali",Indreni TV
-https://ntv.onrender.com/iptvlivestream/indrenitv
-#EXTINF:-1 tvg-id="" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/694/image" group-title="Nepali",Buddha Awaaz
-https://ntv.onrender.com/iptvlivestream/Buddhaawajtv
-#EXTINF:-1 tvg-id="" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/693/image" group-title="Nepali",National Gold
-https://ntv.onrender.com/iptvlivestream/NationalTVHD
-#EXTINF:-1 tvg-id="" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/597/image" group-title="Nepali",Gorkha TV
-https://ntv.onrender.com/iptvlivestream/GorkhaTvHD
-#EXTINF:-1 tvg-id="nepalnetworktv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/898/image" group-title="Nepali",Nepal Network TV
-https://ntv.onrender.com/iptvlivestream/netNepalNetwork
-#EXTINF:-1 tvg-id="deeptv.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/562/image" group-title="Nepali",Deep TV
-https://ntv.onrender.com/iptvlivestream/netDeepTv
+#EXTINF:-1 tvg-id="ntvplus.np" tvg-logo="https://ntv.newitventure.com/images/channel_logos/4.png" group-title="Nepali",NTV Kohalpur
+https://ntv.onrender.com/ntv/ntv-kohalpur
+#EXTINF:-1 tvg-id="ntvplus.np" tvg-logo="https://ntv.newitventure.com/images/channel_logos/600.png" group-title="Nepali",NTV Itaharu
+https://ntv.onrender.com/ntv/ntv-itahari
+#EXTINF:-1 tvg-id="904.np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/904/image" group-title="Nepali",Public TV
+http://103.180.240.141:8080/hls/main1/playlist.m3u8
+
 #EXTINF:-1 tvg-id="291" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/SET_India_logo.svg/1200px-SET_India_logo.svg.png" group-title="Entertainment",Sony
 https://dai.google.com/linear/hls/event/dBdwOiGaQvy0TA1zOsjV6w/master.m3u8
 #EXTINF:-1 tvg-id="154" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sony_SAB.svg/1200px-Sony_SAB.svg.png" group-title="Entertainment",Sony Sab
 https://dai.google.com/linear/hls/event/CrTivkDESWqwvUj3zFEYEA/master.m3u8
 #EXTINF:-1 tvg-id="474" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Sony_Pal_new.png/220px-Sony_Pal_new.png" group-title="Entertainment",Sony Pal
 https://dai.google.com/linear/hls/event/dhPrGRwDRvuMQtmlzppzQQ/master.m3u8
+#EXTINF:-1 tvg-id="sony.kal" tvg-logo="https://i.ibb.co/FsFMtvM/IMG-20230116-175159.jpg" group-title="Entertainment",Sony Kal
+https://spt-sonykal-1-us.lg.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="144" tvg-logo="https://pbs.twimg.com/profile_images/1230017608851869697/kk8ds8H__400x400.jpg" group-title="Entertainment",Colors
 https://ntv.onrender.com/Colors_HD
 https://prod-ent-live-gm.jiocinema.com/bpk-tv/Colors_HD_voot_MOB/Fallback/index.m3u8
@@ -102,10 +41,11 @@ https://ntv.onrender.com/MTV
 https://thetvapp.cote.ws/MTVEast
 #EXTINF:-1 tvg-id="479"  tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/02/05/INBC1500004JR_20220427T054807.png" group-title="Entertainment",TLC
 https://discoveryplus.roshantv.workers.dev/streams/97.m3u8
+https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Tlc2/default/manifest.mpd
 https://thetvapp.cote.ws/TLCEast
 #EXTINF:-1 tvg-id="INBA51000038B" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/02/40/INBA51000038B_20220427T054758.png" group-title="Entertainment",Fashion TV
 https://aa1ce778ea0544e4aa7429bc8a16eb1c.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/Samsung-in_FashionTV/playlist.m3u8?ads.wurl_channel=902&ads.wurl_name=FashionTV&ads.coppa=0&ads.psid=%7BPSID%7D&ads.targetopt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D
-https://ntv.onrender.com/ott_abr/fashiontvabr
+https://fashiontv-fashiontv-5-nl.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="people.awesome" tvg-logo="https://d3k81ch9hvuctc.cloudfront.net/company/HvKcVr/images/82aae7fa-ddf6-4297-a5ed-1486c8a23b89.png" group-title="Entertainment",People are Awesome
 https://jukin-peopleareawesome-2-in.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="1327" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Comedy_Central_2011_Logo.svg/1200px-Comedy_Central_2011_Logo.svg.png" group-title="Entertainment",Comedy Central
@@ -124,9 +64,10 @@ https://ntv.onrender.com/star_gold_select
 https://dai.google.com/linear/hls/event/UcjHNJmCQ1WRlGKlZm73QA/master.m3u8
 #EXTINF:-1 tvg-id="484" tvg-logo="https://image.airtel.tv/MWTV/MWTV_LIVETVCHANNEL_580/PORTRAIT/sjM1MbFR.png" group-title="Movies",Zee Cinema
 https://ntv.onrender.com/0-9-zeecinemahd
-https://ntv.onrender.com/ott_abr/zeecinemahdabr
+https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeecinemahd/default/manifest.mpd
 https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeecinemahd/default/index.m3u8
 #EXTINF:-1 tvg-id="185" tvg-logo="https://www.tvchannelpricelist.com/wp-content/uploads/channels-logo-300/and-pictures-hd-logo-300x300.jpg" group-title="Movies",&pictures
+https://live.drmlive-02.workers.dev/zee/tvpictureshd.m3u8
 https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Andpictureshd/default/index.m3u8
 https://ntv.onrender.com/ott_abr/andpictureshdabr
 https://ntv.onrender.com/0-9-tvpictureshd
@@ -135,33 +76,24 @@ https://ntv.onrender.com/Colors_Cineplex
 #EXTINF:-1 tvg-id="415" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/dd/Zee-anmol-cinema.jpg" group-title="Movies",Zee Anmol Cinema
 #EXTVLCOPT:http-referrer="https://mhdtv.co.in/jio/stream.php?id=415&e=.m3u8"
 https://mhdtv.co.in/jio/stream.php?id=415&e=.m3u8
+https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeeanmolcinema/default/manifest.mpd
 https://ntv.onrender.com/0-9-zeeanmol
-#EXTINF:-1 tvg-id="bbc.america" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/bbcamerica.png" group-title="Movies",BBC America
-http://208.86.19.13:81/34.stream/index.m3u8
 #EXTINF:-1 tvg-id="and.flix" tvg-logo="https://indeltv.com/wp-content/uploads/2019/01/flix.png" group-title="Movies",&flix HD
 https://ntv.onrender.com/0-9-channel_2105335046
-#EXTINF:-1 tvg-id="cine.max" tvg-logo="https://ustvgo.tv/wp-content/uploads/2020/04/cinemax.jpg" group-title="Movies",Cinemax
-http://fpt.vthanhtivi.pw/cinemax/index.m3u8
-https://thetvapp.cote.ws/CinemaxEast
-#EXTVLCOPT:http-referrer="https://tv247.us/"
-https://live.tv247us.com/tv247/cinemaxus.m3u8
-#EXTINF:-1 tvg-id="hb.o" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/1200px-HBO_logo.svg.png" group-title="Movies",HBO
-#EXTVLCOPT:http-referrer="https://tv247.us/"
-https://live.tv247us.com/tv247/hbo.m3u8
-https://thetvapp.cote.ws/HBOEast
-#EXTINF:-1 tvg-id="5e20b730f2f8d5003d739db7-60240f58676235002df19f4b" tvg-logo="https://provider-static.plex.tv/epg/images/ott_channels/logos/topcine_logo_dark_v3.png" group-title="Movies",Top Cine
-https://cdn-uw2-prod.tsv2.amagi.tv/linear/olympusat-topcine-plex/playlist.m3u8?us_privacy=1---&did=62274240-07e7-5d94-8dc8-ef68cf19e175&dnt=0&X-Plex-Token=z3f5nc3-fSds7ziZgkPX&channelId=60240f58676235002df19f4b&device_id_type=&ifa_type=ppid&url=app.plex.tv&app_name=plex&app_bundle=com.plexapp.android&app_store_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.plexapp.android&gdpr=0&gdpr_consent=0&coppa=0&ua=okhttp%2F4.9.0&ip=185.236.200.172&brand_name=&device_model=&device_type=handset&w=&h=&partner_id=S9DEAD1S1E6
 #EXTINF:-1 tvg-id="762" tvg-logo="https://upload.wikimedia.org/wikipedia/en/5/5f/Sony_PIX.png" group-title="Movies",Sony Pix
 https://dai.google.com/linear/hls/event/x7rXWd2ERZ2tvyQWPmO1HA/master.m3u8
-#EXTINF:-1 tvg-id="star.movieshd" tvg-logo="https://www.adgully.com/img/800/202003/star-movies-select-hd.png.jpg" group-title="Movies",Star Movies Select HD
-https://ntv.onrender.com/STAR_MOVIES_SELECT_HD
 #EXTINF:-1 tvg-id="587" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/INBC28000122W_20220928T010039.png" group-title="Music",9X Music
+https://ntv.onrender.com/distro.tv/3612
 http://d2q8p4pe5spbak.cloudfront.net/bpk-tv/9XM/9XM.isml/index.m3u8
 # #EXTINF:-1 tvg-id="440" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/INBC2800013L6_20220928T010036.png" group-title="Music",9X Jalwa
+https://ntv.onrender.com/distro.tv/3613
 # https://d1g8wgjurz8via.cloudfront.net/bpk-tv/9Xjalwa/default/9XJalwa-audio_208482_und=208000-video=877600.m3u8
 # #EXTINF:-1 tvg-id="441" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/INBC28000144H_20220928T010037.png" group-title="Music",9X Jhakaas
 # https://ntv.onrender.com/9x.jhakaas
 # https://d1g8wgjurz8via.cloudfront.net/bpk-tv/9Xjhakaas/default/9Xjhakaas-audio_208482_und=208000-video=877600.m3u8
+#EXTINF:-1 tvg-id="2753" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/YRF_Music.png" group-title="Music",YRF Music
+#EXTVLCOPT:http-referrer="s111.twilightparadox.com"
+https://ntv.onrender.com/distro.tv/5049
 #EXTINF:-1 tvg-id="mhdtv.1020" tvg-logo="https://yt3.googleusercontent.com/ytc/APkrFKYebysSLMPmUqQyhEVyOnUsH9DN-6exAOdQApKCwg=s900-c-k-c0x00ffffff-no-rj" group-title="Music",MTV Beats
 https://ntv.onrender.com/MTV_Beats_HD
 #EXTINF:-1 tvg-id="585" tvg-logo="https://yt3.googleusercontent.com/ytc/APkrFKbFfhW-uqa0hJqrQ8_zlEOEM9MFgnbsDWMb08KuKQ=s900-c-k-c0x00ffffff-no-rj" group-title="Music",Zoom
@@ -171,6 +103,7 @@ https://ntv.onrender.com/ott_abr/zingabr
 https://ntv.onrender.com/0-9-zing
 #EXTINF:-1 tvg-id="INBC15000054I" tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/INBC15000054I_20220824T102019.png" group-title="Kids",Discovery Kids
 https://discoveryplus.roshantv.workers.dev/streams/113.m3u8
+https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Discoverykids2/default/manifest.mpd
 #EXTINF:-1 tvg-id="872" tvg-logo="https://yt3.ggpht.com/ytc/AMLnZu9xAMLXtV4KxKaR1cg-4YoYdJGBlMgVXPv8JsxsVA=s900-c-k-c0x00ffffff-no-rj" group-title="Kids",Sony Yay
 https://dai.google.com/linear/hls/event/GPY7RqOrSkmKJ8z1GbVNhg/master.m3u8
 #EXTINF:-1 tvg-id="AnimaxAsia.sg" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/65/Animaxlogo-20160701.png" group-title="Kids", Animax Asia
@@ -194,6 +127,7 @@ https://mhdtv.co.in/jio/stream.php?id=545&e=.m3u8
 https://thetvapp.cote.ws/NickelodeonEast
 https://ntv.onrender.com/Nickelodeon
 #EXTINF:-1 tvg-id="cartoon.network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/1200px-Cartoon_Network_2010_logo.svg.png" group-title="Kids",Cartoon Network
+https://vodzong.mjunoon.tv:8087/streamtest/cartoon-network-87/playlist.m3u8
 http://ntv.onrender.com/cartoon_network_hindi
 http://fpt.vthanhtivi.pw/cartoon/index.m3u8
 http://ntv.onrender.com/cartoonnetworkasia
@@ -226,9 +160,11 @@ https://discoveryplus.roshantv.workers.dev/streams/99.m3u8
 https://thetvapp.cote.ws/AnimalPlanetEast
 #EXTINF:-1 tvg-id="568"  tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/02/46/INBC1500011RN_20220427T054744.png" group-title="Infotainment",Discovery Science
 https://discoveryplus.roshantv.workers.dev/streams/96.m3u8
+https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Discoveryscience2/default/manifest.mpd
 #EXTINF:-1 tvg-id="242"  tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/01/31/INBB280000836_20220525T002355.png" group-title="Infotainment",Discovery HD
 https://discoveryplus.roshantv.workers.dev/streams/95.m3u8
 http://fpt.vthanhtivi.pw/discovery/index.m3u8
+https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Discoverychannel2/default/manifest.mpd
 https://thetvapp.cote.ws/DiscoveryChannelEast
 #EXTINF:-1 tvg-id="nat.geo" tvg-logo="https://www.ifia.com/wp-content/uploads/2020/05/seo.ngsversion.1565614141405-768x403.jpg" group-title="Infotainment",National Geographic
 https://thetvapp.cote.ws/NationalGeographicEast
