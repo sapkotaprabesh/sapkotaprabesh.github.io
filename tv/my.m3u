@@ -14,9 +14,6 @@ https://ntv.onrender.com/jio/155
 #EXTINF:-1 tvg-id="162" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Ten_HD.png" group-title="Sports",Sony Ten 1 HD
 #EXTVLCOPT:http-referrer="s111.twilightparadox.com"
 https://ntv.onrender.com/jio/162
-#EXTINF:-1 tvg-id="166" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Cartoon_Network_Telugu.png" group-title="Kids",Cartoon Network Telugu
-#EXTVLCOPT:http-referrer="s111.twilightparadox.com"
-https://ntv.onrender.com/jio/166
 #EXTINF:-1 tvg-id="173" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Aaj_Tak.png" group-title="News",Aaj Tak
 #EXTVLCOPT:http-referrer="s111.twilightparadox.com"
 https://ntv.onrender.com/jio/173
