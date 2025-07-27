@@ -105,6 +105,8 @@ https://code.vthanhtivi.pw/getlink/eazie/241430/playlist.m3u8
 https://ntv.onrender.com/thetvapp.to/NickelodeonEast
 #EXTINF:-1 tvg-id="cartoon.network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/1200px-Cartoon_Network_2010_logo.svg.png" group-title="Kids",Cartoon Network
 https://vodzong.mjunoon.tv:8087/streamtest/cartoon-network-87/playlist.m3u8
+http://127.0.0.1:10000/to.thetvapp.net/Cartoon Network
+http://127.0.0.1:10000/thetvapp.to/CartoonNetworkEast
 https://ntv.onrender.com/yt/cartoonnetworkasia
 #EXTINF:-1 tvg-id="815" tvg-logo="https://upload.wikimedia.org/wikipedia/en/2/2b/Nickelodeon_Sonic_logo.png" group-title="Kids",Sonic
 https://ntv.onrender.com/sonic_Hindi
