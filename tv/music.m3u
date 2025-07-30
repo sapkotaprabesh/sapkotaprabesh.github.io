@@ -1,0 +1,523 @@
+#EXTM3U
+
+################################### Nepali #############################################
+#EXTINF:0 group-title="Nepali",Radio Ark 
+http://stream.zeno.fm/sxr8kkycjseuv/;type=mp3
+
+#EXTINF:0 group-title="Nepali",Nepal Network TV
+https://ntv.onrender.com/nettv/_n_e_Tv_:443/iptvlivestream/netNepalNetwork.stream/playlist.m3u8
+
+#EXTINF:0 group-title="Nepali",National Gold
+https://ntv.onrender.com/nettv/_n_e_Tv_:443/iptvlivestream/NationalTVHD.stream/playlist.m3u8
+
+#EXTINF:0 group-title="Nepali",Rajya Television	
+https://ntv.onrender.com/nettv/_n_e_Tv_:443/iptvlivestream/rajya4k.stream/playlist.m3u8
+
+#EXTINF:0 group-title="Nepali",TNN HD
+https://ntv.onrender.com/nettv/_n_e_Tv_:443/iptvlivestream/netPanchaliTv.stream/playlist.m3u8
+
+#EXTINF:0 group-title="Nepali",J MUSIC HD
+https://ntv.onrender.com/nettv/_n_e_Tv_:443/iptvlive_abr/Jmusichdabr.stream/playlist.m3u8
+
+#EXTINF:0 group-title="Nepali",Mega TV
+https://ntv.onrender.com/nettv/_n_e_Tv_:443/iptvlivestream/Megafallback.stream/playlist.m3u8
+
+#EXTINF:0 group-title="Nepali",A News HD
+https://ntv.onrender.com/nettv/_n_e_Tv_:443/iptvlivestream/netAnews.stream/playlist.m3u8
+
+#EXTINF:0 group-title="Nepali",Capital TV HD
+https://ntv.onrender.com/nettv/_n_e_Tv_:443/iptvlivestream/netCapitalTvHD.stream/playlist.m3u8
+
+#EXTINF:0 group-title="Nepali",YES TV
+https://ntv.onrender.com/nettv/_n_e_Tv_:443/iptvlivestream/yestv_high.stream/playlist.m3u8
+
+#EXTINF:0 group-title="Nepali",RAY TV HD
+https://ntv.onrender.com/nettv/_n_e_Tv_/iptvlivestream/BijayKilla.stream/playlist.m3u8
+
+#EXTINF:0 group-title="Nepali",Channel 4 Nepal
+https://ntv.onrender.com/nettv/_n_e_Tv_:443/iptvlivestream/netCHFOUR1500.stream/playlist.m3u8
+
+#EXTINF:0 group-title="Nepali",Universal TV HD
+https://ntv.onrender.com/nettv/_n_e_Tv_:443/iptvlivestream/aranikotv.stream/playlist.m3u8
+
+#EXTINF:0 group-title="Nepali",Kalika HD
+https://ntv.onrender.com/nettv/_n_e_Tv_:443/iptvlive_abr/kalikatvabr.stream/playlist.m3u8
+
+#EXTINF:0 group-title="Nepali",Mukundasen HD
+https://ntv.onrender.com/nettv/_n_e_Tv_:443/iptvlivestream/netMukundaSenTV.stream/playlist.m3u8
+
+#EXTINF:0 group-title="Nepali",Zee Nepal 4K
+https://ntv.onrender.com/nettv/_n_e_Tv_:443/iptvlivestream/znepaltv.stream/playlist.m3u8
+
+################################### Hindi #############################################
+
+#EXTINF:-1 tvg-id="1" group-title="Hindi",9X Music
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/9xm/master.m3u8
+https://d35j504z0x2vu2.cloudfront.net/v1/manifest/0bc8e8376bd8417a1b6761138aa41c26c7309312/9xm/23886666-8fc5-470f-aab1-bd637ed607b1/3.m3u8
+https://d14c63magvk61v.cloudfront.net/strm/channels/9xm/master.m3u8
+
+#EXTINF:-1 tvg-id="1" group-title="Hindi",9X Jalwa
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/9x-jalwa/master.m3u8
+https://d14c63magvk61v.cloudfront.net/strm/channels/9xjalwa/master.m3u8
+https://d1g8wgjurz8via.cloudfront.net/bpk-tv/9xjalwa2/default/main.mpd
+
+#EXTINF:-1 tvg-id="1" group-title="Hindi",9X Jhakas
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/9x-jalwa/master.m3u8
+
+#EXTINF:-1 tvg-id="1" group-title="Hindi",YRF
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/yrf-music/master.m3u8
+
+#EXTINF:-1 tvg-id="1" group-title="Hindi",MTV HD
+#EXTVLCOPT:http-referrer=playyonogames.in
+https://playyonogames.in/live.php?id=1145&format=.m3u8
+
+#EXTINF:-1 tvg-id="1" group-title="Hindi",MTV Beats
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/yrf-music/master.m3u8
+
+#EXTINF:-1 tvg-id="1" group-title="Hindi",Zoom
+https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zoom2/default/main.mpd
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/zoom-tv/master.m3u8
+
+#EXTINF:-1 tvg-id="1" group-title="Hindi",Zing
+https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zing/default/main.mpd
+https://ntv.onrender.com/ott_abr/zingabr
+
+#EXTINF:-1 tvg-id="1" group-title="Hindi",Showbox
+https://epiconvh.akamaized.net/live/showbox/master.m3u8
+
+################################### MTV #############################################
+
+#EXTINF:-1 tvg-id="1" group-title="MTV",Music
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6245d15062cd1f00070a2338/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=a550d1d8-92db-11ef-bff5-3f922ed3e824&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=81d02f87-23ec-43be-8cfa-1f8cb8cfe7ce&userId=&serverSideAds=true
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6245d15062cd1f00070a2338/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=1b1ec342-4b81-11ef-a8ac-e146e4e7be02&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=a56dace8-66e4-4b9a-a55f-d5348160dae2
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6245d15062cd1f00070a2338/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=84ae0440-4b92-11ef-aece-533610f1ea34&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=64060fde-9aa0-457f-ba59-1d8c28109d33
+
+#EXTINF:-1 tvg-id="1" group-title="MTV",Hits
+http://45.88.92.3/tr3_MTVHits_SD/index.m3u8?token=test
+
+#EXTINF:0 group-title="MTV", Yo!
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5d14fc31252d35decbc4080b/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=509ef403-6d49-11f0-b6c5-0ddf473bc021&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=62d706a8-3f99-419d-aeac-97851c03a9f5&userId=&serverSideAds=true
+
+#EXTINF:0 group-title="MTV", Spankin' New
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5d14fdb8ca91eedee1633117/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=509f4222-6d49-11f0-b6c5-0ddf473bc021&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=c885bfd2-dd29-4909-a4db-743f2ab81829&userId=&serverSideAds=true
+
+#EXTINF:0 group-title="MTV", Biggest Pop
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5d14fd1a252d35decbc4080c/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=509f6930-6d49-11f0-b6c5-0ddf473bc021&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=bdc3e082-b450-4e79-afb4-4391e006d592&userId=&serverSideAds=true
+
+#EXTINF:0 group-title="MTV", Flow Latino
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5d3609cd6a6c78d7672f2a81/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=509f6931-6d49-11f0-b6c5-0ddf473bc021&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=e9cbf247-cd46-4758-9cb1-7c9d3f057645&userId=&serverSideAds=true
+
+
+################################### NOW #############################################
+
+#EXTINF:0 group-title="NOW", 70s
+https://lightning-now70s-rakuten.amagi.tv/playlist.m3u8
+https://lightningnow70-samsungau.amagi.tv/playlist.m3u8
+https://lightning-now70s-samsungnz.amagi.tv/playlist.m3u8
+
+#EXTINF:0 group-title="NOW",80s
+https://samsunguk-lightning-now80s-samsunguk-n908q.amagi.tv/playlist/samsunguk-lightning-now80s-samsunguk/playlist.m3u8
+https://lightning-now80s-samsungnz.amagi.tv/playlist720p.m3u8
+https://lightningnow80-samsungau.amagi.tv/playlist.m3u8
+
+#EXTINF:0 group-title="NOW",90s
+https://lightningnow90-samsungau.amagi.tv/playlist.m3u8
+https://lightning-now90s-xiaomi.amagi.tv/playlist.m3u8
+
+#EXTINF:0 group-title="NOW",90s & 00s
+https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/660c209e19ca71000846cf38/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=web&servertSideAds=false&&deviceMake=github.com/inspirationlinks&deviceDNT=1
+
+
+################################### VEVO #############################################
+
+#EXTINF:0 group-title="Vevo", 70s
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f32f26bcd8aea00071240e5/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=509ea5e1-6d49-11f0-b6c5-0ddf473bc021&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=1bfe10e5-1a7e-4350-b5e4-cc22332b9a0b&userId=&serverSideAds=true
+
+#EXTINF:0 group-title="Vevo", 80s
+http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5fd7b8bf927e090007685853/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D
+https://jmp2.uk/sam-USBD300012YC.m3u8
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5fd7b8bf927e090007685853/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=509eccf0-6d49-11f0-b6c5-0ddf473bc021&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=fb1e702e-c77d-4aff-ae20-f5c848507a1b&userId=&serverSideAds=true
+
+#EXTINF:0 group-title="Vevo", 70s & 80s
+https://d8ey2gcjuai15.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-t4dwcnavbvxsk/Vevo70sand80s_GB.m3u8
+
+#EXTINF:0 group-title="Vevo", 90s
+https://d2yw87dguyr3x7.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-gm31ezw31rx7a/playlist.m3u8
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5fd7bb1f86d94a000796e2c2/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=509eccf1-6d49-11f0-b6c5-0ddf473bc021&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=4899385b-7195-4465-b2ff-14d25c068bb9&userId=&serverSideAds=true
+http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5fd7bb1f86d94a000796e2c2livestitch/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D
+
+#EXTINF:0 group-title="Vevo", 2k
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5fd7bca3e0a4ee0007a38e8c/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=509eccf2-6d49-11f0-b6c5-0ddf473bc021&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=585e0632-929e-4f1a-b743-579f065341ec&userId=&serverSideAds=true
+
+#EXTINF:0 group-title="Vevo", Country
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5da0d75e84830900098a1ea0/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=509ef402-6d49-11f0-b6c5-0ddf473bc021&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=2c352f2f-c91b-4924-bd9e-cc2ef58ccfa6&userId=&serverSideAds=true
+https://jmp2.uk/sam-CABC52000165E.m3u8
+
+#EXTINF:0 group-title="Vevo", True School Hip-Hop
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/61d4c2817a823d00070ba53e/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=509f1b10-6d49-11f0-b6c5-0ddf473bc021&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=2052005f-296f-4935-a68a-7cb244c60acb&userId=&serverSideAds=true
+
+#EXTINF:0 group-title="Vevo", R&B
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5da0d83f66c9700009b96d0e/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=509f1b11-6d49-11f0-b6c5-0ddf473bc021&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=cbdd0901-8d5c-48c3-9dbf-f42f19f358d0&userId=&serverSideAds=true
+
+#EXTINF:0 group-title="Vevo", Rock
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/61d4b38226b8a50007fe03a6/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=509f1b12-6d49-11f0-b6c5-0ddf473bc021&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=9185e9a6-2af8-48a1-b2b6-ebd456300b66&userId=&serverSideAds=true
+
+#EXTINF:0 group-title="Vevo", Pop
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5d93b635b43dd1a399b39eee/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=509f4221-6d49-11f0-b6c5-0ddf473bc021&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=10ad00a2-98c3-4fdb-8085-ac9da74b8c24&userId=&serverSideAds=true
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00056-vevotv-vevopopau-samsungau/playlist.m3u8
+https://jmp2.uk/sam-CABC52000180Z.m3u8
+
+
+################################### XITE #############################################
+
+#EXTINF:0 group-title="XITE", Hits
+https://xite-hitsuk-lg.amagi.tv/playlist.m3u8
+https://jmp2.uk/sam-CABD1200038NZ.m3u8
+
+#EXTINF:0 group-title="XITE", Rock x Metal
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/623a1b5188ecdc0007c9ef5a/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=509f4220-6d49-11f0-b6c5-0ddf473bc021&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=7a760f8b-33cf-4f6b-9863-80bebfe88371&userId=&serverSideAds=true
+https://jmp2.uk/sam-CABB26000054K.m3u8
+
+#EXTINF:0 group-title="XITE", Gospel
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/623b93628e6ded0007337d4d/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=509f6932-6d49-11f0-b6c5-0ddf473bc021&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=07c8e4c0-edd8-4a93-8b1e-01148da4eaa2&userId=&serverSideAds=true
+
+#EXTINF:0 group-title="XITE", 90s Throwback
+https://jmp2.uk/sam-CABB2600018T4.m3u8
+
+#EXTINF:0 group-title="XITE",  80s Flashback
+https://jmp2.uk/sam-CABB2600017ZU.m3u8
+
+#EXTINF:0 group-title="XITE", Celebrates
+https://jmp2.uk/sam-CABD17000043J.m3u8
+
+#EXTINF:0 group-title="XITE", Country Today
+https://jmp2.uk/sam-CABD120001993.m3u8
+
+#EXTINF:0 group-title="XITE", Classic Country
+https://jmp2.uk/sam-CABD1200023UJ.m3u8
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/623b92a2ccefed0007b1db48/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=509ef401-6d49-11f0-b6c5-0ddf473bc021&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=31ca42e3-bca0-409b-80b2-f394364aafde&userId=&serverSideAds=true
+
+#EXTINF:0 group-title="XITE", Christian Hits
+https://jmp2.uk/sam-CA460001636.m3u8
+
+#EXTINF:0 group-title="XITE", R&B Classic Jams
+https://jmp2.uk/sam-CABD1200021MS.m3u8
+
+#EXTINF:0 group-title="XITE", Reggae Vibes
+https://jmp2.uk/sam-CA4600018HP.m3u8
+
+#EXTINF:0 group-title="XITE", Just Chill
+https://jmp2.uk/sam-CABB2600004RZ.m3u8
+
+
+################################### Stingray #############################################
+
+#EXTINF:-1 group-title="Stingray", Euro Hits
+https://jmp2.uk/sam-CA4700001Z6.m3u8
+
+#EXTINF:-1 group-title="Stingray", Hit List
+https://lotus.stingray.com/manifest/ose-107ads-montreal/samsungtvplus/master.m3u8
+https://dbrb49pjoymg4.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/master.m3u8?ads.xumo_channelId=99991117
+
+#EXTINF:-1 group-title="Stingray", Greatest Hits
+https://lotus.stingray.com/manifest/ose-155ads-montreal/samsungtvplus/master.m3u8 
+https://d2ijgfgrz03rvu.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-l5gypvhxzqytm/manifest/ose-155ads-montreal/samsungtvplus/master.m3u8
+https://jmp2.uk/sam-CABD1200037BS.m3u8
+
+#EXTINF:-1 group-title="Stingray", Soft Hits
+https://jmp2.uk/sam-CA4700006LN.m3u8
+
+#EXTINF:-1 group-title="Stingray", Adult Pop
+https://lotus.stingray.com/manifest/ose-104ads-montreal/samsungtvplus/master.m3u8 
+
+#EXTINF:-1 group-title="Stingray", Classica
+https://lotus.stingray.com/manifest/classica-cla008-montreal/samsungtvplus/master.m3u8
+https://jmp2.uk/sam-CA400005W4.m3u8
+
+#EXTINF:-1 group-title="Stingray", Cmusic
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64240d00dbdaaa00085bc5e2/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=2c799158-35fc-11ef-a031-2b5d494037a2&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=591a5510-6f0c-4769-9f52-fb2ec0e8a3ea
+https://lotus.stingray.com/manifest/cmusic-cme004-montreal/samsungtvplus/master.m3u8
+
+#EXTINF:-1 group-title="Stingray", Movie Music
+https://jmp2.uk/sam-CA4700002IH.m3u8
+
+#EXTINF:-1 group-title="Stingray", Hip Hop
+https://lotus.stingray.com/manifest/ose-133ads-montreal/samsungtvplus/master.m3u8 
+https://jmp2.uk/sam-CABD1200029U0.m3u8
+
+#EXTINF:-1 group-title="Stingray", Nothin' But 90s
+https://lotus.stingray.com/manifest/ose-142ads-montreal/samsungtvplus/master.m3u8 
+https://jmp2.uk/sam-CABD1200033B1.m3u8
+
+#EXTINF:-1 group-title="Stingray", Remember The '80s
+https://lotus.stingray.com/manifest/ose-128ads-montreal/samsungtvplus/master.m3u8
+https://d1imh73yrie9zu.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-tqikpnjgwyvj8/manifest/ose-128ads-montreal/samsungtvplus/master.m3u8
+https://jmp2.uk/sam-CABD1200026VA.m3u8
+
+#EXTINF:-1 group-title="Stingray", Flashback '70s
+https://lotus.stingray.com/manifest/ose-115ads-montreal/samsungtvplus/master.m3u8
+https://d30hccj9v28bt6.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-jp7qdac3e1wzj/manifest/ose-115ads-montreal/samsungtvplus/master.m3u8
+https://jmp2.uk/sam-CABD1200028QO.m3u8
+
+#EXTINF:-1 group-title="Stingray", Jukebox Oldies
+https://jmp2.uk/sam-CA47000052C.m3u8
+
+#EXTINF:-1 group-title="Stingray", Easy Listening
+https://lotus.stingray.com/manifest/ose-137ads-montreal/samsungtvplus/master.m3u8
+https://jmp2.uk/sam-CABD1200030YP.m3u8
+
+#EXTINF:-1 group-title="Stingray", Naturescape
+https://jmp2.uk/sam-CAAJ3400003T7.m3u8
+
+#EXTINF:-1 group-title="Stingray", ZenLIFE
+https://jmp2.uk/sam-CA600002VE.m3u8
+
+#EXTINF:-1 group-title="Stingray", Spa
+https://lotus.stingray.com/manifest/ose-122ads-montreal/samsungtvplus/master.m3u8
+https://jmp2.uk/sam-CABD1200032N6.m3u8
+
+#EXTINF:-1 group-title="Stingray", Soul Storm
+https://lotus.stingray.com/manifest/ose-134ads-montreal/samsungtvplus/master.m3u8
+
+#EXTINF:-1 group-title="Stingray", Smooth Jazz
+https://lotus.stingray.com/manifest/ose-140ads-montreal/samsungtvplus/master.m3u8
+https://jmp2.uk/sam-CABD1200031NL.m3u8
+
+#EXTINF:-1 group-title="Stingray", DJAZZ
+https://jmp2.uk/sam-CA400002ZK.m3u8
+
+#EXTINF:-1 group-title="Stingray", Classic Rock
+https://lotus.stingray.com/manifest/ose-101ads-montreal/samsungtvplus/master.m3u8
+https://jmp2.uk/sam-CABD1200036YT.m3u8
+
+#EXTINF:-1 group-title="Stingray", Alternative
+https://lotus.stingray.com/manifest/ose-102ads-montreal/samsungtvplus/master.m3u8
+
+#EXTINF:-1 group-title="Stingray", Country Greats
+https://jmp2.uk/sam-CA47000031R.m3u8
+
+#EXTINF:-1 group-title="Stingray", Hot Country
+https://jmp2.uk/sam-CABD1200025IX.m3u8
+
+#EXTINF:-1 group-title="Stingray", Today's K-Pop
+https://lotus.stingray.com/manifest/ose-317ads-montreal/samsungtvplus/master.m3u8
+https://jmp2.uk/sam-CABD1200034DU.m3u8
+
+#EXTINF:-1 group-title="Stingray",Qello Concerts
+https://jmp2.uk/sam-CA400004SM.m3u8
+
+#EXTINF:-1 group-title="Stingray", Romance Latino
+https://lotus.stingray.com/manifest/ose-202ads-montreal/samsungtvplus/master.m3u8
+https://jmp2.uk/sam-CABD1200035WW.m3u8
+
+#EXTINF:-1 group-title="Stingray", Exitos Del Momento
+https://lotus.stingray.com/manifest/ose-190ads-montreal/samsungtvplus/master.m3u8
+
+#EXTINF:-1 group-title="Stingray", Today's Latin Pop
+https://jmp2.uk/sam-CABD1200027JL.m3u8
+
+#EXTINF:-1 group-title="Stingray", Souvenirs
+https://jmp2.uk/sam-CA29000146S.m3u8
+
+#EXTINF:-1 group-title="Stingray", le Palmares
+https://jmp2.uk/sam-CA2900015NH.m3u8
+
+#EXTINF:-1 group-title="Stingray", Nostalgie
+https://jmp2.uk/sam-CA2900017MW.m3u8
+
+#EXTINF:-1 group-title="Stingray", Franco Retro
+https://jmp2.uk/sam-CA29000139Y.m3u8
+
+#EXTINF:-1 group-title="Stingray", Franco Pop
+https://jmp2.uk/sam-CA290001647.m3u8
+
+#EXTINF:-1 group-title="Stingray", Franco Country
+https://jmp2.uk/sam-CA29000183M.m3u8
+
+
+################################### English #############################################
+
+#EXTINF:-1 group-title="English",1mus
+http://hz1.teleport.cc/HLS/HD.m3u8
+
+#EXTINF:-1 group-title="English",Megabox
+https://hdbox.chunklistv.com/live?stream=megabox
+
+#EXTINF:0 group-title="English", Euro Indie Music
+http://178.33.224.197:1935/euroindiemusic/euroindiemusic/playlist.m3u8
+
+#EXTINF:0 group-title="English", CMT Equal Play
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f68f53eb1e5800007390bf8/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=509ef400-6d49-11f0-b6c5-0ddf473bc021&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=5c0dbcfa-4fa1-4170-ac16-0a87ce237070&userId=&serverSideAds=true
+
+#EXTINF:0 group-title="English", Classica
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f779951372da90007fd45e8/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=509f9040-6d49-11f0-b6c5-0ddf473bc021&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=d132805a-78f2-4eea-96c5-1956f66a288f&userId=&serverSideAds=true
+
+#EXTINF:-1 group-title="English",30A TV
+http://30a-tv.com/music.m3u8
+
+
+################################### International #############################################
+
+
+
+################################### Nepali Radio #############################################
+
+#EXTINF:-1 group-title="Nepali Radio",Radio Audio
+https://node-08.zeno.fm/fvrx47wpg0quv?rj-ttl=5&rj-tok=AAABfTF764EA-pWpl73_qxbBYw
+
+#EXTINF:-1 group-title="Nepali Radio",Hits FM
+https://usa15.fastcast4u.com/proxy/hitsfm912?mp=/1
+
+#EXTINF:-1 group-title="Nepali Radio",Radio Nagarik
+http://streaming.hamropatro.com:8789/;type=mp3
+
+#EXTINF:-1 group-title="Nepali Radio",Star FM
+http://live.itechnepal.com:9539/stream?type\\u003d.mp3
+
+################################### Hindi Radio #############################################
+
+#EXTINF:-1 group-title="Hindi Radio",Radio Mirchi
+https://listen.openstream.co/4603/audio
+
+#EXTINF:-1 group-title="Hindi Radio",Radio Panna
+https://sonic.onlineaudience.co.uk:8158/stream
+
+#EXTINF:-1 group-title="Hindi Radio",Radio Radhika Munger
+https://stream.zeno.fm/7ivlkteseuatv
+
+#EXTINF:-1 group-title="Hindi Radio",Big FM 106.2
+https://listen.openstream.co/6983/audio
+
+#EXTINF:-1 group-title="Hindi Radio",Kadak FM
+https://vo-live.cdb.cdn.orange.com/Content/Channel/kadak_fm/HLS/stream_02/index.m3u8
+
+#EXTINF:-1 group-title="Hindi Radio",Radio Time 90.8 FM
+http://165.22.208.252:8010/radio.mp3
+
+#EXTINF:-1 group-title="Hindi Radio",Akashvaani Patna
+https://air.pc.cdn.bitgravity.com/air/live/pbaudio087/playlist.m3u8
+
+#EXTINF:-1 group-title="Hindi Radio",Bombay Beats FM
+https://strmreg.1.fm/bombaybeats_mobile_mp3
+
+#EXTINF:-1 group-title="Hindi Radio",Ghazal Radio
+https://stream.zeno.fm/yo0kzyzedittv
+
+#EXTINF:-1 group-title="Hindi Radio",Non Stop Hindi FM
+https://free.rcast.net/14972
+
+#EXTINF:-1 group-title="Hindi Radio",Hindi Filmy Song
+https://streaming.webhostnepal.com/8020/stream
+
+#EXTINF:-1 group-title="Hindi Radio",103 FM
+https://s4.myradiostream.com/:14348/
+
+#EXTINF:-1 group-title="Hindi Radio",Radio Umang
+http://vmi352552.contaboserver.net/radio/8000/radio.mp3
+
+#EXTINF:-1 group-title="Hindi Radio",Best FM 
+https://radio.mbconline.xyz/hls/bestfm.m3u8
+
+#EXTINF:-1 group-title="Hindi Radio",Madhur Sangeet FM
+https://stream.zeno.fm/yv2k0dp18vzuv
+
+#EXTINF:-1 group-title="Hindi Radio",Radio Garam Masala
+https://main.smanelcast.com/radio/8030/radio.mp3
+
+#EXTINF:-1 group-title="Hindi Radio",Manpasand Radio
+https://c5.radioboss.fm:18125/stream
+
+#EXTINF:-1 group-title="Hindi Radio",Suddh Desi Radio
+https://streamer.radio.co/se30891e37/listen
+
+#EXTINF:-1 group-title="Hindi Radio",Hum FM Radio
+http://ice10.securenetsystems.net/HUMFM
+
+#EXTINF:-1 group-title="Hindi Radio",Badal New Beats FM
+https://stream.zeno.fm/uzq9fznb368uv
+
+#EXTINF:-1 group-title="Hindi Radio",Radio Sajawat
+https://usa3.fastcast4u.com/proxy/radiosajawat
+
+#EXTINF:-1 group-title="Hindi Radio",Radio Bimal
+https://stream.zeno.fm/bzbpxfjxmpmuv
+
+#EXTINF:-1 group-title="Hindi Radio",CMR 101.3 FM HD
+https://live.cmr24.net/CMR/Desi_Music-MQ/icecast.audio
+
+#EXTINF:-1 group-title="Hindi Radio",Oye India Radio
+https://hbhamra4.radioca.st/stream
+
+#EXTINF:-1 group-title="Hindi Radio",Radio Dil
+https://us3.streamingpulse.com/ssl/radiodil2
+
+#EXTINF:-1 group-title="Hindi Radio",Spice 98.8 FM
+https://spice988fm.radioca.st/stream
+
+#EXTINF:-1 group-title="Hindi Radio",Radio Zindagi
+https://us9.maindigitalstream.com/ssl/RadioZindagi
+
+#EXTINF:-1 group-title="Hindi Radio",Lyca Radio
+https://listen-lycaradio.sharp-stream.com/1035.mp3
+
+#EXTINF:-1 group-title="Hindi Radio",Radio 90.5 FM
+https://ice42.securenetsystems.net/CR90
+
+#EXTINF:-1 group-title="Hindi Radio",Club Asia Radio
+https://s3.citrus3.com:8320/stream
+
+################################### English Radio #############################################
+
+#EXTINF:-1 group-title="English Radio",Planet Radio
+https://mp3.planetradio.de/planetradio/hqlivestream.aac
+
+#EXTINF:-1 group-title="English Radio",Radio Paradise 
+http://stream.radioparadise.com/aac-128
+
+#EXTINF:-1 group-title="English Radio",ABC Louge
+https://str1.openstream.co/589
+
+#EXTINF:-1 group-title="English Radio",Folk Forward
+https://ice6.somafm.com/folkfwd-128-mp3
+
+#EXTINF:-1 group-title="English Radio",CBC Music
+http://playerservices.streamtheworld.com/pls/CBLFM_CBC.pls
+
+#EXTINF:-1 group-title="English Radio",indie88 FM
+https://localradio.streamb.live/SB00349
+
+#EXTINF:-1 group-title="English Radio", BBC Radio 1Xtra
+http://as-hls-ww-live.akamaized.net/pool_92079267/live/ww/bbc_1xtra/bbc_1xtra.isml/bbc_1xtra-audio%3d96000.norewind.m3u8
+
+#EXTINF:-1 group-title="English Radio",Rap Classics
+https://radiorecord.hostingradio.ru/rapclassics96.aacp
+
+#EXTINF:-1 group-title="English Radio",Blues Radio
+http://strm112.1.fm/blues_mobile_mp3
+
+#EXTINF:-1 group-title="English Radio",Back To The 50's & 60's Radio
+http://strm112.1.fm/60s_70s_mobile_mp3
+
+#EXTINF:-1 group-title="English Radio",Absolute 70's Pop Radio
+http://strm112.1.fm/70s_mobile_mp3
+
+#EXTINF:-1 group-title="English Radio",A List 80's Radio
+http://strm112.1.fm/back280s_mobile_mp3
+
+#EXTINF:-1 group-title="English Radio",Absolute 90's Radio
+http://strm112.1.fm/90s_mobile_mp3
+
+#EXTINF:-1 group-title="English Radio", Top Hits 2000 Radio
+http://strm112.1.fm/hits2000_mobile_mp3
+
+#EXTINF:-1 group-title="English Radio",All Times Hits Radio
+http://strm112.1.fm/allmixedup_mobile_mp3
+
+#EXTINF:-1 group-title="English Radio", SomaFM Groove Salad
+http://ice2.somafm.com/groovesalad-128-aac
+
+#EXTINF:-1 group-title="English Radio", Bad Radio
+https://s2.radio.co/s2b2b68744/listen
+
+#EXTINF:-1 group-title="English Radio", SLAY Radio
+http://relay1.slayradio.org:8000/
