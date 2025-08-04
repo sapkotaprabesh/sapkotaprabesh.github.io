@@ -395,7 +395,7 @@ http://30a-tv.com/music.m3u8
 
 ################################### Nepali Radio #############################################
 
-#EXTINF:0 group-title="Nepali",Radio Ark 
+#EXTINF:0 group-title="Nepali Radio",Radio Ark 
 http://stream.zeno.fm/sxr8kkycjseuv/;type=mp3
 
 #EXTINF:-1 group-title="Nepali Radio",Radio Audio
@@ -554,3 +554,4 @@ https://s2.radio.co/s2b2b68744/listen
 
 #EXTINF:-1 group-title="English Radio", SLAY Radio
 http://relay1.slayradio.org:8000/
+
