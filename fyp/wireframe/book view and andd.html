@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management - Wireframe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+            color: #333;
+            line-height: 1.4;
+            padding: 20px;
+        }
+
+        .wireframe-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Wireframe Header */
+        .wireframe-header {
+            border: 3px solid #000;
+            padding: 25px 30px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        .page-title-placeholder {
+            width: 250px;
+            height: 40px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+        }
+
+        .user-info-placeholder {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .user-text {
+            width: 100px;
+            height: 25px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+        }
+
+        .user-avatar-placeholder {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+        }
+
+        /* Wireframe Tabs */
+        .wireframe-tabs {
+            display: flex;
+            border: 3px solid #000;
+            margin-bottom: 30px;
+            background-color: #fff;
+        }
+
+        .tab-placeholder {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            border-right: 2px solid #000;
+            background-color: #f8f8f8;
+            cursor: pointer;
+        }
+
+        .tab-placeholder:last-child {
+            border-right: none;
+        }
+
+        .tab-placeholder.active {
+            background-color: #000;
+            color: white;
+        }
+
+        /* Action Bar */
+        .action-bar-placeholder {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            border: 3px solid #000;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .search-placeholder {
+            flex: 1;
+            max-width: 400px;
+            position: relative;
+        }
+
+        .search-box-placeholder {
+            width: 100%;
+            height: 50px;
+            border: 2px solid #000;
+            background-color: #fff;
+            position: relative;
+        }
+
+        .search-icon-placeholder {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25px;
+            height: 25px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+        }
+
+        .search-text {
+            position: absolute;
+            left: 55px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #666;
+            font-style: italic;
+        }
+
+        .add-button-placeholder {
+            width: 150px;
+            height: 50px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+        }
+
+        /* Books Table */
+        .table-container-placeholder {
+            border: 3px solid #000;
+            padding: 0;
+            background-color: #fff;
+            overflow: hidden;
+        }
+
+        .wireframe-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .wireframe-table thead {
+            background-color: #f8f8f8;
+        }
+
+        .wireframe-table th {
+            padding: 20px 15px;
+            border-bottom: 3px solid #000;
+            border-right: 2px solid #ddd;
+            text-align: left;
+        }
+
+        .wireframe-table th:last-child {
+            border-right: none;
+        }
+
+        .wireframe-table td {
+            padding: 20px 15px;
+            border-bottom: 1px solid #ddd;
+            border-right: 2px solid #ddd;
+        }
+
+        .wireframe-table td:last-child {
+            border-right: none;
+        }
+
+        /* Placeholder elements */
+        .placeholder-box {
+            background-color: #f0f0f0;
+            border: 2px solid #000;
+            border-radius: 2px;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        .placeholder-rect {
+            height: 25px;
+            background-color: #f0f0f0;
+            border: 2px solid #000;
+            border-radius: 2px;
+            margin: 5px 0;
+        }
+
+        .placeholder-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            border: 2px solid #000;
+        }
+
+        /* Form Container */
+        .form-container-placeholder {
+            border: 3px solid #000;
+            padding: 30px;
+            background-color: #fff;
+        }
+
+        .qr-scanner-placeholder {
+            border: 3px dashed #000;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            background-color: #f8f8f8;
+        }
+
+        .qr-icon-placeholder {
+            width: 60px;
+            height: 60px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+            margin-bottom: 15px;
+        }
+
+        .qr-text {
+            width: 200px;
+            height: 25px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+        }
+
+        /* Form Rows */
+        .form-row-placeholder {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+
+        .form-group-placeholder {
+            flex: 1;
+        }
+
+        .form-label {
+            width: 100px;
+            height: 20px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+            margin-bottom: 10px;
+        }
+
+        .form-input-placeholder {
+            width: 100%;
+            height: 50px;
+            border: 2px solid #000;
+            background-color: #fff;
+        }
+
+        .form-select-placeholder {
+            width: 100%;
+            height: 50px;
+            border: 2px solid #000;
+            background-color: #fff;
+        }
+
+        /* Form Actions */
+        .form-actions-placeholder {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 2px solid #000;
+        }
+
+        .form-button {
+            width: 120px;
+            height: 45px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+        }
+
+        /* Action Buttons */
+        .action-buttons-placeholder {
+            display: flex;
+            gap: 8px;
+        }
+
+        .action-button {
+            width: 40px;
+            height: 35px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+        }
+
+        /* Wireframe annotations */
+        .wireframe-label {
+            position: absolute;
+            background-color: white;
+            border: 1px solid #000;
+            padding: 2px 6px;
+            font-size: 11px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .wireframe-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .user-info-placeholder {
+                margin-top: 15px;
+            }
+
+            .action-bar-placeholder {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-placeholder {
+                max-width: 100%;
+                margin-bottom: 15px;
+            }
+
+            .form-row-placeholder {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .table-container-placeholder {
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wireframe-container">
+        <!-- Header -->
+        <div class="wireframe-header">
+            <div class="page-title-placeholder"></div>
+            <div class="user-info-placeholder">
+                <div class="user-text"></div>
+                <div class="user-avatar-placeholder"></div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="wireframe-tabs">
+            <div class="tab-placeholder active"></div>
+            <div class="tab-placeholder"></div>
+        </div>
+
+        <!-- Books List Tab (Active) -->
+        <div id="books-list-tab">
+            <!-- Action Bar -->
+            <div class="action-bar-placeholder">
+                <div class="search-placeholder">
+                    <div class="search-box-placeholder">
+                        <div class="search-icon-placeholder"></div>
+                        <div class="search-text">Search books...</div>
+                    </div>
+                </div>
+                <div class="add-button-placeholder"></div>
+            </div>
+
+            <!-- Books Table -->
+            <div class="table-container-placeholder">
+                <table class="wireframe-table">
+                    <thead>
+                        <tr>
+                            <th><div class="placeholder-rect" style="width: 60px;"></div></th>
+                            <th><div class="placeholder-rect" style="width: 150px;"></div></th>
+                            <th><div class="placeholder-rect" style="width: 120px;"></div></th>
+                            <th><div class="placeholder-rect" style="width: 100px;"></div></th>
+                            <th><div class="placeholder-rect" style="width: 80px;"></div></th>
+                            <th><div class="placeholder-rect" style="width: 70px;"></div></th>
+                            <th><div class="placeholder-rect" style="width: 150px;"></div></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><div class="placeholder-box"></div></td>
+                            <td><div class="placeholder-rect" style="width: 150px;"></div></td>
+                            <td><div class="placeholder-rect" style="width: 120px;"></div></td>
+                            <td><div class="placeholder-box"></div></td>
+                            <td><div class="placeholder-box"></div></td>
+                            <td><div class="placeholder-box"></div></td>
+                            <td>
+                                <div class="action-buttons-placeholder">
+                                    <div class="action-button"></div>
+                                    <div class="action-button"></div>
+                                    <div class="action-button"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div class="placeholder-box"></div></td>
+                            <td><div class="placeholder-rect" style="width: 150px;"></div></td>
+                            <td><div class="placeholder-rect" style="width: 120px;"></div></td>
+                            <td><div class="placeholder-box"></div></td>
+                            <td><div class="placeholder-box"></div></td>
+                            <td><div class="placeholder-box"></div></td>
+                            <td>
+                                <div class="action-buttons-placeholder">
+                                    <div class="action-button"></div>
+                                    <div class="action-button"></div>
+                                    <div class="action-button"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div class="placeholder-box"></div></td>
+                            <td><div class="placeholder-rect" style="width: 150px;"></div></td>
+                            <td><div class="placeholder-rect" style="width: 120px;"></div></td>
+                            <td><div class="placeholder-box"></div></td>
+                            <td><div class="placeholder-box"></div></td>
+                            <td><div class="placeholder-box"></div></td>
+                            <td>
+                                <div class="action-buttons-placeholder">
+                                    <div class="action-button"></div>
+                                    <div class="action-button"></div>
+                                    <div class="action-button"></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Add Book Tab (Hidden) -->
+        <div id="add-book-tab" style="display: none;">
+            <div class="form-container-placeholder">
+                <!-- QR Scanner -->
+                <div class="qr-scanner-placeholder">
+                    <div class="qr-icon-placeholder"></div>
+                    <div class="qr-text"></div>
+                </div>
+
+                <!-- Form Rows -->
+                <div class="form-row-placeholder">
+                    <div class="form-group-placeholder">
+                        <div class="form-label"></div>
+                        <div class="form-input-placeholder"></div>
+                    </div>
+                    <div class="form-group-placeholder">
+                        <div class="form-label"></div>
+                        <div class="form-input-placeholder"></div>
+                    </div>
+                </div>
+
+                <div class="form-row-placeholder">
+                    <div class="form-group-placeholder">
+                        <div class="form-label"></div>
+                        <div class="form-input-placeholder"></div>
+                    </div>
+                    <div class="form-group-placeholder">
+                        <div class="form-label"></div>
+                        <div class="form-input-placeholder"></div>
+                    </div>
+                </div>
+
+                <div class="form-row-placeholder">
+                    <div class="form-group-placeholder">
+                        <div class="form-label"></div>
+                        <div class="form-select-placeholder"></div>
+                    </div>
+                    <div class="form-group-placeholder">
+                        <div class="form-label"></div>
+                        <div class="form-input-placeholder"></div>
+                    </div>
+                </div>
+
+                <!-- Form Actions -->
+                <div class="form-actions-placeholder">
+                    <div class="form-button"></div>
+                    <div class="form-button"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add sample text to placeholders
+        document.addEventListener('DOMContentLoaded', function() {
+            // Header
+            const pageTitle = document.querySelector('.page-title-placeholder');
+            if (pageTitle) {
+                pageTitle.textContent = 'Manage Books';
+                pageTitle.style.color = '#333';
+                pageTitle.style.fontSize = '28px';
+                pageTitle.style.fontWeight = 'bold';
+                pageTitle.style.display = 'flex';
+                pageTitle.style.alignItems = 'center';
+                pageTitle.style.paddingLeft = '10px';
+            }
+
+            const userText = document.querySelector('.user-text');
+            if (userText) {
+                userText.textContent = 'Hi, Librarian';
+                userText.style.color = '#666';
+                userText.style.fontSize = '16px';
+                userText.style.display = 'flex';
+                userText.style.alignItems = 'center';
+                userText.style.paddingLeft = '5px';
+            }
+
+            // Tabs
+            const tabs = document.querySelectorAll('.tab-placeholder');
+            const tabTexts = ['Books List', 'Add Book'];
+            tabs.forEach((tab, index) => {
+                if (tabTexts[index]) {
+                    tab.textContent = tabTexts[index];
+                    tab.style.color = '#333';
+                    tab.style.fontSize = '16px';
+                    tab.style.fontWeight = '600';
+                }
+            });
+
+            // Active tab styling
+            const activeTab = document.querySelector('.tab-placeholder.active');
+            if (activeTab) {
+                activeTab.style.color = '#fff';
+            }
+
+            // Search placeholder text
+            const searchText = document.querySelector('.search-text');
+            if (searchText) {
+                searchText.textContent = 'Search books by title, author, or ISBN...';
+                searchText.style.color = '#666';
+                searchText.style.fontSize = '14px';
+                searchText.style.fontStyle = 'italic';
+            }
+
+            // Add button
+            const addButton = document.querySelector('.add-button-placeholder');
+            if (addButton) {
+                addButton.textContent = '+ Add Book';
+                addButton.style.color = '#333';
+                addButton.style.fontSize = '16px';
+                addButton.style.fontWeight = '600';
+                addButton.style.display = 'flex';
+                addButton.style.alignItems = 'center';
+                addButton.style.justifyContent = 'center';
+            }
+
+            // Table headers
+            const tableHeaders = document.querySelectorAll('.wireframe-table thead .placeholder-rect');
+            const headerTexts = ['ID', 'Book Title', 'Author', 'ISBN', 'Category', 'Available', 'Actions'];
+            tableHeaders.forEach((header, index) => {
+                if (headerTexts[index]) {
+                    header.textContent = headerTexts[index];
+                    header.style.color = '#333';
+                    header.style.fontSize = '14px';
+                    header.style.fontWeight = 'bold';
+                    header.style.paddingLeft = '5px';
+                }
+            });
+
+            // Table cells
+            const tableBoxes = document.querySelectorAll('.placeholder-box');
+            tableBoxes.forEach((box, index) => {
+                const sampleData = ['BOOK001', 'XXX-XXX-XXX', 'cat1', '3/5', 'Sample Data'];
+                const dataIndex = index % sampleData.length;
+                box.textContent = sampleData[dataIndex];
+                box.style.color = '#666';
+                box.style.fontSize = '14px';
+                box.style.paddingLeft = '8px';
+            });
+
+            const tableRects = document.querySelectorAll('.wireframe-table tbody .placeholder-rect');
+            tableRects.forEach((rect, index) => {
+                const sampleData = ['Title-1', 'Author-1', 'Title-2', 'Author-2', 'Title-3', 'Author-3'];
+                if (sampleData[index]) {
+                    rect.textContent = sampleData[index];
+                    rect.style.color = '#333';
+                    rect.style.fontSize = '14px';
+                    rect.style.paddingLeft = '8px';
+                }
+            });
+
+            // Action buttons
+            const actionButtons = document.querySelectorAll('.action-button');
+            actionButtons.forEach((button, index) => {
+                const icons = ['👁️', '✏️', '🗑️'];
+                button.textContent = icons[index % 3];
+                button.style.fontSize = '16px';
+                button.style.display = 'flex';
+                button.style.alignItems = 'center';
+                button.style.justifyContent = 'center';
+            });
+
+            // Form labels
+            const formLabels = document.querySelectorAll('.form-label');
+            const labelTexts = ['ISBN', 'Book Name', 'Author', 'Publication', 'Category', 'Book Count'];
+            formLabels.forEach((label, index) => {
+                if (labelTexts[index]) {
+                    label.textContent = labelTexts[index];
+                    label.style.color = '#333';
+                    label.style.fontSize = '14px';
+                    label.style.fontWeight = '600';
+                    label.style.paddingLeft = '5px';
+                }
+            });
+
+            // Form inputs placeholder text
+            const formInputs = document.querySelectorAll('.form-input-placeholder, .form-select-placeholder');
+            formInputs.forEach((input, index) => {
+                const placeholders = ['e.g., 9780743273565', 'e.g., The Great Gatsby', 'e.g., F. Scott Fitzgerald', 'e.g., Scribner', 'Select Category', 'e.g., 5'];
+                if (placeholders[index]) {
+                    input.textContent = placeholders[index];
+                    input.style.color = '#888';
+                    input.style.fontSize = '14px';
+                    input.style.fontStyle = 'italic';
+                    input.style.paddingLeft = '10px';
+                    input.style.display = 'flex';
+                    input.style.alignItems = 'center';
+                }
+            });
+
+            // QR Scanner
+            const qrText = document.querySelector('.qr-text');
+            if (qrText) {
+                qrText.textContent = 'Scan ISBN QR code';
+                qrText.style.color = '#666';
+                qrText.style.fontSize = '16px';
+                qrText.style.paddingLeft = '5px';
+            }
+
+            // Form buttons
+            const formButtons = document.querySelectorAll('.form-button');
+            const buttonTexts = ['Cancel', 'Save Book'];
+            formButtons.forEach((button, index) => {
+                if (buttonTexts[index]) {
+                    button.textContent = buttonTexts[index];
+                    button.style.color = '#333';
+                    button.style.fontSize = '16px';
+                    button.style.fontWeight = '600';
+                    button.style.display = 'flex';
+                    button.style.alignItems = 'center';
+                    button.style.justifyContent = 'center';
+                }
+            });
+
+            // Tab switching functionality
+            tabs.forEach((tab, index) => {
+                tab.addEventListener('click', function() {
+                    // Update active tab
+                    tabs.forEach(t => {
+                        t.classList.remove('active');
+                        t.style.color = '#333';
+                        t.style.backgroundColor = '#f8f8f8';
+                    });
+                    
+                    this.classList.add('active');
+                    this.style.color = '#fff';
+                    this.style.backgroundColor = '#000';
+                    
+                    // Show/hide tab content
+                    if (index === 0) {
+                        document.getElementById('books-list-tab').style.display = 'block';
+                        document.getElementById('add-book-tab').style.display = 'none';
+                    } else {
+                        document.getElementById('books-list-tab').style.display = 'none';
+                        document.getElementById('add-book-tab').style.display = 'block';
+                    }
+                });
+            });
+
+            // Add button click
+            if (addButton) {
+                addButton.addEventListener('click', function() {
+                    // Switch to Add Book tab
+                    tabs.forEach(t => {
+                        t.classList.remove('active');
+                        t.style.color = '#333';
+                        t.style.backgroundColor = '#f8f8f8';
+                    });
+                    
+                    tabs[1].classList.add('active');
+                    tabs[1].style.color = '#fff';
+                    tabs[1].style.backgroundColor = '#000';
+                    
+                    document.getElementById('books-list-tab').style.display = 'none';
+                    document.getElementById('add-book-tab').style.display = 'block';
+                });
+            }
+
+            // Cancel button click
+            const cancelButton = document.querySelectorAll('.form-button')[0];
+            if (cancelButton) {
+                cancelButton.addEventListener('click', function() {
+                    // Switch to Books List tab
+                    tabs.forEach(t => {
+                        t.classList.remove('active');
+                        t.style.color = '#333';
+                        t.style.backgroundColor = '#f8f8f8';
+                    });
+                    
+                    tabs[0].classList.add('active');
+                    tabs[0].style.color = '#fff';
+                    tabs[0].style.backgroundColor = '#000';
+                    
+                    document.getElementById('books-list-tab').style.display = 'block';
+                    document.getElementById('add-book-tab').style.display = 'none';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

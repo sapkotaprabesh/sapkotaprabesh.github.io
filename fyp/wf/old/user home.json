@@ -1,0 +1,96 @@
+{
+  "version": "1.0",
+  "title": "user home",
+  "width": 1300,
+  "height": 800,
+  "components": [
+    {
+      "type": "navbar",
+      "x": 54.999999999999496,
+      "y": 68.96974055048483,
+      "width": 1199.999999999992,
+      "height": 225.7473406205995,
+      "label": "ABC Library Navbar"
+    },
+    {
+      "type": "card",
+      "x": 144.33333333333334,
+      "y": 463.33333333333337,
+      "width": 360,
+      "height": 240,
+      "label": "Book Card"
+    },
+    {
+      "type": "input",
+      "x": 65,
+      "y": 173.3333333333333,
+      "width": 720,
+      "height": 80,
+      "label": "Search book"
+    },
+    {
+      "type": "heading",
+      "x": 142.66666666666544,
+      "y": 99.99999999999932,
+      "width": 179.99999999999883,
+      "height": 75.00000000000071,
+      "label": "ABC Library"
+    },
+    {
+      "type": "heading",
+      "x": 182.33333333333331,
+      "y": 553.3333333333334,
+      "width": 240,
+      "height": 40,
+      "label": "Title - 1"
+    },
+    {
+      "type": "text",
+      "x": 180.66666666666663,
+      "y": 596.6666666666666,
+      "width": 240,
+      "height": 24,
+      "label": "Author - 1"
+    },
+    {
+      "type": "text",
+      "x": 206.66666666666666,
+      "y": 635,
+      "width": 240,
+      "height": 24,
+      "label": "cat1"
+    },
+    {
+      "type": "heading",
+      "x": 590,
+      "y": 380,
+      "width": 120,
+      "height": 40,
+      "label": "Section - 1"
+    },
+    {
+      "type": "icon",
+      "x": 71,
+      "y": 73.33333333333333,
+      "width": 48,
+      "height": 80,
+      "label": "Book Icon"
+    },
+    {
+      "type": "icon",
+      "x": 172.33333333333334,
+      "y": 626.6666666666667,
+      "width": 36,
+      "height": 24,
+      "label": "Category Icon"
+    },
+    {
+      "type": "button",
+      "x": 368.9902495363452,
+      "y": 474.2006882028154,
+      "width": 120,
+      "height": 40,
+      "label": "Available"
+    }
+  ]
+}

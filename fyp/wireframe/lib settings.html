@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Wireframe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+            color: #333;
+            line-height: 1.4;
+            padding: 20px;
+        }
+
+        .wireframe-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Wireframe Header */
+        .wireframe-header {
+            border: 3px solid #000;
+            padding: 25px 30px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        .page-title-placeholder {
+            width: 250px;
+            height: 40px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+        }
+
+        .user-info-placeholder {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .user-text {
+            width: 100px;
+            height: 25px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+        }
+
+        .user-avatar-placeholder {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+        }
+
+        /* Alert Message */
+        .alert-placeholder {
+            border: 3px solid #000;
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: #f8f8f8;
+            display: none;
+        }
+
+        /* Settings Sections */
+        .settings-section-placeholder {
+            border: 3px solid #000;
+            padding: 30px;
+            margin-bottom: 30px;
+            background-color: #fff;
+        }
+
+        .section-header-placeholder {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #000;
+        }
+
+        .section-icon {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+            margin-right: 15px;
+        }
+
+        .section-title {
+            width: 200px;
+            height: 30px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+        }
+
+        /* Form Elements */
+        .form-row-placeholder {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+
+        .form-group-placeholder {
+            flex: 1;
+        }
+
+        .form-label {
+            width: 150px;
+            height: 20px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+            margin-bottom: 10px;
+        }
+
+        .form-input-placeholder {
+            width: 100%;
+            height: 50px;
+            border: 2px solid #000;
+            background-color: #fff;
+        }
+
+        .textarea-placeholder {
+            width: 100%;
+            height: 100px;
+            border: 2px solid #000;
+            background-color: #fff;
+        }
+
+        /* Input Groups */
+        .input-group-placeholder {
+            display: flex;
+            align-items: center;
+        }
+
+        .input-prefix {
+            width: 100px;
+            height: 50px;
+            border: 2px solid #000;
+            border-right: none;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .input-group-placeholder .form-input-placeholder {
+            border-left: none;
+        }
+
+        /* Premium Feature */
+        .premium-feature-placeholder {
+            border: 3px dashed #000;
+            padding: 25px;
+            margin-top: 20px;
+            background-color: #f8f8f8;
+            position: relative;
+        }
+
+        .premium-badge {
+            position: absolute;
+            top: -15px;
+            left: 15px;
+            width: 120px;
+            height: 30px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+        }
+
+        .premium-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .premium-text {
+            width: 200px;
+            height: 20px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+        }
+
+        .premium-button {
+            width: 150px;
+            height: 40px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+        }
+
+        /* Color Picker */
+        .color-picker-group {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 20px;
+        }
+
+        .color-picker-placeholder {
+            flex: 1;
+        }
+
+        .color-input-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .color-swatch {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+        }
+
+        /* Fine Settings Grid */
+        .fine-grid-placeholder {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .fine-setting-placeholder {
+            border: 2px solid #000;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        .fine-title {
+            width: 150px;
+            height: 20px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+            margin-bottom: 15px;
+        }
+
+        /* Social Media Inputs */
+        .social-input-placeholder {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .social-icon-placeholder {
+            width: 60px;
+            height: 50px;
+            border: 2px solid #000;
+            border-right: none;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-input-placeholder .form-input-placeholder {
+            border-left: none;
+        }
+
+        /* Form Actions */
+        .form-actions-placeholder {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 2px solid #000;
+        }
+
+        .form-button {
+            width: 150px;
+            height: 50px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+        }
+
+        /* Help Text */
+        .help-text {
+            width: 300px;
+            height: 20px;
+            border: 2px solid #000;
+            background-color: #f0f0f0;
+            margin-top: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .wireframe-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .user-info-placeholder {
+                margin-top: 15px;
+            }
+
+            .form-row-placeholder {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .color-picker-group {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .fine-grid-placeholder {
+                grid-template-columns: 1fr;
+            }
+
+            .premium-info {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .form-actions-placeholder {
+                flex-direction: column;
+            }
+
+            .form-button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wireframe-container">
+        <!-- Header -->
+        <div class="wireframe-header">
+            <div class="page-title-placeholder"></div>
+            <div class="user-info-placeholder">
+                <div class="user-text"></div>
+                <div class="user-avatar-placeholder"></div>
+            </div>
+        </div>
+
+        <!-- Alert Message -->
+        <div class="alert-placeholder" id="alert-message"></div>
+
+        <!-- Library Information Section -->
+        <div class="settings-section-placeholder">
+            <div class="section-header-placeholder">
+                <div class="section-title"></div>
+            </div>
+
+            <div class="form-row-placeholder">
+                <div class="form-group-placeholder">
+                    <div class="form-label"></div>
+                    <div class="form-input-placeholder"></div>
+                </div>
+            </div>
+
+            <div class="form-row-placeholder">
+                <div class="form-group-placeholder">
+                    <div class="form-label"></div>
+                    <div class="textarea-placeholder"></div>
+                </div>
+            </div>
+
+            <div class="form-row-placeholder">
+                <div class="form-group-placeholder">
+                    <div class="form-label"></div>
+                    <div class="input-group-placeholder">
+                        <div class="form-input-placeholder" style="border-right: none;"></div>
+                        <div class="input-prefix"></div>
+                    </div>
+                    <div class="help-text"></div>
+                </div>
+            </div>
+
+            <!-- Premium Feature -->
+            <div class="premium-feature-placeholder">
+                <div class="premium-badge"></div>
+                <div class="form-group-placeholder">
+                    <div class="form-label"></div>
+                    <div class="form-input-placeholder"></div>
+                    <div class="help-text"></div>
+                </div>
+                <div class="premium-info">
+                    <div class="premium-button"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Details Section -->
+        <div class="settings-section-placeholder">
+            <div class="section-header-placeholder">
+                <div class="section-title"></div>
+            </div>
+
+            <div class="form-row-placeholder">
+                <div class="form-group-placeholder">
+                    <div class="form-label"></div>
+                    <div class="form-input-placeholder"></div>
+                </div>
+                <div class="form-group-placeholder">
+                    <div class="form-label"></div>
+                    <div class="form-input-placeholder"></div>
+                </div>
+            </div>
+
+            <div class="form-row-placeholder">
+                <div class="form-group-placeholder">
+                    <div class="form-label"></div>
+                    <div class="textarea-placeholder" style="height: 70px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="settings-section-placeholder">
+            <div class="section-header-placeholder">
+                <div class="section-title"></div>
+            </div>
+
+            <div class="social-input-placeholder">
+                <div class="social-icon-placeholder"></div>
+                <div class="form-input-placeholder"></div>
+            </div>
+
+            <div class="social-input-placeholder">
+                <div class="social-icon-placeholder"></div>
+                <div class="form-input-placeholder"></div>
+            </div>
+
+            <div class="social-input-placeholder">
+                <div class="social-icon-placeholder"></div>
+                <div class="form-input-placeholder"></div>
+            </div>
+
+            <div class="social-input-placeholder">
+                <div class="social-icon-placeholder"></div>
+                <div class="form-input-placeholder"></div>
+            </div>
+        </div>
+
+        <!-- Theme Colors Section -->
+        <div class="settings-section-placeholder">
+            <div class="section-header-placeholder">
+                <div class="section-title"></div>
+            </div>
+
+            <div class="color-picker-group">
+                <div class="color-picker-placeholder">
+                    <div class="form-label"></div>
+                    <div class="color-input-group">
+                        <div class="form-input-placeholder"></div>
+                        <div class="color-swatch"></div>
+                    </div>
+                </div>
+
+                <div class="color-picker-placeholder">
+                    <div class="form-label"></div>
+                    <div class="color-input-group">
+                        <div class="form-input-placeholder"></div>
+                        <div class="color-swatch"></div>
+                    </div>
+                </div>
+
+                <div class="color-picker-placeholder">
+                    <div class="form-label"></div>
+                    <div class="color-input-group">
+                        <div class="form-input-placeholder"></div>
+                        <div class="color-swatch"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fine Settings Section -->
+        <div class="settings-section-placeholder">
+            <div class="section-header-placeholder">
+                <div class="section-title"></div>
+            </div>
+
+            <div class="fine-grid-placeholder">
+                <div class="fine-setting-placeholder">
+                    <div class="fine-title"></div>
+                    <div class="input-group-placeholder">
+                        <div class="form-input-placeholder" style="border-right: none;"></div>
+                        <div class="input-prefix"></div>
+                    </div>
+                </div>
+
+                <div class="fine-setting-placeholder">
+                    <div class="fine-title"></div>
+                    <div class="input-group-placeholder">
+                        <div class="input-prefix"></div>
+                        <div class="form-input-placeholder" style="border-left: none;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row-placeholder" style="margin-top: 20px;">
+                <div class="form-group-placeholder">
+                    <div class="form-label"></div>
+                    <div class="input-group-placeholder">
+                        <div class="form-input-placeholder"></div>
+                    </div>
+                    <div class="help-text"></div>
+                </div>
+
+                <div class="form-group-placeholder">
+                    <div class="form-label"></div>
+                    <div class="input-group-placeholder">
+                        <div class="input-prefix"></div>
+                        <div class="form-input-placeholder" style="border-left: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Actions -->
+        <div class="form-actions-placeholder">
+            <div class="form-button"></div>
+            <div class="form-button"></div>
+        </div>
+    </div>
+
+    <script>
+        // Add sample text to placeholders
+        document.addEventListener('DOMContentLoaded', function() {
+            // Header
+            const pageTitle = document.querySelector('.page-title-placeholder');
+            if (pageTitle) {
+                pageTitle.textContent = 'Library Settings';
+                pageTitle.style.color = '#333';
+                pageTitle.style.fontSize = '28px';
+                pageTitle.style.fontWeight = 'bold';
+                pageTitle.style.display = 'flex';
+                pageTitle.style.alignItems = 'center';
+                pageTitle.style.paddingLeft = '10px';
+            }
+
+            const userText = document.querySelector('.user-text');
+            if (userText) {
+                userText.textContent = 'Hi, Librarian';
+                userText.style.color = '#666';
+                userText.style.fontSize = '16px';
+                userText.style.display = 'flex';
+                userText.style.alignItems = 'center';
+                userText.style.paddingLeft = '5px';
+            }
+
+            // Alert message
+            const alertMessage = document.getElementById('alert-message');
+            if (alertMessage) {
+                alertMessage.textContent = 'Settings saved successfully!';
+                alertMessage.style.color = '#333';
+                alertMessage.style.fontSize = '16px';
+                alertMessage.style.display = 'flex';
+                alertMessage.style.alignItems = 'center';
+                alertMessage.style.paddingLeft = '10px';
+            }
+
+            // Section titles
+            const sectionTitles = document.querySelectorAll('.section-title');
+            const titleTexts = [
+                'Library Information',
+                'Contact Details',
+                'Social Media Links',
+                'Customize Website',
+                'Fine Settings'
+            ];
+
+            sectionTitles.forEach((title, index) => {
+                if (titleTexts[index]) {
+                    title.textContent = titleTexts[index];
+                    title.style.color = '#333';
+                    title.style.fontSize = '20px';
+                    title.style.fontWeight = 'bold';
+                    title.style.paddingLeft = '5px';
+                }
+            });
+
+            // Form labels
+            const formLabels = document.querySelectorAll('.form-label');
+            const labelTexts = [
+                'Library Name', 'About Library', 'Library Subdomain',
+                'Custom Domain', 'Contact Email', 'Contact Phone',
+                'Library Address', 'Primary Color', 'Secondary Color',
+                'Accent Color', 'Issue Duration', 'Overdue Fine',
+                'Fine Increase Every x Days', 'Fine Increase Amount'
+            ];
+
+            formLabels.forEach((label, index) => {
+                if (labelTexts[index]) {
+                    label.textContent = labelTexts[index];
+                    label.style.color = '#333';
+                    label.style.fontSize = '14px';
+                    label.style.fontWeight = '600';
+                    label.style.paddingLeft = '5px';
+                }
+            });
+
+            // Form inputs
+            const formInputs = document.querySelectorAll('.form-input-placeholder');
+            const inputTexts = [
+                'ABC Public Library',
+                'central-library',
+                'abc-lib',
+                'library.orgname.com',
+                'info@orgname.com',
+                '+977 (980) 456-4597',
+                '123 Street',
+                '#3498db',
+                '#2c3e50',
+                '#e74c3c',
+                '14',
+                '0.50',
+                '7',
+                '0.25'
+            ];
+
+            formInputs.forEach((input, index) => {
+                if (inputTexts[index]) {
+                    input.textContent = inputTexts[index];
+                    input.style.color = '#666';
+                    input.style.fontSize = '14px';
+                    input.style.fontStyle = 'italic';
+                    input.style.paddingLeft = '10px';
+                    input.style.display = 'flex';
+                    input.style.alignItems = 'center';
+                }
+            });
+
+            // Textareas
+            const textareas = document.querySelectorAll('.textarea-placeholder');
+            if (textareas[0]) {
+                textareas[0].textContent = 'Write about your library...';
+                textareas[0].style.color = '#666';
+                textareas[0].style.fontSize = '14px';
+                textareas[0].style.padding = '10px';
+            }
+
+            if (textareas[1]) {
+                textareas[1].textContent = '123 Knowledge Street, Central City, CC 12345';
+                textareas[1].style.color = '#666';
+                textareas[1].style.fontSize = '14px';
+                textareas[1].style.padding = '10px';
+            }
+
+            // Input prefixes
+            const prefixes = document.querySelectorAll('.input-prefix');
+            const prefixTexts = ['.libx.com', 'Days', 'NRs.', 'NRs.'];
+            prefixes.forEach((prefix, index) => {
+                if (prefixTexts[index]) {
+                    prefix.textContent = prefixTexts[index];
+                    prefix.style.color = '#666';
+                    prefix.style.fontSize = '14px';
+                }
+            });
+
+            // Help text
+            const helpTexts = document.querySelectorAll('.help-text');
+            const helpTextContent = [
+                'at: central-library.libx.com',
+                'Use your own domain name instead of libx.com',
+                '0 = no increase'
+            ];
+
+            helpTexts.forEach((help, index) => {
+                if (helpTextContent[index]) {
+                    help.textContent = helpTextContent[index];
+                    help.style.color = '#666';
+                    help.style.fontSize = '13px';
+                    help.style.fontStyle = 'italic';
+                    help.style.paddingLeft = '5px';
+                }
+            });
+
+            // Premium badge
+            const premiumBadge = document.querySelector('.premium-badge');
+            if (premiumBadge) {
+                premiumBadge.textContent = 'PREMIUM FEATURE';
+                premiumBadge.style.color = '#333';
+                premiumBadge.style.fontSize = '12px';
+                premiumBadge.style.fontWeight = 'bold';
+                premiumBadge.style.display = 'flex';
+                premiumBadge.style.alignItems = 'center';
+                premiumBadge.style.justifyContent = 'center';
+            }
+
+            // Premium text and button
+            const premiumButton = document.querySelector('.premium-button');
+            if (premiumButton) {
+                premiumButton.textContent = 'Upgrade to Premium';
+                premiumButton.style.color = '#333';
+                premiumButton.style.fontSize = '14px';
+                premiumButton.style.fontWeight = '600';
+                premiumButton.style.display = 'flex';
+                premiumButton.style.alignItems = 'center';
+                premiumButton.style.justifyContent = 'center';
+            }
+
+            // Color swatches
+            const colorSwatches = document.querySelectorAll('.color-swatch');
+            const colors = ['#3498db', '#2c3e50', '#e74c3c'];
+            colorSwatches.forEach((swatch, index) => {
+                if (colors[index]) {
+                    swatch.style.backgroundColor = colors[index];
+                }
+            });
+
+            // Fine titles
+            const fineTitles = document.querySelectorAll('.fine-title');
+            const fineTitleTexts = ['Issue Duration', 'Overdue Fine'];
+            fineTitles.forEach((title, index) => {
+                if (fineTitleTexts[index]) {
+                    title.textContent = fineTitleTexts[index];
+                    title.style.color = '#333';
+                    title.style.fontSize = '16px';
+                    title.style.fontWeight = '600';
+                    title.style.paddingLeft = '5px';
+                }
+            });
+
+            // Social icons
+            const socialIcons = document.querySelectorAll('.social-icon-placeholder');
+            const socialIconTexts = ['fb', 'tw', 'ig', 'yt'];
+            socialIcons.forEach((icon, index) => {
+                if (socialIconTexts[index]) {
+                    icon.textContent = socialIconTexts[index];
+                    icon.style.color = '#333';
+                    icon.style.fontSize = '16px';
+                    icon.style.fontWeight = 'bold';
+                }
+            });
+
+            // Social inputs
+            const socialInputs = document.querySelectorAll('.social-input-placeholder .form-input-placeholder');
+            const socialInputTexts = [
+                'https://facebook.com/centrallibrary',
+                'https://twitter.com/centrallibrary',
+                'https://instagram.com/centrallibrary',
+                'https://youtube.com/c/centrallibrary'
+            ];
+
+            socialInputs.forEach((input, index) => {
+                if (socialInputTexts[index]) {
+                    input.textContent = socialInputTexts[index];
+                    input.style.color = '#666';
+                    input.style.fontSize = '14px';
+                    input.style.paddingLeft = '10px';
+                }
+            });
+
+            // Form buttons
+            const formButtons = document.querySelectorAll('.form-button');
+            const buttonTexts = ['Cancel', 'Save All Settings'];
+            formButtons.forEach((button, index) => {
+                if (buttonTexts[index]) {
+                    button.textContent = buttonTexts[index];
+                    button.style.color = '#333';
+                    button.style.fontSize = '16px';
+                    button.style.fontWeight = '600';
+                    button.style.display = 'flex';
+                    button.style.alignItems = 'center';
+                    button.style.justifyContent = 'center';
+                }
+            });
+
+            // Button click handlers
+            const saveButton = formButtons[1];
+            if (saveButton) {
+                saveButton.addEventListener('click', function() {
+                    // Show alert
+                    alertMessage.style.display = 'flex';
+
+                    // Hide after 3 seconds
+                    setTimeout(() => {
+                        alertMessage.style.display = 'none';
+                    }, 3000);
+
+                    alert("Wireframe demo - In real app, settings would be saved to database");
+                });
+            }
+
+            const cancelButton = formButtons[0];
+            if (cancelButton) {
+                cancelButton.addEventListener('click', function() {
+                    if (confirm("Wireframe demo - Discard changes?")) {
+                        alert("Changes would be discarded in real app");
+                    }
+                });
+            }
+
+            if (premiumButton) {
+                premiumButton.addEventListener('click', function() {
+                    alert("Wireframe demo - Premium upgrade would be initiated");
+                });
+            }
+
+            // Color swatch click handlers
+            colorSwatches.forEach((swatch, index) => {
+                swatch.addEventListener('click', function() {
+                    const colorNames = ['blue', 'dark blue', 'red'];
+                    alert(`Wireframe demo - Color picker would open for ${colorNames[index]}`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

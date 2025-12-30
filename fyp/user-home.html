@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Admin - Book Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --success: #27ae60;
+            --warning: #f39c12;
+            --danger: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --gray: #95a5a6;
+            --card-bg: #ffffff;
+            --border: #dfe6e9;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), #1a2530);
+            color: white;
+            padding: 25px 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo i {
+            font-size: 2.5rem;
+            color: var(--secondary);
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .admin-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 15px;
+            border-radius: 50px;
+        }
+
+        .admin-info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid var(--secondary);
+        }
+
+        .search-container {
+            margin: 25px 0 30px;
+            position: relative;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 18px 25px 18px 55px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            background-color: white;
+        }
+
+        .search-box:focus {
+            outline: none;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gray);
+            font-size: 1.2rem;
+        }
+
+        .tabs {
+            display: flex;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 18px 20px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 4px solid transparent;
+        }
+
+        .tab:hover {
+            background-color: #f8f9fa;
+        }
+
+        .tab.active {
+            border-bottom: 4px solid var(--secondary);
+            color: var(--secondary);
+            background-color: #f8f9fa;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .book-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border);
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .book-header {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .book-id {
+            font-size: 0.85rem;
+            color: var(--gray);
+            background-color: #e9ecef;
+            padding: 3px 10px;
+            border-radius: 20px;
+        }
+
+        .book-body {
+            padding: 20px;
+        }
+
+        .book-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--primary);
+            line-height: 1.4;
+        }
+
+        .book-author {
+            color: var(--gray);
+            font-size: 1rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .book-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        .book-status {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .status-available {
+            background-color: rgba(39, 174, 96, 0.15);
+            color: var(--success);
+        }
+
+        .status-issued {
+            background-color: rgba(231, 76, 60, 0.15);
+            color: var(--danger);
+        }
+
+        .status-due {
+            background-color: rgba(243, 156, 18, 0.15);
+            color: var(--warning);
+        }
+
+        .book-footer {
+            padding: 0 20px 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .btn-success:hover {
+            background-color: #219653;
+        }
+
+        .btn-warning {
+            background-color: var(--warning);
+            color: white;
+        }
+
+        .btn-warning:hover {
+            background-color: #e67e22;
+        }
+
+        .issued-section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border);
+            color: var(--primary);
+        }
+
+        .overdue-title {
+            color: var(--danger);
+        }
+
+        .today-title {
+            color: var(--warning);
+        }
+
+        .tomorrow-title {
+            color: #e67e22;
+        }
+
+        .week-title {
+            color: var(--secondary);
+        }
+
+        .month-title {
+            color: #9b59b6;
+        }
+
+        .member-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed var(--border);
+        }
+
+        .member-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: var(--secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .member-details {
+            flex: 1;
+        }
+
+        .member-name {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .member-id {
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+
+        .due-date {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--danger);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .due-date.overdue {
+            color: var(--danger);
+        }
+
+        .due-date.today {
+            color: var(--warning);
+        }
+
+        .due-date.tomorrow {
+            color: #e67e22;
+        }
+
+        .no-books {
+            text-align: center;
+            padding: 50px 20px;
+            color: var(--gray);
+            font-size: 1.1rem;
+            grid-column: 1 / -1;
+        }
+
+        .no-books i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #ddd;
+        }
+
+        .search-hint {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: var(--gray);
+            padding-left: 10px;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .admin-info {
+                align-self: flex-end;
+            }
+
+            .books-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            }
+
+            .tabs {
+                flex-direction: column;
+            }
+
+            .tab {
+                border-bottom: 1px solid var(--border);
+                border-right: none;
+            }
+
+            .tab.active {
+                border-bottom: 4px solid var(--secondary);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 15px;
+            }
+
+            .books-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .book-footer {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .search-box {
+                padding: 15px 20px 15px 50px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-book-open"></i>
+                    <h1>ABC Library</h1>
+                </div>
+            </div>
+
+            <div class="search-container">
+                <input type="text" class="search-box" id="searchInput" placeholder="Search book">
+            </div>
+        </header>
+
+        <div class="tabs">
+            <div class="tab active" data-tab="all-books">Section - 1</div>
+        </div>
+
+        <div class="tab-content active" id="all-books">
+            <div id="all-books-container">
+                <!-- Books will be dynamically generated here -->
+            </div>
+        </div>
+
+        <div class="tab-content" id="issued-books">
+            <div id="issued-books-container">
+                <!-- Issued books will be dynamically generated here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample data for books
+        const books = [
+            {
+                id: "BOOK1",
+                title: "Title - 1",
+                author: "Author - 1",
+                status: "available",
+                category: "cat1",
+                publishedYear: 1925,
+                isbn: "9780743273565"
+            },
+        ];
+
+        // Sample members
+        const members = [
+            { id: "MEM101", name: "John Smith", email: "john.smith@example.com" },
+            { id: "MEM102", name: "Sarah Johnson", email: "sarah.j@example.com" },
+            { id: "MEM103", name: "Michael Brown", email: "michael.b@example.com" },
+            { id: "MEM104", name: "Emily Davis", email: "emily.d@example.com" },
+            { id: "MEM105", name: "Robert Wilson", email: "robert.w@example.com" }
+        ];
+
+        // Initialize the app
+        document.addEventListener('DOMContentLoaded', function() {
+            renderAllBooks();
+            renderIssuedBooks();
+            setupEventListeners();
+        });
+
+        // Setup event listeners for tabs and search
+        function setupEventListeners() {
+            // Tab switching
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+
+                    // Update active tab
+                    tabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Show corresponding content
+                    document.querySelectorAll('.tab-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+
+            // Search functionality
+            const searchInput = document.getElementById('searchInput');
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase().trim();
+                filterBooks(searchTerm);
+                filterIssuedBooks(searchTerm);
+            });
+        }
+
+        // Render all books in the grid
+        function renderAllBooks(filteredBooks = books) {
+            const container = document.getElementById('all-books-container');
+
+            if (filteredBooks.length === 0) {
+                container.innerHTML = `
+                    <div class="no-books">
+                        <i class="fas fa-book"></i>
+                        <h3>No books found</h3>
+                        <p>Try a different search term</p>
+                    </div>
+                `;
+                return;
+            }
+
+            let html = '<div class="books-grid">';
+
+            filteredBooks.forEach(book => {
+                // Determine button configuration
+                let buttonsHtml = '';
+                if (book.status === 'available') {
+                    buttonsHtml = `
+                    `;
+                } else if (book.status === 'issued') {
+                    buttonsHtml = `
+                        <button class="btn btn-success" onclick="returnBook('${book.id}')">
+                            <i class="fas fa-undo-alt"></i> Return Book
+                        </button>
+                        <button class="btn btn-warning" onclick="renewBook('${book.id}')">
+                            <i class="fas fa-redo-alt"></i> Renew
+                        </button>
+                    `;
+                }
+
+                // Member info if book is issued
+                let memberInfoHtml = '';
+                if (book.issuedTo) {
+                    memberInfoHtml = `
+                        <div class="member-info">
+                            <div class="member-details">
+                                <div class="member-name">${book.issuedTo.name}</div>
+                                <div class="member-id">${book.issuedTo.id}</div>
+                            </div>
+                            <div class="due-date ${book.issuedTo.overdue ? 'overdue' : ''}">
+                                <i class="far fa-calendar-alt"></i> Due: ${formatDate(book.issuedTo.dueDate)}
+                            </div>
+                        </div>
+                    `;
+                }
+
+                html += `
+                    <div class="book-card">
+                        <div class="book-header">
+                            <div class="book-id">${book.id}</div>
+                            <div class="book-status status-${book.status}">${book.status === 'available' ? 'Available' : 'Issued'}</div>
+                        </div>
+                        <div class="book-body">
+                            <h3 class="book-title">${book.title}</h3>
+                            <div class="book-author">
+                                <i class="fas fa-user-pen"></i> ${book.author}
+                            </div>
+                            <div class="book-meta">
+                                <div><i class="fas fa-tag"></i> ${book.category}</div>
+                            </div>
+                            ${memberInfoHtml}
+                        </div>
+                        <div class="book-footer">
+                            ${buttonsHtml}
+                        </div>
+                    </div>
+                `;
+            });
+
+            html += '</div>';
+            container.innerHTML = html;
+        }
+
+        // Render issued books organized by due date
+        function renderIssuedBooks(filteredBooks = books.filter(book => book.status === 'issued')) {
+            const container = document.getElementById('issued-books-container');
+
+            if (filteredBooks.length === 0) {
+                container.innerHTML = `
+                    <div class="no-books">
+                        <i class="fas fa-book"></i>
+                        <h3>No issued books found</h3>
+                        <p>Try a different search term</p>
+                    </div>
+                `;
+                return;
+            }
+
+            // Categorize books by due date
+            const overdueBooks = filteredBooks.filter(book => book.issuedTo.overdue);
+            const todayBooks = filteredBooks.filter(book => book.issuedTo.dueDate === getTodayDate());
+            const tomorrowBooks = filteredBooks.filter(book => book.issuedTo.dueDate === getTomorrowDate());
+            const thisWeekBooks = filteredBooks.filter(book =>
+                isThisWeek(book.issuedTo.dueDate) &&
+                !overdueBooks.includes(book) &&
+                !todayBooks.includes(book) &&
+                !tomorrowBooks.includes(book)
+            );
+            const thisMonthBooks = filteredBooks.filter(book =>
+                isThisMonth(book.issuedTo.dueDate) &&
+                !overdueBooks.includes(book) &&
+                !todayBooks.includes(book) &&
+                !tomorrowBooks.includes(book) &&
+                !thisWeekBooks.includes(book)
+            );
+
+            let html = '';
+
+            // Overdue books section
+            if (overdueBooks.length > 0) {
+                html += `
+                    <div class="issued-section">
+                        <h3 class="section-title overdue-title">
+                            <i class="fas fa-exclamation-triangle"></i> Overdue Books (${overdueBooks.length})
+                        </h3>
+                        <div class="books-grid">
+                            ${renderIssuedBookCards(overdueBooks)}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Due today section
+            if (todayBooks.length > 0) {
+                html += `
+                    <div class="issued-section">
+                        <h3 class="section-title today-title">
+                            <i class="fas fa-calendar-day"></i> Due Today (${todayBooks.length})
+                        </h3>
+                        <div class="books-grid">
+                            ${renderIssuedBookCards(todayBooks)}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Due tomorrow section
+            if (tomorrowBooks.length > 0) {
+                html += `
+                    <div class="issued-section">
+                        <h3 class="section-title tomorrow-title">
+                            <i class="fas fa-calendar-alt"></i> Due Tomorrow (${tomorrowBooks.length})
+                        </h3>
+                        <div class="books-grid">
+                            ${renderIssuedBookCards(tomorrowBooks)}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Due this week section
+            if (thisWeekBooks.length > 0) {
+                html += `
+                    <div class="issued-section">
+                        <h3 class="section-title week-title">
+                            <i class="fas fa-calendar-week"></i> Due This Week (${thisWeekBooks.length})
+                        </h3>
+                        <div class="books-grid">
+                            ${renderIssuedBookCards(thisWeekBooks)}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Due this month section
+            if (thisMonthBooks.length > 0) {
+                html += `
+                    <div class="issued-section">
+                        <h3 class="section-title month-title">
+                            <i class="fas fa-calendar"></i> Due This Month (${thisMonthBooks.length})
+                        </h3>
+                        <div class="books-grid">
+                            ${renderIssuedBookCards(thisMonthBooks)}
+                        </div>
+                    </div>
+                `;
+            }
+
+            container.innerHTML = html;
+        }
+
+        // Helper function to render issued book cards
+        function renderIssuedBookCards(bookList) {
+            return bookList.map(book => {
+                return `
+                    <div class="book-card">
+                        <div class="book-header">
+                            <div class="book-id">${book.id}</div>
+                            <div class="book-status status-${book.status}">Issued</div>
+                        </div>
+                        <div class="book-body">
+                            <h3 class="book-title">${book.title}</h3>
+                            <div class="book-author">
+                                <i class="fas fa-user-pen"></i> ${book.author}
+                            </div>
+                            <div class="member-info">
+                                <div class="member-avatar">${book.issuedTo.name.charAt(0)}</div>
+                                <div class="member-details">
+                                    <div class="member-name">${book.issuedTo.name}</div>
+                                    <div class="member-id">${book.issuedTo.id}</div>
+                                </div>
+                                <div class="due-date ${book.issuedTo.overdue ? 'overdue' : getDueDateClass(book.issuedTo.dueDate)}">
+                                    <i class="far fa-calendar-alt"></i> Due: ${formatDate(book.issuedTo.dueDate)}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-footer">
+                            <button class="btn btn-success" onclick="returnBook('${book.id}')">
+                                <i class="fas fa-undo-alt"></i> Return Book
+                            </button>
+                            <button class="btn btn-warning" onclick="renewBook('${book.id}')">
+                                <i class="fas fa-redo-alt"></i> Renew
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Filter books based on search term
+        function filterBooks(searchTerm) {
+            if (!searchTerm) {
+                renderAllBooks();
+                return;
+            }
+
+            const filteredBooks = books.filter(book => {
+                // Search by book ID, title, author, or ISBN
+                if (book.id.toLowerCase().includes(searchTerm) ||
+                    book.title.toLowerCase().includes(searchTerm) ||
+                    book.author.toLowerCase().includes(searchTerm) ||
+                    book.isbn.includes(searchTerm)) {
+                    return true;
+                }
+
+                // Search by member if book is issued
+                if (book.issuedTo &&
+                    (book.issuedTo.id.toLowerCase().includes(searchTerm) ||
+                     book.issuedTo.name.toLowerCase().includes(searchTerm))) {
+                    return true;
+                }
+
+                return false;
+            });
+
+            renderAllBooks(filteredBooks);
+        }
+
+        // Filter issued books based on search term
+        function filterIssuedBooks(searchTerm) {
+            const issuedBooks = books.filter(book => book.status === 'issued');
+
+            if (!searchTerm) {
+                renderIssuedBooks(issuedBooks);
+                return;
+            }
+
+            const filteredBooks = issuedBooks.filter(book => {
+                // Search by book ID, title, author, or ISBN
+                if (book.id.toLowerCase().includes(searchTerm) ||
+                    book.title.toLowerCase().includes(searchTerm) ||
+                    book.author.toLowerCase().includes(searchTerm) ||
+                    book.isbn.includes(searchTerm)) {
+                    return true;
+                }
+
+                // Search by member if book is issued
+                if (book.issuedTo &&
+                    (book.issuedTo.id.toLowerCase().includes(searchTerm) ||
+                     book.issuedTo.name.toLowerCase().includes(searchTerm))) {
+                    return true;
+                }
+
+                return false;
+            });
+
+            renderIssuedBooks(filteredBooks);
+        }
+
+        // Helper functions
+        function formatDate(dateString) {
+            const options = { year: 'numeric', month: 'short', day: 'numeric' };
+            return new Date(dateString).toLocaleDateString('en-US', options);
+        }
+
+        function getTodayDate() {
+            const today = new Date();
+            return today.toISOString().split('T')[0];
+        }
+
+        function getTomorrowDate() {
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            return tomorrow.toISOString().split('T')[0];
+        }
+
+        function isThisWeek(dateString) {
+            const date = new Date(dateString);
+            const today = new Date();
+            const startOfWeek = new Date(today.setDate(today.getDate() - today.getDay()));
+            const endOfWeek = new Date(startOfWeek);
+            endOfWeek.setDate(endOfWeek.getDate() + 6);
+
+            return date >= startOfWeek && date <= endOfWeek;
+        }
+
+        function isThisMonth(dateString) {
+            const date = new Date(dateString);
+            const today = new Date();
+
+            return date.getMonth() === today.getMonth() &&
+                   date.getFullYear() === today.getFullYear();
+        }
+
+        function getDueDateClass(dueDate) {
+            const today = new Date().toISOString().split('T')[0];
+            const tomorrow = getTomorrowDate();
+
+            if (dueDate === today) return 'today';
+            if (dueDate === tomorrow) return 'tomorrow';
+            return '';
+        }
+
+        // Mock functions for button actions
+        function issueBook(bookId) {
+            alert(`Issuing book ${bookId}...\n(In a real application, this would open a modal to select a member)`);
+            // In a real app, you would update the book status and add issuedTo info
+        }
+
+        function returnBook(bookId) {
+            alert(`Returning book ${bookId}...\n(In a real application, this would update the database)`);
+            // In a real app, you would update the book status and remove issuedTo info
+        }
+
+        function renewBook(bookId) {
+            alert(`Renewing book ${bookId}...\n(In a real application, this would extend the due date)`);
+            // In a real app, you would update the due date
+        }
+    </script>
+</body>
+</html>

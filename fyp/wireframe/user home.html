@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Admin - Wireframe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.4;
+            padding: 20px;
+        }
+
+        .wireframe-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Wireframe Header */
+        .wireframe-header {
+            border: 2px solid #333;
+            padding: 25px 30px;
+            margin-bottom: 30px;
+            background-color: white;
+            position: relative;
+        }
+
+        .header-placeholder {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo-placeholder {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+        }
+
+        .logo-text {
+            width: 180px;
+            height: 35px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+        }
+
+        .admin-placeholder {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .admin-avatar {
+            width: 45px;
+            height: 45px;
+            border: 2px solid #333;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+        }
+
+        .admin-text {
+            width: 100px;
+            height: 25px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+        }
+
+        /* Wireframe Search */
+        .search-placeholder {
+            margin: 25px 0;
+            position: relative;
+        }
+
+        .search-box-placeholder {
+            width: 100%;
+            height: 55px;
+            border: 2px solid #333;
+            background-color: white;
+            position: relative;
+        }
+
+        .search-icon-placeholder {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25px;
+            height: 25px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+        }
+
+        .search-text {
+            position: absolute;
+            left: 60px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Wireframe Tabs */
+        .tabs-placeholder {
+            display: flex;
+            background-color: white;
+            border: 2px solid #333;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .tab-placeholder {
+            flex: 1;
+            padding: 18px 20px;
+            text-align: center;
+            border-right: 2px solid #333;
+            background-color: #f0f0f0;
+        }
+
+        .tab-placeholder:last-child {
+            border-right: none;
+        }
+
+        .tab-placeholder.active {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Wireframe Book Cards */
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .book-card-placeholder {
+            border: 2px solid #333;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .book-header-placeholder {
+            padding: 20px;
+            border-bottom: 2px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f8f8;
+        }
+
+        .book-id-placeholder {
+            width: 80px;
+            height: 25px;
+            border: 2px solid #333;
+            background-color: #e8e8e8;
+        }
+
+        .status-placeholder {
+            width: 100px;
+            height: 30px;
+            border: 2px solid #333;
+            background-color: #e8e8e8;
+        }
+
+        .book-body-placeholder {
+            padding: 20px;
+        }
+
+        .book-title-placeholder {
+            width: 90%;
+            height: 30px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+            margin-bottom: 15px;
+        }
+
+        .book-author-placeholder {
+            width: 70%;
+            height: 20px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+            margin-bottom: 20px;
+        }
+
+        .book-meta-placeholder {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .meta-item {
+            width: 40%;
+            height: 20px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+        }
+
+        /* Wireframe Member Info */
+        .member-info-placeholder {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px dashed #333;
+        }
+
+        .member-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .member-avatar-placeholder {
+            width: 35px;
+            height: 35px;
+            border: 2px solid #333;
+            border-radius: 50%;
+            background-color: #e8e8e8;
+        }
+
+        .member-details-placeholder {
+            flex: 1;
+        }
+
+        .member-name-placeholder {
+            width: 120px;
+            height: 20px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+            margin-bottom: 5px;
+        }
+
+        .member-id-placeholder {
+            width: 80px;
+            height: 15px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+        }
+
+        .due-date-placeholder {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            justify-content: flex-end;
+        }
+
+        .date-icon {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+        }
+
+        .date-text {
+            width: 100px;
+            height: 20px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+        }
+
+        /* Wireframe Buttons */
+        .book-footer-placeholder {
+            padding: 0 20px 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .button-placeholder {
+            flex: 1;
+            height: 45px;
+            border: 2px solid #333;
+            background-color: #e8e8e8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .button-icon {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #333;
+            background-color: #d8d8d8;
+        }
+
+        /* Wireframe Section Headers */
+        .section-header-placeholder {
+            margin: 30px 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-icon {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+        }
+
+        .section-title-placeholder {
+            width: 200px;
+            height: 35px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+        }
+
+        /* Wireframe No Books Placeholder */
+        .no-books-placeholder {
+            text-align: center;
+            padding: 50px 20px;
+            grid-column: 1 / -1;
+            border: 2px dashed #333;
+            background-color: #f8f8f8;
+        }
+
+        .no-books-icon {
+            width: 80px;
+            height: 80px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+        }
+
+        .no-books-text {
+            width: 150px;
+            height: 25px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+            margin: 10px auto;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .header-placeholder {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .admin-placeholder {
+                align-self: flex-end;
+            }
+
+            .books-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            }
+
+            .tabs-placeholder {
+                flex-direction: column;
+            }
+
+            .tab-placeholder {
+                border-right: none;
+                border-bottom: 2px solid #333;
+            }
+
+            .tab-placeholder:last-child {
+                border-bottom: none;
+            }
+        }
+
+        @media (max-width: 576px) {
+            body {
+                padding: 10px;
+            }
+
+            .books-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .book-footer-placeholder {
+                flex-direction: column;
+            }
+
+            .button-placeholder {
+                width: 100%;
+            }
+        }
+
+        /* Wireframe annotation style */
+        .wireframe-note {
+            position: absolute;
+            background-color: white;
+            border: 1px solid #333;
+            padding: 3px 8px;
+            font-size: 12px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .header-note {
+            top: -12px;
+            left: 10px;
+        }
+
+        .search-note {
+            top: -12px;
+            left: 10px;
+        }
+
+        .tab-note {
+            top: -12px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wireframe-container">
+        <!-- Header Section -->
+        <div class="wireframe-header">
+            <div class="header-placeholder">
+                <div class="logo-placeholder">
+                    <div class="logo-icon"></div>
+                    <div class="logo-text"></div>
+                </div>
+            </div>
+
+            <div class="search-placeholder">
+                <div class="search-box-placeholder">
+                    <div class="search-icon-placeholder"></div>
+                    <div class="search-text">Search book...</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs Section -->
+        <div class="tabs-placeholder">
+            <div class="tab-placeholder active"></div>
+        </div>
+
+        <!-- Book Grid Section -->
+        <div class="books-grid">
+            <!-- Book Card 1 -->
+
+            <!-- Book Card 2 -->
+            <div class="book-card-placeholder">
+                <div class="book-header-placeholder">
+                    <div class="book-id-placeholder"></div>
+                    <div class="status-placeholder"></div>
+                </div>
+                <div class="book-body-placeholder">
+                    <div class="book-title-placeholder"></div>
+                    <div class="book-author-placeholder"></div>
+                    <div class="book-meta-placeholder">
+                        <div class="meta-item"></div>
+                        <div class="meta-item"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        // Add some simple annotations to key elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add labels to tabs
+            const tabs = document.querySelectorAll('.tab-placeholder');
+            const tabLabels = ['Section-1', 'Issued Books', 'Overdue'];
+            tabs.forEach((tab, index) => {
+                if (tabLabels[index]) {
+                    tab.textContent = tabLabels[index];
+                }
+            });
+
+            // Add labels to buttons
+            const buttons = document.querySelectorAll('.button-placeholder');
+            buttons.forEach((button, index) => {
+                const buttonText = ['Issue Book', 'Return Book', 'Renew Book'][index % 3];
+                if (buttonText) {
+                    const textDiv = document.createElement('div');
+                    textDiv.textContent = buttonText;
+                    textDiv.style.fontSize = '14px';
+                    textDiv.style.color = '#333';
+                    button.appendChild(textDiv);
+                }
+            });
+
+            // Add sample text to some placeholders
+            const bookTitles = document.querySelectorAll('.book-title-placeholder');
+            bookTitles.forEach(title => {
+                title.textContent = 'Book Title Placeholder';
+                title.style.color = '#666';
+                title.style.fontStyle = 'italic';
+                title.style.fontSize = '14px';
+                title.style.display = 'flex';
+                title.style.alignItems = 'center';
+                title.style.paddingLeft = '10px';
+            });
+
+            const authors = document.querySelectorAll('.book-author-placeholder');
+            authors.forEach(author => {
+                author.textContent = 'Author Name';
+                author.style.color = '#666';
+                author.style.fontStyle = 'italic';
+                author.style.fontSize = '12px';
+                author.style.display = 'flex';
+                author.style.alignItems = 'center';
+                author.style.paddingLeft = '10px';
+            });
+        });
+    </script>
+</body>
+</html>
